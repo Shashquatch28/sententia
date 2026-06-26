@@ -1,82 +1,131 @@
 {
-  "role": "Senior Product Manager - AI/ML Platform",
+  "role": "Senior AI Engineer - Founding Team",
+  "company": "Redrob AI",
   "required_skills": [
-    "embeddings",
-    "vector_search",
-    "eval_frameworks",
-    "ranking_recommendation",
-    "python_ml"
+    "llm_rag",
+    "python_ml_stack",
+    "vector_databases",
+    "production_deployment",
+    "nlp_genai"
   ],
   "required_skill_aliases": {
-    "embeddings": [
-      "embeddings",
-      "sentence transformers",
-      "sentence-transformers",
-      "openai embeddings",
-      "bge",
-      "e5",
-      "dense retrieval"
+    "llm_rag": [
+      "llm",
+      "large language model",
+      "rag",
+      "retrieval augmented generation",
+      "langchain",
+      "llamaindex",
+      "llama index",
+      "openai",
+      "gpt",
+      "gpt-4",
+      "chatgpt",
+      "claude",
+      "gemini",
+      "prompt engineering",
+      "chain of thought",
+      "instruction tuning",
+      "language model",
+      "generative ai"
     ],
-    "vector_search": [
-      "vector search",
+    "python_ml_stack": [
+      "python",
+      "pytorch",
+      "tensorflow",
+      "scikit-learn",
+      "sklearn",
+      "numpy",
+      "pandas",
+      "transformers",
+      "hugging face",
+      "huggingface",
+      "keras",
+      "jax",
+      "machine learning"
+    ],
+    "vector_databases": [
+      "vector database",
       "pinecone",
       "weaviate",
       "qdrant",
       "milvus",
+      "chroma",
+      "chromadb",
+      "pgvector",
       "faiss",
-      "elasticsearch",
-      "opensearch",
-      "information retrieval"
+      "semantic search",
+      "embeddings",
+      "vector search",
+      "dense retrieval",
+      "sentence transformers",
+      "text embeddings"
     ],
-    "eval_frameworks": [
-      "ndcg",
-      "mrr",
-      "map",
-      "a/b test",
-      "ab test",
-      "offline evaluation",
-      "online evaluation",
-      "evaluation"
-    ],
-    "ranking_recommendation": [
-      "recommendation systems",
-      "recommendation system",
-      "ranking",
-      "learning to rank",
-      "xgboost",
-      "lightgbm",
-      "search ranking"
-    ],
-    "python_ml": [
-      "python",
-      "machine learning",
+    "production_deployment": [
+      "docker",
+      "kubernetes",
+      "fastapi",
+      "flask",
+      "aws",
+      "gcp",
+      "azure",
+      "mlops",
+      "model serving",
+      "model deployment",
+      "ci/cd",
       "mlflow",
-      "scikit-learn",
-      "sklearn",
-      "pytorch",
-      "tensorflow",
-      "feature engineering"
+      "triton",
+      "bentoml",
+      "torchserve",
+      "ray serve",
+      "redis",
+      "kafka"
+    ],
+    "nlp_genai": [
+      "nlp",
+      "natural language processing",
+      "transformer",
+      "bert",
+      "t5",
+      "roberta",
+      "generative ai",
+      "text generation",
+      "information extraction",
+      "text classification",
+      "question answering",
+      "summarization",
+      "fine-tuning",
+      "fine tuning",
+      "named entity recognition",
+      "sentiment analysis"
     ]
   },
   "nice_to_have": [
-    "Python scripting",
-    "A/B Testing & Experimentation",
-    "API product experience",
-    "Growth/PLG experience",
-    "LLM or foundation model familiarity"
+    "Fine-tuning LLMs (LoRA, QLoRA, PEFT)",
+    "Recommendation systems or search ranking",
+    "Startup or founding-team experience",
+    "Active GitHub with AI/ML contributions",
+    "Experience with A/B testing AI features"
   ],
   "nice_to_have_skills": [
     "lora",
     "qlora",
     "peft",
-    "rag",
-    "llm fine-tuning",
     "fine-tuning llms",
-    "hugging face transformers",
-    "mlops",
-    "bentoml",
-    "kafka",
-    "spark"
+    "llm fine-tuning",
+    "recommendation systems",
+    "learning to rank",
+    "information retrieval",
+    "a/b test",
+    "ab test",
+    "spark",
+    "airflow",
+    "terraform",
+    "weights and biases",
+    "wandb",
+    "evaluation",
+    "ndcg",
+    "mrr"
   ],
   "disqualifier_companies": [
     "tcs",
@@ -101,8 +150,10 @@
     "sales",
     "sales executive",
     "graphic designer",
-    "project manager",
-    "customer support"
+    "customer support",
+    "product manager",
+    "business analyst",
+    "scrum master"
   ],
   "preferred_locations": [
     "pune",
@@ -118,49 +169,53 @@
   "preferred_countries": [
     "india"
   ],
-  "experience_years_min": 4,
-  "experience_years_max": 10,
+  "experience_years_min": 5,
+  "experience_years_max": 9,
   "experience_range": {
     "min": 5,
     "max": 9,
-    "ideal_min": 6,
+    "ideal_min": 5,
     "ideal_max": 8
   },
   "preferred_notice_days": 30,
   "key_discriminators": [
-    "product_impact_at_scale",
-    "technical_depth_for_ml",
-    "stakeholder_influence",
-    "growth_trajectory"
+    "llm_rag_production_experience",
+    "product_company_background",
+    "founding_team_ownership_mindset",
+    "python_mlops_depth"
   ],
   "career_keywords": {
     "strong_positive": [
-      "recommendation system",
-      "search engine",
-      "retrieval",
-      "ranking",
-      "nlp",
+      "llm",
+      "rag",
+      "retrieval augmented generation",
+      "generative ai",
+      "language model",
+      "embedding",
+      "vector search",
       "ml engineer",
-      "applied ml",
       "ai engineer",
-      "data scientist",
+      "applied ml",
+      "nlp engineer",
       "machine learning"
     ],
     "production_signals": [
       "deployed",
       "production",
       "shipped",
+      "built",
       "owned",
-      "a/b test",
-      "offline-online",
-      "ndcg",
-      "online evaluation",
+      "architected",
+      "led",
       "at scale",
+      "latency",
+      "throughput",
+      "a/b test",
       "users",
       "revenue",
-      "latency",
-      "conversion",
-      "feature pipeline"
+      "feature pipeline",
+      "model monitoring",
+      "inference"
     ],
     "negative_signals": [
       "langchain tutorial",
@@ -168,7 +223,9 @@
       "hobby",
       "online course",
       "kaggle only",
-      "ai enthusiast"
+      "ai enthusiast",
+      "learning llm",
+      "exploring ai"
     ]
   },
   "strong_ai_titles": [
@@ -176,43 +233,49 @@
     "ml engineer",
     "ai engineer",
     "nlp engineer",
-    "search engineer",
-    "recommendation systems engineer",
-    "recommendation engineer",
+    "llm engineer",
+    "generative ai engineer",
     "applied scientist",
     "applied ml engineer",
+    "research engineer",
+    "senior software engineer",
+    "staff engineer",
+    "principal engineer",
     "data scientist",
-    "research engineer"
+    "research scientist"
   ],
   "medium_titles": [
     "software engineer",
     "backend engineer",
     "data engineer",
-    "full stack",
+    "full stack engineer",
     "python developer",
-    "devops",
     "cloud engineer",
-    "analytics engineer"
+    "platform engineer",
+    "devops engineer",
+    "analytics engineer",
+    "tech lead"
   ],
   "culture_keywords": [
     "ownership",
     "first-principles thinking",
-    "data-driven",
-    "customer-obsessed",
     "builder mindset",
-    "autonomy"
+    "autonomy",
+    "shipped",
+    "founded",
+    "early stage",
+    "startup"
   ],
-  "company_stage_preference": "Series B to post-IPO product companies",
+  "company_stage_preference": "Series A to Series B AI-native product companies",
   "must_not_have": [
-    "pure_ic_engineering_only",
-    "no_product_experience",
+    "no_production_ml_experience",
     "purely_consulting_background"
   ],
-  "team_context": "Joining a 6-person PM team at a Series C AI infrastructure company. Will own the developer experience surface of the ML platform, partnering with 4 engineering teams.",
+  "team_context": "Founding-team hire at Redrob AI (Series A, AI-native talent intelligence platform, Pune/Noida). Will own LLM/RAG pipelines end-to-end, working directly with the founding team. No hand-holding — high ownership, high impact.",
   "hiring_manager_priorities": [
-    "Has shipped a technical product that engineers love",
-    "Can write a crisp PRD and defend tradeoffs",
-    "Has worked in a fast-paced, ambiguous environment",
-    "Can represent product in technical design reviews"
+    "Has shipped LLM or RAG system to real users in production",
+    "Owns work end-to-end — architecture, deployment, and monitoring",
+    "Python-native with hands-on vector DB and model serving experience",
+    "Comfortable in a fast-moving founding-team environment with high ambiguity"
   ]
 }
