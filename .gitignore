@@ -48,9 +48,11 @@ checkpoints/
 models/
 !src/models/
 !src/models/**
-# Allow reasoning_map.json — this is the Dev A handoff artifact
+# Allow precomputed artifacts needed for Dev A handoff and Streamlit sandbox
 !precomputed/
 !precomputed/reasoning_map.json
+!precomputed/demo_data.json
+!precomputed/comparisons.json
 src/models/__pycache__/
 src/models/**/*.py[cod]
 *.pkl
