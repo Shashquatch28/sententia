@@ -50,6 +50,7 @@ models/
 *.pickle
 
 # Data (large/local datasets — download separately)
+datasets/
 data/
 docs/
 
