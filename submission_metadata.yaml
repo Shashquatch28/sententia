@@ -8,29 +8,34 @@ primary_contact:
 team_members:
   - name: "Shashwat Kumar"
     email: "TODO@example.com"
-    role: "Core Pipeline Engineer"
+    role: "Core Pipeline Engineer (Dev A) — scoring pipeline, streaming ranker, CSV writer"
+  - name: "Rishik Sinha"
+    email: "rishiksinha9@gmail.com"
+    role: "Intelligence Layer Engineer (Dev B) — 5-agent offline pipeline, Streamlit UI"
 
-github_repo: "TODO"
+github_repo: "https://github.com/Shashquatch28/sententia"
 sandbox_link: "TODO"
-reproduce_command: "python rank.py --candidates ./datasets/candidates.jsonl --out ./submission.csv"
+reproduce_command: "python rank.py --candidates <path_to_candidates.jsonl> --out submission.csv --precomputed precomputed"
 
 compute:
   platform: "Local CPU"
   cpu_cores: 8
   ram_gb: 16
-  python_version: "3.14"
+  python_version: "3.11"
   os: "Windows"
   uses_gpu_for_inference: false
   has_network_during_ranking: false
-  pre_computation_required: false
-  pre_computation_time_minutes: 0
+  pre_computation_required: true
+  pre_computation_time_minutes: 10
 
 ai_tools_used:
-  - "ChatGPT"
+  - "Claude Code (Anthropic)"
+  - "ChatGPT (OpenAI)"
 
 ai_usage_summary: |
-  Used Codex/ChatGPT to implement and verify the deterministic ranking pipeline.
-  The judged ranking command makes no network calls and does not send candidate data to any API.
+  Used Claude Code (Anthropic) and ChatGPT (OpenAI) for implementation assistance during
+  development. All ranking logic is fully deterministic and rule-based — no AI API calls
+  are made during the ranking step. The pipeline makes zero network calls at inference time.
 
 methodology_summary: |
   Streaming rule-based ranker with honeypot detection, hard caps for disqualified

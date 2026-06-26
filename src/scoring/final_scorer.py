@@ -60,7 +60,7 @@ def score_candidate(candidate: dict[str, Any], jd: dict[str, Any]) -> CandidateF
         WEIGHTS["education_score"] * edu_score +
         WEIGHTS["availability_score"] * availability
     )
-    final_score = base_score * multiplier
+    final_score = min(base_score * multiplier, 1.0)
     if hard_rule.score_cap is not None:
         final_score = min(final_score, hard_rule.score_cap)
 

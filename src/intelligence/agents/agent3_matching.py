@@ -46,8 +46,8 @@ _MLOPS_KEYWORDS = {
     "model serving", "triton", "torchserve", "bento", "ray",
 }
 
-_PM_POSITIVE_TITLES = {
-    "applied", "platform", "product", "ml engineer", "ai engineer",
+_ENGINEER_TITLE_BOOST = {
+    "applied", "platform", "ml engineer", "ai engineer",
     "machine learning engineer", "data scientist", "research engineer",
 }
 
@@ -107,7 +107,7 @@ def _score_candidate(profile: dict, discriminators: list) -> dict:
     product_score = 0.25
     product_score += product_frac * 0.45
     product_score += outcome_score * 0.20
-    if any(kw in title for kw in _PM_POSITIVE_TITLES):
+    if any(kw in title for kw in _ENGINEER_TITLE_BOOST):
         product_score += 0.10
     product_score = min(product_score, 1.0)
 

@@ -170,7 +170,6 @@ def _apply_decision_tree(match: dict, profile: dict) -> str:
 
     # 1. Blocking risks
     blocking_keywords = [
-        "no product experience", "pure engineer", "no leadership",
         "fraud", "fabricated", "inconsistent dates",
     ]
     has_blocking = any(
