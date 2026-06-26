@@ -1,12 +1,63 @@
 {
-  "role": "Senior Product Manager — AI/ML Platform",
+  "role": "Senior Product Manager - AI/ML Platform",
   "required_skills": [
-    "Product Strategy",
-    "ML/AI Platform Product Management",
-    "Cross-functional Leadership",
-    "Data Analysis & SQL",
-    "Technical Product Requirements"
+    "embeddings",
+    "vector_search",
+    "eval_frameworks",
+    "ranking_recommendation",
+    "python_ml"
   ],
+  "required_skill_aliases": {
+    "embeddings": [
+      "embeddings",
+      "sentence transformers",
+      "sentence-transformers",
+      "openai embeddings",
+      "bge",
+      "e5",
+      "dense retrieval"
+    ],
+    "vector_search": [
+      "vector search",
+      "pinecone",
+      "weaviate",
+      "qdrant",
+      "milvus",
+      "faiss",
+      "elasticsearch",
+      "opensearch",
+      "information retrieval"
+    ],
+    "eval_frameworks": [
+      "ndcg",
+      "mrr",
+      "map",
+      "a/b test",
+      "ab test",
+      "offline evaluation",
+      "online evaluation",
+      "evaluation"
+    ],
+    "ranking_recommendation": [
+      "recommendation systems",
+      "recommendation system",
+      "ranking",
+      "learning to rank",
+      "xgboost",
+      "lightgbm",
+      "search ranking"
+    ],
+    "python_ml": [
+      "python",
+      "machine learning",
+      "mlflow",
+      "scikit-learn",
+      "sklearn",
+      "pytorch",
+      "tensorflow",
+      "feature engineering"
+    ]
+  },
   "nice_to_have": [
     "Python scripting",
     "A/B Testing & Experimentation",
@@ -14,13 +65,134 @@
     "Growth/PLG experience",
     "LLM or foundation model familiarity"
   ],
+  "nice_to_have_skills": [
+    "lora",
+    "qlora",
+    "peft",
+    "rag",
+    "llm fine-tuning",
+    "fine-tuning llms",
+    "hugging face transformers",
+    "mlops",
+    "bentoml",
+    "kafka",
+    "spark"
+  ],
+  "disqualifier_companies": [
+    "tcs",
+    "infosys",
+    "wipro",
+    "accenture",
+    "cognizant",
+    "capgemini",
+    "hcl",
+    "tech mahindra",
+    "mphasis",
+    "hexaware",
+    "mindtree"
+  ],
+  "disqualifier_titles": [
+    "marketing manager",
+    "hr manager",
+    "operations manager",
+    "accountant",
+    "civil engineer",
+    "content writer",
+    "sales",
+    "sales executive",
+    "graphic designer",
+    "project manager",
+    "customer support"
+  ],
+  "preferred_locations": [
+    "pune",
+    "noida",
+    "hyderabad",
+    "mumbai",
+    "delhi",
+    "gurgaon",
+    "gurugram",
+    "bengaluru",
+    "bangalore"
+  ],
+  "preferred_countries": [
+    "india"
+  ],
   "experience_years_min": 4,
   "experience_years_max": 10,
+  "experience_range": {
+    "min": 5,
+    "max": 9,
+    "ideal_min": 6,
+    "ideal_max": 8
+  },
+  "preferred_notice_days": 30,
   "key_discriminators": [
     "product_impact_at_scale",
     "technical_depth_for_ml",
     "stakeholder_influence",
     "growth_trajectory"
+  ],
+  "career_keywords": {
+    "strong_positive": [
+      "recommendation system",
+      "search engine",
+      "retrieval",
+      "ranking",
+      "nlp",
+      "ml engineer",
+      "applied ml",
+      "ai engineer",
+      "data scientist",
+      "machine learning"
+    ],
+    "production_signals": [
+      "deployed",
+      "production",
+      "shipped",
+      "owned",
+      "a/b test",
+      "offline-online",
+      "ndcg",
+      "online evaluation",
+      "at scale",
+      "users",
+      "revenue",
+      "latency",
+      "conversion",
+      "feature pipeline"
+    ],
+    "negative_signals": [
+      "langchain tutorial",
+      "side project",
+      "hobby",
+      "online course",
+      "kaggle only",
+      "ai enthusiast"
+    ]
+  },
+  "strong_ai_titles": [
+    "machine learning engineer",
+    "ml engineer",
+    "ai engineer",
+    "nlp engineer",
+    "search engineer",
+    "recommendation systems engineer",
+    "recommendation engineer",
+    "applied scientist",
+    "applied ml engineer",
+    "data scientist",
+    "research engineer"
+  ],
+  "medium_titles": [
+    "software engineer",
+    "backend engineer",
+    "data engineer",
+    "full stack",
+    "python developer",
+    "devops",
+    "cloud engineer",
+    "analytics engineer"
   ],
   "culture_keywords": [
     "ownership",
