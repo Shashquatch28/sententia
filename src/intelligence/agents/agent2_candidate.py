@@ -157,12 +157,12 @@ def _load_top_candidates() -> list:
             score = _keyword_fast_score(c)
             c["fast_score"] = score
             if len(heap) < TOP_N:
-                heapq.heappush(heap, (score, c))
+                heapq.heappush(heap, (score, total, c))
             elif score > heap[0][0]:
-                heapq.heapreplace(heap, (score, c))
+                heapq.heapreplace(heap, (score, total, c))
             if total % 10_000 == 0:
                 logger.info(f"  Scanned {total:,} candidates...")
-        candidates = [c for _, c in heap]
+        candidates = [c for _, _, c in heap]
         logger.info(f"  Scanned {total:,} total candidates")
     else:
         logger.error(
