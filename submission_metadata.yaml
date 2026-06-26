@@ -1,0 +1,47 @@
+team_name: "sententia"
+
+primary_contact:
+  name: "Shashwat Kumar"
+  email: "TODO@example.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Shashwat Kumar"
+    email: "TODO@example.com"
+    role: "Core Pipeline Engineer"
+
+github_repo: "TODO"
+sandbox_link: "TODO"
+reproduce_command: "python rank.py --candidates ./datasets/candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "Local CPU"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.14"
+  os: "Windows"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "ChatGPT"
+
+ai_usage_summary: |
+  Used Codex/ChatGPT to implement and verify the deterministic ranking pipeline.
+  The judged ranking command makes no network calls and does not send candidate data to any API.
+
+methodology_summary: |
+  Streaming rule-based ranker with honeypot detection, hard caps for disqualified
+  titles or consulting-only careers, six weighted fit dimensions, and a behavioral
+  reachability multiplier. The pipeline maintains only a top-200 heap during
+  candidate streaming, then writes a validator-compliant top-100 CSV with either
+  Dev B precomputed reasoning or candidate-specific fallback reasoning.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
