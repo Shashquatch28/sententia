@@ -1,0 +1,46 @@
+{
+  "role": "Senior Product Manager — AI/ML Platform",
+  "required_skills": [
+    "Product Strategy",
+    "ML/AI Platform Product Management",
+    "Cross-functional Leadership",
+    "Data Analysis & SQL",
+    "Technical Product Requirements"
+  ],
+  "nice_to_have": [
+    "Python scripting",
+    "A/B Testing & Experimentation",
+    "API product experience",
+    "Growth/PLG experience",
+    "LLM or foundation model familiarity"
+  ],
+  "experience_years_min": 4,
+  "experience_years_max": 10,
+  "key_discriminators": [
+    "product_impact_at_scale",
+    "technical_depth_for_ml",
+    "stakeholder_influence",
+    "growth_trajectory"
+  ],
+  "culture_keywords": [
+    "ownership",
+    "first-principles thinking",
+    "data-driven",
+    "customer-obsessed",
+    "builder mindset",
+    "autonomy"
+  ],
+  "company_stage_preference": "Series B to post-IPO product companies",
+  "must_not_have": [
+    "pure_ic_engineering_only",
+    "no_product_experience",
+    "purely_consulting_background"
+  ],
+  "team_context": "Joining a 6-person PM team at a Series C AI infrastructure company. Will own the developer experience surface of the ML platform, partnering with 4 engineering teams.",
+  "hiring_manager_priorities": [
+    "Has shipped a technical product that engineers love",
+    "Can write a crisp PRD and defend tradeoffs",
+    "Has worked in a fast-paced, ambiguous environment",
+    "Can represent product in technical design reviews"
+  ]
+}

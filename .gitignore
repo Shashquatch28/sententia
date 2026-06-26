@@ -54,6 +54,11 @@ datasets/
 data/
 docs/
 
+# Hackathon dataset folder (large files — not committed)
+"[PUB] India_runs_data_and_ai_challenge (1)/"
+"[PUB] India_runs_data_and_ai_challenge (1).zip"
+[PUB]*
+
 # Python build
 build/
 dist/
