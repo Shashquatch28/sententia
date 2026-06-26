@@ -54,9 +54,11 @@ AI_KEYWORDS = {
     "ml", "ai", "artificial intelligence", "computer vision", "recommendation",
 }
 
-PM_POSITIVE = {
-    "product manager", "pm ", "senior pm", "principal pm", "head of product",
-    "vp product", "director of product", "chief product",
+ENGINEER_POSITIVE = {
+    "ml engineer", "ai engineer", "machine learning engineer", "data scientist",
+    "research engineer", "applied scientist", "applied ml", "nlp engineer",
+    "senior engineer", "staff engineer", "principal engineer", "tech lead",
+    "software engineer", "backend engineer", "platform engineer",
 }
 
 BAD_TITLES = {
@@ -81,7 +83,7 @@ def _keyword_fast_score(candidate: dict) -> float:
         skill_names.add(name)
 
     score = 0.0
-    if any(pm in title for pm in PM_POSITIVE):
+    if any(eng in title for eng in ENGINEER_POSITIVE):
         score += 20.0
     if any(bad in title for bad in BAD_TITLES):
         score -= 25.0
@@ -240,12 +242,12 @@ def _consistency_score(candidate: dict) -> float:
     ]
     career = candidate.get("career_history", [])
 
-    pm_title = any(pm in title for pm in {"product manager", "pm", "head of product"})
-    has_product_skill = any(
-        any(p in s for p in {"product", "roadmap", "strategy", "stakeholder"})
+    eng_title = any(kw in title for kw in {"engineer", "scientist", "developer", "ml", "ai"})
+    has_tech_skill = any(
+        any(p in s for p in {"python", "ml", "ai", "llm", "model", "data", "engineer"})
         for s in skills
     )
-    if pm_title and not has_product_skill and skills:
+    if eng_title and not has_tech_skill and skills:
         score -= 0.15
 
     if len(career) >= 2:

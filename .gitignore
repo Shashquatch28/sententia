@@ -48,6 +48,9 @@ checkpoints/
 models/
 !src/models/
 !src/models/**
+# Allow reasoning_map.json — this is the Dev A handoff artifact
+!precomputed/
+!precomputed/reasoning_map.json
 src/models/__pycache__/
 src/models/**/*.py[cod]
 *.pkl
