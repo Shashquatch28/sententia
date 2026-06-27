@@ -72,3 +72,6 @@ docs/
 build/
 dist/
 *.egg-info/
+[PUB] India_runs_data_and_ai_challenge (1).zip
+[PUB] India_runs_data_and_ai_challenge (1)/
+*.jsonl
