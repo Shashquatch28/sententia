@@ -1,14 +1,16 @@
 """
-HireIQ — AI Candidate Intelligence Dashboard (v2)
-Dark-theme professional recruiter UI.
+HireIQ — AI Candidate Intelligence Dashboard
+Light editorial recruiter UI (Claude Design handoff: "HireIQ App").
+
 Loads ONLY from precomputed JSON files. No computation on page load.
+Navigation is sidebar-driven via st.session_state["tab"] — robust across reruns.
 """
 
 import json
+import math
 from pathlib import Path
 from typing import Optional
 
-import plotly.graph_objects as go
 import streamlit as st
 
 # ---------------------------------------------------------------------------
@@ -17,52 +19,75 @@ import streamlit as st
 
 st.set_page_config(
     page_title="HireIQ — AI Candidate Intelligence",
-    page_icon="🎯",
+    page_icon="🟢",
     layout="wide",
-    initial_sidebar_state="collapsed",
+    initial_sidebar_state="expanded",
 )
 
 ROOT = Path(__file__).resolve().parents[1]
 PRECOMPUTED = ROOT / "precomputed"
 
 # ---------------------------------------------------------------------------
-# Constants
+# Design tokens (from HireIQ App.dc.html)
 # ---------------------------------------------------------------------------
 
-TIER_COLORS = {
-    "STRONGLY_ADVANCE":     "#22c55e",
-    "ADVANCE":              "#3b82f6",
-    "REVIEW_FURTHER":       "#f59e0b",
-    "ADVANCE_IF_POOL_THIN": "#8b5cf6",
-    "DECLINE":              "#ef4444",
-}
-TIER_LABELS = {
-    "STRONGLY_ADVANCE":     "Strongly Advance",
-    "ADVANCE":              "Advance",
-    "REVIEW_FURTHER":       "Review Further",
-    "ADVANCE_IF_POOL_THIN": "Advance If Pool Thin",
-    "DECLINE":              "Decline",
-}
-TIER_ICONS = {
-    "STRONGLY_ADVANCE":     "🟢",
-    "ADVANCE":              "🔵",
-    "REVIEW_FURTHER":       "🟡",
-    "ADVANCE_IF_POOL_THIN": "🟣",
-    "DECLINE":              "🔴",
+BG        = "#F4F2EC"
+SURFACE   = "#FFFFFF"
+SURFACE_2 = "#FBFAF5"
+INK       = "#1B1A14"
+INK_2     = "#56544A"
+MUTED     = "#8E8B7E"
+LINE      = "#E4E1D6"
+LINE_2    = "#EEEBE2"
+ACCENT    = "#1F7A4D"   # forest green
+AMBER     = "#9A6B12"
+AMBER_BG  = "#F4ECD9"
+SLATE     = "#5C5B52"
+SLATE_BG  = "#EBE9E0"
+SB        = "#1C1B16"   # sidebar
+BLUE      = "#2E5E8C"   # compare candidate B
+
+# tier tones: (label, fg, bg, bar-color)
+TIER_TONE = {
+    "STRONGLY_ADVANCE":     ("Strongly Advance", ACCENT, "#E3EFE8", ACCENT),
+    "ADVANCE":              ("Advance",          AMBER,  AMBER_BG, "#B7791F"),
+    "ADVANCE_IF_POOL_THIN": ("Advance If Thin",  AMBER,  AMBER_BG, "#B7791F"),
+    "REVIEW_FURTHER":       ("Review Further",   SLATE,  SLATE_BG, "#8E8B7E"),
+    "DECLINE":              ("Decline",          SLATE,  SLATE_BG, "#8E8B7E"),
 }
 
-BG_PAGE    = "#0f172a"
-BG_CARD    = "#1e293b"
-BG_BORDER  = "#334155"
-TXT_PRI    = "#f1f5f9"
-TXT_MUT    = "#94a3b8"
+NAV = [
+    ("role",      "Role brief"),
+    ("shortlist", "Shortlist"),
+    ("detail",    "Candidate review"),
+    ("compare",   "Compare"),
+]
 
-PLOTLY_BASE = dict(
-    template="plotly_dark",
-    paper_bgcolor="rgba(0,0,0,0)",
-    plot_bgcolor="rgba(0,0,0,0)",
-    font=dict(family="Inter, system-ui, sans-serif", color=TXT_PRI),
-)
+HEADS = {
+    "role": dict(
+        kicker="Role intelligence",
+        title="Senior AI Engineer — the brief",
+        sub="What the model optimizes for, and the bar a candidate must clear.",
+    ),
+    "shortlist": dict(
+        kicker="The shortlist",
+        title="Top 100 of 100,000 scanned",
+        sub="Grouped by recommendation strength. Search, filter, and open any candidate to review.",
+    ),
+    "detail": dict(
+        kicker="Candidate review",
+        title="In-depth assessment",
+        sub="Trust, fit, risks, and an interview plan — the evidence behind the score.",
+    ),
+    "compare": dict(
+        kicker="Compare",
+        title="Head-to-head",
+        sub="Place two candidates side by side: who is stronger on what, by how much, and when each would win.",
+    ),
+}
+
+DIM_KEYS  = ["technical", "product", "cultural", "growth"]
+DIM_NAMES = ["Technical", "Product", "Cultural", "Growth"]
 
 # ---------------------------------------------------------------------------
 # CSS
@@ -70,369 +95,142 @@ PLOTLY_BASE = dict(
 
 st.markdown(f"""
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 /* ── Base ── */
-.stApp {{ background-color: {BG_PAGE}; }}
-section[data-testid="stSidebar"] {{ display: none; }}
-.block-container {{ padding-top: 2.5rem !important; padding-bottom: 2rem; max-width: 100% !important; }}
-div[data-testid="stAppViewBlockContainer"] {{ padding-top: 2rem !important; }}
-
-/* ── Tabs ── */
-.stTabs [data-baseweb="tab-list"] {{
-    background: {BG_CARD};
-    border: 1px solid {BG_BORDER};
-    border-radius: 12px;
-    padding: 4px 6px;
-    gap: 4px;
+.stApp {{ background: {BG}; color: {INK}; }}
+html, body, [class*="css"] {{ font-family: 'Archivo', sans-serif; color: {INK}; }}
+/* Force ink color on ALL main-area elements so Streamlit defaults never bleed through */
+[data-testid="stMain"] p,
+[data-testid="stMain"] div,
+[data-testid="stMain"] span,
+[data-testid="stMain"] h1,
+[data-testid="stMain"] h2,
+[data-testid="stMain"] h3 {{ color: {INK}; }}
+#MainMenu, header[data-testid="stHeader"], footer {{ display: none !important; }}
+[data-testid="stMain"] .block-container {{
+    max-width: 1180px !important;
+    padding: 30px 40px 80px !important;
 }}
-.stTabs [data-baseweb="tab"] {{
-    background: transparent;
-    color: {TXT_MUT};
-    border-radius: 8px;
-    padding: 8px 22px;
-    font-weight: 600;
-    font-size: 0.875rem;
-    border: none;
-}}
-.stTabs [aria-selected="true"] {{
-    background: #1e3a5f !important;
-    color: #60a5fa !important;
+[data-testid="stMain"] {{
+    background: radial-gradient(120% 70% at 100% 0%, #ECF3EE 0%, {BG} 50%);
 }}
 
-/* ── Metrics ── */
-[data-testid="stMetric"] {{
-    background: {BG_CARD};
-    border: 1px solid {BG_BORDER};
-    border-radius: 12px;
-    padding: 16px 20px !important;
+/* ── Sidebar ── */
+section[data-testid="stSidebar"] {{
+    background: {SB} !important;
+    width: 250px !important;
+    min-width: 250px !important;
 }}
-[data-testid="stMetricLabel"] {{
-    color: {TXT_MUT} !important;
-    font-size: 0.72rem !important;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-weight: 600;
-}}
-[data-testid="stMetricValue"] {{
-    color: {TXT_PRI} !important;
-    font-size: 1.7rem !important;
-    font-weight: 800 !important;
-}}
+section[data-testid="stSidebar"] > div {{ padding-top: 22px; }}
+section[data-testid="stSidebar"] div,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] p {{ color: #E7E4D8 !important; }}
+section[data-testid="stSidebar"] [data-testid="stVerticalBlock"] {{ gap: 0.35rem; }}
 
-/* ── Cards ── */
-.cand-card {{
-    background: {BG_CARD};
-    border: 1px solid {BG_BORDER};
-    border-radius: 12px;
-    padding: 18px 20px;
-    margin-bottom: 14px;
-    transition: transform 0.15s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}}
-.cand-card:hover {{
-    border-color: #3b82f6;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-}}
-
-/* ── Hover polish on detail/compare cards ── */
-.hover-lift {{
-    transition: transform 0.15s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}}
-.hover-lift:hover {{
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-}}
-
-/* ── Typography helpers ── */
-.section-title {{
-    font-size: 0.72rem;
-    font-weight: 700;
-    color: {TXT_MUT};
-    text-transform: uppercase;
-    letter-spacing: 0.10em;
-    margin-bottom: 14px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #3b82f633;
-}}
-.tier-badge {{
-    display: inline-block;
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 0.70rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}}
-.culture-pill {{
-    display: inline-block;
-    background: #1e3a5f;
-    border: 1px solid #3b82f6;
-    color: #93c5fd;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.78rem;
-    margin: 3px 4px 3px 0;
-}}
-
-/* ── Signal tags ── */
-.sig-verified   {{ color: #4ade80; font-weight: 700; font-size: 0.72rem; }}
-.sig-plausible  {{ color: #60a5fa; font-weight: 700; font-size: 0.72rem; }}
-.sig-suspicious {{ color: #f87171; font-weight: 700; font-size: 0.72rem; }}
-
-/* ── Callout boxes ── */
-.callout-blue {{
-    background: #0f2744;
-    border-left: 4px solid #3b82f6;
-    padding: 14px 18px;
-    border-radius: 0 10px 10px 0;
-    color: #bfdbfe;
-    font-style: italic;
-    margin: 8px 0;
-    line-height: 1.6;
-}}
-.callout-amber {{
-    background: #1c1200;
-    border-left: 4px solid #f59e0b;
-    padding: 14px 18px;
-    border-radius: 0 10px 10px 0;
-    color: #fef3c7;
-    margin: 8px 0;
-    line-height: 1.6;
-}}
-.callout-listen {{
-    background: #0d1f38;
-    border-left: 3px solid #3b82f6;
-    padding: 10px 14px;
-    border-radius: 0 8px 8px 0;
-    color: #93c5fd;
-    font-size: 0.83rem;
-    margin-top: 10px;
-    line-height: 1.5;
-}}
-
-/* ── Compare winner badges ── */
-.winner-a {{ background:#14532d; color:#4ade80; padding:2px 8px; border-radius:10px; font-size:0.68rem; font-weight:700; }}
-.winner-b {{ background:#1c2a4a; color:#60a5fa; padding:2px 8px; border-radius:10px; font-size:0.68rem; font-weight:700; }}
-.winner-tie {{ background:{BG_CARD}; color:#64748b; padding:2px 8px; border-radius:10px; font-size:0.68rem; }}
-
-/* ── Misc ── */
-.no-data {{
-    background: {BG_CARD};
-    border: 1px solid {BG_BORDER};
-    border-radius: 12px;
-    padding: 48px;
-    text-align: center;
-    color: {TXT_MUT};
-}}
-hr.divider {{
-    border: none;
-    border-top: 1px solid {BG_BORDER};
-    margin: 22px 0;
-}}
-
-/* ── Header gradient accent ── */
-.accent-bar {{
-    height: 3px;
+/* sidebar nav buttons */
+section[data-testid="stSidebar"] .stButton button {{
     width: 100%;
-    border-radius: 3px;
-    background: linear-gradient(90deg, #22c55e, #3b82f6, #8b5cf6);
-    margin: 4px 0 18px 0;
-}}
-.brand-title {{
-    font-size: 2.1rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    background: linear-gradient(90deg, #60a5fa, #34d399);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}}
-
-/* ── Skill pills ── */
-.skill-pill {{
-    display: inline-block;
-    background: #1e3a5f;
-    border: 1px solid #3b82f655;
-    color: #93c5fd;
-    padding: 2px 9px;
-    border-radius: 12px;
-    font-size: 0.68rem;
-    font-weight: 600;
-    margin: 2px 4px 2px 0;
-}}
-.skill-pill-green {{
-    display: inline-block;
-    background: #14331f;
-    border: 1px solid #22c55e66;
-    color: #6ee7a8;
-    padding: 3px 11px;
-    border-radius: 12px;
-    font-size: 0.74rem;
-    font-weight: 600;
-    margin: 3px 5px 3px 0;
-}}
-.rank-badge {{
-    display: inline-block;
-    background: #0f172a;
-    border: 1px solid {BG_BORDER};
-    color: {TXT_MUT};
-    padding: 1px 8px;
-    border-radius: 8px;
-    font-size: 0.68rem;
-    font-weight: 700;
-    margin-bottom: 6px;
-}}
-
-/* ── HTML progress bars ── */
-.pbar-track {{
-    width: 100%;
-    height: 8px;
-    background: #0f172a;
-    border-radius: 6px;
-    overflow: hidden;
-    margin: 6px 0;
-}}
-.pbar-fill {{
-    height: 100%;
-    border-radius: 6px;
-}}
-
-/* ── Ghost buttons (View Details) ── */
-div[data-testid="stButton"] > button {{
-    background: transparent !important;
-    border: 1px solid #3b82f6 !important;
-    color: #60a5fa !important;
-    border-radius: 8px !important;
-    font-weight: 600 !important;
-    font-size: 0.82rem !important;
-    transition: all 0.18s ease !important;
-}}
-div[data-testid="stButton"] > button:hover {{
-    background: #1e3a5f !important;
-    border-color: #60a5fa !important;
-    color: #bfdbfe !important;
-    transform: translateY(-1px);
-}}
-
-/* ── Expanders ── */
-.streamlit-expanderHeader, [data-testid="stExpander"] summary {{
-    background: #162032 !important;
-    border-left: 3px solid #3b82f6 !important;
-    border-radius: 6px !important;
-}}
-[data-testid="stExpander"] details {{
-    background: transparent !important;
-    border: 1px solid {BG_BORDER} !important;
-    border-radius: 8px !important;
-}}
-
-/* ── Discriminator table ── */
-.disc-table {{
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.78rem;
-    margin-top: 6px;
-}}
-.disc-table th {{
     text-align: left;
-    color: {TXT_MUT};
-    font-size: 0.66rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    padding: 8px 10px;
-    border-bottom: 1px solid {BG_BORDER};
+    justify-content: flex-start;
+    background: transparent;
+    border: none;
+    color: #B6B2A6;
+    font-family: 'Archivo', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 12px;
+    border-radius: 10px;
+    transition: background .15s, color .15s;
 }}
-.disc-table td {{
-    padding: 9px 10px;
-    color: #cbd5e1;
-    border-bottom: 1px solid #1e293b;
-    vertical-align: top;
+section[data-testid="stSidebar"] .stButton button:hover {{
+    background: rgba(255,255,255,.06);
+    color: #F4F2EC;
 }}
-.disc-table tr:hover td {{ background: #162032; }}
-
-/* ── Shimmer animation on ideal-candidate border ── */
-@keyframes shimmer {{
-    0%   {{ border-left-color: #3b82f6; }}
-    50%  {{ border-left-color: #34d399; }}
-    100% {{ border-left-color: #3b82f6; }}
-}}
-.ideal-box {{
-    background: #162032;
-    border-left: 4px solid #3b82f6;
-    padding: 16px 18px;
-    border-radius: 0 10px 10px 0;
-    color: #cbd5e1;
-    font-style: italic;
-    line-height: 1.75;
-    font-size: 0.875rem;
-    animation: shimmer 3s ease-in-out infinite;
+section[data-testid="stSidebar"] .stButton button[kind="primary"] {{
+    background: rgba(255,255,255,.08);
+    color: #F4F2EC;
+    font-weight: 600;
+    box-shadow: inset 2px 0 0 {ACCENT};
 }}
 
-/* ── Score circle glow ── */
-.score-circle {{
-    border-radius: 18px;
-    padding: 26px 16px;
-    text-align: center;
-    margin-top: 4px;
+/* ── Main buttons (links, pills, prev/next) + download buttons ── */
+[data-testid="stMain"] [data-testid="stDownloadButton"] button {{
+    background: {SURFACE};
+    border: 1px solid {LINE};
+    color: {INK} !important;
+    font-family: 'Archivo', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 8px 15px;
+    transition: all .15s;
+    box-shadow: 0 1px 2px rgba(20,20,15,.04);
+}}
+[data-testid="stMain"] [data-testid="stDownloadButton"] button:hover {{
+    border-color: {ACCENT};
+    color: {ACCENT} !important;
+}}
+[data-testid="stMain"] .stButton button {{
+    background: {SURFACE};
+    border: 1px solid {LINE};
+    color: {INK_2};
+    font-family: 'Archivo', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 8px 15px;
+    transition: all .15s;
+    box-shadow: 0 1px 2px rgba(20,20,15,.04);
+}}
+[data-testid="stMain"] .stButton button:hover {{
+    border-color: {ACCENT};
+    color: {ACCENT};
+}}
+[data-testid="stMain"] .stButton button[kind="primary"] {{
+    background: {ACCENT};
+    border-color: {ACCENT};
+    color: #fff;
 }}
 
-/* ── Scrollbar ── */
-::-webkit-scrollbar {{ width: 6px; height: 6px; }}
-::-webkit-scrollbar-track {{ background: #0f172a; }}
-::-webkit-scrollbar-thumb {{ background: #334155; border-radius: 3px; }}
-::-webkit-scrollbar-thumb:hover {{ background: #3b82f6; }}
+/* ── Inputs ── */
+[data-testid="stMain"] [data-baseweb="input"],
+[data-testid="stMain"] [data-baseweb="select"] > div {{
+    background: {SURFACE} !important;
+    border: 1px solid {LINE} !important;
+    border-radius: 11px !important;
+    font-family: 'Archivo', sans-serif !important;
+}}
+[data-testid="stMain"] input {{ color: {INK} !important; font-size: 14px !important; }}
+[data-testid="stMain"] [data-baseweb="select"] * {{ color: {INK} !important; }}
+
+/* labels */
+.kick {{ font: 600 10px/1 'JetBrains Mono', monospace; letter-spacing: .18em;
+         text-transform: uppercase; color: {ACCENT} !important; }}
+.lbl {{ font: 600 10px/1 'JetBrains Mono', monospace; letter-spacing: .16em;
+        text-transform: uppercase; color: {MUTED} !important; }}
+.serif {{ font-family: 'Newsreader', serif; color: {INK}; }}
+.mono {{ font-family: 'JetBrains Mono', monospace; color: {INK}; }}
+
+@keyframes fadeUp {{ from {{ opacity:0; transform:translateY(8px); }} to {{ opacity:1; transform:none; }} }}
+section[data-testid="stMain"] section {{ animation: fadeUp .35s ease both; }}
 </style>
 """, unsafe_allow_html=True)
 
 
-def _pbar(score: float, color: str) -> str:
-    """Return an HTML progress bar string filled to score (0-1) with the given color."""
-    pct = max(0, min(100, int(score * 100)))
-    return (f'<div class="pbar-track"><div class="pbar-fill" '
-            f'style="width:{pct}%;background:{color};"></div></div>')
-
-
-def _extract_skills(evidence: list, limit: int = 3) -> list:
-    """Pull short skill phrases out of top_evidence strings for compact pills."""
-    skills: list = []
-    for e in evidence:
-        if not e:
-            continue
-        # Prefer the phrase before " match" (e.g. "Qdrant, Weights & Biases match LLM...")
-        if " match" in e:
-            head = e.split(" match")[0]
-            for part in head.split(","):
-                part = part.strip()
-                if part and len(part) <= 28 and part not in skills:
-                    skills.append(part)
-        # Otherwise pull text inside parentheses
-        elif "(" in e and ")" in e:
-            inner = e[e.find("(") + 1:e.find(")")].strip()
-            if inner and len(inner) <= 28 and inner not in skills:
-                skills.append(inner)
-        if len(skills) >= limit:
-            break
-    return skills[:limit]
-
-
 # ---------------------------------------------------------------------------
-# Data loaders (all cached)
+# Data loaders (cached)
 # ---------------------------------------------------------------------------
 
 @st.cache_data
-def load_job_intelligence() -> Optional[dict]:
+def load_job() -> Optional[dict]:
     p = PRECOMPUTED / "job_intelligence.json"
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
 
 
 @st.cache_data
-def load_demo_data() -> Optional[dict]:
+def load_demo() -> Optional[dict]:
     p = PRECOMPUTED / "demo_data.json"
-    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
-
-
-@st.cache_data
-def load_decision(cid: str) -> Optional[dict]:
-    p = PRECOMPUTED / "recruiter_decisions" / f"{cid}.json"
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
 
 
@@ -446,739 +244,876 @@ def load_comparisons() -> dict:
 # Helpers
 # ---------------------------------------------------------------------------
 
-def tier_badge(tier: str) -> str:
-    c = TIER_COLORS.get(tier, "#64748b")
-    l = TIER_LABELS.get(tier, tier)
-    return f'<span class="tier-badge" style="background:{c}22;border:1px solid {c};color:{c};">{l}</span>'
+def _clean(s: str) -> str:
+    """Fix mojibake (replacement char) from upstream evidence strings."""
+    if not s:
+        return ""
+    return s.replace("�", "—").replace(" — ", " — ").strip()
 
 
-def clean_reasoning(text: str, name: str) -> str:
-    """Remove the duplicate name/company prefix that appears in some reasoning strings."""
-    if not text or not name:
-        return text
-    first_name = name.split()[0]
-    parts = text.split(" — ", 1)
-    if len(parts) == 2 and first_name in parts[1]:
-        inner = parts[1].split(" — ", 1)
-        if len(inner) == 2 and first_name in inner[0]:
-            return parts[0] + " — " + inner[1]
-    return text
+def tone(rec: str):
+    return TIER_TONE.get(rec, ("Review Further", SLATE, SLATE_BG, "#8E8B7E"))
+
+
+def dims_of(cand: dict) -> list:
+    fit = cand.get("fit_assessment", {})
+    return [float(fit.get(k, {}).get("score", 0.5)) for k in DIM_KEYS]
+
+
+def _radar_points(scores: list) -> str:
+    """Map four 0-1 scores onto the diamond (TECH top, PROD right, CULT bottom, GROWTH left)."""
+    ang = [-90, 0, 90, 180]
+    pts = []
+    for s, a in zip(scores, ang):
+        r = max(0.0, min(1.0, s)) * 100
+        rad = math.radians(a)
+        pts.append(f"{130 + r*math.cos(rad):.1f},{130 + r*math.sin(rad):.1f}")
+    return " ".join(pts)
+
+
+def _radar_grid() -> str:
+    return (
+        f'<polygon points="130,30 230,130 130,230 30,130" fill="none" stroke="{LINE}" stroke-width="1"></polygon>'
+        f'<polygon points="130,80 180,130 130,180 80,130" fill="none" stroke="{LINE_2}" stroke-width="1"></polygon>'
+        f'<line x1="130" y1="30" x2="130" y2="230" stroke="{LINE_2}" stroke-width="1"></line>'
+        f'<line x1="30" y1="130" x2="230" y2="130" stroke="{LINE_2}" stroke-width="1"></line>'
+    )
+
+
+def _radar_labels() -> str:
+    return (
+        f'<text x="130" y="22" text-anchor="middle" style="font:600 10px \'JetBrains Mono\';fill:{INK_2}">TECHNICAL</text>'
+        f'<text x="236" y="133" text-anchor="start" style="font:600 10px \'JetBrains Mono\';fill:{INK_2}">PRODUCT</text>'
+        f'<text x="130" y="248" text-anchor="middle" style="font:600 10px \'JetBrains Mono\';fill:{INK_2}">CULTURAL</text>'
+        f'<text x="24" y="133" text-anchor="end" style="font:600 10px \'JetBrains Mono\';fill:{INK_2}">GROWTH</text>'
+    )
+
+
+def radar_single(scores: list, ideal: list) -> str:
+    return (
+        '<svg viewBox="0 0 260 260" style="width:100%;max-width:230px;margin-top:6px">'
+        f'{_radar_grid()}'
+        f'<polygon points="{_radar_points(ideal)}" fill="none" stroke="{MUTED}" stroke-width="1.5" stroke-dasharray="4 4"></polygon>'
+        f'<polygon points="{_radar_points(scores)}" fill="rgba(31,122,77,.16)" stroke="{ACCENT}" stroke-width="2"></polygon>'
+        f'{_radar_labels()}'
+        '</svg>'
+    )
+
+
+def radar_dual(a: list, b: list) -> str:
+    return (
+        '<svg viewBox="0 0 260 260" style="width:240px;height:240px">'
+        f'{_radar_grid()}'
+        f'<polygon points="{_radar_points(b)}" fill="rgba(46,94,140,.14)" stroke="{BLUE}" stroke-width="2"></polygon>'
+        f'<polygon points="{_radar_points(a)}" fill="rgba(31,122,77,.14)" stroke="{ACCENT}" stroke-width="2"></polygon>'
+        f'{_radar_labels()}'
+        '</svg>'
+    )
 
 
 def _not_ready():
-    st.markdown("""
-<div class="no-data">
-    <div style="font-size:2rem; margin-bottom:12px;">⚙️</div>
-    <div style="font-size:1.1rem; font-weight:700; color:#f1f5f9; margin-bottom:8px;">Pipeline data not found</div>
-    <div style="font-size:0.85rem;">Run <code>python run_agents.py</code> then refresh.</div>
-</div>""", unsafe_allow_html=True)
-
-
-def _hex_to_rgba(hex_color: str, alpha: float) -> str:
-    h = hex_color.lstrip("#")
-    r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
-    return f"rgba({r},{g},{b},{alpha})"
-
-
-def radar_fig(categories: list, values: list, name: str, color: str, height: int = 280) -> go.Figure:
-    cats = categories + [categories[0]]
-    vals = values + [values[0]]
-    fig = go.Figure(go.Scatterpolar(
-        r=vals, theta=cats, fill="toself", name=name,
-        line=dict(color=color, width=2),
-        fillcolor=_hex_to_rgba(color, 0.15),
-    ))
-    fig.update_layout(
-        **PLOTLY_BASE,
-        height=height,
-        showlegend=False,
-        polar=dict(
-            bgcolor="rgba(0,0,0,0)",
-            radialaxis=dict(visible=True, range=[0, 1], tickfont=dict(size=9), gridcolor=BG_BORDER),
-            angularaxis=dict(tickfont=dict(size=11), gridcolor=BG_BORDER),
-        ),
-        margin=dict(l=40, r=40, t=20, b=20),
+    st.markdown(
+        f'<div style="background:{SURFACE};border:1px solid {LINE};border-radius:16px;'
+        f'padding:48px;text-align:center;color:{MUTED}">'
+        f'<div style="font-size:2rem;margin-bottom:10px">⚙️</div>'
+        f'<div style="font:500 20px \'Newsreader\',serif;color:{INK}">Pipeline data not found</div>'
+        f'<div style="margin-top:8px;font-size:13px">Run <code>python run_agents.py</code>, then refresh.</div>'
+        f'</div>',
+        unsafe_allow_html=True,
     )
-    return fig
 
 
-def dual_radar_fig(categories: list, va: list, vb: list, na: str, nb: str,
-                   radial_max: float = 1.0) -> go.Figure:
-    cats = categories + [categories[0]]
-    fig = go.Figure()
-    fig.add_trace(go.Scatterpolar(r=va + [va[0]], theta=cats, fill="toself", name=na,
-                                   line=dict(color="#3b82f6", width=2), fillcolor="rgba(59,130,246,0.15)"))
-    fig.add_trace(go.Scatterpolar(r=vb + [vb[0]], theta=cats, fill="toself", name=nb,
-                                   line=dict(color="#f59e0b", width=2), fillcolor="rgba(245,158,11,0.15)"))
-    fig.update_layout(
-        **PLOTLY_BASE,
-        height=320,
-        showlegend=True,
-        legend=dict(orientation="h", yanchor="bottom", y=-0.25, xanchor="center", x=0.5,
-                    font=dict(size=11, color=TXT_MUT)),
-        polar=dict(
-            bgcolor="rgba(0,0,0,0)",
-            radialaxis=dict(visible=True, range=[0, radial_max], tickfont=dict(size=9), gridcolor=BG_BORDER),
-            angularaxis=dict(tickfont=dict(size=11), gridcolor=BG_BORDER),
-        ),
-        margin=dict(l=40, r=40, t=20, b=40),
-    )
-    return fig
+def card_open(extra: str = "") -> str:
+    return (f'<div style="background:{SURFACE};border:1px solid {LINE};border-radius:16px;'
+            f'padding:24px;box-shadow:0 1px 2px rgba(20,20,15,.04);{extra}">')
+
+
+# ---------------------------------------------------------------------------
+# Sidebar
+# ---------------------------------------------------------------------------
+
+def render_sidebar(demo: Optional[dict]):
+    stats = (demo or {}).get("stats", {})
+    by_tier = stats.get("by_tier", {})
+    advancing = by_tier.get("STRONGLY_ADVANCE", 0) + by_tier.get("ADVANCE", 0)
+
+    with st.sidebar:
+        st.markdown(
+            f'<div style="display:flex;align-items:center;gap:10px;padding:0 4px">'
+            f'<div style="width:30px;height:30px;border-radius:8px;background:{ACCENT};display:flex;'
+            f'align-items:center;justify-content:center;font:600 15px/1 \'Newsreader\',serif;color:#fff">H</div>'
+            f'<div style="font:500 23px/1 \'Newsreader\',serif;color:#fff">HireIQ</div></div>'
+            f'<div style="margin:13px 0 18px;padding:11px 13px;background:rgba(255,255,255,.05);'
+            f'border:1px solid rgba(255,255,255,.08);border-radius:11px">'
+            f'<div style="font:600 9px/1 \'JetBrains Mono\';letter-spacing:.16em;text-transform:uppercase;color:#5FA37E">Active search</div>'
+            f'<div style="font-size:13.5px;font-weight:600;color:#F4F2EC;margin-top:6px">Senior AI Engineer</div>'
+            f'<div style="font-size:11.5px;color:#9C988B;margin-top:2px">Early-stage AI startup · Bengaluru</div></div>'
+            f'<div style="font:600 9px/1 \'JetBrains Mono\';letter-spacing:.16em;text-transform:uppercase;'
+            f'color:#807C70;padding:0 12px 6px">Workspace</div>',
+            unsafe_allow_html=True,
+        )
+
+        for tab_id, label in NAV:
+            active = st.session_state.get("tab", "shortlist") == tab_id
+            if st.button(label, key=f"nav_{tab_id}",
+                         type="primary" if active else "secondary",
+                         use_container_width=True):
+                st.session_state["tab"] = tab_id
+                st.rerun()
+
+        st.markdown(
+            f'<div style="margin-top:20px;padding:15px 14px;background:rgba(255,255,255,.04);'
+            f'border:1px solid rgba(255,255,255,.07);border-radius:12px">'
+            f'<div style="font:600 9px/1 \'JetBrains Mono\';letter-spacing:.16em;text-transform:uppercase;'
+            f'color:#807C70;margin-bottom:11px">Pipeline</div>'
+            + "".join(
+                f'<div style="display:flex;justify-content:space-between;align-items:baseline;margin:7px 0">'
+                f'<span style="font-size:12.5px;color:#B6B2A6">{k}</span>'
+                f'<span style="font:500 17px/1 \'Newsreader\',serif;color:{c}">{v}</span></div>'
+                for k, v, c in [
+                    ("Scanned", "100,000", "#E7E4D8"),
+                    ("Shortlisted", str(stats.get("total_evaluated", 100)), "#E7E4D8"),
+                    ("Advancing", str(advancing), "#5FA37E"),
+                ]
+            )
+            + '</div>'
+            f'<div style="display:flex;align-items:center;gap:10px;padding:14px 8px 0">'
+            f'<div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#5C5B52,#3A3933);'
+            f'display:flex;align-items:center;justify-content:center;font:600 12px/1 \'Archivo\';color:#E7E4D8">RS</div>'
+            f'<div><div style="font-size:12.5px;font-weight:600;color:#F4F2EC">Recruiting · Seed</div>'
+            f'<div style="font-size:11px;color:#807C70">talent@startup.ai</div></div></div>',
+            unsafe_allow_html=True,
+        )
+
+
+# ---------------------------------------------------------------------------
+# Brief export formatter
+# ---------------------------------------------------------------------------
+
+def _format_brief(job: Optional[dict]) -> str:
+    if not job:
+        return "No role intelligence data available."
+    lines = []
+    lines.append("=" * 60)
+    lines.append("HIREIQ — ROLE BRIEF")
+    lines.append("Senior AI Engineer · Early-stage AI startup · Bengaluru")
+    lines.append("=" * 60)
+
+    lines.append("\nSCORING WEIGHTS")
+    lines.append("-" * 40)
+    for d in job.get("discriminator_hierarchy", []):
+        pct = int(round(d.get("weight", 0) * 100))
+        desc = _clean(d.get("description", "") or "")
+        lines.append(f"  {pct:>3}%  {d.get('name','')}:")
+        if desc:
+            lines.append(f"        {desc}")
+
+    lines.append("\nNON-NEGOTIABLE REQUIREMENTS")
+    lines.append("-" * 40)
+    for r in job.get("red_line_requirements", []):
+        lines.append(f"  — {_clean(r)}")
+
+    lines.append("\nIDEAL CANDIDATE")
+    lines.append("-" * 40)
+    lines.append(_clean(job.get("ideal_candidate_narrative", "")))
+
+    lines.append("\nCULTURE SIGNALS")
+    lines.append("-" * 40)
+    lines.append("  " + "  ·  ".join(job.get("culture_signals", [])))
+
+    lines.append("\nIMPLICIT REQUIREMENTS")
+    lines.append("-" * 40)
+    for i in job.get("implicit_requirements", []):
+        lines.append(f"  • {_clean(i)}")
+
+    lines.append("\nSENIORITY NOTE")
+    lines.append("-" * 40)
+    lines.append(_clean(job.get("seniority_calibration", "")))
+
+    lines.append("\n" + "=" * 60)
+    lines.append("Generated by HireIQ · AI Candidate Intelligence")
+    lines.append("=" * 60)
+    return "\n".join(lines)
 
 
 # ---------------------------------------------------------------------------
 # Header
 # ---------------------------------------------------------------------------
 
-def render_header():
-    demo = load_demo_data()
-    stats = demo.get("stats", {}) if demo else {}
-    by_tier = stats.get("by_tier", {})
-    advancing = by_tier.get("STRONGLY_ADVANCE", 0) + by_tier.get("ADVANCE", 0)
-    avg = stats.get("avg_match_score", 0)
+def render_header(tab: str, job: Optional[dict] = None):
+    h = HEADS[tab]
 
+    # Header text (left) + action buttons (right) as real Streamlit widgets
+    txt_col, btn_col = st.columns([3.2, 1], gap="small")
+    with txt_col:
+        st.markdown(
+            f'<div class="kick">{h["kicker"]}</div>'
+            f'<div class="serif" style="font-size:33px;font-weight:500;line-height:1.05;'
+            f'letter-spacing:-.01em;margin-top:9px;color:{INK}">{h["title"]}</div>'
+            f'<div style="font-size:13.5px;color:{INK_2};margin-top:7px">{h["sub"]}</div>',
+            unsafe_allow_html=True,
+        )
+    with btn_col:
+        st.markdown("<div style='height:28px'></div>", unsafe_allow_html=True)
+        if tab == "role":
+            bc1, bc2 = st.columns(2)
+            with bc1:
+                st.download_button(
+                    "Export brief", _format_brief(job),
+                    file_name="role_brief.txt", mime="text/plain",
+                    use_container_width=True,
+                )
+            with bc2:
+                if st.button("Edit weights", use_container_width=True, type="primary"):
+                    st.toast("Weight editing is not available in demo mode.", icon="ℹ️")
+        elif tab == "shortlist":
+            if st.button("Add candidate", use_container_width=True, type="primary"):
+                st.toast("Manual candidate entry is not available in demo mode.", icon="ℹ️")
+        elif tab == "detail":
+            if st.button("Share profile", use_container_width=True, type="primary"):
+                st.toast("Profile sharing is not available in demo mode.", icon="ℹ️")
+        elif tab == "compare":
+            if st.button("Reset", use_container_width=True, type="primary"):
+                st.session_state["cmp_a"] = 0
+                st.session_state["cmp_b"] = 1
+                st.rerun()
+
+    st.markdown(f'<div style="border-bottom:1px solid {LINE};margin:16px 0 26px"></div>',
+                unsafe_allow_html=True)
+
+
+# ---------------------------------------------------------------------------
+# Tab — Role brief
+# ---------------------------------------------------------------------------
+
+def render_role(job: dict):
+    left, right = st.columns([1.12, 0.92], gap="medium")
+
+    with left:
+        # weighted scoring model
+        rows = ""
+        for d in job.get("discriminator_hierarchy", []):
+            pct = int(round(d.get("weight", 0) * 100))
+            desc = _clean(d.get("description", "") or " · ".join(d.get("signals", [])[:1]))
+            rows += (
+                f'<div style="margin-bottom:15px">'
+                f'<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">'
+                f'<div style="font-size:13.5px;font-weight:600">{d.get("name","")}</div>'
+                f'<div class="mono" style="font:600 13px/1 \'JetBrains Mono\';color:{ACCENT}">{pct}%</div></div>'
+                f'<div style="height:8px;background:{LINE_2};border-radius:5px;overflow:hidden;margin-bottom:6px">'
+                f'<div style="height:100%;width:{pct}%;background:{ACCENT};border-radius:5px"></div></div>'
+                f'<div style="font-size:12.5px;color:{INK_2};line-height:1.4">{desc}</div></div>'
+            )
+        st.markdown(
+            card_open() +
+            f'<div class="lbl">How the model scores</div>'
+            f'<div class="serif" style="font-size:23px;font-weight:500;margin:8px 0 18px">Weighted scoring model</div>'
+            f'{rows}</div>',
+            unsafe_allow_html=True,
+        )
+
+        # hard filters (dark)
+        reqs = job.get("red_line_requirements", [])
+        req_html = "".join(
+            f'<div style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:#E7E4D8;line-height:1.4">'
+            f'<span style="color:#5FA37E;font-weight:700;flex:none">—</span><span style="color:#E7E4D8">{_clean(r)}</span></div>'
+            for r in reqs
+        )
+        st.markdown(
+            f'<div style="background:{INK};color:#F4F2EC;border-radius:16px;padding:24px;margin-top:22px">'
+            f'<div style="font:600 10px/1 \'JetBrains Mono\';letter-spacing:.16em;text-transform:uppercase;color:#5FA37E">Hard filters</div>'
+            f'<div class="serif" style="font-size:23px;font-weight:500;margin:8px 0 16px;color:#fff">Non-negotiable requirements</div>'
+            f'<div style="display:grid;grid-template-columns:1fr 1fr;gap:13px 24px">{req_html}</div></div>',
+            unsafe_allow_html=True,
+        )
+
+    with right:
+        st.markdown(
+            card_open() +
+            f'<div class="lbl">Target profile</div>'
+            f'<div class="serif" style="font-size:24px;font-weight:500;margin:10px 0 0">The ideal candidate</div>'
+            f'<p style="font-size:14.5px;line-height:1.65;color:{INK_2};margin:12px 0 0">'
+            f'{_clean(job.get("ideal_candidate_narrative",""))}</p></div>',
+            unsafe_allow_html=True,
+        )
+
+        tags = "".join(
+            f'<div style="border:1px solid {LINE};background:{SURFACE};border-radius:999px;padding:7px 15px;'
+            f'font-size:13px;font-weight:500;color:{INK};box-shadow:0 1px 2px rgba(20,20,15,.03)">{s}</div>'
+            for s in job.get("culture_signals", [])
+        )
+        st.markdown(
+            f'<div style="margin-top:22px"><div class="lbl" style="margin-bottom:12px">Culture signals</div>'
+            f'<div style="display:flex;flex-wrap:wrap;gap:9px">{tags}</div></div>',
+            unsafe_allow_html=True,
+        )
+
+        impl = "".join(
+            f'<div style="display:flex;gap:11px;align-items:flex-start;font-size:13.5px;color:{INK_2};line-height:1.5">'
+            f'<span style="width:6px;height:6px;border-radius:50%;background:{ACCENT};margin-top:7px;flex:none"></span>'
+            f'<span>{_clean(i)}</span></div>'
+            for i in job.get("implicit_requirements", [])
+        )
+        st.markdown(
+            card_open("margin-top:22px") +
+            f'<div class="lbl">Reads between the lines</div>'
+            f'<div class="serif" style="font-size:22px;font-weight:500;margin:8px 0 16px">Implicit requirements</div>'
+            f'<div style="display:flex;flex-direction:column;gap:12px">{impl}</div></div>',
+            unsafe_allow_html=True,
+        )
+
+        st.markdown(
+            f'<div style="border:1px dashed {LINE};border-left:3px solid {ACCENT};border-radius:0 12px 12px 0;'
+            f'padding:16px 20px;background:#F1F6F2;margin-top:22px">'
+            f'<div style="font:600 10px/1 \'JetBrains Mono\';letter-spacing:.14em;text-transform:uppercase;color:{ACCENT}">Seniority note</div>'
+            f'<p style="font-size:13.5px;line-height:1.6;color:{INK_2};margin:9px 0 0">'
+            f'{_clean(job.get("seniority_calibration",""))}</p></div>',
+            unsafe_allow_html=True,
+        )
+
+
+# ---------------------------------------------------------------------------
+# Tab — Shortlist
+# ---------------------------------------------------------------------------
+
+def _skills_from_evidence(evidence: list, limit: int = 4) -> list:
+    skills: list = []
+    for e in evidence:
+        e = _clean(e)
+        if not e:
+            continue
+        if " match" in e:
+            head = e.split(" match")[0]
+            # take the part after a dash if present
+            head = head.split("—")[-1]
+            for part in head.split(","):
+                part = part.strip()
+                if part and len(part) <= 26 and part not in skills:
+                    skills.append(part)
+        elif "(" in e and ")" in e:
+            inner = e[e.find("(") + 1:e.find(")")].strip()
+            if inner and len(inner) <= 26 and inner not in skills:
+                skills.append(inner)
+        if len(skills) >= limit:
+            break
+    return skills[:limit]
+
+
+def render_shortlist(demo: dict):
+    by_tier = demo.get("stats", {}).get("by_tier", {})
+    all_cands = demo.get("all_candidates", [])
+    rank_of = {c["candidate_id"]: i + 1 for i, c in enumerate(all_cands)}
+
+    # ── tier distribution card ──
+    bar_defs = [
+        ("STRONGLY_ADVANCE", "Strongly Advance", ACCENT),
+        ("ADVANCE",          "Advance",          "#B7791F"),
+        ("REVIEW_FURTHER",   "Review Further",   "#8E8B7E"),
+    ]
+    counts = {k: by_tier.get(k, 0) for k, _, _ in bar_defs}
+    mx = max(counts.values()) or 1
+
+    flt = st.session_state.get("shortlist_filter", "All")
+    search = st.session_state.get("shortlist_search", "")
+
+    # compute shown count for the header
+    def _passes(c):
+        if flt != "All" and c.get("recommendation") != flt:
+            return False
+        if search:
+            q = search.lower()
+            blob = (c.get("name", "") + c.get("current_title", "") + c.get("current_company", "")).lower()
+            if q not in blob:
+                return False
+        return True
+    shown = sum(1 for c in all_cands if _passes(c))
+
+    bars = ""
+    for k, label, clr in bar_defs:
+        cnt = counts[k]
+        pct = int(cnt / mx * 100)
+        bars += (
+            f'<div style="display:flex;align-items:center;gap:16px">'
+            f'<div style="width:150px;display:flex;align-items:center;gap:9px;flex:none">'
+            f'<span style="width:9px;height:9px;border-radius:3px;background:{clr}"></span>'
+            f'<span style="font-size:13.5px;font-weight:500">{label}</span></div>'
+            f'<div style="flex:1;height:20px;background:{LINE_2};border-radius:6px;overflow:hidden">'
+            f'<div style="height:100%;width:{pct}%;background:{clr};border-radius:6px"></div></div>'
+            f'<div style="width:32px;text-align:right;font:600 15px/1 \'Newsreader\',serif;flex:none">{cnt}</div></div>'
+        )
     st.markdown(
-        f'<div style="display:flex;align-items:baseline;margin-bottom:6px;">'
-        f'<span style="font-size:2.1rem;margin-right:8px;">🎯</span>'
-        f'<span class="brand-title">HireIQ</span>'
-        f'<span style="color:{TXT_MUT};font-size:0.88rem;margin-left:14px;">'
-        f'AI Candidate Intelligence &nbsp;·&nbsp; Senior AI Engineer @ Redrob AI</span>'
-        f'</div>'
-        f'<div class="accent-bar"></div>',
+        card_open("padding:22px 24px") +
+        f'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">'
+        f'<div class="lbl">Candidates per tier · top 100 of 100,000</div>'
+        f'<div style="font-size:12.5px;color:{MUTED}"><strong class="mono" style="color:{INK}">{shown}</strong> shown</div></div>'
+        f'<div style="display:flex;flex-direction:column;gap:13px">{bars}</div></div>',
         unsafe_allow_html=True,
     )
 
-    c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Candidates Scanned", "100,000")
-    c2.metric("Decisions Made", stats.get("total_evaluated", 100))
-    c3.metric("Advancing", advancing)
-    c4.metric("Avg Match Score", f"{avg:.1%}")
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
 
-    st.markdown("<div style='height:6px'></div>", unsafe_allow_html=True)
-
-
-# ---------------------------------------------------------------------------
-# Tab 1 — Role Intelligence
-# ---------------------------------------------------------------------------
-
-def render_role_intelligence():
-    job = load_job_intelligence()
-    if not job:
-        _not_ready()
-        return
-
-    left, right = st.columns([1, 1.2], gap="large")
-
-    with left:
-        st.markdown('<div class="section-title">Scoring Weight Distribution</div>', unsafe_allow_html=True)
-        discs = job.get("discriminator_hierarchy", [])
-        labels  = [d["name"] for d in discs]
-        weights = [d["weight"] for d in discs]
-        colors  = ["#3b82f6", "#22c55e", "#f59e0b", "#8b5cf6", "#06b6d4"]
-
-        fig = go.Figure(go.Pie(
-            labels=labels, values=weights, hole=0.58,
-            marker=dict(colors=colors, line=dict(color=BG_PAGE, width=2)),
-            textinfo="percent", textfont=dict(size=12, color=TXT_PRI),
-            hovertemplate="<b>%{label}</b><br>Weight: %{percent}<extra></extra>",
-        ))
-        fig.update_layout(
-            **PLOTLY_BASE, height=320,
-            showlegend=True,
-            legend=dict(x=1.02, y=0.5, font=dict(size=10.5, color=TXT_MUT)),
-            annotations=[dict(text="Scoring<br>Weights", x=0.5, y=0.5,
-                              font=dict(size=12, color=TXT_MUT), showarrow=False)],
+    # ── search + filter pills ──
+    sc, fc = st.columns([1.4, 2])
+    with sc:
+        new_search = st.text_input(
+            "search", value=search, placeholder="🔍  Search by name, title, company, or skill…",
+            label_visibility="collapsed",
         )
-        st.plotly_chart(fig, use_container_width=True)
+        if new_search != search:
+            st.session_state["shortlist_search"] = new_search
+            st.rerun()
+    with fc:
+        pills = [("All", "All", 100)] + [(k, lbl, counts[k]) for k, lbl, _ in bar_defs]
+        pcols = st.columns(len(pills))
+        for col, (fid, lbl, cnt) in zip(pcols, pills):
+            with col:
+                if st.button(f"{lbl} {cnt}", key=f"flt_{fid}",
+                             type="primary" if flt == fid else "secondary",
+                             use_container_width=True):
+                    st.session_state["shortlist_filter"] = fid
+                    st.rerun()
 
-        # Discriminator detail table — show all signals in full (no truncation)
-        rows = ""
-        for d in discs:
-            sigs = d.get("signals", [])
-            sig_html = "".join(
-                f'<div style="margin:2px 0;line-height:1.45;">• {s}</div>' for s in sigs
-            )
-            rows += (
-                f'<tr><td style="color:#60a5fa;font-weight:700;">{d.get("rank","")}</td>'
-                f'<td style="color:#f1f5f9;font-weight:600;">{d.get("name","")}</td>'
-                f'<td style="color:#34d399;font-weight:700;">{int(d.get("weight",0)*100)}%</td>'
-                f'<td style="color:#94a3b8;font-size:0.72rem;">{sig_html}</td></tr>'
-            )
+    st.markdown("<div style='height:14px'></div>", unsafe_allow_html=True)
+
+    # ── candidate cards ──
+    cands = [c for c in all_cands if _passes(c)]
+    if not cands:
         st.markdown(
-            '<table class="disc-table"><thead><tr>'
-            '<th>#</th><th>Discriminator</th><th>Weight</th><th>Key Signals</th>'
-            f'</tr></thead><tbody>{rows}</tbody></table>',
-            unsafe_allow_html=True,
-        )
-
-        st.markdown('<div class="section-title" style="margin-top:20px;">Red-Line Requirements</div>',
-                    unsafe_allow_html=True)
-        for req in job.get("red_line_requirements", []):
-            st.markdown(
-                f'<div style="background:#2d0a0a;border:1px solid #ef4444;border-radius:8px;'
-                f'padding:10px 14px;color:#fca5a5;font-size:0.82rem;margin-bottom:6px;">⛔ {req}</div>',
-                unsafe_allow_html=True,
-            )
-
-    with right:
-        st.markdown('<div class="section-title">Ideal Candidate</div>', unsafe_allow_html=True)
-        st.markdown(
-            f'<div class="ideal-box">{job.get("ideal_candidate_narrative", "")}</div>',
-            unsafe_allow_html=True,
-        )
-
-        st.markdown('<div class="section-title" style="margin-top:22px;">Culture Signals</div>',
-                    unsafe_allow_html=True)
-        badges = " ".join(f'<span class="culture-pill">{s}</span>'
-                          for s in job.get("culture_signals", []))
-        st.markdown(badges, unsafe_allow_html=True)
-
-        st.markdown('<div class="section-title" style="margin-top:22px;">Implicit Requirements</div>',
-                    unsafe_allow_html=True)
-        for req in job.get("implicit_requirements", []):
-            st.markdown(
-                f'<div style="color:{TXT_MUT};font-size:0.82rem;margin:5px 0;padding-left:12px;'
-                f'border-left:2px solid {BG_BORDER};">→ {req}</div>',
-                unsafe_allow_html=True,
-            )
-
-        st.markdown('<div class="section-title" style="margin-top:22px;">Seniority Calibration</div>',
-                    unsafe_allow_html=True)
-        st.markdown(
-            f'<div style="background:#1e2d1e;border:1px solid #22c55e33;border-radius:8px;'
-            f'padding:12px 16px;color:#86efac;font-size:0.82rem;line-height:1.6;">'
-            f'{job.get("seniority_calibration", "")}</div>',
-            unsafe_allow_html=True,
-        )
-
-
-# ---------------------------------------------------------------------------
-# Tab 2 — Shortlist
-# ---------------------------------------------------------------------------
-
-def render_shortlist():
-    demo = load_demo_data()
-    if not demo:
-        _not_ready()
-        return
-
-    tiers_data = demo.get("candidates_by_tier", {})
-    by_tier    = demo.get("stats", {}).get("by_tier", {})
-
-    # Tier bar chart — ordered so Strongly Advance sits at the TOP
-    # (plotly horizontal bars render the first list item at the bottom, so reverse)
-    tier_keys   = ["REVIEW_FURTHER", "ADVANCE", "STRONGLY_ADVANCE"]
-    tier_names  = ["Review Further", "Advance", "Strongly Advance"]
-    tier_clrs   = ["#f59e0b", "#3b82f6", "#22c55e"]
-    tier_counts = [by_tier.get(k, 0) for k in tier_keys]
-
-    fig = go.Figure(go.Bar(
-        x=tier_counts, y=tier_names, orientation="h",
-        marker=dict(color=tier_clrs),
-        text=[str(c) for c in tier_counts],
-        textposition="inside",
-        textfont=dict(size=13, color="#0f172a"),
-        hovertemplate="%{y}: %{x} candidates<extra></extra>",
-    ))
-    fig.update_layout(
-        **PLOTLY_BASE, height=130,
-        xaxis=dict(showgrid=False, showticklabels=False, zeroline=False),
-        yaxis=dict(showgrid=False, tickfont=dict(size=12, color=TXT_MUT)),
-        bargap=0.38,
-        margin=dict(l=10, r=10, t=10, b=10),
-    )
-    st.plotly_chart(fig, use_container_width=True)
-
-    # Search
-    search = st.text_input(
-        "search", placeholder="🔍  Search by name, title or company...",
-        label_visibility="collapsed",
-    )
-    st.markdown("<div style='height:6px'></div>", unsafe_allow_html=True)
-
-    # Build a global rank lookup from the full sorted list
-    rank_lookup = {c["candidate_id"]: i + 1
-                   for i, c in enumerate(demo.get("all_candidates", []))}
-
-    # Eligibility sub-tabs — one per tier that has candidates
-    tier_order = ["STRONGLY_ADVANCE", "ADVANCE", "REVIEW_FURTHER", "ADVANCE_IF_POOL_THIN", "DECLINE"]
-    present = [t for t in tier_order if tiers_data.get(t)]
-    if not present:
-        st.info("No candidates to display.")
-        return
-
-    sub_labels = [
-        f"{TIER_ICONS.get(t, '⚪')}  {TIER_LABELS.get(t, t)} ({len(tiers_data.get(t, []))})"
-        for t in present
-    ]
-    sub_tabs = st.tabs(sub_labels)
-
-    for sub_tab, tier in zip(sub_tabs, present):
-        with sub_tab:
-            _render_tier_cards(tiers_data.get(tier, []), tier, rank_lookup, search)
-
-
-def _render_tier_cards(candidates: list, tier: str, rank_lookup: dict, search: str):
-    """Render the 2-column candidate card grid for a single eligibility tier."""
-    if search:
-        q = search.lower()
-        candidates = [c for c in candidates
-                      if q in c.get("name", "").lower()
-                      or q in c.get("current_title", "").lower()
-                      or q in c.get("current_company", "").lower()]
-
-    if not candidates:
-        st.markdown(
-            f'<div style="color:{TXT_MUT};font-size:0.85rem;padding:24px;text-align:center;">'
+            f'<div style="color:{MUTED};font-size:14px;padding:40px;text-align:center">'
             f'No candidates match your search in this tier.</div>',
             unsafe_allow_html=True,
         )
         return
 
-    color = TIER_COLORS.get(tier, "#64748b")
-
     cols = st.columns(2)
-    for i, cand in enumerate(candidates):
-        cid       = cand["candidate_id"]
-        name      = cand.get("name", cid)
-        title     = cand.get("current_title", "")
-        company   = cand.get("current_company", "")
-        pct       = int(cand.get("overall_match_score", 0) * 100)
-        evidence  = cand.get("top_evidence", [])[:2]
-        reasoning = clean_reasoning(cand.get("reasoning", ""), name)
-        rank      = rank_lookup.get(cid)
+    for i, c in enumerate(cands):
+        cid = c["candidate_id"]
+        rec = c.get("recommendation", "")
+        label, fg, bg, _ = tone(rec)
+        pct = int(round(c.get("overall_match_score", 0) * 100))
+        rank = rank_of.get(cid, i + 1)
 
-        ev_html = "".join(
-            f'<div style="color:{TXT_MUT};font-size:0.79rem;margin:3px 0;">• {e}</div>'
-            for e in evidence
+        evidence = "".join(
+            f'<div style="display:flex;gap:9px;font-size:13px;color:{INK_2};line-height:1.4">'
+            f'<span style="color:{ACCENT};font-weight:700;flex:none">✓</span><span>{_clean(e)}</span></div>'
+            for e in c.get("top_evidence", [])[:3]
         )
-
-        skills = _extract_skills(cand.get("top_evidence", []))
-        skill_html = ""
-        if skills:
-            skill_html = ('<div style="margin-top:10px;">'
-                          + "".join(f'<span class="skill-pill">{s}</span>' for s in skills)
-                          + '</div>')
-
-        rank_html = f'<span class="rank-badge">#{rank}</span>' if rank else ""
+        skills = "".join(
+            f'<div style="border:1px solid {LINE};border-radius:6px;padding:3px 9px;'
+            f'font:500 11.5px/1.4 \'JetBrains Mono\';color:{INK_2};background:{SURFACE_2}">{s}</div>'
+            for s in _skills_from_evidence(c.get("top_evidence", []))
+        )
+        reasoning = _clean(c.get("recommendation_rationale", ""))
+        timing = c.get("timing_assessment", {})
+        avail = "Open to move" if timing.get("likely_available") else "Passive — will talk"
+        notice = f'{timing.get("estimated_notice_weeks", 4)} wk notice'
 
         with cols[i % 2]:
-            st.markdown(f"""
-<div class="cand-card" style="border-left:4px solid {color};">
-  {rank_html}
-  <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;">
-    <div style="flex:1;min-width:0;">
-      <div style="font-weight:700;color:{TXT_PRI};font-size:0.97rem;white-space:nowrap;
-                  overflow:hidden;text-overflow:ellipsis;">{name}</div>
-      <div style="color:{TXT_MUT};font-size:0.79rem;margin-top:2px;">{title} · {company}</div>
-    </div>
-    <div style="text-align:right;flex-shrink:0;margin-left:12px;">
-      {tier_badge(tier)}
-      <div style="color:{color};font-weight:800;font-size:1.5rem;line-height:1.2;margin-top:4px;">{pct}%</div>
-    </div>
-  </div>
-  {ev_html}
-  {skill_html}
-  <div style="font-size:0.76rem;color:#64748b;font-style:italic;margin-top:10px;
-              border-top:1px solid {BG_BORDER};padding-top:8px;line-height:1.5;">
-    "{reasoning}"
-  </div>
-</div>""", unsafe_allow_html=True)
-
-            if st.button("View Details →", key=f"view_{cid}_{tier}", use_container_width=True):
-                st.session_state["selected_candidate"] = cid
-                st.session_state["switch_to_detail"] = True
+            st.markdown(
+                card_open("padding:20px;margin-bottom:4px") +
+                f'<div style="display:flex;gap:14px;align-items:flex-start">'
+                f'<div class="serif" style="font-size:18px;color:{MUTED};width:28px;flex:none;padding-top:4px">{rank:02d}</div>'
+                f'<div style="flex:1;min-width:0">'
+                f'<div class="serif" style="font-size:19px;font-weight:500;line-height:1.1">{c.get("name","")}</div>'
+                f'<div style="font-size:13px;color:{INK_2};margin-top:3px">{c.get("current_title","")} · {c.get("current_company","")}</div></div>'
+                f'<div style="text-align:right;flex:none">'
+                f'<div class="serif" style="font-size:31px;font-weight:500;line-height:.9">{pct}<span style="font-size:15px;color:{MUTED}">%</span></div>'
+                f'<div style="display:inline-block;margin-top:6px;font:600 9px/1 \'JetBrains Mono\';letter-spacing:.08em;'
+                f'text-transform:uppercase;padding:4px 9px;border-radius:999px;color:{fg};background:{bg}">{label}</div></div></div>'
+                f'<div style="display:flex;flex-direction:column;gap:6px;border-top:1px solid {LINE_2};padding-top:13px;margin-top:14px">{evidence}</div>'
+                f'<div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:12px">{skills}</div>'
+                f'<div style="font:italic 400 13.5px/1.5 \'Newsreader\',serif;color:{INK_2};border-left:2px solid {LINE};padding-left:12px;margin-top:12px">{reasoning}</div>'
+                f'<div style="font-size:12px;color:{MUTED};margin-top:12px">{avail} · {notice}</div>'
+                f'</div>',
+                unsafe_allow_html=True,
+            )
+            if st.button("Review →", key=f"rev_{cid}", use_container_width=True):
+                st.session_state["cand_idx"] = rank - 1
+                st.session_state["tab"] = "detail"
                 st.rerun()
+            st.markdown("<div style='height:14px'></div>", unsafe_allow_html=True)
 
 
 # ---------------------------------------------------------------------------
-# Tab 3 — Candidate Detail
+# Tab — Candidate review
 # ---------------------------------------------------------------------------
 
-def render_candidate_detail():
-    demo = load_demo_data()
-    if not demo:
-        _not_ready()
-        return
-
+def render_detail(demo: dict):
     all_cands = demo.get("all_candidates", [])
     if not all_cands:
         st.warning("No candidates found.")
         return
 
-    options = {
-        f"{c.get('name', c['candidate_id'])} — {c.get('current_title','')} @ {c.get('current_company','')}": c["candidate_id"]
-        for c in all_cands
-    }
-    keys = list(options.keys())
+    n = len(all_cands)
+    idx = min(st.session_state.get("cand_idx", 0), n - 1)
 
-    pre = st.session_state.get("selected_candidate")
-    default = 0
-    if pre:
-        for i, cid in enumerate(options.values()):
-            if cid == pre:
-                default = i
-                break
+    # ── selector + prev/next ──
+    sel_col, p_col, nx_col = st.columns([6, 1, 1])
+    with sel_col:
+        labels = [f'#{i+1} · {c.get("name","")} — {int(round(c.get("overall_match_score",0)*100))}%'
+                  for i, c in enumerate(all_cands)]
+        picked = st.selectbox("Reviewing", labels, index=idx, label_visibility="collapsed")
+        new_idx = labels.index(picked)
+        if new_idx != idx:
+            st.session_state["cand_idx"] = new_idx
+            st.rerun()
+    with p_col:
+        if st.button("‹", key="prev_cand", use_container_width=True):
+            st.session_state["cand_idx"] = (idx - 1) % n
+            st.rerun()
+    with nx_col:
+        if st.button("›", key="next_cand", use_container_width=True):
+            st.session_state["cand_idx"] = (idx + 1) % n
+            st.rerun()
 
-    selected_label = st.selectbox("Candidate", keys, index=default, label_visibility="collapsed")
-    cid = options[selected_label]
-    dec = load_decision(cid)
+    c = all_cands[idx]
+    rec = c.get("recommendation", "")
+    label, fg, bg, _ = tone(rec)
+    pct = int(round(c.get("overall_match_score", 0) * 100))
+    timing = c.get("timing_assessment", {})
+    avail = "Open to move" if timing.get("likely_available") else "Passive — will talk"
+    notice = f'{timing.get("estimated_notice_weeks", 4)} wk notice'
+    years = round(timing.get("current_tenure_months", 0) / 12)
 
-    if dec is None:
-        st.error(f"No decision file found for {cid}.")
-        return
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
 
-    name      = dec.get("name", cid)
-    title     = dec.get("current_title", "")
-    company   = dec.get("current_company", "")
-    rec       = dec.get("recommendation", "")
-    rationale = dec.get("recommendation_rationale", "")
-    pct       = int(dec.get("overall_match_score", 0) * 100)
-    color     = TIER_COLORS.get(rec, "#64748b")
+    # ── hero ──
+    st.markdown(
+        f'<div style="background:{SURFACE};border:1px solid {LINE};border-radius:18px;padding:28px;'
+        f'display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;box-shadow:0 1px 2px rgba(20,20,15,.04)">'
+        f'<div><div class="serif" style="font-size:36px;font-weight:500;letter-spacing:-.01em">{c.get("name","")}</div>'
+        f'<div style="font-size:15px;color:{INK_2};margin-top:8px">{c.get("current_title","")} · {c.get("current_company","")} · {years} yrs</div>'
+        f'<div style="display:flex;gap:10px;align-items:center;margin-top:16px;flex-wrap:wrap">'
+        f'<div style="display:inline-flex;align-items:center;gap:8px;padding:8px 15px;border-radius:999px;background:{bg};color:{fg};font-size:13px;font-weight:600">'
+        f'<span style="width:7px;height:7px;border-radius:50%;background:{fg}"></span>{label} to onsite</div>'
+        f'<div style="display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border:1px solid {LINE};border-radius:999px;font-size:13px;color:{INK_2}">'
+        f'<span style="width:6px;height:6px;border-radius:50%;background:{ACCENT if timing.get("likely_available") else AMBER}"></span>{avail} · {notice}</div></div></div>'
+        f'<div style="text-align:center;border-left:1px solid {LINE};padding-left:28px;min-width:150px">'
+        f'<div class="serif" style="font-size:68px;font-weight:500;line-height:.85">{pct}<span style="font-size:26px;color:{MUTED}">%</span></div>'
+        f'<div class="lbl" style="letter-spacing:.14em;margin-top:10px">Overall match · rank {idx+1:02d}</div></div></div>',
+        unsafe_allow_html=True,
+    )
 
-    # ── Header ──────────────────────────────────────────────────────────
-    h1, h2 = st.columns([3, 1])
-    with h1:
-        st.markdown(
-            f'<div style="font-size:1.65rem;font-weight:800;color:{TXT_PRI};margin-bottom:4px;">{name}</div>',
-            unsafe_allow_html=True,
-        )
-        st.markdown(
-            f'<div style="color:{TXT_MUT};font-size:0.88rem;margin-bottom:10px;">📍 {title} at {company}</div>',
-            unsafe_allow_html=True,
-        )
-        st.markdown(tier_badge(rec), unsafe_allow_html=True)
-        st.markdown(
-            f'<div style="margin-top:14px;color:#94a3b8;font-style:italic;font-size:0.875rem;'
-            f'line-height:1.65;background:#162032;border-left:3px solid {color};'
-            f'padding:12px 16px;border-radius:0 8px 8px 0;">{rationale}</div>',
-            unsafe_allow_html=True,
-        )
-    with h2:
-        st.markdown(
-            f'<div class="score-circle" style="background:{color}18;border:2px solid {color};'
-            f'box-shadow:0 0 20px {color}55, 0 0 40px {color}22;">'
-            f'<div style="font-size:3rem;font-weight:800;color:{color};line-height:1;">{pct}%</div>'
-            f'<div style="color:{color};font-size:0.70rem;font-weight:700;text-transform:uppercase;'
-            f'letter-spacing:0.08em;margin-top:10px;">{TIER_LABELS.get(rec, rec)}</div>'
-            f'</div>',
-            unsafe_allow_html=True,
-        )
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
 
-    st.markdown('<hr class="divider">', unsafe_allow_html=True)
-
-    # ── Trust Assessment ────────────────────────────────────────────────
-    st.markdown('<div class="section-title">Trust Assessment</div>', unsafe_allow_html=True)
-    trust       = dec.get("trust_assessment", {})
-    trust_score = trust.get("overall_trust_score", 0.5)
-    trust_tier  = trust.get("trust_tier", "MEDIUM")
-    tc          = {"HIGH": "#22c55e", "MEDIUM": "#f59e0b", "LOW": "#ef4444"}.get(trust_tier, "#64748b")
-
-    tl, tr = st.columns([1, 3])
-    with tl:
-        st.markdown(
-            f'<div style="background:{tc}18;border:1px solid {tc};border-radius:12px;'
-            f'padding:18px 14px;text-align:center;">'
-            f'<div style="font-size:1.9rem;font-weight:800;color:{tc};">{int(trust_score * 100)}%</div>'
-            f'<div style="color:{tc};font-size:0.68rem;font-weight:700;text-transform:uppercase;'
-            f'letter-spacing:0.06em;margin-top:5px;margin-bottom:8px;">Trust — {trust_tier}</div>'
-            f'{_pbar(trust_score, tc)}'
-            f'</div>',
-            unsafe_allow_html=True,
-        )
-    with tr:
-        for sig in trust.get("signals", [])[:5]:
-            sig_type = sig.get("signal_type", "")
-            cls = {"VERIFIED": "sig-verified", "PLAUSIBLE": "sig-plausible",
-                   "SUSPICIOUS": "sig-suspicious"}.get(sig_type, "sig-plausible")
-            st.markdown(
-                f'<div style="margin:7px 0;">'
-                f'<span class="{cls}">[{sig_type}]</span> '
-                f'<span style="color:#cbd5e1;font-size:0.84rem;">{sig.get("description","")}</span></div>',
-                unsafe_allow_html=True,
+    # ── trust + skills ──
+    tcol, scol = st.columns([1.25, 1], gap="medium")
+    with tcol:
+        trust = c.get("trust_assessment", {})
+        tscore = int(round(trust.get("overall_trust_score", 0.5) * 100))
+        ttier = trust.get("trust_tier", "MEDIUM").title()
+        sig_html = ""
+        sigs = trust.get("signals", [])[:4]
+        for s in sigs:
+            stype = s.get("signal_type", "")
+            ok = stype in ("VERIFIED", "PLAUSIBLE")
+            mark, mfg = ("✓", ACCENT) if ok else ("!", AMBER)
+            sig_html += (
+                f'<div style="display:flex;gap:9px;align-items:flex-start;font-size:13px;color:{INK_2};line-height:1.4">'
+                f'<span style="color:{mfg};font-weight:700;flex:none">{mark}</span><span>{_clean(s.get("description",""))}</span></div>'
             )
-        for flag in trust.get("red_flags", []):
-            st.warning(f"⚠ {flag}")
-
-    # Required skills matched
-    matched_skills = dec.get("required_skills_matched", [])
-    if matched_skills:
-        st.markdown('<div class="section-title" style="margin-top:18px;">Required Skills Matched</div>',
-                    unsafe_allow_html=True)
+        for flag in trust.get("red_flags", [])[:2]:
+            sig_html += (
+                f'<div style="display:flex;gap:9px;align-items:flex-start;font-size:13px;color:{INK_2};line-height:1.4">'
+                f'<span style="color:{AMBER};font-weight:700;flex:none">!</span><span>{_clean(flag)}</span></div>'
+            )
         st.markdown(
-            "".join(f'<span class="skill-pill-green">✓ {s}</span>' for s in matched_skills),
+            card_open("padding:22px") +
+            f'<div style="display:flex;justify-content:space-between;align-items:flex-start">'
+            f'<div><div class="lbl">Verification</div>'
+            f'<div class="serif" style="font-size:22px;font-weight:500;margin-top:8px">Trust &amp; authenticity</div></div>'
+            f'<div style="text-align:right"><div class="serif" style="font-size:30px;font-weight:500;line-height:.9;color:{ACCENT}">{tscore}<span style="font-size:15px;color:{MUTED}">/100</span></div>'
+            f'<div style="font:600 10px/1 \'JetBrains Mono\';letter-spacing:.1em;text-transform:uppercase;color:{INK_2};margin-top:5px">{ttier} confidence</div></div></div>'
+            f'<div style="display:grid;grid-template-columns:1fr 1fr;gap:9px 18px;margin-top:16px">{sig_html}</div></div>',
+            unsafe_allow_html=True,
+        )
+    with scol:
+        matched = "".join(
+            f'<div style="border:1px solid #B7D4C5;background:#EAF3EE;color:{INK};border-radius:7px;'
+            f'padding:5px 11px;font:500 12px/1.4 \'JetBrains Mono\'">{s}</div>'
+            for s in c.get("required_skills_matched", [])
+        )
+        st.markdown(
+            card_open("padding:22px") +
+            f'<div class="lbl">Requirements</div>'
+            f'<div class="serif" style="font-size:22px;font-weight:500;margin:8px 0 16px">Required skills matched</div>'
+            f'<div style="display:flex;flex-wrap:wrap;gap:8px">{matched}</div></div>',
             unsafe_allow_html=True,
         )
 
-    st.markdown('<hr class="divider">', unsafe_allow_html=True)
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
 
-    # ── Fit Dimensions ──────────────────────────────────────────────────
-    st.markdown('<div class="section-title">Fit Dimensions</div>', unsafe_allow_html=True)
-    fit       = dec.get("fit_assessment", {})
-    dim_keys  = ["technical", "product", "cultural", "growth"]
-    dim_names = ["Technical", "Product", "Cultural", "Growth"]
-    dim_vals  = [fit.get(k, {}).get("score", 0.5) for k in dim_keys]
-
-    rc, bc = st.columns([1, 1.4])
-    with rc:
-        st.plotly_chart(radar_fig(dim_names, dim_vals, name, color, height=320),
-                        use_container_width=True)
-    with bc:
-        dc1, dc2 = st.columns(2)
-        for idx, (dk, dn) in enumerate(zip(dim_keys, dim_names)):
-            dd  = fit.get(dk, {})
-            ds  = dd.get("score", 0.5)
-            dc  = "#22c55e" if ds >= 0.7 else ("#f59e0b" if ds >= 0.45 else "#ef4444")
-            col = dc1 if idx % 2 == 0 else dc2
-
-            ev_html = "".join(
-                f'<div style="color:#4ade80;font-size:0.75rem;margin-top:4px;">✓ {ev}</div>'
-                for ev in dd.get("evidence", [])[:2]
+    # ── fit dimensions ──
+    st.markdown('<div class="lbl" style="margin-bottom:12px">Fit breakdown · candidate vs ideal</div>',
+                unsafe_allow_html=True)
+    rcol, dcol = st.columns([0.82, 1.7], gap="medium")
+    with rcol:
+        ideal = [0.9, 0.85, 0.9, 0.85]
+        st.markdown(
+            card_open("padding:18px;display:flex;flex-direction:column;align-items:center") +
+            f'<div class="serif" style="font-size:18px;font-weight:500;align-self:flex-start">Fit dimensions</div>'
+            f'{radar_single(dims_of(c), ideal)}'
+            f'<div style="display:flex;gap:16px;margin-top:6px;font:500 11px/1 \'JetBrains Mono\';color:{INK_2}">'
+            f'<span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:3px;background:{ACCENT};display:inline-block"></span>Candidate</span>'
+            f'<span style="display:flex;align-items:center;gap:6px"><span style="width:14px;border-top:1.5px dashed {MUTED};display:inline-block"></span>Ideal</span>'
+            f'</div></div>',
+            unsafe_allow_html=True,
+        )
+    with dcol:
+        fit = c.get("fit_assessment", {})
+        cells = ""
+        for k, name in zip(DIM_KEYS, DIM_NAMES):
+            dd = fit.get(k, {})
+            score = float(dd.get("score", 0.5))
+            ev = _clean(dd.get("evidence", ["—"])[0]) if dd.get("evidence") else "—"
+            gaps = dd.get("gaps", [])
+            gap = _clean(gaps[0]) if gaps else "None material."
+            cells += (
+                f'<div style="background:{SURFACE};border:1px solid {LINE};border-radius:14px;padding:16px;box-shadow:0 1px 2px rgba(20,20,15,.04)">'
+                f'<div style="display:flex;justify-content:space-between;align-items:baseline">'
+                f'<div style="font-size:14px;font-weight:600">{name}</div>'
+                f'<div class="serif" style="font-size:22px;font-weight:500">{score*10:.1f}</div></div>'
+                f'<div style="height:6px;background:{LINE_2};border-radius:4px;overflow:hidden;margin:10px 0 12px">'
+                f'<div style="height:100%;width:{int(score*100)}%;background:{ACCENT};border-radius:4px"></div></div>'
+                f'<div style="font-size:12.5px;color:{INK_2};line-height:1.45;margin-bottom:8px">'
+                f'<span style="font:600 9.5px \'JetBrains Mono\';letter-spacing:.08em;text-transform:uppercase;color:{ACCENT}">Evidence</span><br/>{ev}</div>'
+                f'<div style="font-size:12.5px;color:{MUTED};line-height:1.45">'
+                f'<span style="font:600 9.5px \'JetBrains Mono\';letter-spacing:.08em;text-transform:uppercase;color:{MUTED}">Gap</span><br/>{gap}</div></div>'
             )
-            gap_html = "".join(
-                f'<div style="color:#f87171;font-size:0.75rem;margin-top:3px;">✗ {gap}</div>'
-                for gap in dd.get("gaps", [])[:1]
-            )
-            with col:
-                st.markdown(
-                    f'<div class="hover-lift" style="background:#162032;border:1px solid {BG_BORDER};'
-                    f'border-radius:10px;padding:14px;margin-bottom:10px;">'
-                    f'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">'
-                    f'<span style="font-size:0.75rem;font-weight:700;color:{TXT_MUT};text-transform:uppercase;'
-                    f'letter-spacing:0.06em;">{dn}</span>'
-                    f'<span style="font-size:1.3rem;font-weight:800;color:{dc};">{int(ds * 100)}%</span>'
-                    f'</div>'
-                    f'{_pbar(ds, dc)}'
-                    f'{ev_html}{gap_html}'
-                    f'</div>',
-                    unsafe_allow_html=True,
-                )
+        st.markdown(
+            f'<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">{cells}</div>',
+            unsafe_allow_html=True,
+        )
 
-    st.markdown('<hr class="divider">', unsafe_allow_html=True)
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
 
-    # ── Risks + Interview Questions ────────────────────────────────────
-    risk_col, q_col = st.columns(2)
-
-    with risk_col:
-        st.markdown('<div class="section-title">Hiring Risks</div>', unsafe_allow_html=True)
-        risks = sorted(dec.get("hiring_risks", []),
+    # ── risks + interview ──
+    sev_tone = {"HIGH": ("#9A1B1B", "#F4DCDC"), "MEDIUM": (AMBER, AMBER_BG), "LOW": (SLATE, SLATE_BG)}
+    rk_col, iq_col = st.columns(2, gap="medium")
+    with rk_col:
+        risks = sorted(c.get("hiring_risks", []),
                        key=lambda r: {"HIGH": 0, "MEDIUM": 1, "LOW": 2}.get(r.get("severity", "LOW"), 2))
-        for risk in risks:
-            sev = risk.get("severity", "LOW")
-            sc  = {"HIGH": "#ef4444", "MEDIUM": "#f59e0b", "LOW": "#22c55e"}.get(sev, "#64748b")
-            with st.expander(f"[{sev}] {risk.get('risk_type','Risk')}", expanded=(sev == "HIGH")):
-                st.markdown(f'<span style="color:{sc};font-size:0.83rem;">{risk.get("description","")}</span>',
-                            unsafe_allow_html=True)
-                st.markdown(f"**Mitigation:** {risk.get('mitigation','')}")
-                if risk.get("is_blocking"):
-                    st.error("⛔ Blocking — Do not advance")
-
-    with q_col:
-        st.markdown('<div class="section-title">Interview Focus</div>', unsafe_allow_html=True)
-        questions = sorted(dec.get("interview_focus", []),
-                           key=lambda q: {"HIGH": 0, "MEDIUM": 1, "LOW": 2}.get(q.get("priority","LOW"), 2))
-        pri_dot = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}
-        for q in questions:
-            pri = q.get("priority", "LOW")
-            dim = q.get("dimension", "")
-            txt = q.get("question", "")
-            dot = pri_dot.get(pri, "🟢")
-            with st.expander(f"{dot} {dim} — {txt[:55]}...", expanded=(pri == "HIGH")):
-                st.markdown(f"**{txt}**")
-                wtlf = q.get("what_to_listen_for", "")
-                if wtlf:
-                    st.markdown(f'<div class="callout-listen">👂 {wtlf}</div>', unsafe_allow_html=True)
-
-    # ── Timing ────────────────────────────────────────────────────────
-    timing = dec.get("timing_assessment")
-    if timing:
-        st.markdown('<hr class="divider">', unsafe_allow_html=True)
-        st.markdown('<div class="section-title">Timing & Availability</div>', unsafe_allow_html=True)
-        tm1, tm2, tm3 = st.columns(3)
-        tm1.metric("Current Tenure",  f"{timing.get('current_tenure_months', 0)} months")
-        tm2.metric("Available",       "Yes ✓" if timing.get("likely_available") else "Unclear")
-        tm3.metric("Notice Period",   f"{timing.get('estimated_notice_weeks', 4)} weeks")
-        if timing.get("urgency_signal"):
-            st.markdown(
-                f'<div style="color:{TXT_MUT};font-size:0.82rem;font-style:italic;margin-top:10px;">'
-                f'💡 {timing["urgency_signal"]}</div>',
-                unsafe_allow_html=True,
+        items = ""
+        for r in risks:
+            sev = r.get("severity", "LOW")
+            sfg, sbg = sev_tone.get(sev, (SLATE, SLATE_BG))
+            items += (
+                f'<div style="border:1px solid {LINE};border-radius:11px;overflow:hidden">'
+                f'<div style="display:flex;align-items:center;gap:10px;padding:13px 16px;font-size:13.5px;font-weight:600">'
+                f'<span style="font:600 9px/1 \'JetBrains Mono\';letter-spacing:.06em;text-transform:uppercase;'
+                f'padding:3px 7px;border-radius:5px;color:{sfg};background:{sbg}">{sev[:3]}</span>{r.get("risk_type","Risk")}</div>'
+                f'<div style="padding:0 16px 14px;font-size:13px;line-height:1.55;color:{INK_2}">'
+                f'<div style="margin-bottom:8px">{_clean(r.get("description",""))}</div>'
+                f'<div style="font-size:12.5px"><span style="font:600 9px \'JetBrains Mono\';letter-spacing:.06em;'
+                f'text-transform:uppercase;color:{ACCENT}">Mitigation</span><br/>{_clean(r.get("mitigation",""))}</div></div></div>'
             )
+        st.markdown(
+            card_open("padding:22px") +
+            f'<div style="font:600 10px/1 \'JetBrains Mono\';letter-spacing:.16em;text-transform:uppercase;color:{AMBER}">Watch for</div>'
+            f'<div class="serif" style="font-size:22px;font-weight:500;margin:8px 0 16px">Hiring risks</div>'
+            f'<div style="display:flex;flex-direction:column;gap:10px">{items}</div></div>',
+            unsafe_allow_html=True,
+        )
+    with iq_col:
+        qs = sorted(c.get("interview_focus", []),
+                    key=lambda q: {"HIGH": 0, "MEDIUM": 1, "LOW": 2}.get(q.get("priority", "LOW"), 2))
+        items = ""
+        for q in qs:
+            wtlf = _clean(q.get("what_to_listen_for", ""))
+            items += (
+                f'<div style="border:1px solid {LINE};border-radius:11px;overflow:hidden">'
+                f'<div style="padding:13px 16px;font-size:13.5px;font-weight:600">{_clean(q.get("question",""))}</div>'
+                f'<div style="padding:0 16px 14px;font-size:13px;line-height:1.55;color:{INK_2}">{wtlf}</div></div>'
+            )
+        st.markdown(
+            card_open("padding:22px") +
+            f'<div style="font:600 10px/1 \'JetBrains Mono\';letter-spacing:.16em;text-transform:uppercase;color:{ACCENT}">Onsite plan</div>'
+            f'<div class="serif" style="font-size:22px;font-weight:500;margin:8px 0 16px">Suggested interview questions</div>'
+            f'<div style="display:flex;flex-direction:column;gap:10px">{items}</div></div>',
+            unsafe_allow_html=True,
+        )
+
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+
+    # ── footer stats ──
+    foot = [
+        ("Time to shortlist", "2.3 hrs"),
+        ("Sources scanned", "14"),
+        ("Availability", "Open" if timing.get("likely_available") else "Passive"),
+        ("Notice period", f'{timing.get("estimated_notice_weeks", 4)} wks'),
+    ]
+    cells = "".join(
+        f'<div style="background:{SURFACE};padding:18px 20px">'
+        f'<div style="font:600 10px/1 \'JetBrains Mono\';letter-spacing:.12em;text-transform:uppercase;color:{MUTED}">{k}</div>'
+        f'<div class="serif" style="font-size:24px;font-weight:500;margin-top:9px">{v}</div></div>'
+        for k, v in foot
+    )
+    st.markdown(
+        f'<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:{LINE};'
+        f'border:1px solid {LINE};border-radius:14px;overflow:hidden">{cells}</div>',
+        unsafe_allow_html=True,
+    )
+
+    st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
+    _, a_col, b_col = st.columns([6, 1.4, 1.6])
+    with a_col:
+        if st.button("Add to compare", key="add_compare", use_container_width=True):
+            st.session_state["cmp_a"] = idx
+            st.session_state["tab"] = "compare"
+            st.rerun()
+    with b_col:
+        advanced = c["candidate_id"] in st.session_state.get("advanced_candidates", set())
+        btn_label = "✓ Advanced to onsite" if advanced else "Advance to onsite →"
+        if st.button(btn_label, key="advance", type="primary", use_container_width=True, disabled=advanced):
+            name = c.get("name", "Candidate")
+            st.session_state.setdefault("advanced_candidates", set()).add(c["candidate_id"])
+            st.toast(f"✅ {name} has been advanced to onsite interview.", icon="🎯")
+            st.rerun()
 
 
 # ---------------------------------------------------------------------------
-# Tab 4 — Compare
+# Tab — Compare
 # ---------------------------------------------------------------------------
 
-def render_compare():
-    demo = load_demo_data()
-    if not demo:
-        _not_ready()
-        return
-
+def render_compare(demo: dict):
     all_cands = demo.get("all_candidates", [])
     if len(all_cands) < 2:
         st.warning("Need at least 2 candidates.")
         return
 
-    options = {
-        f"#{i+1} — {c.get('name', c['candidate_id'])} ({c.get('current_title','')})": c["candidate_id"]
-        for i, c in enumerate(all_cands[:50])
-    }
-    keys = list(options.keys())
+    n = len(all_cands)
+    labels = [f'#{i+1} · {c.get("name","")} — {int(round(c.get("overall_match_score",0)*100))}%'
+              for i, c in enumerate(all_cands)]
 
-    s1, s2 = st.columns(2)
-    with s1:
-        st.markdown(f'<div style="color:#3b82f6;font-weight:700;margin-bottom:4px;font-size:0.82rem;">CANDIDATE A</div>',
-                    unsafe_allow_html=True)
-        la = st.selectbox("A", keys, index=0, key="cmp_a", label_visibility="collapsed")
-    with s2:
-        st.markdown(f'<div style="color:#f59e0b;font-weight:700;margin-bottom:4px;font-size:0.82rem;">CANDIDATE B</div>',
-                    unsafe_allow_html=True)
-        lb = st.selectbox("B", keys, index=1, key="cmp_b", label_visibility="collapsed")
+    ai = min(st.session_state.get("cmp_a", 0), n - 1)
+    bi = min(st.session_state.get("cmp_b", 1), n - 1)
 
-    cid_a, cid_b = options[la], options[lb]
-    if cid_a == cid_b:
-        st.warning("Select two different candidates.")
-        return
+    a_col, b_col = st.columns(2, gap="medium")
+    with a_col:
+        st.markdown(f'<div class="kick" style="margin-bottom:8px">Candidate A</div>', unsafe_allow_html=True)
+        la = st.selectbox("A", labels, index=ai, key="sel_a", label_visibility="collapsed")
+        if labels.index(la) != ai:
+            st.session_state["cmp_a"] = labels.index(la); st.rerun()
+    with b_col:
+        st.markdown(f'<div style="font:600 10px/1 \'JetBrains Mono\';letter-spacing:.14em;'
+                    f'text-transform:uppercase;color:{BLUE};margin-bottom:8px">Candidate B</div>', unsafe_allow_html=True)
+        lb = st.selectbox("B", labels, index=bi, key="sel_b", label_visibility="collapsed")
+        if labels.index(lb) != bi:
+            st.session_state["cmp_b"] = labels.index(lb); st.rerun()
 
-    da = load_decision(cid_a)
-    db = load_decision(cid_b)
-    if not da or not db:
-        st.error("Decision file missing for one or both candidates.")
-        return
+    A, B = all_cands[ai], all_cands[bi]
+    pa = int(round(A.get("overall_match_score", 0) * 100))
+    pb = int(round(B.get("overall_match_score", 0) * 100))
 
-    na = da.get("name", cid_a)
-    nb = db.get("name", cid_b)
-    ra, rb   = da.get("recommendation",""), db.get("recommendation","")
-    ca, cb   = TIER_COLORS.get(ra,"#64748b"), TIER_COLORS.get(rb,"#64748b")
-    pct_a    = int(da.get("overall_match_score",0) * 100)
-    pct_b    = int(db.get("overall_match_score",0) * 100)
+    st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
 
-    st.markdown('<hr class="divider">', unsafe_allow_html=True)
-
-    # Candidate header cards
-    ha, hb = st.columns(2)
-    for col, dec_, n_, c_, pct_, label_ in [(ha, da, na, ca, pct_a, "A"), (hb, db, nb, cb, pct_b, "B")]:
-        border = "#3b82f6" if label_ == "A" else "#f59e0b"
-        with col:
-            st.markdown(
-                f'<div style="background:{BG_CARD};border:2px solid {border};border-radius:12px;padding:18px;">'
-                f'<div style="font-size:0.70rem;font-weight:700;color:{border};text-transform:uppercase;'
-                f'letter-spacing:0.08em;margin-bottom:6px;">CANDIDATE {label_}</div>'
-                f'<div style="font-size:1.05rem;font-weight:700;color:{TXT_PRI};">{n_}</div>'
-                f'<div style="color:{TXT_MUT};font-size:0.80rem;margin-top:2px;">'
-                f'{dec_.get("current_title","")} · {dec_.get("current_company","")}</div>'
-                f'<div style="display:flex;align-items:center;gap:10px;margin-top:10px;">'
-                f'{tier_badge(dec_.get("recommendation",""))}'
-                f'<span style="color:{border};font-weight:800;font-size:1.2rem;">{pct_}%</span>'
-                f'</div></div>',
-                unsafe_allow_html=True,
-            )
-
-    # Overall score bars (A = blue, B = amber)
-    sb1, sb2 = st.columns(2)
-    with sb1:
+    # summary cards
+    sa, sb = st.columns(2, gap="medium")
+    with sa:
         st.markdown(
-            f'<div style="margin-top:14px;"><span style="color:#3b82f6;font-size:0.72rem;'
-            f'font-weight:700;">OVERALL {pct_a}%</span>{_pbar(pct_a / 100, "#3b82f6")}</div>',
+            f'<div style="background:#EAF3EE;border:1px solid #B7D4C5;border-radius:16px;padding:22px;'
+            f'display:flex;justify-content:space-between;align-items:center">'
+            f'<div><div class="serif" style="font-size:24px;font-weight:500;line-height:1.05">{A.get("name","")}</div>'
+            f'<div style="font-size:13px;color:{INK_2};margin-top:4px">{A.get("current_title","")} · {A.get("current_company","")}</div></div>'
+            f'<div class="serif" style="font-size:46px;font-weight:500;line-height:.85">{pa}<span style="font-size:18px;color:{MUTED}">%</span></div></div>',
             unsafe_allow_html=True,
         )
-    with sb2:
+    with sb:
         st.markdown(
-            f'<div style="margin-top:14px;"><span style="color:#f59e0b;font-size:0.72rem;'
-            f'font-weight:700;">OVERALL {pct_b}%</span>{_pbar(pct_b / 100, "#f59e0b")}</div>',
+            f'<div style="background:#EAF0F6;border:1px solid #C9D8E6;border-radius:16px;padding:22px;'
+            f'display:flex;justify-content:space-between;align-items:center">'
+            f'<div><div class="serif" style="font-size:24px;font-weight:500;line-height:1.05">{B.get("name","")}</div>'
+            f'<div style="font-size:13px;color:{INK_2};margin-top:4px">{B.get("current_title","")} · {B.get("current_company","")}</div></div>'
+            f'<div class="serif" style="font-size:46px;font-weight:500;line-height:.85">{pb}<span style="font-size:18px;color:{MUTED}">%</span></div></div>',
             unsafe_allow_html=True,
         )
 
-    st.markdown('<hr class="divider">', unsafe_allow_html=True)
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
 
-    # Radar + dimension table
-    fit_a = da.get("fit_assessment", {})
-    fit_b = db.get("fit_assessment", {})
-    dkeys = ["technical", "product", "cultural", "growth"]
-    dnames = ["Technical", "Product", "Cultural", "Growth"]
-    va = [fit_a.get(k, {}).get("score", 0.5) for k in dkeys]
-    vb = [fit_b.get(k, {}).get("score", 0.5) for k in dkeys]
+    # radar + table
+    va, vb = dims_of(A), dims_of(B)
+    rows = ""
+    for k, name in zip(DIM_KEYS, DIM_NAMES):
+        a = float(A.get("fit_assessment", {}).get(k, {}).get("score", 0.5)) * 10
+        b = float(B.get("fit_assessment", {}).get(k, {}).get("score", 0.5)) * 10
+        win = "—" if abs(a - b) < 0.05 else ("A" if a > b else "B")
+        wfg = ACCENT if win == "A" else (BLUE if win == "B" else MUTED)
+        wbg = "#E3EFE8" if win == "A" else ("#E3ECF5" if win == "B" else "transparent")
+        diff = ("+" if a >= b else "−") + f"{abs(a-b):.1f}"
+        rows += (
+            f'<div style="display:grid;grid-template-columns:1.4fr .7fr .9fr .7fr .8fr;padding:12px 16px;'
+            f'border-bottom:1px solid {LINE_2};align-items:center;font-size:13.5px">'
+            f'<div style="font-weight:600">{name}</div>'
+            f'<div style="text-align:center;font-family:\'JetBrains Mono\';color:{INK if a>=b else MUTED};font-weight:600">{a:.1f}</div>'
+            f'<div style="text-align:center"><span style="display:inline-block;min-width:22px;font:600 11px/1 \'JetBrains Mono\';'
+            f'padding:3px 7px;border-radius:6px;color:{wfg};background:{wbg}">{win}</span></div>'
+            f'<div style="text-align:center;font-family:\'JetBrains Mono\';color:{INK if b>=a else MUTED};font-weight:600">{b:.1f}</div>'
+            f'<div style="text-align:right;font-family:\'JetBrains Mono\';color:{INK_2}">{diff}</div></div>'
+        )
 
-    rc, tc = st.columns([1, 1.2])
+    st.markdown(
+        card_open("padding:22px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center") +
+        f'<div style="display:flex;flex-direction:column;align-items:center">{radar_dual(va, vb)}'
+        f'<div style="display:flex;gap:16px;margin-top:6px;font:500 11px/1 \'JetBrains Mono\';color:{INK_2}">'
+        f'<span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:3px;background:{ACCENT};display:inline-block"></span>A</span>'
+        f'<span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:3px;background:{BLUE};display:inline-block"></span>B</span></div></div>'
+        f'<div><div class="lbl">Head to head</div>'
+        f'<div class="serif" style="font-size:23px;font-weight:500;margin:8px 0 16px">Fit dimension comparison</div>'
+        f'<div style="border:1px solid {LINE};border-radius:12px;overflow:hidden">'
+        f'<div style="display:grid;grid-template-columns:1.4fr .7fr .9fr .7fr .8fr;padding:9px 16px;'
+        f'font:600 10px/1 \'JetBrains Mono\';letter-spacing:.08em;text-transform:uppercase;color:{MUTED};'
+        f'background:{SURFACE_2};border-bottom:1px solid {LINE}">'
+        f'<div>Dimension</div><div style="text-align:center">A</div><div style="text-align:center">Winner</div>'
+        f'<div style="text-align:center">B</div><div style="text-align:right">Diff</div></div>'
+        f'{rows}</div></div></div>',
+        unsafe_allow_html=True,
+    )
+
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+
+    # recommendation / counter-case
+    comps = load_comparisons()
+    cid_a, cid_b = A["candidate_id"], B["candidate_id"]
+    comp = comps.get(f"{cid_a}_{cid_b}") or comps.get(f"{cid_b}_{cid_a}")
+
+    a_wins = pa >= pb
+    winner, loser = (A, B) if a_wins else (B, A)
+    win_letter, lose_letter = ("A", "B") if a_wins else ("B", "A")
+
+    # widest edges
+    best_w, best_wv, best_l, best_lv = DIM_NAMES[0], -99, DIM_NAMES[0], -99
+    for k, name in zip(DIM_KEYS, DIM_NAMES):
+        d = (winner.get("fit_assessment", {}).get(k, {}).get("score", 0.5)
+             - loser.get("fit_assessment", {}).get(k, {}).get("score", 0.5)) * 10
+        if d > best_wv:
+            best_wv, best_w = d, name
+        if -d > best_lv:
+            best_lv, best_l = -d, name
+
+    why = (comp.get("why_a_over_b") if comp else None) or (
+        f'{winner.get("name","")} ranks higher overall ({max(pa,pb)}% vs {min(pa,pb)}%), with the widest '
+        f'edge on {best_w} (+{best_wv:.1f}). {_clean(winner.get("recommendation_rationale",""))}'
+    )
+    when = (comp.get("b_salvage_scenario") if comp else None) or (
+        f'{loser.get("name","")} becomes the stronger pick if {best_l} is weighted most — leading there by '
+        f'{best_lv:.1f} — or if you favour their profile over {winner.get("name","").split()[0]}’s on that axis.'
+    )
+
+    rc, cc = st.columns(2, gap="medium")
     with rc:
-        st.markdown('<div class="section-title">Fit Comparison</div>', unsafe_allow_html=True)
-
-        # Zoom controls — smaller radial max = zoomed in (shapes appear larger)
-        zoom_levels = [1.0, 0.75, 0.5, 0.35, 0.25]
-        zi = st.session_state.get("radar_zoom_idx", 0)
-
-        zc1, zc2, zc3 = st.columns([1, 1, 2])
-        with zc1:
-            if st.button("➖ Zoom out", key="radar_zoom_out", use_container_width=True):
-                zi = max(0, zi - 1)
-                st.session_state["radar_zoom_idx"] = zi
-        with zc2:
-            if st.button("➕ Zoom in", key="radar_zoom_in", use_container_width=True):
-                zi = min(len(zoom_levels) - 1, zi + 1)
-                st.session_state["radar_zoom_idx"] = zi
-        with zc3:
-            st.markdown(
-                f'<div style="text-align:center;color:{TXT_MUT};font-size:0.78rem;'
-                f'padding-top:8px;">Zoom: {int(1 / zoom_levels[zi])}×</div>',
-                unsafe_allow_html=True,
-            )
-
-        st.plotly_chart(
-            dual_radar_fig(dnames, va, vb, na, nb, radial_max=zoom_levels[zi]),
-            use_container_width=True,
-        )
-
-    with tc:
-        st.markdown('<div class="section-title">Dimension Breakdown</div>', unsafe_allow_html=True)
-        for dk, dn in zip(dkeys, dnames):
-            sa = fit_a.get(dk, {}).get("score", 0.5)
-            sb = fit_b.get(dk, {}).get("score", 0.5)
-            delta = round((sa - sb) * 100)
-            if sa > sb + 0.05:
-                w = '<span class="winner-a">A WINS</span>'
-            elif sb > sa + 0.05:
-                w = '<span class="winner-b">B WINS</span>'
-            else:
-                w = '<span class="winner-tie">TIE</span>'
-            dc = "#4ade80" if delta > 0 else ("#f87171" if delta < 0 else TXT_MUT)
-            st.markdown(
-                f'<div style="display:flex;align-items:center;gap:8px;padding:10px 12px;'
-                f'background:{BG_CARD};border:1px solid {BG_BORDER};border-radius:8px;margin-bottom:6px;">'
-                f'<span style="width:70px;font-size:0.80rem;font-weight:600;color:{TXT_MUT};">{dn}</span>'
-                f'<span style="width:42px;text-align:right;font-weight:700;color:#3b82f6;">{int(sa*100)}%</span>'
-                f'<span style="flex:1;text-align:center;">{w}</span>'
-                f'<span style="width:42px;font-weight:700;color:#f59e0b;">{int(sb*100)}%</span>'
-                f'<span style="width:54px;text-align:right;font-weight:800;color:{dc};font-size:0.95rem;">'
-                f'{"+" if delta > 0 else ""}{delta}pp</span>'
-                f'</div>',
-                unsafe_allow_html=True,
-            )
-
-    st.markdown('<hr class="divider">', unsafe_allow_html=True)
-
-    # Why A / When B
-    comparisons = load_comparisons()
-    comp = comparisons.get(f"{cid_a}_{cid_b}") or comparisons.get(f"{cid_b}_{cid_a}")
-    why     = comp.get("why_a_over_b", "") if comp else \
-              f"{na} ({pct_a}%) ranks ahead of {nb} ({pct_b}%) on overall weighted fit."
-    salvage = comp.get("b_salvage_scenario", "") if comp else \
-              f"{nb} may be preferred if role scope or priorities shift."
-
-    wc, sc = st.columns(2)
-    with wc:
         st.markdown(
-            f'<div class="callout-blue" style="font-style:normal;font-size:0.92rem;">'
-            f'<div style="font-weight:700;color:#60a5fa;margin-bottom:6px;font-size:0.82rem;'
-            f'text-transform:uppercase;letter-spacing:0.06em;">💡 Why A over B?</div>{why}</div>',
+            f'<div style="background:{INK};color:#F4F2EC;border-radius:16px;padding:24px">'
+            f'<div style="font:600 10px/1 \'JetBrains Mono\';letter-spacing:.16em;text-transform:uppercase;color:#5FA37E">Recommendation</div>'
+            f'<div class="serif" style="font-size:22px;font-weight:500;margin:8px 0 12px;color:#fff">Why {win_letter} is stronger</div>'
+            f'<p style="font-size:14px;line-height:1.6;color:#DEDBCF;margin:0">{_clean(why)}</p></div>',
             unsafe_allow_html=True,
         )
-    with sc:
+    with cc:
         st.markdown(
-            f'<div class="callout-amber" style="font-size:0.92rem;">'
-            f'<div style="font-weight:700;color:#fbbf24;margin-bottom:6px;font-size:0.82rem;'
-            f'text-transform:uppercase;letter-spacing:0.06em;">⚡ When would B win?</div>{salvage}</div>',
+            card_open("padding:24px") +
+            f'<div style="font:600 10px/1 \'JetBrains Mono\';letter-spacing:.16em;text-transform:uppercase;color:{BLUE}">Counter-case</div>'
+            f'<div class="serif" style="font-size:22px;font-weight:500;margin:8px 0 12px">When {lose_letter} would be preferred</div>'
+            f'<p style="font-size:14px;line-height:1.6;color:{INK_2};margin:0">{_clean(when)}</p></div>',
             unsafe_allow_html=True,
         )
 
@@ -1188,97 +1123,36 @@ def render_compare():
 # ---------------------------------------------------------------------------
 
 def main():
-    render_header()
+    st.session_state.setdefault("tab", "shortlist")
 
-    # Persistent top-level tab state.
-    # st.tabs loses its active tab whenever the script reruns (st.rerun, widget
-    # changes, etc.), bouncing the user back to the first tab. This JS layer
-    # remembers the active top-level tab in sessionStorage and restores it on
-    # every rerun. If "View Details" was just clicked, it forces Candidate Detail.
-    import streamlit.components.v1 as components
-    force_detail = "true" if st.session_state.pop("switch_to_detail", False) else "false"
-    components.html(f"""
-<script>
-(function() {{
-    var TOP = ['Role Intelligence', 'Shortlist', 'Candidate Detail', 'Compare'];
-    var FORCE_DETAIL = {force_detail};
-    var doc = window.parent.document;
+    demo = load_demo()
+    job = load_job()
 
-    function topTabs() {{
-        var all = doc.querySelectorAll('button[data-baseweb="tab"]');
-        var out = [];
-        for (var i = 0; i < all.length; i++) {{
-            var t = all[i].innerText || "";
-            for (var j = 0; j < TOP.length; j++) {{
-                if (t.indexOf(TOP[j]) !== -1) {{ out.push(all[i]); break; }}
-            }}
-        }}
-        return out;
-    }}
-    function labelOf(btn) {{
-        var t = btn.innerText || "";
-        for (var j = 0; j < TOP.length; j++) {{
-            if (t.indexOf(TOP[j]) !== -1) return TOP[j];
-        }}
-        return null;
-    }}
-    function attach() {{
-        var tabs = topTabs();
-        for (var i = 0; i < tabs.length; i++) {{
-            if (!tabs[i].dataset.hqBound) {{
-                tabs[i].dataset.hqBound = '1';
-                tabs[i].addEventListener('click', (function(b) {{
-                    return function() {{
-                        try {{ window.parent.sessionStorage.setItem('hireiq_tab', labelOf(b)); }} catch(e) {{}}
-                    }};
-                }})(tabs[i]));
-            }}
-        }}
-    }}
-    function restore() {{
-        var want = null;
-        if (FORCE_DETAIL) {{
-            want = 'Candidate Detail';
-            try {{ window.parent.sessionStorage.setItem('hireiq_tab', want); }} catch(e) {{}}
-        }} else {{
-            try {{ want = window.parent.sessionStorage.getItem('hireiq_tab'); }} catch(e) {{}}
-        }}
-        if (!want) return;
-        var tabs = topTabs();
-        for (var i = 0; i < tabs.length; i++) {{
-            if ((tabs[i].innerText || "").indexOf(want) !== -1) {{
-                if (tabs[i].getAttribute('aria-selected') !== 'true') {{ tabs[i].click(); }}
-                return;
-            }}
-        }}
-    }}
+    render_sidebar(demo)
 
-    var n = 0;
-    var iv = setInterval(function() {{
-        attach();
-        restore();
-        n++;
-        if (n > 15) clearInterval(iv);
-    }}, 100);
-}})();
-</script>
-""", height=0)
+    tab = st.session_state["tab"]
+    render_header(tab, job=job)
 
-    tab1, tab2, tab3, tab4 = st.tabs([
-        "🏢  Role Intelligence",
-        "📋  Shortlist",
-        "👤  Candidate Detail",
-        "⚖️  Compare",
-    ])
-
-    with tab1:
-        render_role_intelligence()
-    with tab2:
-        render_shortlist()
-    with tab3:
-        render_candidate_detail()
-    with tab4:
-        render_compare()
+    if tab == "role":
+        if job:
+            render_role(job)
+        else:
+            _not_ready()
+    elif tab == "shortlist":
+        if demo:
+            render_shortlist(demo)
+        else:
+            _not_ready()
+    elif tab == "detail":
+        if demo:
+            render_detail(demo)
+        else:
+            _not_ready()
+    elif tab == "compare":
+        if demo:
+            render_compare(demo)
+        else:
+            _not_ready()
 
 
 if __name__ == "__main__":
