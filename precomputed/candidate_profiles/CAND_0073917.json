@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0073917",
+  "name": "Aarav Trivedi",
+  "current_title": "Data Scientist",
+  "current_company": "InMobi",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.227,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "BentoML",
+    "dbt",
+    "Rust",
+    "Learning to Rank",
+    "Computer Vision",
+    "MLOps",
+    "YOLO",
+    "MLflow"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Speech Recognition 77/100"
+  ],
+  "fast_score": 60.6,
+  "years_of_experience": 5.8,
+  "total_months": 68,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 93.2,
+    "interview_completion_rate": 0.88,
+    "offer_acceptance_rate": 0.35,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "BentoML": 55.3,
+      "MLOps": 68.6,
+      "YOLO": 75.9,
+      "MLflow": 69.4,
+      "Speech Recognition": 77.1
+    }
+  }
+}

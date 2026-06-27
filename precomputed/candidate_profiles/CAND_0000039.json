@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0000039",
+  "name": "Sai Saxena",
+  "current_title": "Marketing Manager",
+  "current_company": "Acme Corp",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.825,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Spark",
+    "Tailwind",
+    "Sales",
+    "CI/CD",
+    "Illustrator",
+    "Hadoop",
+    "Microservices",
+    "REST APIs"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 0.0,
+  "years_of_experience": 3.9,
+  "total_months": 46,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 28.3,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {}
+  }
+}

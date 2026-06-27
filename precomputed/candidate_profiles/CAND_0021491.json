@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0021491",
+  "name": "Aarohi Hegde",
+  "current_title": "AI Research Engineer",
+  "current_company": "Wysa",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.165,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.722,
+  "top_skills": [
+    "Recommendation Systems",
+    "Docker",
+    "Speech Recognition",
+    "Spring Boot",
+    "scikit-learn",
+    "Image Classification",
+    "Statistical Modeling",
+    "Vector Search"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 64/100) \u2014 verifiable technical output",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Python 80/100"
+  ],
+  "fast_score": 59.2,
+  "years_of_experience": 6.1,
+  "total_months": 72,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 64.0,
+    "profile_completeness_score": 64.9,
+    "interview_completion_rate": 0.81,
+    "offer_acceptance_rate": 0.69,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "scikit-learn": 44.4,
+      "Image Classification": 45.9,
+      "Statistical Modeling": 68.7,
+      "Vector Search": 66.7,
+      "Python": 80.9
+    }
+  }
+}

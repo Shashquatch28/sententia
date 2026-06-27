@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0007052",
+  "name": "Nisha Bansal",
+  "current_title": "ML Engineer",
+  "current_company": "Unacademy",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.0,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Time Series",
+    "Data Science",
+    "ASR",
+    "RAG",
+    "Statistical Modeling",
+    "Diffusion Models",
+    "Deep Learning",
+    "Weaviate"
+  ],
+  "career_trajectory": "mixed",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 62.0,
+  "years_of_experience": 6.5,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 48.1,
+    "interview_completion_rate": 0.64,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

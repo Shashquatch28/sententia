@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0085887",
+  "name": "Siya Gupta",
+  "current_title": "Backend Engineer",
+  "current_company": "Pied Piper",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.442,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Tailwind",
+    "Six Sigma",
+    "gRPC",
+    "Reinforcement Learning",
+    "Hadoop",
+    "CI/CD",
+    "Kubeflow",
+    "LangChain"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 7.6,
+  "total_months": 90,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 14.9,
+    "profile_completeness_score": 87.6,
+    "interview_completion_rate": 0.64,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Reinforcement Learning": 44.3,
+      "Vector Search": 67.2
+    }
+  }
+}

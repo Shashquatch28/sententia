@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0088691",
+  "name": "Tanvi Mukherjee",
+  "current_title": "Software Engineer",
+  "current_company": "Wipro",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.442,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.581,
+  "top_skills": [
+    "Elasticsearch",
+    "GraphQL",
+    "Machine Learning",
+    "Computer Vision",
+    "BentoML",
+    "NLP",
+    "Airflow",
+    "Weights & Biases"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 120-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 7.9,
+  "total_months": 93,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 64.6,
+    "interview_completion_rate": 0.66,
+    "offer_acceptance_rate": 0.81,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Machine Learning": 69.1,
+      "BentoML": 52.6,
+      "NLP": 69.1
+    }
+  }
+}

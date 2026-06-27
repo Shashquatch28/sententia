@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0093958",
+  "name": "Aarohi Shah",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Meesho",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.165,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "PyTorch",
+    "Recommendation Systems",
+    "FAISS",
+    "Java",
+    "Python",
+    "MLOps",
+    "ASR",
+    "Image Classification"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 53/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 58.8,
+  "years_of_experience": 5.9,
+  "total_months": 70,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 53.6,
+    "profile_completeness_score": 79.9,
+    "interview_completion_rate": 0.8,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Python": 60.7,
+      "ASR": 41.3
+    }
+  }
+}

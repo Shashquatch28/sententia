@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0044883",
+  "name": "Rajesh Reddy",
+  "current_title": "AI Engineer",
+  "current_company": "Mad Street Den",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.625,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "CNN",
+    "BM25",
+    "Computer Vision",
+    "Prompt Engineering",
+    "Embeddings",
+    "Data Science",
+    "QLoRA",
+    "ASR"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 70/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 63.6,
+  "years_of_experience": 6.3,
+  "total_months": 74,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 70.5,
+    "profile_completeness_score": 58.2,
+    "interview_completion_rate": 0.77,
+    "offer_acceptance_rate": 0.71,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

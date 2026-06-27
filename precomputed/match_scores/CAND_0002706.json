@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 1.0,
+    "Product-Sense & User-Facing AI": 0.8,
+    "Founding-Team Ownership": 0.486,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "TensorFlow",
+    "LLMs",
+    "Semantic Search"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.695,
+  "match_evidence": [
+    "Shaurya Dutta (Junior ML Engineer at Zoho) \u2014 TensorFlow, LLMs match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Upward career trajectory \u2014 progressive responsibility growth"
+  ],
+  "candidate_id": "CAND_0002706"
+}

@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0045494",
+  "name": "Shreya Bhatia",
+  "current_title": "Software Engineer",
+  "current_company": "Dunder Mifflin",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.46,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.655,
+  "top_skills": [
+    "Milvus",
+    "Haystack",
+    "MLflow",
+    "Qdrant",
+    "QLoRA",
+    "Redux",
+    "TTS",
+    "OpenCV"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (49%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 58.6,
+  "years_of_experience": 7.3,
+  "total_months": 87,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 34.9,
+    "profile_completeness_score": 46.0,
+    "interview_completion_rate": 0.49,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "QLoRA": 42.7,
+      "PEFT": 50.6
+    }
+  }
+}

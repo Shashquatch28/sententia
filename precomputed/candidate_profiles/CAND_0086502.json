@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0086502",
+  "name": "Rohan Verma",
+  "current_title": "Software Engineer",
+  "current_company": "Stark Industries",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.437,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.655,
+  "top_skills": [
+    "Reinforcement Learning",
+    "Diffusion Models",
+    "Terraform",
+    "CI/CD",
+    "Weaviate",
+    "LlamaIndex",
+    "Kubeflow",
+    "MLOps"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 68/100) \u2014 verifiable technical output",
+    "Actively open to work, 90-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 58.6,
+  "years_of_experience": 7.3,
+  "total_months": 87,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 68.3,
+    "profile_completeness_score": 53.5,
+    "interview_completion_rate": 0.83,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0030468",
+  "name": "Pooja Bose",
+  "current_title": "Senior Applied Scientist",
+  "current_company": "Swiggy",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": false,
+  "ownership_language_score": 0.306,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Information Retrieval Systems",
+    "Content Matching",
+    "Text Encoders",
+    "TensorFlow",
+    "Search & Discovery",
+    "CNN",
+    "Model Adaptation",
+    "Machine Learning"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 45-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Sentence Transformers 97/100"
+  ],
+  "fast_score": 59.8,
+  "years_of_experience": 5.4,
+  "total_months": 64,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 45.0,
+    "profile_completeness_score": 84.7,
+    "interview_completion_rate": 0.82,
+    "offer_acceptance_rate": 0.56,
+    "open_to_work_flag": true,
+    "notice_period_days": 45,
+    "skill_assessment_scores": {
+      "RAG": 80.5,
+      "Semantic Search": 72.4,
+      "Sentence Transformers": 97.0
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0045250",
+  "name": "Priya Pandey",
+  "current_title": "Applied ML Engineer",
+  "current_company": "Rephrase.ai",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.602,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Sentence Transformers",
+    "Milvus",
+    "LoRA",
+    "Embeddings",
+    "NLP",
+    "Time Series",
+    "Image Classification",
+    "LangChain"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Sentence Transformers 83/100"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 6.6,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 89.8,
+    "interview_completion_rate": 0.65,
+    "offer_acceptance_rate": 0.68,
+    "open_to_work_flag": false,
+    "notice_period_days": 15,
+    "skill_assessment_scores": {
+      "Sentence Transformers": 83.2,
+      "Milvus": 53.9,
+      "LoRA": 65.0,
+      "Embeddings": 73.0
+    }
+  }
+}

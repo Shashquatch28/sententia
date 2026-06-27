@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.9,
+    "Product-Sense & User-Facing AI": 0.7,
+    "Founding-Team Ownership": 0.467,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.7
+  },
+  "required_skills_matched": [
+    "Diffusion Models",
+    "Qdrant",
+    "Sentence Transformers",
+    "Embeddings",
+    "Kubernetes"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.719,
+  "match_evidence": [
+    "Sai Dalal (Software Engineer at Razorpay) \u2014 Diffusion Models, Qdrant match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0057098"
+}

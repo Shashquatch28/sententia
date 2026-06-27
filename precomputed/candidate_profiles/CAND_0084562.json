@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0084562",
+  "name": "Tanvi Joshi",
+  "current_title": "Senior Software Engineer",
+  "current_company": "CRED",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.588,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "PEFT",
+    "MLOps",
+    "Milvus",
+    "Hadoop",
+    "Object Detection",
+    "TTS",
+    "LangChain",
+    "GANs"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 7.6,
+  "total_months": 90,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 48.9,
+    "interview_completion_rate": 0.88,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "MLOps": 65.2
+    }
+  }
+}

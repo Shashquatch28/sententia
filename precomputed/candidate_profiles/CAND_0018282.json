@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0018282",
+  "name": "Tanvi Mittal",
+  "current_title": "Backend Engineer",
+  "current_company": "Cognizant",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.345,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.659,
+  "top_skills": [
+    "NLP",
+    "Kafka",
+    "Node.js",
+    "Apache Beam",
+    "Spring Boot",
+    "Time Series",
+    "BM25",
+    "Hugging Face Transformers"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Time Series 81/100"
+  ],
+  "fast_score": 59.8,
+  "years_of_experience": 6.9,
+  "total_months": 82,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 19.8,
+    "profile_completeness_score": 80.4,
+    "interview_completion_rate": 0.71,
+    "offer_acceptance_rate": 0.76,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Time Series": 81.9,
+      "Kubeflow": 41.2,
+      "Data Science": 55.4,
+      "RAG": 38.7
+    }
+  }
+}

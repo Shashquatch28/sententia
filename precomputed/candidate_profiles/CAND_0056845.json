@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0056845",
+  "name": "Dev Tiwari",
+  "current_title": "Backend Engineer",
+  "current_company": "Ola",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.435,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.609,
+  "top_skills": [
+    "Semantic Search",
+    "Kubernetes",
+    "Statistical Modeling",
+    "Kubeflow",
+    "Excel",
+    "MLOps",
+    "Scrum",
+    "Webpack"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Forecasting 77/100"
+  ],
+  "fast_score": 59.8,
+  "years_of_experience": 5.4,
+  "total_months": 64,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 56.3,
+    "interview_completion_rate": 0.84,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Statistical Modeling": 53.2,
+      "MLOps": 55.0,
+      "Forecasting": 77.0,
+      "MLflow": 51.0,
+      "PyTorch": 45.4
+    }
+  }
+}

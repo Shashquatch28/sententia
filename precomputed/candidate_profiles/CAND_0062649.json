@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0062649",
+  "name": "Pari Trivedi",
+  "current_title": "Software Engineer",
+  "current_company": "Vedantu",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.423,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Spark",
+    "Fine-tuning LLMs",
+    "LlamaIndex",
+    "Computer Vision",
+    "Accounting",
+    "Kubernetes",
+    "dbt",
+    "Statistical Modeling"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 62.2,
+  "years_of_experience": 6.6,
+  "total_months": 79,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 79.3,
+    "interview_completion_rate": 0.53,
+    "offer_acceptance_rate": 0.33,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

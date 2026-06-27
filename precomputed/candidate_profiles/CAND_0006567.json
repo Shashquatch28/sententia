@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0006567",
+  "name": "Aditya Subramanian",
+  "current_title": "Senior AI Engineer",
+  "current_company": "Meta",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.273,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Speech Recognition",
+    "scikit-learn",
+    "Search Backend",
+    "Model Adaptation",
+    "Vector Representations",
+    "BM25",
+    "Workflow Orchestration",
+    "GANs"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: scikit-learn 89/100",
+    "Experience at tier-1 product company: Meta"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 7.9,
+  "total_months": 94,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 35.2,
+    "profile_completeness_score": 58.6,
+    "interview_completion_rate": 0.93,
+    "offer_acceptance_rate": 0.79,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "scikit-learn": 89.9,
+      "Weaviate": 63.0,
+      "Fine-tuning LLMs": 88.7,
+      "Embeddings": 64.4
+    }
+  }
+}

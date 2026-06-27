@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0043228",
+  "name": "Kiara Sen",
+  "current_title": "Applied ML Engineer",
+  "current_company": "Zoho",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.7,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.638,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "BigQuery",
+    "NLP",
+    "ASR",
+    "Hugging Face Transformers",
+    "FastAPI",
+    "Haystack",
+    "Image Classification",
+    "Machine Learning"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Image Classification 83/100"
+  ],
+  "fast_score": 62.6,
+  "years_of_experience": 6.8,
+  "total_months": 80,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 47.6,
+    "profile_completeness_score": 88.3,
+    "interview_completion_rate": 0.94,
+    "offer_acceptance_rate": 0.52,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "NLP": 83.0,
+      "ASR": 76.5,
+      "Hugging Face Transformers": 64.4,
+      "Haystack": 65.0,
+      "Image Classification": 83.6
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.25,
+    "Product-Sense & User-Facing AI": 0.713,
+    "Founding-Team Ownership": 0.619,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.607
+  },
+  "required_skills_matched": [
+    "MLflow",
+    "Machine Learning",
+    "Milvus",
+    "Weights & Biases"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+  ],
+  "overall_match_score": 0.558,
+  "match_evidence": [
+    "Rajesh Mehta (Software Engineer at Razorpay) \u2014 MLflow, Machine Learning match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0007994"
+}

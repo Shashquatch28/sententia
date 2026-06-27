@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0004972",
+  "name": "Anika Desai",
+  "current_title": "ML Engineer",
+  "current_company": "Glance",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.183,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Data Science",
+    "Semantic Search",
+    "RAG",
+    "TTS",
+    "PostgreSQL",
+    "BentoML",
+    "PyTorch",
+    "Data Pipelines"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Semantic Search 86/100"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 6.0,
+  "total_months": 71,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 31.5,
+    "profile_completeness_score": 88.6,
+    "interview_completion_rate": 0.76,
+    "offer_acceptance_rate": 0.4,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Data Science": 61.1,
+      "Semantic Search": 86.5,
+      "TTS": 41.5,
+      "BentoML": 83.0
+    }
+  }
+}

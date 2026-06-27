@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0043425",
+  "name": "Riya Shah",
+  "current_title": "Backend Engineer",
+  "current_company": "Ola",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.503,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Airflow",
+    "Angular",
+    "Spring Boot",
+    "MLflow",
+    "Redis",
+    "Agile",
+    "Salesforce CRM",
+    "Data Science"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 69/100) \u2014 verifiable technical output",
+    "Actively open to work, 30-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.8,
+  "years_of_experience": 5.9,
+  "total_months": 69,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 69.7,
+    "profile_completeness_score": 63.6,
+    "interview_completion_rate": 0.53,
+    "offer_acceptance_rate": 0.74,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {}
+  }
+}

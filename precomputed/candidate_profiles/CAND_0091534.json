@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0091534",
+  "name": "Dhruv Dutta",
+  "current_title": "AI Engineer",
+  "current_company": "Flipkart",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.632,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Hugging Face Transformers",
+    "scikit-learn",
+    "Diffusion Models",
+    "Qdrant",
+    "Sentence Transformers",
+    "RAG",
+    "Data Science",
+    "LlamaIndex"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 66/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: Hugging Face Transformers 76/100"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 16.6,
+  "total_months": 85,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 66.0,
+    "profile_completeness_score": 57.5,
+    "interview_completion_rate": 0.81,
+    "offer_acceptance_rate": 0.35,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Hugging Face Transformers": 76.1,
+      "scikit-learn": 74.5
+    }
+  }
+}

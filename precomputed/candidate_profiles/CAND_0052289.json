@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0052289",
+  "name": "Avni Verma",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Accenture",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.351,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 0.247,
+  "top_skills": [
+    "Feature Engineering",
+    "Airflow",
+    "Figma",
+    "Forecasting",
+    "Tailwind",
+    "React",
+    "MLflow",
+    "Object Detection"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 68/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 59.8,
+  "years_of_experience": 6.9,
+  "total_months": 81,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 68.7,
+    "profile_completeness_score": 63.5,
+    "interview_completion_rate": 0.5,
+    "offer_acceptance_rate": 0.63,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "MLflow": 43.4
+    }
+  }
+}

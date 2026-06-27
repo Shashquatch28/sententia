@@ -1,0 +1,39 @@
+{
+  "candidate_id": "CAND_0086028",
+  "name": "Shaurya Tiwari",
+  "current_title": "AI Research Engineer",
+  "current_company": "PharmEasy",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.287,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Reinforcement Learning",
+    "Haystack",
+    "LlamaIndex",
+    "Semantic Search",
+    "NLP",
+    "Milvus",
+    "BentoML",
+    "Weights & Biases"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [],
+  "fast_score": 63.4,
+  "years_of_experience": 6.2,
+  "total_months": 72,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 67.1,
+    "interview_completion_rate": 0.75,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {}
+  }
+}

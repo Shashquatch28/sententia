@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0057125",
+  "name": "Sanjay Bose",
+  "current_title": "Software Engineer",
+  "current_company": "Accenture",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.562,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.33,
+  "top_skills": [
+    "Airflow",
+    "FAISS",
+    "SAP",
+    "Apache Flink",
+    "MongoDB",
+    "MLflow",
+    "Data Science",
+    "Vector Search"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 8.2,
+  "total_months": 97,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 45.1,
+    "profile_completeness_score": 55.5,
+    "interview_completion_rate": 0.55,
+    "offer_acceptance_rate": 0.4,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "FAISS": 61.4,
+      "MLflow": 29.9
+    }
+  }
+}

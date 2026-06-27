@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0079387",
+  "name": "Sneha Arora",
+  "current_title": "AI Engineer",
+  "current_company": "Microsoft",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.553,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "scikit-learn",
+    "Recommendation Systems",
+    "Python",
+    "Time Series",
+    "Sentence Transformers",
+    "JavaScript",
+    "Illustrator",
+    "Vector Search"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "Active GitHub contributor (score: 64/100) \u2014 verifiable technical output",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Sentence Transformers 85/100",
+    "Experience at tier-1 product company: Microsoft"
+  ],
+  "fast_score": 59.8,
+  "years_of_experience": 6.9,
+  "total_months": 81,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 64.1,
+    "profile_completeness_score": 90.2,
+    "interview_completion_rate": 0.9,
+    "offer_acceptance_rate": 0.5,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "scikit-learn": 66.5,
+      "Recommendation Systems": 84.4,
+      "Python": 57.8,
+      "Time Series": 53.2,
+      "Sentence Transformers": 85.8
+    }
+  }
+}

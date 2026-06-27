@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0054368",
+  "name": "Ved Kapoor",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Ola",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.524,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Speech Recognition",
+    "Airflow",
+    "Weaviate",
+    "Snowflake",
+    "Time Series",
+    "Scrum",
+    "MLOps",
+    "ASR"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.6,
+  "years_of_experience": 5.8,
+  "total_months": 68,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 68.4,
+    "interview_completion_rate": 0.91,
+    "offer_acceptance_rate": 0.77,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "MLOps": 46.8,
+      "Vector Search": 38.8
+    }
+  }
+}

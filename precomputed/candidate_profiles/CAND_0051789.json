@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0051789",
+  "name": "Tanya Dalal",
+  "current_title": "Software Engineer",
+  "current_company": "Infosys",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.403,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.58,
+  "top_skills": [
+    "FAISS",
+    "Excel",
+    "Next.js",
+    "Angular",
+    "HTML",
+    "Airflow",
+    "Photoshop",
+    "Six Sigma"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.0,
+  "years_of_experience": 10.0,
+  "total_months": 119,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 52.4,
+    "interview_completion_rate": 0.79,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "FAISS": 46.5
+    }
+  }
+}

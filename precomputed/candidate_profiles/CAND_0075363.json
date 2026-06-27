@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0075363",
+  "name": "Myra Khanna",
+  "current_title": "Software Engineer",
+  "current_company": "Wayne Enterprises",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.342,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Apache Beam",
+    "Tally",
+    "Vue.js",
+    "REST APIs",
+    "Django",
+    "MLOps",
+    "HTML",
+    "LoRA"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 9.5,
+  "total_months": 112,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 10.3,
+    "profile_completeness_score": 33.8,
+    "interview_completion_rate": 0.52,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

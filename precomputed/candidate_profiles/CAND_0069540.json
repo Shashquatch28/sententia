@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0069540",
+  "name": "Kiara Khanna",
+  "current_title": "ML Engineer",
+  "current_company": "BYJU'S",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.156,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Prompt Engineering",
+    "Hugging Face Transformers",
+    "Data Science",
+    "QLoRA",
+    "Fine-tuning LLMs",
+    "Statistical Modeling",
+    "Accounting",
+    "Haystack"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 58.4,
+  "years_of_experience": 5.7,
+  "total_months": 67,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 87.2,
+    "interview_completion_rate": 0.61,
+    "offer_acceptance_rate": 0.61,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Prompt Engineering": 63.7
+    }
+  }
+}

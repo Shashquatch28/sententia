@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0097429",
+  "name": "Anil Mehta",
+  "current_title": "Software Engineer",
+  "current_company": "PharmEasy",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.337,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Reinforcement Learning",
+    "Machine Learning",
+    "Marketing",
+    "OpenCV",
+    "Apache Beam",
+    "GraphQL",
+    "Diffusion Models",
+    "Kubeflow"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: OpenCV 80/100"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 8.0,
+  "total_months": 95,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 20.9,
+    "profile_completeness_score": 79.4,
+    "interview_completion_rate": 0.51,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Reinforcement Learning": 63.4,
+      "OpenCV": 80.8
+    }
+  }
+}

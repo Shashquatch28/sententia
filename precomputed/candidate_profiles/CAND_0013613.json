@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0013613",
+  "name": "Advaith Joshi",
+  "current_title": "Machine Learning Engineer",
+  "current_company": "Adobe",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": false,
+  "ownership_language_score": 0.513,
+  "outcome_language_score": 0.2,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Speech Recognition",
+    "LoRA",
+    "Computer Vision",
+    "TensorFlow",
+    "Object Detection",
+    "Weaviate",
+    "Statistical Modeling",
+    "MLflow"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 66/100) \u2014 verifiable technical output",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: TensorFlow 89/100"
+  ],
+  "fast_score": 58.4,
+  "years_of_experience": 4.7,
+  "total_months": 55,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 66.7,
+    "profile_completeness_score": 74.8,
+    "interview_completion_rate": 0.63,
+    "offer_acceptance_rate": 0.42,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "LoRA": 66.8,
+      "Computer Vision": 75.4,
+      "TensorFlow": 89.1,
+      "Weaviate": 62.2
+    }
+  }
+}

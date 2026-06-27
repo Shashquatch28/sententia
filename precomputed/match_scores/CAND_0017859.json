@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.18,
+    "Product-Sense & User-Facing AI": 0.546,
+    "Founding-Team Ownership": 0.671,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "BentoML",
+    "Weaviate"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+  ],
+  "overall_match_score": 0.462,
+  "match_evidence": [
+    "Pooja Nair (Software Engineer at Flipkart) \u2014 BentoML, Weaviate match LLM/RAG core requirements",
+    "65% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0017859"
+}

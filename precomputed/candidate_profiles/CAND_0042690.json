@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0042690",
+  "name": "Krishna Pillai",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Niramai",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.237,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Haystack",
+    "pgvector",
+    "MLflow",
+    "Go",
+    "Reinforcement Learning",
+    "Milvus",
+    "Kubernetes",
+    "Data Science"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.6,
+  "years_of_experience": 6.3,
+  "total_months": 74,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 85.7,
+    "interview_completion_rate": 0.66,
+    "offer_acceptance_rate": 0.61,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "pgvector": 66.2,
+      "Milvus": 69.3,
+      "Data Science": 72.9,
+      "LLMs": 48.2,
+      "Image Classification": 52.8
+    }
+  }
+}

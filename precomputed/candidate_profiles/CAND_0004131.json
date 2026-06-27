@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0004131",
+  "name": "Vivaan Bose",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Flipkart",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.12,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Information Retrieval",
+    "MLflow",
+    "CI/CD",
+    "LangChain",
+    "TTS",
+    "QLoRA",
+    "PyTorch",
+    "YOLO"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 56/100) \u2014 verifiable technical output",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Information Retrieval 75/100"
+  ],
+  "fast_score": 62.6,
+  "years_of_experience": 6.8,
+  "total_months": 80,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 56.0,
+    "profile_completeness_score": 46.8,
+    "interview_completion_rate": 0.7,
+    "offer_acceptance_rate": 0.5,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Information Retrieval": 75.0,
+      "MLflow": 58.1
+    }
+  }
+}

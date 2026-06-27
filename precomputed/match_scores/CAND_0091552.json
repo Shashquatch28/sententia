@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.6,
+    "Product-Sense & User-Facing AI": 0.449,
+    "Founding-Team Ownership": 0.648,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "BentoML",
+    "PyTorch",
+    "LangChain"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.548,
+  "match_evidence": [
+    "Rahul Verma (Software Engineer at Zomato) \u2014 BentoML, PyTorch match LLM/RAG core requirements",
+    "41% product company exposure",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0091552"
+}

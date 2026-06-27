@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0051441",
+  "name": "Manish Joshi",
+  "current_title": "Backend Engineer",
+  "current_company": "CRED",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.335,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "TypeScript",
+    "Photoshop",
+    "LangChain",
+    "Semantic Search",
+    "Computer Vision",
+    "Weights & Biases",
+    "Diffusion Models",
+    "Speech Recognition"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: LangChain 78/100"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 7.8,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 75.6,
+    "interview_completion_rate": 0.64,
+    "offer_acceptance_rate": 0.8,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "LangChain": 78.3
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "candidate_id": "CAND_0013536",
+  "name": "Nisha Sen",
+  "current_title": "Applied ML Engineer",
+  "current_company": "Haptik",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.8,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "Active GitHub contributor (score 51/100)",
+        "confidence": 0.85,
+        "field_name": "github_activity_score"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed PyTorch: 84/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Skill assessment score: PyTorch = 84/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.66,
+      "evidence": [
+        "Nisha Sen (Applied ML Engineer at Haptik) has PyTorch, LLMs matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.81,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.7,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.61,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.706
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Nisha Sen",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Nisha Sen (Applied ML Engineer at Haptik) scores 78/100 with PyTorch aligned to role requirements. No critical gaps. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 56,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 90-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 12
+  },
+  "required_skills_matched": [
+    "PyTorch",
+    "LLMs",
+    "NLP",
+    "Embeddings",
+    "Pinecone"
+  ],
+  "overall_match_score": 0.783,
+  "top_evidence": [
+    "Nisha Sen (Applied ML Engineer at Haptik) \u2014 PyTorch, LLMs match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

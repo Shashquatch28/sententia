@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0081713",
+  "name": "Dev Menon",
+  "current_title": "Software Engineer",
+  "current_company": "Wayne Enterprises",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.428,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.5,
+  "top_skills": [
+    "GCP",
+    "Snowflake",
+    "ASR",
+    "MLflow",
+    "Vector Search",
+    "Kubeflow",
+    "Weights & Biases",
+    "Forecasting"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 5.6,
+  "total_months": 66,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 41.6,
+    "interview_completion_rate": 0.55,
+    "offer_acceptance_rate": 0.33,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "MLflow": 68.4
+    }
+  }
+}

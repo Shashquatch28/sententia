@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0091745",
+  "name": "Karan Agarwal",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Locobuzz",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.36,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "PostgreSQL",
+    "Deep Learning",
+    "Embeddings",
+    "Fine-tuning LLMs",
+    "Java",
+    "Machine Learning",
+    "Hugging Face Transformers",
+    "Reinforcement Learning"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Fine-tuning LLMs 85/100"
+  ],
+  "fast_score": 58.8,
+  "years_of_experience": 5.9,
+  "total_months": 70,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 31.7,
+    "profile_completeness_score": 82.6,
+    "interview_completion_rate": 0.99,
+    "offer_acceptance_rate": 0.73,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Deep Learning": 64.8,
+      "Fine-tuning LLMs": 85.5,
+      "Machine Learning": 74.5
+    }
+  }
+}

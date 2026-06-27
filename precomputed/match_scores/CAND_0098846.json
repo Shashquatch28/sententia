@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.65,
+    "Product-Sense & User-Facing AI": 0.827,
+    "Founding-Team Ownership": 0.717,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.713
+  },
+  "required_skills_matched": [
+    "Hugging Face Transformers",
+    "Machine Learning"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.635,
+  "match_evidence": [
+    "Shreya Saxena (AI Engineer at upGrad) \u2014 Hugging Face Transformers, Machine Learning match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0098846"
+}

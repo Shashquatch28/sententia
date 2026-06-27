@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.578,
+    "Founding-Team Ownership": 0.576,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "RAG",
+    "pgvector",
+    "MLflow"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.563,
+  "match_evidence": [
+    "Divya Khanna (ML Engineer at Vedantu) \u2014 RAG, pgvector match LLM/RAG core requirements",
+    "50% product company exposure",
+    "Upward career trajectory \u2014 progressive responsibility growth"
+  ],
+  "candidate_id": "CAND_0078669"
+}

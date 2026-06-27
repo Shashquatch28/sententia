@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0000035",
+  "name": "Vikram Verma",
+  "current_title": "Full Stack Developer",
+  "current_company": "Globex Inc",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.556,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.647,
+  "top_skills": [
+    "Snowflake",
+    "BigQuery",
+    "Recommendation Systems",
+    "Data Pipelines",
+    "Docker",
+    "MongoDB",
+    "PostgreSQL",
+    "Sales"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 25.6,
+  "years_of_experience": 4.3,
+  "total_months": 51,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 56.2,
+    "interview_completion_rate": 0.5,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

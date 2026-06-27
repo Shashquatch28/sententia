@@ -1,0 +1,117 @@
+{
+  "candidate_id": "CAND_0055905",
+  "name": "Anika Rao",
+  "current_title": "Senior Machine Learning Engineer",
+  "current_company": "Flipkart",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.7,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed Elasticsearch: 83/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Skill assessment score: Elasticsearch = 83/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.59,
+      "evidence": [
+        "Anika Rao (Senior Machine Learning Engineer at Flipkart) has Hugging Face Transformers, LangChain matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.85,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.68,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.64,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.694
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Anika Rao",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Anika Rao (Senior Machine Learning Engineer at Flipkart) scores 75/100 with Hugging Face Transformers aligned to role requirements. No critical gaps. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 96,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 30-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 4
+  },
+  "required_skills_matched": [
+    "Hugging Face Transformers",
+    "LangChain",
+    "Python",
+    "LLMs"
+  ],
+  "overall_match_score": 0.757,
+  "top_evidence": [
+    "Anika Rao (Senior Machine Learning Engineer at Flipkart) \u2014 Hugging Face Transformers, LangChain match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

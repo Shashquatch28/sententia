@@ -1,0 +1,39 @@
+{
+  "candidate_id": "CAND_0000009",
+  "name": "Amit Shah",
+  "current_title": "Mechanical Engineer",
+  "current_company": "Dunder Mifflin",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.7,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.474,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 0.847,
+  "top_skills": [
+    "Snowflake",
+    "gRPC",
+    "JavaScript",
+    "OpenCV",
+    "Go",
+    "PowerPoint"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 26.0,
+  "years_of_experience": 11.0,
+  "total_months": 131,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 39.6,
+    "interview_completion_rate": 0.54,
+    "offer_acceptance_rate": 0.48,
+    "open_to_work_flag": false,
+    "notice_period_days": 150,
+    "skill_assessment_scores": {}
+  }
+}

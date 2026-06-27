@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0051630",
+  "name": "Kavya Naidu",
+  "current_title": "Machine Learning Engineer",
+  "current_company": "Razorpay",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": false,
+  "ownership_language_score": 0.64,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Elasticsearch",
+    "Hugging Face Transformers",
+    "BentoML",
+    "MLflow",
+    "Embeddings",
+    "Recommendation Systems",
+    "Machine Learning",
+    "Python"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 66/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 6.0,
+  "total_months": 71,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": 66.4,
+    "profile_completeness_score": 59.8,
+    "interview_completion_rate": 0.72,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

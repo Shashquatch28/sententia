@@ -58,14 +58,16 @@ logger = logging.getLogger(__name__)
 
 ROOT = Path(__file__).resolve().parent
 
+sys.stdout.reconfigure(encoding="utf-8")
+
 _TEST_MODE = os.getenv("HIREIQ_TEST") == "1"
 
 BANNER = f"""
-╔══════════════════════════════════════════════════════════╗
-║           HireIQ — Intelligence Pipeline                  ║
-║           Dev B: Offline Pre-Computation Phase            ║
-║           Mode: {'TEST (sample_candidates.json)     ' if _TEST_MODE else 'FULL (candidates.jsonl / 100K)     '}║
-╚══════════════════════════════════════════════════════════╝
++------------------------------------------------------------+
+|           HireIQ — Intelligence Pipeline                  |
+|           Dev B: Offline Pre-Computation Phase            |
+|           Mode: {'TEST (sample_candidates.json)     ' if _TEST_MODE else 'FULL (candidates.jsonl / 100K)     '}|
++------------------------------------------------------------+
 """
 
 

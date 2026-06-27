@@ -1,0 +1,126 @@
+{
+  "candidate_id": "CAND_0000046",
+  "name": "Dev Nair",
+  "current_title": "Mechanical Engineer",
+  "current_company": "Hooli",
+  "recommendation": "ADVANCE_IF_POOL_THIN",
+  "trust_assessment": {
+    "overall_trust_score": 0.5,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "SUSPICIOUS",
+        "description": "Low interview completion rate (40%)",
+        "confidence": 0.85,
+        "field_name": "interview_completion_rate"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": [
+      "Low interview completion rate (40%) \u2014 potential reliability risk"
+    ]
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.17,
+      "evidence": [
+        "Dev Nair (Mechanical Engineer at Hooli) has Azure matching role requirements"
+      ],
+      "gaps": [
+        "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+      ]
+    },
+    "product": {
+      "score": 0.71,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.95,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.81,
+      "evidence": [
+        "Upward career trajectory with upward progression"
+      ],
+      "gaps": []
+    },
+    "overall": 0.584
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Skill Gap",
+      "severity": "HIGH",
+      "description": "Dev Nair: Limited LLM/RAG engineering skills \u2014 core requirement not met",
+      "mitigation": "Probe depth of adjacent skills and practical project examples in technical screen",
+      "is_blocking": false
+    },
+    {
+      "risk_type": "Profile Signal",
+      "severity": "MEDIUM",
+      "description": "Dev Nair: Low interview completion rate (40%) \u2014 potential reliability risk",
+      "mitigation": "Raise directly in intro call and assess candidate response",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "What specific AI/ML area are you most excited to grow in over the next 12 months?",
+      "priority": "HIGH",
+      "dimension": "Growth",
+      "what_to_listen_for": "Awareness of own gaps, concrete learning plan, genuine motivation to stretch beyond current skills"
+    },
+    {
+      "question": "Tell me about a project where you had to deliver with limited guidance or resources.",
+      "priority": "HIGH",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Self-directedness, initiative, creative problem-solving under constraints"
+    },
+    {
+      "question": "What is your experience with vector databases and semantic search?",
+      "priority": "MEDIUM",
+      "dimension": "Technical",
+      "what_to_listen_for": "Hands-on vs. theoretical knowledge, specific tools, real use cases vs. tutorials"
+    }
+  ],
+  "recommendation_rationale": "Dev Nair (Mechanical Engineer at Hooli) is below primary threshold at 46/100 \u2014 Limited LLM/RAG engineering skills \u2014 core requirement not met. Include as backup if top-tier pool is insufficient.",
+  "timing_assessment": {
+    "current_tenure_months": 93,
+    "likely_available": false,
+    "urgency_signal": "No active availability signal \u2014 outreach response rate unknown",
+    "estimated_notice_weeks": 4
+  },
+  "required_skills_matched": [
+    "Azure"
+  ],
+  "overall_match_score": 0.465,
+  "top_evidence": [
+    "Dev Nair (Mechanical Engineer at Hooli) \u2014 Azure match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

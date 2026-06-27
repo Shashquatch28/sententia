@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0000007",
+  "name": "Vihaan Bose",
+  "current_title": "Civil Engineer",
+  "current_company": "Wipro",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.7,
+  "skill_duration_credible": true,
+  "ownership_language_score": 1.0,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.415,
+  "top_skills": [
+    "Content Writing",
+    "MongoDB",
+    "Sales",
+    "Spark",
+    "Scrum",
+    "Apache Beam",
+    "Illustrator"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (47%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 15.0,
+  "years_of_experience": 5.5,
+  "total_months": 65,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 74.6,
+    "interview_completion_rate": 0.47,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {}
+  }
+}

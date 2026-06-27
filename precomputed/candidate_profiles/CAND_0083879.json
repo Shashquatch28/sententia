@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0083879",
+  "name": "Mira Reddy",
+  "current_title": "Machine Learning Engineer",
+  "current_company": "Ola",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.591,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "MLOps",
+    "Fine-tuning LLMs",
+    "Milvus",
+    "Image Classification",
+    "Data Science",
+    "scikit-learn",
+    "Hugging Face Transformers",
+    "Prompt Engineering"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 63.2,
+  "years_of_experience": 7.1,
+  "total_months": 84,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 59.6,
+    "interview_completion_rate": 0.83,
+    "offer_acceptance_rate": 0.85,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Fine-tuning LLMs": 63.1
+    }
+  }
+}

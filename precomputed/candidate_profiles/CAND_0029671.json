@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0029671",
+  "name": "Tanya Chatterjee",
+  "current_title": "Data Scientist",
+  "current_company": "BYJU'S",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.335,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Statistical Modeling",
+    "PEFT",
+    "MLOps",
+    "Prompt Engineering",
+    "Embeddings",
+    "Six Sigma",
+    "Qdrant",
+    "Kafka"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Qdrant 86/100"
+  ],
+  "fast_score": 60.4,
+  "years_of_experience": 5.7,
+  "total_months": 68,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 56.3,
+    "interview_completion_rate": 0.83,
+    "offer_acceptance_rate": 0.63,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Statistical Modeling": 54.7,
+      "MLOps": 62.0,
+      "Prompt Engineering": 63.8,
+      "Embeddings": 59.4,
+      "Qdrant": 86.6
+    }
+  }
+}

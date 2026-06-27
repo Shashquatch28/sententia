@@ -1,0 +1,108 @@
+{
+  "candidate_id": "CAND_0007052",
+  "name": "Nisha Bansal",
+  "current_title": "ML Engineer",
+  "current_company": "Unacademy",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.6,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.54,
+      "evidence": [
+        "Nisha Bansal (ML Engineer at Unacademy) has RAG, Diffusion Models matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.8,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.25,
+      "evidence": [],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.5,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.554
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Nisha Bansal",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Nisha Bansal (ML Engineer at Unacademy) scores 60/100 with RAG aligned to role requirements. No critical gaps. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 78,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 60-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 8
+  },
+  "required_skills_matched": [
+    "RAG",
+    "Diffusion Models",
+    "Deep Learning",
+    "Weaviate"
+  ],
+  "overall_match_score": 0.6,
+  "top_evidence": [
+    "Nisha Bansal (ML Engineer at Unacademy) \u2014 RAG, Diffusion Models match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

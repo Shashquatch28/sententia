@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.6,
+    "Product-Sense & User-Facing AI": 0.478,
+    "Founding-Team Ownership": 0.473,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "Kafka",
+    "NLP",
+    "MLflow",
+    "Diffusion Models"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.561,
+  "match_evidence": [
+    "Arjun Chatterjee (Backend Engineer at Wayne Enterprises) \u2014 Kafka, NLP match LLM/RAG core requirements",
+    "47% product company exposure"
+  ],
+  "candidate_id": "CAND_0022784"
+}

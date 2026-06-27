@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0000011",
+  "name": "Deepak Desai",
+  "current_title": "QA Engineer",
+  "current_company": "Pied Piper",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.7,
+  "skill_duration_credible": false,
+  "ownership_language_score": 0.312,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Recommendation Systems",
+    "Scrum",
+    "FastAPI",
+    "Hugging Face Transformers",
+    "AWS",
+    "Snowflake",
+    "Spring Boot",
+    "PostgreSQL"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (45%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [],
+  "fast_score": 21.0,
+  "years_of_experience": 2.0,
+  "total_months": 23,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 32.3,
+    "profile_completeness_score": 59.2,
+    "interview_completion_rate": 0.45,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Recommendation Systems": 29.8
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.0,
+    "Product-Sense & User-Facing AI": 0.59,
+    "Founding-Team Ownership": 0.417,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.713
+  },
+  "required_skills_matched": [
+    "Kubernetes",
+    "CI/CD",
+    "Airflow"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+  ],
+  "overall_match_score": 0.408,
+  "match_evidence": [
+    "Shreya Nair (Graphic Designer at Wipro) \u2014 Kubernetes, CI/CD match LLM/RAG core requirements",
+    "69% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0000033"
+}

@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0000026",
+  "name": "Neha Rao",
+  "current_title": "Graphic Designer",
+  "current_company": "Initech",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.562,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Apache Beam",
+    "Kubeflow",
+    "Scrum",
+    "ETL",
+    "Django",
+    "Docker",
+    "Airflow",
+    "Kubernetes"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [
+    "Low interview completion rate (49%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 27.6,
+  "years_of_experience": 6.8,
+  "total_months": 80,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 80.3,
+    "interview_completion_rate": 0.49,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {}
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0093587",
+  "name": "Diya Dutta",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Flipkart",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.482,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.457,
+  "top_skills": [
+    "Time Series",
+    "Tailwind",
+    "MongoDB",
+    "TTS",
+    "Milvus",
+    "Prompt Engineering",
+    "LlamaIndex",
+    "Content Writing"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 8.0,
+  "total_months": 94,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 87.7,
+    "interview_completion_rate": 0.91,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Milvus": 35.5,
+      "LlamaIndex": 36.8,
+      "BentoML": 43.8,
+      "Python": 41.1
+    }
+  }
+}

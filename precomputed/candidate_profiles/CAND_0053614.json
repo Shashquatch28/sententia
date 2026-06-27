@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0053614",
+  "name": "Rajesh Naidu",
+  "current_title": "Backend Engineer",
+  "current_company": "upGrad",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.437,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.382,
+  "top_skills": [
+    "Six Sigma",
+    "Apache Flink",
+    "Data Science",
+    "BentoML",
+    "YOLO",
+    "Forecasting",
+    "MLflow",
+    "Python"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [
+    "Low interview completion rate (47%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 58.4,
+  "years_of_experience": 4.7,
+  "total_months": 55,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 46.9,
+    "interview_completion_rate": 0.47,
+    "offer_acceptance_rate": 0.81,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "MLflow": 35.8
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0000050",
+  "name": "Naina Bose",
+  "current_title": "Business Analyst",
+  "current_company": "Infosys",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 1.0,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.494,
+  "top_skills": [
+    "gRPC",
+    "SEO",
+    "Feature Engineering",
+    "Marketing",
+    "Data Pipelines",
+    "Kafka",
+    "Excel"
+  ],
+  "career_trajectory": "mixed",
+  "red_flags": [],
+  "green_flags": [
+    "4 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 23.0,
+  "years_of_experience": 13.5,
+  "total_months": 160,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 44.7,
+    "profile_completeness_score": 42.5,
+    "interview_completion_rate": 0.58,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Feature Engineering": 60.8
+    }
+  }
+}

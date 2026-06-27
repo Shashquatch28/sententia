@@ -1,0 +1,122 @@
+{
+  "candidate_id": "CAND_0033445",
+  "name": "Ved Bhatia",
+  "current_title": "ML Engineer",
+  "current_company": "Vedantu",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.75,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed Semantic Search: 84/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "High profile completeness (89%)",
+        "confidence": 0.8,
+        "field_name": "profile_completeness_score"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Skill assessment score: Semantic Search = 84/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.62,
+      "evidence": [
+        "Ved Bhatia (ML Engineer at Vedantu) has Deep Learning, Information Retrieval matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.8,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.47,
+      "evidence": [],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.6,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.641
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Ved Bhatia",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Ved Bhatia (ML Engineer at Vedantu) scores 69/100 with Deep Learning aligned to role requirements. No critical gaps. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 80,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 30-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 4
+  },
+  "required_skills_matched": [
+    "Deep Learning",
+    "Information Retrieval",
+    "pgvector",
+    "Semantic Search",
+    "Hugging Face Transformers"
+  ],
+  "overall_match_score": 0.697,
+  "top_evidence": [
+    "Ved Bhatia (ML Engineer at Vedantu) \u2014 Deep Learning, Information Retrieval match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

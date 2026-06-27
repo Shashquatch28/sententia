@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0089470",
+  "name": "Om Krishnan",
+  "current_title": "AI Research Engineer",
+  "current_company": "Zomato",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.115,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "PyTorch",
+    "Feature Engineering",
+    "GraphQL",
+    "Weaviate",
+    "BM25",
+    "Image Classification",
+    "OpenCV",
+    "CNN"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 62.0,
+  "years_of_experience": 6.5,
+  "total_months": 77,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 84.1,
+    "interview_completion_rate": 0.56,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 45,
+    "skill_assessment_scores": {
+      "Weaviate": 54.4,
+      "Image Classification": 63.1,
+      "OpenCV": 59.4
+    }
+  }
+}

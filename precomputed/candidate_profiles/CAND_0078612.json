@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0078612",
+  "name": "Arnav Krishnan",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Stark Industries",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.418,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "MongoDB",
+    "Airflow",
+    "Pinecone",
+    "Hadoop",
+    "Computer Vision",
+    "ETL",
+    "CNN",
+    "Milvus"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Computer Vision 80/100"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 7.6,
+  "total_months": 89,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 5.2,
+    "profile_completeness_score": 67.6,
+    "interview_completion_rate": 0.55,
+    "offer_acceptance_rate": 0.51,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Pinecone": 63.5,
+      "Computer Vision": 80.6
+    }
+  }
+}

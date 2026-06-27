@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.93,
+    "Product-Sense & User-Facing AI": 0.827,
+    "Founding-Team Ownership": 0.592,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.713
+  },
+  "required_skills_matched": [
+    "Docker",
+    "Weaviate",
+    "BentoML",
+    "Weights & Biases",
+    "LangChain"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.828,
+  "match_evidence": [
+    "Aisha Reddy (Applied ML Engineer at Krutrim) \u2014 Docker, Weaviate match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0015528"
+}

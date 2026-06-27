@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0008202",
+  "name": "Anjali Patel",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Yellow.ai",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.366,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.791,
+  "top_skills": [
+    "Haystack",
+    "TypeScript",
+    "FAISS",
+    "Python",
+    "Computer Vision",
+    "Image Classification",
+    "LLMs",
+    "PyTorch"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Haystack 85/100"
+  ],
+  "fast_score": 60.4,
+  "years_of_experience": 5.7,
+  "total_months": 67,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 65.7,
+    "interview_completion_rate": 0.67,
+    "offer_acceptance_rate": 0.31,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Haystack": 85.7,
+      "FAISS": 56.9,
+      "Python": 70.0
+    }
+  }
+}

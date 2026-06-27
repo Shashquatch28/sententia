@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0085907",
+  "name": "Reyansh Pillai",
+  "current_title": "Software Engineer",
+  "current_company": "InMobi",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.449,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Statistical Modeling",
+    "LangChain",
+    "Object Detection",
+    "Airflow",
+    "GCP",
+    "Image Classification",
+    "MLOps",
+    "HTML"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (47%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.8,
+  "years_of_experience": 5.4,
+  "total_months": 64,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 41.9,
+    "interview_completion_rate": 0.47,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Statistical Modeling": 63.0,
+      "Object Detection": 72.7,
+      "Image Classification": 45.1
+    }
+  }
+}

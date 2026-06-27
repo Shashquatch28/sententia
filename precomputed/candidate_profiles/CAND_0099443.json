@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0099443",
+  "name": "Priya Bose",
+  "current_title": "Junior ML Engineer",
+  "current_company": "InMobi",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.0,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.803,
+  "top_skills": [
+    "GANs",
+    "Speech Recognition",
+    "Time Series",
+    "CNN",
+    "SQL",
+    "OpenCV",
+    "MLOps",
+    "Statistical Modeling"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 78/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: Speech Recognition 86/100"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 6.0,
+  "total_months": 71,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 78.7,
+    "profile_completeness_score": 83.3,
+    "interview_completion_rate": 0.85,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "GANs": 82.9,
+      "Speech Recognition": 86.1,
+      "CNN": 51.4
+    }
+  }
+}

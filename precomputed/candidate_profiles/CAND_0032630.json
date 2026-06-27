@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0032630",
+  "name": "Aisha Saxena",
+  "current_title": "Software Engineer",
+  "current_company": "Wipro",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.693,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.364,
+  "top_skills": [
+    "Photoshop",
+    "HTML",
+    "Vector Search",
+    "Airflow",
+    "Speech Recognition",
+    "Apache Beam",
+    "Content Writing",
+    "REST APIs"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 63.0,
+  "years_of_experience": 9.0,
+  "total_months": 107,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 40.2,
+    "profile_completeness_score": 49.5,
+    "interview_completion_rate": 0.76,
+    "offer_acceptance_rate": 0.54,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Speech Recognition": 49.8
+    }
+  }
+}

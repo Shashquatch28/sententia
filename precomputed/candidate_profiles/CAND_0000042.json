@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0000042",
+  "name": "Riya Mukherjee",
+  "current_title": "HR Manager",
+  "current_company": "Wayne Enterprises",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.571,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 0.441,
+  "top_skills": [
+    "Project Management",
+    "gRPC",
+    "Marketing",
+    "SAP",
+    "Illustrator",
+    "Node.js",
+    "YOLO",
+    "Tailwind"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [
+    "Low interview completion rate (35%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 0.0,
+  "years_of_experience": 5.0,
+  "total_months": 59,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 58.6,
+    "interview_completion_rate": 0.35,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {}
+  }
+}

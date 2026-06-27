@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0000043",
+  "name": "Aarav Sen",
+  "current_title": "Cloud Engineer",
+  "current_company": "Swiggy",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.402,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.505,
+  "top_skills": [
+    "Elasticsearch",
+    "OpenSearch",
+    "Airflow",
+    "Kubeflow",
+    "Fine-tuning LLMs",
+    "Haystack",
+    "OpenCV",
+    "TensorFlow"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 46.0,
+  "years_of_experience": 8.3,
+  "total_months": 99,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 57.0,
+    "interview_completion_rate": 0.72,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {}
+  }
+}

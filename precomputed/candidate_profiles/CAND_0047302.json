@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0047302",
+  "name": "Rahul Naidu",
+  "current_title": "Software Engineer",
+  "current_company": "Wipro",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.486,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.27,
+  "top_skills": [
+    "Data Science",
+    "FastAPI",
+    "Content Writing",
+    "Recommendation Systems",
+    "Computer Vision",
+    "gRPC",
+    "SEO",
+    "AWS"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: BentoML 75/100"
+  ],
+  "fast_score": 63.0,
+  "years_of_experience": 7.6,
+  "total_months": 89,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 21.7,
+    "profile_completeness_score": 50.4,
+    "interview_completion_rate": 0.65,
+    "offer_acceptance_rate": 0.55,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Recommendation Systems": 68.8,
+      "Computer Vision": 70.4,
+      "BentoML": 75.8,
+      "Weights & Biases": 36.6
+    }
+  }
+}

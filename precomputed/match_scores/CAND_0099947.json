@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.4,
+    "Product-Sense & User-Facing AI": 0.444,
+    "Founding-Team Ownership": 0.514,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "CI/CD",
+    "MLflow",
+    "LlamaIndex"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.49,
+  "match_evidence": [
+    "Kabir Iyengar (Software Engineer at Cognizant) \u2014 CI/CD, MLflow match LLM/RAG core requirements",
+    "40% product company exposure",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0099947"
+}

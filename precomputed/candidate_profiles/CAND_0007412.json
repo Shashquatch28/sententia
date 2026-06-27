@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0007412",
+  "name": "Pranav Shah",
+  "current_title": "Applied ML Engineer",
+  "current_company": "Zoho",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.602,
+  "outcome_language_score": 0.2,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Node.js",
+    "scikit-learn",
+    "Data Science",
+    "Pinecone",
+    "Milvus",
+    "PyTorch",
+    "BM25",
+    "Kubeflow"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Experience at tier-1 product company: LinkedIn"
+  ],
+  "fast_score": 62.8,
+  "years_of_experience": 7.4,
+  "total_months": 87,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 36.0,
+    "profile_completeness_score": 81.3,
+    "interview_completion_rate": 0.88,
+    "offer_acceptance_rate": 0.77,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "scikit-learn": 55.8,
+      "Data Science": 50.1
+    }
+  }
+}

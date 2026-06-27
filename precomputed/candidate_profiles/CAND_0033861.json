@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0033861",
+  "name": "Kabir Kapoor",
+  "current_title": "Senior NLP Engineer",
+  "current_company": "Mad Street Den",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.444,
+  "outcome_language_score": 0.4,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Reinforcement Learning",
+    "Weaviate",
+    "LoRA",
+    "LLMs",
+    "Machine Learning",
+    "TensorFlow",
+    "LlamaIndex",
+    "Time Series"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Reinforcement Learning 90/100"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 8.0,
+  "total_months": 95,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 32.6,
+    "profile_completeness_score": 69.6,
+    "interview_completion_rate": 0.83,
+    "offer_acceptance_rate": 0.82,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Reinforcement Learning": 90.5,
+      "Weaviate": 79.5,
+      "LoRA": 67.2
+    }
+  }
+}

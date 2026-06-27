@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0070449",
+  "name": "Dev Menon",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Freshworks",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.437,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Excel",
+    "Hugging Face Transformers",
+    "Weights & Biases",
+    "LLMs",
+    "Kubeflow",
+    "LoRA",
+    "YOLO",
+    "MLflow"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: MLflow 81/100"
+  ],
+  "fast_score": 60.0,
+  "years_of_experience": 5.5,
+  "total_months": 65,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 22.7,
+    "profile_completeness_score": 70.7,
+    "interview_completion_rate": 0.9,
+    "offer_acceptance_rate": 0.8,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Weights & Biases": 35.8,
+      "Kubeflow": 39.3,
+      "MLflow": 81.3,
+      "Computer Vision": 72.0
+    }
+  }
+}

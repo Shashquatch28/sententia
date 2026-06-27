@@ -1,0 +1,21 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.43,
+    "Product-Sense & User-Facing AI": 0.646,
+    "Founding-Team Ownership": 0.775,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "LLMs",
+    "Docker"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.564,
+  "match_evidence": [
+    "Meera Verma (Software Engineer at Wayne Enterprises) \u2014 LLMs, Docker match LLM/RAG core requirements",
+    "85% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0063650"
+}

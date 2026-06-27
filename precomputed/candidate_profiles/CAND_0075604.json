@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0075604",
+  "name": "Saanvi Iyengar",
+  "current_title": "Software Engineer",
+  "current_company": "Globex Inc",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.431,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.557,
+  "top_skills": [
+    "Computer Vision",
+    "Agile",
+    "AWS",
+    "PostgreSQL",
+    "CNN",
+    "Airflow",
+    "Spring Boot",
+    "TypeScript"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (45%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 66.0,
+  "years_of_experience": 8.2,
+  "total_months": 97,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 37.4,
+    "interview_completion_rate": 0.45,
+    "offer_acceptance_rate": 0.65,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Computer Vision": 44.5
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "candidate_id": "CAND_0057529",
+  "name": "Manish Kapoor",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Glance",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.8,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "High interview completion rate (98%)",
+        "confidence": 0.9,
+        "field_name": "interview_completion_rate"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed Data Science: 83/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Skill assessment score: Data Science = 83/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.42,
+      "evidence": [
+        "Manish Kapoor (Junior ML Engineer at Glance) has Diffusion Models, Sentence Transformers matching role requirements"
+      ],
+      "gaps": [
+        "MLOps/deployment stack not evident in skill profile"
+      ]
+    },
+    "product": {
+      "score": 0.8,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.54,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.8,
+      "evidence": [
+        "Upward career trajectory with upward progression"
+      ],
+      "gaps": []
+    },
+    "overall": 0.615
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Skill Gap",
+      "severity": "MEDIUM",
+      "description": "Manish Kapoor: MLOps/deployment stack not evident in skill profile",
+      "mitigation": "Probe depth of adjacent skills and practical project examples in technical screen",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Manish Kapoor (Junior ML Engineer at Glance) scores 65/100 with Diffusion Models aligned to role requirements. Gap: MLOps/deployment stack not evident in skill profile. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 82,
+    "likely_available": false,
+    "urgency_signal": "No active availability signal \u2014 outreach response rate unknown",
+    "estimated_notice_weeks": 6
+  },
+  "required_skills_matched": [
+    "Diffusion Models",
+    "Sentence Transformers",
+    "NLP"
+  ],
+  "overall_match_score": 0.652,
+  "top_evidence": [
+    "Manish Kapoor (Junior ML Engineer at Glance) \u2014 Diffusion Models, Sentence Transformers match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

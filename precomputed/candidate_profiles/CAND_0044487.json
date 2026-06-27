@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0044487",
+  "name": "Sai Sethi",
+  "current_title": "Data Scientist",
+  "current_company": "upGrad",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.165,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "PEFT",
+    "Sentence Transformers",
+    "pgvector",
+    "MLOps",
+    "Information Retrieval",
+    "ASR",
+    "Speech Recognition",
+    "CSS"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 64/100) \u2014 verifiable technical output",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Speech Recognition 78/100"
+  ],
+  "fast_score": 59.2,
+  "years_of_experience": 6.1,
+  "total_months": 72,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 64.8,
+    "profile_completeness_score": 50.9,
+    "interview_completion_rate": 0.61,
+    "offer_acceptance_rate": 0.5,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Sentence Transformers": 63.3,
+      "Information Retrieval": 58.8,
+      "Speech Recognition": 78.5,
+      "Object Detection": 60.2,
+      "MLflow": 57.6
+    }
+  }
+}

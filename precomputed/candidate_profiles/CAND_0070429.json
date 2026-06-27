@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0070429",
+  "name": "Amit Singh",
+  "current_title": "Software Engineer",
+  "current_company": "Swiggy",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.312,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.557,
+  "top_skills": [
+    "MLOps",
+    "PyTorch",
+    "Salesforce CRM",
+    "Spring Boot",
+    "Weights & Biases",
+    "Figma",
+    "Accounting",
+    "Kafka"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 62.0,
+  "years_of_experience": 8.1,
+  "total_months": 97,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 13.8,
+    "profile_completeness_score": 62.6,
+    "interview_completion_rate": 0.86,
+    "offer_acceptance_rate": 0.74,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "PyTorch": 54.4,
+      "Weights & Biases": 64.3
+    }
+  }
+}

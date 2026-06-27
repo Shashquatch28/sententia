@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.33,
+    "Product-Sense & User-Facing AI": 0.583,
+    "Founding-Team Ownership": 0.686,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "Airflow",
+    "Deep Learning",
+    "AWS"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.535,
+  "match_evidence": [
+    "Aisha Kapoor (Software Engineer at Paytm) \u2014 Airflow, Deep Learning match LLM/RAG core requirements",
+    "71% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0029100"
+}

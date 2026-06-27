@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.0,
+    "Product-Sense & User-Facing AI": 0.488,
+    "Founding-Team Ownership": 0.496,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.7
+  },
+  "required_skills_matched": [
+    "Terraform",
+    "Flask",
+    "Azure"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+  ],
+  "overall_match_score": 0.397,
+  "match_evidence": [
+    "Yash Chatterjee (Business Analyst at Wipro) \u2014 Terraform, Flask match LLM/RAG core requirements",
+    "52% product company exposure",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0000034"
+}

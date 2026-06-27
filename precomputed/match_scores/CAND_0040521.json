@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.75,
+    "Product-Sense & User-Facing AI": 0.568,
+    "Founding-Team Ownership": 0.618,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "Airflow",
+    "GCP",
+    "pgvector",
+    "LlamaIndex",
+    "Sentence Transformers"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.705,
+  "match_evidence": [
+    "Ritu Bhatia (Software Engineer at Meesho) \u2014 Airflow, GCP match LLM/RAG core requirements",
+    "67% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0040521"
+}

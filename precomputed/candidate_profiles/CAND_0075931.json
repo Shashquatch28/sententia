@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0075931",
+  "name": "Pari Pillai",
+  "current_title": "Software Engineer",
+  "current_company": "BYJU'S",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.508,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Six Sigma",
+    "Diffusion Models",
+    "Sentence Transformers",
+    "Recommendation Systems",
+    "Speech Recognition",
+    "TTS",
+    "SEO",
+    "Agile"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Sentence Transformers 79/100"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 7.5,
+  "total_months": 89,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": 44.3,
+    "profile_completeness_score": 77.1,
+    "interview_completion_rate": 0.63,
+    "offer_acceptance_rate": 0.54,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Diffusion Models": 52.1,
+      "Sentence Transformers": 79.7,
+      "Recommendation Systems": 78.1,
+      "TTS": 70.1
+    }
+  }
+}

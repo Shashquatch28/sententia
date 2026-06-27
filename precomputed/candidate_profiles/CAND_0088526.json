@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0088526",
+  "name": "Pari Dutta",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Saarthi.ai",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.237,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.87,
+  "top_skills": [
+    "Reinforcement Learning",
+    "Node.js",
+    "LangChain",
+    "MLOps",
+    "CSS",
+    "scikit-learn",
+    "Object Detection",
+    "FAISS"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 74/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: Haystack 86/100"
+  ],
+  "fast_score": 58.2,
+  "years_of_experience": 4.6,
+  "total_months": 54,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 74.8,
+    "profile_completeness_score": 72.4,
+    "interview_completion_rate": 0.55,
+    "offer_acceptance_rate": 0.57,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Object Detection": 57.2,
+      "Haystack": 86.6,
+      "Elasticsearch": 43.4
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0092278",
+  "name": "Ananya Arora",
+  "current_title": "Senior NLP Engineer",
+  "current_company": "Microsoft",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.645,
+  "outcome_language_score": 0.2,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "TensorFlow",
+    "Machine Learning",
+    "Hugging Face Transformers",
+    "gRPC",
+    "QLoRA",
+    "pgvector",
+    "NLP",
+    "Elasticsearch"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Experience at tier-1 product company: Microsoft"
+  ],
+  "fast_score": 62.6,
+  "years_of_experience": 6.8,
+  "total_months": 80,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 65.4,
+    "interview_completion_rate": 0.78,
+    "offer_acceptance_rate": 0.65,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "TensorFlow": 66.6
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0009691",
+  "name": "Ira Subramanian",
+  "current_title": "Applied ML Engineer",
+  "current_company": "LinkedIn",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.299,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "BentoML",
+    "Prompt Engineering",
+    "Recommendation Systems",
+    "GANs",
+    "Fine-tuning LLMs",
+    "Terraform",
+    "LoRA",
+    "Pinecone"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 67/100) \u2014 verifiable technical output",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: LoRA 81/100"
+  ],
+  "fast_score": 61.4,
+  "years_of_experience": 6.2,
+  "total_months": 73,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 67.8,
+    "profile_completeness_score": 94.1,
+    "interview_completion_rate": 0.57,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "BentoML": 65.1,
+      "Prompt Engineering": 64.9,
+      "Recommendation Systems": 69.9,
+      "Fine-tuning LLMs": 52.9,
+      "LoRA": 81.8
+    }
+  }
+}

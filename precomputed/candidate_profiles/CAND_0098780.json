@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0098780",
+  "name": "Shreya Singh",
+  "current_title": "AI Research Engineer",
+  "current_company": "Zomato",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.333,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Six Sigma",
+    "Semantic Search",
+    "Sentence Transformers",
+    "Milvus",
+    "Kubeflow",
+    "BigQuery",
+    "MLOps",
+    "Feature Engineering"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 58.8,
+  "years_of_experience": 5.9,
+  "total_months": 70,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 79.5,
+    "interview_completion_rate": 0.72,
+    "offer_acceptance_rate": 0.59,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Semantic Search": 48.4
+    }
+  }
+}

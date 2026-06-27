@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0075249",
+  "name": "Ishaan Arora",
+  "current_title": "Applied ML Engineer",
+  "current_company": "Zomato",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.48,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Sentence Transformers",
+    "Milvus",
+    "Machine Learning",
+    "Fine-tuning LLMs",
+    "MLflow",
+    "Hadoop",
+    "BM25",
+    "Pinecone"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 45-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Sentence Transformers 80/100"
+  ],
+  "fast_score": 59.4,
+  "years_of_experience": 6.2,
+  "total_months": 74,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 36.8,
+    "profile_completeness_score": 70.1,
+    "interview_completion_rate": 0.63,
+    "offer_acceptance_rate": 0.43,
+    "open_to_work_flag": true,
+    "notice_period_days": 45,
+    "skill_assessment_scores": {
+      "Sentence Transformers": 80.7,
+      "Milvus": 77.9,
+      "Machine Learning": 69.0,
+      "Fine-tuning LLMs": 57.6,
+      "MLflow": 54.7
+    }
+  }
+}

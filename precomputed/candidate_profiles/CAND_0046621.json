@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0046621",
+  "name": "Aarav Sharma",
+  "current_title": "AI Research Engineer",
+  "current_company": "upGrad",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.0,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "MLflow",
+    "Statistical Modeling",
+    "Deep Learning",
+    "Sentence Transformers",
+    "Image Classification",
+    "Pinecone",
+    "LlamaIndex",
+    "CNN"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 45-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: TensorFlow 81/100"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 6.6,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 20.5,
+    "profile_completeness_score": 72.7,
+    "interview_completion_rate": 0.87,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 45,
+    "skill_assessment_scores": {
+      "MLflow": 48.8,
+      "Image Classification": 40.8,
+      "Pinecone": 49.2,
+      "TensorFlow": 81.7,
+      "pgvector": 63.8
+    }
+  }
+}

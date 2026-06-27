@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.68,
+    "Product-Sense & User-Facing AI": 0.421,
+    "Founding-Team Ownership": 0.658,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.7
+  },
+  "required_skills_matched": [
+    "TensorFlow",
+    "MLflow",
+    "Weights & Biases",
+    "Embeddings",
+    "Airflow"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.651,
+  "match_evidence": [
+    "Avni Gupta (Software Engineer at BYJU'S) \u2014 TensorFlow, MLflow match LLM/RAG core requirements",
+    "38% product company exposure",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0036724"
+}

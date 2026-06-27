@@ -1,0 +1,132 @@
+{
+  "candidate_id": "CAND_0088354",
+  "name": "Rohan Mishra",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Aganitha",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.95,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Highly active GitHub contributor (score 72/100)",
+        "confidence": 0.95,
+        "field_name": "github_activity_score"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed OpenSearch: 81/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "High profile completeness (88%)",
+        "confidence": 0.8,
+        "field_name": "profile_completeness_score"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Verifiable technical output via GitHub (score 72/100)",
+      "Skill assessment score: OpenSearch = 81/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.67,
+      "evidence": [
+        "Rohan Mishra (Junior ML Engineer at Aganitha) has Hugging Face Transformers, AWS matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.8,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.73,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.8,
+      "evidence": [
+        "Upward career trajectory with upward progression"
+      ],
+      "gaps": []
+    },
+    "overall": 0.74
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Rohan Mishra",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Rohan Mishra (Junior ML Engineer at Aganitha) scores 78/100 with Hugging Face Transformers aligned to role requirements. No critical gaps. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 77,
+    "likely_available": true,
+    "urgency_signal": "Recent role change pattern suggests may be open to new opportunities",
+    "estimated_notice_weeks": 17
+  },
+  "required_skills_matched": [
+    "Hugging Face Transformers",
+    "AWS",
+    "Machine Learning",
+    "Diffusion Models"
+  ],
+  "overall_match_score": 0.783,
+  "top_evidence": [
+    "Rohan Mishra (Junior ML Engineer at Aganitha) \u2014 Hugging Face Transformers, AWS match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

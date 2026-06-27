@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.85,
+    "Product-Sense & User-Facing AI": 0.7,
+    "Founding-Team Ownership": 0.289,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.75
+  },
+  "required_skills_matched": [
+    "Sentence Transformers",
+    "BentoML",
+    "Diffusion Models",
+    "LangChain"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.63,
+  "match_evidence": [
+    "Ishaan Singh (Senior Software Engineer (ML) at Dream11) \u2014 Sentence Transformers, BentoML match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0078810"
+}

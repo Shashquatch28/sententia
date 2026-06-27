@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.75,
+    "Product-Sense & User-Facing AI": 0.7,
+    "Founding-Team Ownership": 0.61,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.7
+  },
+  "required_skills_matched": [
+    "Weights & Biases",
+    "pgvector",
+    "MLflow",
+    "Fine-tuning LLMs",
+    "Vector Search"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.735,
+  "match_evidence": [
+    "Om Mittal (Software Engineer at InMobi) \u2014 Weights & Biases, pgvector match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0089414"
+}

@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0096136",
+  "name": "Ira Naidu",
+  "current_title": "Software Engineer",
+  "current_company": "Zomato",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.465,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Airflow",
+    "Photoshop",
+    "Docker",
+    "Angular",
+    "Salesforce CRM",
+    "TensorFlow",
+    "JavaScript",
+    "Hugging Face Transformers"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 8.8,
+  "total_months": 105,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 18.9,
+    "profile_completeness_score": 41.7,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": 0.72,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

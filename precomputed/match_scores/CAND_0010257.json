@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.35,
+    "Product-Sense & User-Facing AI": 0.84,
+    "Founding-Team Ownership": 0.675,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.77
+  },
+  "required_skills_matched": [
+    "Milvus",
+    "TensorFlow",
+    "MLflow",
+    "Python",
+    "Qdrant"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.649,
+  "match_evidence": [
+    "Ira Shetty (Senior Data Scientist at Google) \u2014 Milvus, TensorFlow match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0010257"
+}

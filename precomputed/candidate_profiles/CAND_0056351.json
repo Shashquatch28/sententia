@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0056351",
+  "name": "Suresh Pillai",
+  "current_title": "Backend Engineer",
+  "current_company": "Nykaa",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.341,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.706,
+  "top_skills": [
+    "Hugging Face Transformers",
+    "Object Detection",
+    "Semantic Search",
+    "Accounting",
+    "React",
+    "Spring Boot",
+    "MLflow",
+    "dbt"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 58.4,
+  "years_of_experience": 7.2,
+  "total_months": 85,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 47.1,
+    "profile_completeness_score": 64.5,
+    "interview_completion_rate": 0.53,
+    "offer_acceptance_rate": 0.83,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Hugging Face Transformers": 39.4
+    }
+  }
+}

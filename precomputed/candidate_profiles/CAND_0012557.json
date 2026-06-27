@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0012557",
+  "name": "Aisha Shah",
+  "current_title": "Software Engineer",
+  "current_company": "PhonePe",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.515,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "TTS",
+    "GANs",
+    "Data Pipelines",
+    "Spark",
+    "Weights & Biases",
+    "Next.js",
+    "Terraform",
+    "Redis"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 62.8,
+  "years_of_experience": 6.9,
+  "total_months": 81,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 30.8,
+    "profile_completeness_score": 65.1,
+    "interview_completion_rate": 0.86,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "GANs": 44.6
+    }
+  }
+}

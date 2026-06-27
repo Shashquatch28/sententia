@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0078020",
+  "name": "Siya Kumar",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Ola",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.442,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.344,
+  "top_skills": [
+    "Reinforcement Learning",
+    "BentoML",
+    "Prompt Engineering",
+    "PEFT",
+    "Haystack",
+    "React",
+    "GANs",
+    "Time Series"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: PEFT 75/100"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 7.9,
+  "total_months": 93,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": 48.9,
+    "profile_completeness_score": 69.5,
+    "interview_completion_rate": 0.81,
+    "offer_acceptance_rate": 0.51,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Reinforcement Learning": 71.9,
+      "BentoML": 57.0,
+      "Prompt Engineering": 68.9,
+      "PEFT": 75.2,
+      "Haystack": 58.4
+    }
+  }
+}

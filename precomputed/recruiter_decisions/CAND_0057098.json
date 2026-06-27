@@ -1,0 +1,124 @@
+{
+  "candidate_id": "CAND_0057098",
+  "name": "Sai Dalal",
+  "current_title": "Software Engineer",
+  "current_company": "Razorpay",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.6,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "SUSPICIOUS",
+        "description": "Low interview completion rate (46%)",
+        "confidence": 0.85,
+        "field_name": "interview_completion_rate"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed ASR: 77/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Skill assessment score: ASR = 77/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": [
+      "Low interview completion rate (46%) \u2014 potential reliability risk"
+    ]
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.78,
+      "evidence": [
+        "Sai Dalal (Software Engineer at Razorpay) has Diffusion Models, Qdrant matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.7,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.47,
+      "evidence": [],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.6,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.667
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Profile Signal",
+      "severity": "MEDIUM",
+      "description": "Sai Dalal: Low interview completion rate (46%) \u2014 potential reliability risk",
+      "mitigation": "Raise directly in intro call and assess candidate response",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Sai Dalal (Software Engineer at Razorpay) scores 71/100 with Diffusion Models aligned to role requirements. No critical gaps. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 101,
+    "likely_available": true,
+    "urgency_signal": "Recent role change pattern suggests may be open to new opportunities",
+    "estimated_notice_weeks": 12
+  },
+  "required_skills_matched": [
+    "Diffusion Models",
+    "Qdrant",
+    "Sentence Transformers",
+    "Embeddings",
+    "Kubernetes"
+  ],
+  "overall_match_score": 0.719,
+  "top_evidence": [
+    "Sai Dalal (Software Engineer at Razorpay) \u2014 Diffusion Models, Qdrant match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

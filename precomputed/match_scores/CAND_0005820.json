@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.35,
+    "Product-Sense & User-Facing AI": 0.525,
+    "Founding-Team Ownership": 0.569,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "Hugging Face Transformers",
+    "Airflow",
+    "Weights & Biases"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.504,
+  "match_evidence": [
+    "Sai Gupta (Backend Engineer at PolicyBazaar) \u2014 Hugging Face Transformers, Airflow match LLM/RAG core requirements",
+    "58% product company exposure",
+    "Upward career trajectory \u2014 progressive responsibility growth"
+  ],
+  "candidate_id": "CAND_0005820"
+}

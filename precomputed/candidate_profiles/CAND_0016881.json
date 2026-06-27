@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0016881",
+  "name": "Karan Dalal",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Hooli",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.422,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.649,
+  "top_skills": [
+    "FAISS",
+    "pgvector",
+    "Feature Engineering",
+    "Time Series",
+    "LlamaIndex",
+    "HTML",
+    "Airflow",
+    "Illustrator"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 120-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 64.2,
+  "years_of_experience": 6.6,
+  "total_months": 77,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 26.9,
+    "profile_completeness_score": 40.2,
+    "interview_completion_rate": 0.68,
+    "offer_acceptance_rate": 0.72,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Feature Engineering": 73.0
+    }
+  }
+}

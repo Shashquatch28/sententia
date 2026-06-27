@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0050656",
+  "name": "Kavya Rao",
+  "current_title": "Backend Engineer",
+  "current_company": "Hooli",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.503,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "ASR",
+    "Flask",
+    "Rust",
+    "scikit-learn",
+    "JavaScript",
+    "Diffusion Models",
+    "Kafka",
+    "Feature Engineering"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (48%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 58.8,
+  "years_of_experience": 7.4,
+  "total_months": 88,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 24.6,
+    "profile_completeness_score": 79.4,
+    "interview_completion_rate": 0.48,
+    "offer_acceptance_rate": 0.31,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

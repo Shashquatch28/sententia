@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0078422",
+  "name": "Dev Sen",
+  "current_title": "Software Engineer",
+  "current_company": "CRED",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.524,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.761,
+  "top_skills": [
+    "Computer Vision",
+    "GANs",
+    "Data Science",
+    "Forecasting",
+    "Statistical Modeling",
+    "JavaScript",
+    "YOLO",
+    "CNN"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 120-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 61.2,
+  "years_of_experience": 6.1,
+  "total_months": 71,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 49.6,
+    "profile_completeness_score": 53.3,
+    "interview_completion_rate": 0.52,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Computer Vision": 52.2
+    }
+  }
+}

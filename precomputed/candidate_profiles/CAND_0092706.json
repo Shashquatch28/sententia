@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0092706",
+  "name": "Karan Kumar",
+  "current_title": "AI Research Engineer",
+  "current_company": "Unacademy",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.198,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Weights & Biases",
+    "Speech Recognition",
+    "Data Science",
+    "Agile",
+    "Sentence Transformers",
+    "OpenCV",
+    "MLOps",
+    "Forecasting"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 65/100) \u2014 verifiable technical output",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Forecasting 79/100"
+  ],
+  "fast_score": 58.6,
+  "years_of_experience": 5.8,
+  "total_months": 69,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 65.1,
+    "profile_completeness_score": 99.1,
+    "interview_completion_rate": 0.76,
+    "offer_acceptance_rate": 0.5,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Weights & Biases": 60.0,
+      "Sentence Transformers": 41.0,
+      "MLOps": 54.2,
+      "Forecasting": 79.7,
+      "Hugging Face Transformers": 55.1
+    }
+  }
+}

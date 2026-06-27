@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0000017",
+  "name": "Anil Pandey",
+  "current_title": "Accountant",
+  "current_company": "Wipro",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.741,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 0.562,
+  "top_skills": [
+    "Next.js",
+    "Java",
+    "Apache Flink",
+    "Sales",
+    "Tally",
+    "PostgreSQL",
+    "REST APIs",
+    "Hadoop"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (32%) \u2014 potential reliability risk",
+    "Low offer acceptance rate (17%) \u2014 may use offers as leverage"
+  ],
+  "green_flags": [
+    "4 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 23.0,
+  "years_of_experience": 12.3,
+  "total_months": 146,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 38.7,
+    "interview_completion_rate": 0.32,
+    "offer_acceptance_rate": 0.17,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

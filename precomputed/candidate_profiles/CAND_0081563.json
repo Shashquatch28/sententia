@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0081563",
+  "name": "Ved Reddy",
+  "current_title": "ML Engineer",
+  "current_company": "Dream11",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.0,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Sentence Transformers",
+    "YOLO",
+    "Feature Engineering",
+    "Reinforcement Learning",
+    "PyTorch",
+    "Tally",
+    "Computer Vision",
+    "Object Detection"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.8,
+  "years_of_experience": 6.9,
+  "total_months": 82,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 44.4,
+    "profile_completeness_score": 72.6,
+    "interview_completion_rate": 0.52,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

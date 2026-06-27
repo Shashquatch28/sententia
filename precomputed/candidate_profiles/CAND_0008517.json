@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0008517",
+  "name": "Amit Chowdary",
+  "current_title": "AI Research Engineer",
+  "current_company": "Locobuzz",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.366,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.646,
+  "top_skills": [
+    "GANs",
+    "Feature Engineering",
+    "Speech Recognition",
+    "LoRA",
+    "Recommendation Systems",
+    "HTML",
+    "Redux",
+    "MLOps"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "Actively open to work, 120-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 5.6,
+  "total_months": 65,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 11.7,
+    "profile_completeness_score": 63.9,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": 0.31,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {}
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0007411",
+  "name": "Rahul Bansal",
+  "current_title": "Senior Machine Learning Engineer",
+  "current_company": "Amazon",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.274,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "OpenSearch",
+    "Prompt Engineering",
+    "Fine-tuning LLMs",
+    "Vector Search",
+    "Data Science",
+    "BM25",
+    "PyTorch",
+    "Information Retrieval"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 89/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: Vector Search 91/100",
+    "Experience at tier-1 product company: Amazon"
+  ],
+  "fast_score": 62.0,
+  "years_of_experience": 8.0,
+  "total_months": 95,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 89.5,
+    "profile_completeness_score": 58.9,
+    "interview_completion_rate": 0.8,
+    "offer_acceptance_rate": 0.65,
+    "open_to_work_flag": false,
+    "notice_period_days": 15,
+    "skill_assessment_scores": {
+      "OpenSearch": 63.4,
+      "Prompt Engineering": 62.0,
+      "Fine-tuning LLMs": 75.8,
+      "Vector Search": 91.3,
+      "BM25": 86.6
+    }
+  }
+}

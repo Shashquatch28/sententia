@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.6,
+    "Product-Sense & User-Facing AI": 0.8,
+    "Founding-Team Ownership": 0.467,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Spark",
+    "Vector Search",
+    "Machine Learning",
+    "Qdrant"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.631,
+  "match_evidence": [
+    "Vikram Nair (ML Engineer at Genpact AI) \u2014 Spark, Vector Search match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0019159"
+}

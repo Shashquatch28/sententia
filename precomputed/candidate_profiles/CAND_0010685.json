@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0010685",
+  "name": "Sunil Mishra",
+  "current_title": "NLP Engineer",
+  "current_company": "Rephrase.ai",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.62,
+  "outcome_language_score": 0.2,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Prompt Engineering",
+    "LlamaIndex",
+    "Deep Learning",
+    "Statistical Modeling",
+    "PyTorch",
+    "Information Retrieval",
+    "ASR",
+    "Elasticsearch"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Experience at tier-1 product company: Microsoft"
+  ],
+  "fast_score": 64.4,
+  "years_of_experience": 6.7,
+  "total_months": 79,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 70.7,
+    "interview_completion_rate": 0.89,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {}
+  }
+}

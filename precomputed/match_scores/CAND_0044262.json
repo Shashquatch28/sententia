@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.35,
+    "Product-Sense & User-Facing AI": 0.683,
+    "Founding-Team Ownership": 0.503,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Python",
+    "PyTorch",
+    "MLflow",
+    "Azure"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.562,
+  "match_evidence": [
+    "Karan Nair (Data Scientist at upGrad) \u2014 Python, PyTorch match LLM/RAG core requirements",
+    "74% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0044262"
+}

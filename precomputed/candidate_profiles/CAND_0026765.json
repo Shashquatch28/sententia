@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0026765",
+  "name": "Ela Dalal",
+  "current_title": "Software Engineer",
+  "current_company": "Wayne Enterprises",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.213,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.675,
+  "top_skills": [
+    "Microservices",
+    "Airflow",
+    "Fine-tuning LLMs",
+    "React",
+    "dbt",
+    "Speech Recognition",
+    "Apache Beam",
+    "Django"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 9.9,
+  "total_months": 117,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 72.5,
+    "interview_completion_rate": 0.8,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Fine-tuning LLMs": 42.6
+    }
+  }
+}

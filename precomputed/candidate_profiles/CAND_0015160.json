@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0015160",
+  "name": "Kavya Sharma",
+  "current_title": "Software Engineer",
+  "current_company": "Capgemini",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.401,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.708,
+  "top_skills": [
+    "Kubernetes",
+    "scikit-learn",
+    "BentoML",
+    "Speech Recognition",
+    "Semantic Search",
+    "Hadoop",
+    "ETL",
+    "Tally"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: TTS 76/100"
+  ],
+  "fast_score": 60.0,
+  "years_of_experience": 7.5,
+  "total_months": 89,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 36.3,
+    "profile_completeness_score": 40.3,
+    "interview_completion_rate": 0.76,
+    "offer_acceptance_rate": 0.78,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "scikit-learn": 45.9,
+      "Semantic Search": 41.6,
+      "TTS": 76.9
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0002706",
+  "name": "Shaurya Dutta",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Zoho",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.104,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Six Sigma",
+    "TensorFlow",
+    "LLMs",
+    "dbt",
+    "PostgreSQL",
+    "GANs",
+    "Semantic Search",
+    "Haystack"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 78/100) \u2014 verifiable technical output",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: CNN 75/100"
+  ],
+  "fast_score": 62.8,
+  "years_of_experience": 6.9,
+  "total_months": 82,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 78.9,
+    "profile_completeness_score": 69.1,
+    "interview_completion_rate": 0.7,
+    "offer_acceptance_rate": 0.72,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "TensorFlow": 44.4,
+      "Fine-tuning LLMs": 59.4,
+      "Time Series": 61.1,
+      "CNN": 75.5,
+      "Prompt Engineering": 56.9
+    }
+  }
+}

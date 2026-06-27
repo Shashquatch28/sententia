@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0012798",
+  "name": "Jay Malhotra",
+  "current_title": "AI Research Engineer",
+  "current_company": "Vedantu",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.231,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.683,
+  "top_skills": [
+    "CNN",
+    "RAG",
+    "Learning to Rank",
+    "Go",
+    "TensorFlow",
+    "Feature Engineering",
+    "Kubeflow",
+    "Object Detection"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [],
+  "fast_score": 59.2,
+  "years_of_experience": 5.1,
+  "total_months": 60,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 11.9,
+    "profile_completeness_score": 57.7,
+    "interview_completion_rate": 0.75,
+    "offer_acceptance_rate": 0.86,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "CNN": 56.3,
+      "RAG": 74.3,
+      "Learning to Rank": 70.2
+    }
+  }
+}

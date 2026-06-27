@@ -1,0 +1,25 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.0,
+    "Product-Sense & User-Facing AI": 0.25,
+    "Founding-Team Ownership": 0.6,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.5
+  },
+  "required_skills_matched": [
+    "Spark",
+    "Kubernetes"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met",
+    "Limited product company or user-facing AI experience",
+    "Under-qualified: 4 yrs experience vs 5+ required",
+    "Majority career at consulting/service firms \u2014 limited product ownership"
+  ],
+  "overall_match_score": 0.303,
+  "match_evidence": [
+    "Shaurya Chatterjee (Operations Manager at Wipro) \u2014 Spark, Kubernetes match LLM/RAG core requirements",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0000008"
+}

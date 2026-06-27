@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0077337",
+  "name": "Aarav Agarwal",
+  "current_title": "Staff Machine Learning Engineer",
+  "current_company": "Paytm",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.502,
+  "outcome_language_score": 0.267,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "GANs",
+    "Semantic Search",
+    "QLoRA",
+    "pgvector",
+    "Pinecone",
+    "Feature Engineering",
+    "BM25",
+    "Information Retrieval"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 68/100) \u2014 verifiable technical output",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 65.0,
+  "years_of_experience": 7.0,
+  "total_months": 83,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 68.0,
+    "profile_completeness_score": 64.6,
+    "interview_completion_rate": 0.73,
+    "offer_acceptance_rate": 0.77,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Semantic Search": 63.2
+    }
+  }
+}

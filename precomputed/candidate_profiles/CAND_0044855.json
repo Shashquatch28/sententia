@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0044855",
+  "name": "Kavya Joshi",
+  "current_title": "Senior Data Scientist",
+  "current_company": "Flipkart",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.526,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Object Detection",
+    "Learning to Rank",
+    "Hugging Face Transformers",
+    "OpenSearch",
+    "BentoML",
+    "Information Retrieval",
+    "Pinecone",
+    "Machine Learning"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: BentoML 79/100",
+    "Experience at tier-1 product company: LinkedIn"
+  ],
+  "fast_score": 62.2,
+  "years_of_experience": 6.6,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 46.7,
+    "profile_completeness_score": 93.5,
+    "interview_completion_rate": 0.9,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Object Detection": 55.7,
+      "Learning to Rank": 63.7,
+      "Hugging Face Transformers": 66.7,
+      "OpenSearch": 78.6,
+      "BentoML": 79.9
+    }
+  }
+}

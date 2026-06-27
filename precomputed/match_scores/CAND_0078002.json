@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.93,
+    "Product-Sense & User-Facing AI": 0.84,
+    "Founding-Team Ownership": 0.769,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.62
+  },
+  "required_skills_matched": [
+    "pgvector",
+    "Flask",
+    "FastAPI",
+    "TensorFlow",
+    "NLP"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.859,
+  "match_evidence": [
+    "Reyansh Sharma (Machine Learning Engineer at Meta) \u2014 pgvector, Flask match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0078002"
+}

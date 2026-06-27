@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0007851",
+  "name": "Aryan Goyal",
+  "current_title": "Backend Engineer",
+  "current_company": "Zomato",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.435,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Time Series",
+    "Computer Vision",
+    "Redux",
+    "pgvector",
+    "OpenCV",
+    "Go",
+    "MLflow",
+    "PyTorch"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Computer Vision 78/100"
+  ],
+  "fast_score": 63.8,
+  "years_of_experience": 7.4,
+  "total_months": 88,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 62.8,
+    "interview_completion_rate": 0.83,
+    "offer_acceptance_rate": 0.52,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Time Series": 66.0,
+      "Computer Vision": 78.1,
+      "OpenCV": 42.7,
+      "MLflow": 72.6,
+      "PyTorch": 54.2
+    }
+  }
+}

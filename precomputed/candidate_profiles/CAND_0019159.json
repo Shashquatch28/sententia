@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0019159",
+  "name": "Vikram Nair",
+  "current_title": "ML Engineer",
+  "current_company": "Genpact AI",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.335,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Spark",
+    "Vector Search",
+    "Forecasting",
+    "Machine Learning",
+    "ASR",
+    "Excel",
+    "Qdrant",
+    "MLOps"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Machine Learning 77/100"
+  ],
+  "fast_score": 61.2,
+  "years_of_experience": 6.1,
+  "total_months": 72,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 61.7,
+    "interview_completion_rate": 0.5,
+    "offer_acceptance_rate": 0.63,
+    "open_to_work_flag": false,
+    "notice_period_days": 45,
+    "skill_assessment_scores": {
+      "Machine Learning": 77.2
+    }
+  }
+}

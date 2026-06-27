@@ -1,0 +1,39 @@
+{
+  "candidate_id": "CAND_0000018",
+  "name": "Vivaan Reddy",
+  "current_title": "Frontend Engineer",
+  "current_company": "Acme Corp",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.312,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "CNN",
+    "Java",
+    "Accounting",
+    "Data Pipelines",
+    "Node.js",
+    "Tailwind"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 27.2,
+  "years_of_experience": 6.6,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 34.8,
+    "interview_completion_rate": 0.7,
+    "offer_acceptance_rate": 0.46,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {}
+  }
+}

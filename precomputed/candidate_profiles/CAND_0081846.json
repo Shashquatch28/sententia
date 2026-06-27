@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0081846",
+  "name": "Arjun Khanna",
+  "current_title": "Lead AI Engineer",
+  "current_company": "Razorpay",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.617,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Data Science",
+    "Information Retrieval",
+    "LlamaIndex",
+    "pgvector",
+    "Forecasting",
+    "Learning to Rank",
+    "Elasticsearch",
+    "PyTorch"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.4,
+  "years_of_experience": 6.7,
+  "total_months": 79,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 33.7,
+    "profile_completeness_score": 95.7,
+    "interview_completion_rate": 0.94,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Data Science": 62.9,
+      "Information Retrieval": 64.8,
+      "LlamaIndex": 67.7
+    }
+  }
+}

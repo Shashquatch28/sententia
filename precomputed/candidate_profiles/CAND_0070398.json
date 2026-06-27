@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0070398",
+  "name": "Riya Saxena",
+  "current_title": "Machine Learning Engineer",
+  "current_company": "Genpact AI",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.645,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Image Classification",
+    "Data Science",
+    "BM25",
+    "RAG",
+    "FAISS",
+    "Object Detection",
+    "Embeddings",
+    "PyTorch"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 63/100) \u2014 verifiable technical output",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: RAG 84/100"
+  ],
+  "fast_score": 63.4,
+  "years_of_experience": 7.2,
+  "total_months": 85,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 63.1,
+    "profile_completeness_score": 50.3,
+    "interview_completion_rate": 0.64,
+    "offer_acceptance_rate": 0.63,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Image Classification": 61.9,
+      "Data Science": 50.7,
+      "BM25": 67.5,
+      "RAG": 84.8
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "candidate_id": "CAND_0000049",
+  "name": "Tanya Chowdary",
+  "current_title": "Mechanical Engineer",
+  "current_company": "Wayne Enterprises",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.97,
+  "outcome_language_score": 0.2,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "TypeScript",
+    "Rust",
+    "Data Pipelines",
+    "Apache Beam",
+    "GraphQL",
+    "Kubernetes"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 24.0,
+  "years_of_experience": 11.8,
+  "total_months": 141,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 64.0,
+    "interview_completion_rate": 0.56,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {}
+  }
+}

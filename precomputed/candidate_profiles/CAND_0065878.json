@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0065878",
+  "name": "Suresh Kapoor",
+  "current_title": "Senior Data Scientist",
+  "current_company": "Niramai",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.522,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "scikit-learn",
+    "RAG",
+    "Computer Vision",
+    "pgvector",
+    "QLoRA",
+    "LlamaIndex",
+    "MLflow",
+    "TensorFlow"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 15-day notice \u2014 immediately actionable",
+    "Experience at tier-1 product company: Uber"
+  ],
+  "fast_score": 66.0,
+  "years_of_experience": 7.8,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 90.8,
+    "interview_completion_rate": 0.61,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 15,
+    "skill_assessment_scores": {
+      "scikit-learn": 70.6,
+      "RAG": 51.0,
+      "pgvector": 70.0
+    }
+  }
+}

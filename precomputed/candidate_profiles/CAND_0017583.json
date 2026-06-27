@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0017583",
+  "name": "Kabir Bhatia",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Globex Inc",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.449,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.451,
+  "top_skills": [
+    "Time Series",
+    "Computer Vision",
+    "MLOps",
+    "Redis",
+    "Angular",
+    "Terraform",
+    "OpenCV",
+    "Image Classification"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (45%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 6.0,
+  "total_months": 71,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 40.9,
+    "interview_completion_rate": 0.45,
+    "offer_acceptance_rate": 0.51,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Computer Vision": 46.7,
+      "MLOps": 38.2,
+      "OpenCV": 70.7
+    }
+  }
+}

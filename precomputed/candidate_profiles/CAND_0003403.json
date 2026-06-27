@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0003403",
+  "name": "Zara Agarwal",
+  "current_title": "Software Engineer",
+  "current_company": "BYJU'S",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.357,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Weights & Biases",
+    "HTML",
+    "FastAPI",
+    "Kubernetes",
+    "Recommendation Systems",
+    "GraphQL",
+    "Weaviate",
+    "Rust"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 58.6,
+  "years_of_experience": 5.8,
+  "total_months": 69,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 23.0,
+    "profile_completeness_score": 78.2,
+    "interview_completion_rate": 0.52,
+    "offer_acceptance_rate": 0.51,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {}
+  }
+}

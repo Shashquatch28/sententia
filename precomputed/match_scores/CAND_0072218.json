@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.25,
+    "Product-Sense & User-Facing AI": 0.56,
+    "Founding-Team Ownership": 0.306,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.75
+  },
+  "required_skills_matched": [
+    "Weights & Biases",
+    "Hugging Face Transformers"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+  ],
+  "overall_match_score": 0.389,
+  "match_evidence": [
+    "Kavya Gupta (Senior Software Engineer (ML) at HCL) \u2014 Weights & Biases, Hugging Face Transformers match LLM/RAG core requirements",
+    "68% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0072218"
+}

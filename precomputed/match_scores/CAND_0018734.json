@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.75,
+    "Product-Sense & User-Facing AI": 0.545,
+    "Founding-Team Ownership": 0.639,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.863
+  },
+  "required_skills_matched": [
+    "Redis",
+    "LangChain",
+    "Fine-tuning LLMs",
+    "PyTorch"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.636,
+  "match_evidence": [
+    "Krishna Iyer (Senior Software Engineer at Wipro) \u2014 Redis, LangChain match LLM/RAG core requirements",
+    "59% product company exposure"
+  ],
+  "candidate_id": "CAND_0018734"
+}

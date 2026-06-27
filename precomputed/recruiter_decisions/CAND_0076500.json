@@ -1,0 +1,117 @@
+{
+  "candidate_id": "CAND_0076500",
+  "name": "Deepak Sethi",
+  "current_title": "Backend Engineer",
+  "current_company": "BYJU'S",
+  "recommendation": "REVIEW_FURTHER",
+  "trust_assessment": {
+    "overall_trust_score": 0.7,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "Active GitHub contributor (score 67/100)",
+        "confidence": 0.85,
+        "field_name": "github_activity_score"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.75,
+      "evidence": [
+        "Deepak Sethi (Backend Engineer at BYJU'S) has RAG, Kubernetes matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.45,
+      "evidence": [
+        "39% product company experience"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.5,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.62,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.59
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Deepak Sethi",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "What is your experience with production LLM systems? Walk me through a specific example.",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Depth of real production experience vs. prototype or toy projects \u2014 look for specifics"
+    },
+    {
+      "question": "How have you dealt with AI model failures or degradations in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Monitoring setup, incident response, rollback strategy, root cause analysis"
+    },
+    {
+      "question": "What attracts you to an early-stage AI company vs. a larger tech firm?",
+      "priority": "MEDIUM",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Genuine startup motivation, comfort with ambiguity, equity mindset vs. job security"
+    }
+  ],
+  "recommendation_rationale": "Deepak Sethi (Backend Engineer at BYJU'S) shows adjacent fit at 64/100 via RAG, but full role alignment needs verification. Review if primary pipeline candidates are unavailable.",
+  "timing_assessment": {
+    "current_tenure_months": 84,
+    "likely_available": false,
+    "urgency_signal": "No active availability signal \u2014 outreach response rate unknown",
+    "estimated_notice_weeks": 4
+  },
+  "required_skills_matched": [
+    "RAG",
+    "Kubernetes",
+    "Hugging Face Transformers",
+    "Terraform",
+    "LangChain"
+  ],
+  "overall_match_score": 0.641,
+  "top_evidence": [
+    "Deepak Sethi (Backend Engineer at BYJU'S) \u2014 RAG, Kubernetes match LLM/RAG core requirements",
+    "39% product company exposure"
+  ]
+}

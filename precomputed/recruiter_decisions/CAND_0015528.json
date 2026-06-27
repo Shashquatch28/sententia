@@ -1,0 +1,132 @@
+{
+  "candidate_id": "CAND_0015528",
+  "name": "Aisha Reddy",
+  "current_title": "Applied ML Engineer",
+  "current_company": "Krutrim",
+  "recommendation": "STRONGLY_ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.8,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "Active GitHub contributor (score 50/100)",
+        "confidence": 0.85,
+        "field_name": "github_activity_score"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed BentoML: 78/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Skill assessment score: BentoML = 78/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.97,
+      "evidence": [
+        "Aisha Reddy (Applied ML Engineer at Krutrim) has Docker, Weaviate matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.83,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.59,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.82,
+      "evidence": [
+        "Upward career trajectory with upward progression"
+      ],
+      "gaps": []
+    },
+    "overall": 0.829
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Aisha Reddy",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Walk me through the most complex LLM/RAG system you designed. What retrieval architecture did you choose and why?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Specific architectural decisions (chunking, reranking, hybrid search), production tradeoffs, latency vs accuracy choices"
+    },
+    {
+      "question": "Tell me about a time you pushed back on a product requirement due to technical constraints. What happened?",
+      "priority": "HIGH",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Directness, confidence in technical judgment, outcome orientation and how they handled stakeholder disagreement"
+    },
+    {
+      "question": "How do you measure success for an AI feature after it ships?",
+      "priority": "MEDIUM",
+      "dimension": "Product",
+      "what_to_listen_for": "Specific metrics (precision, recall, latency, engagement), A/B testing, evaluation frameworks like RAGAS"
+    },
+    {
+      "question": "Describe your approach to fine-tuning vs. RAG for a new use case. How do you decide?",
+      "priority": "MEDIUM",
+      "dimension": "Technical",
+      "what_to_listen_for": "Systematic thinking, tradeoff awareness (cost, latency, data requirements), real examples from their work"
+    }
+  ],
+  "recommendation_rationale": "Aisha Reddy (Applied ML Engineer at Krutrim) is a strong match at 82/100 \u2014 Docker and Weaviate directly cover our core LLM/RAG requirements. No blocking gaps identified. Advance to technical screen immediately.",
+  "timing_assessment": {
+    "current_tenure_months": 87,
+    "likely_available": false,
+    "urgency_signal": "No active availability signal \u2014 outreach response rate unknown",
+    "estimated_notice_weeks": 4
+  },
+  "required_skills_matched": [
+    "Docker",
+    "Weaviate",
+    "BentoML",
+    "Weights & Biases",
+    "LangChain"
+  ],
+  "overall_match_score": 0.828,
+  "top_evidence": [
+    "Aisha Reddy (Applied ML Engineer at Krutrim) \u2014 Docker, Weaviate match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

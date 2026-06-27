@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0056372",
+  "name": "Advaith Shetty",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Dream11",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.396,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Forecasting",
+    "GraphQL",
+    "CNN",
+    "CSS",
+    "MLOps",
+    "GANs",
+    "Sales",
+    "Hadoop"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low offer acceptance rate (23%) \u2014 may use offers as leverage"
+  ],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 63.0,
+  "years_of_experience": 7.7,
+  "total_months": 91,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 79.9,
+    "interview_completion_rate": 0.96,
+    "offer_acceptance_rate": 0.23,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Forecasting": 38.8
+    }
+  }
+}

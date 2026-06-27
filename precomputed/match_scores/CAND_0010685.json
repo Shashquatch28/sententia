@@ -1,0 +1,25 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.8,
+    "Product-Sense & User-Facing AI": 0.74,
+    "Founding-Team Ownership": 0.567,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.62
+  },
+  "required_skills_matched": [
+    "LlamaIndex",
+    "Deep Learning",
+    "PyTorch",
+    "Information Retrieval"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.628,
+  "match_evidence": [
+    "Sunil Mishra (NLP Engineer at Rephrase.ai) \u2014 LlamaIndex, Deep Learning match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0010685"
+}

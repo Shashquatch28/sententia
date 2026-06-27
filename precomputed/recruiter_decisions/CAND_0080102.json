@@ -1,0 +1,101 @@
+{
+  "candidate_id": "CAND_0080102",
+  "name": "Naina Desai",
+  "current_title": "Junior ML Engineer",
+  "current_company": "BYJU'S",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.55,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "High interview completion rate (84%)",
+        "confidence": 0.9,
+        "field_name": "interview_completion_rate"
+      }
+    ],
+    "verified_claims": [],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.57,
+      "evidence": [
+        "Naina Desai (Junior ML Engineer at BYJU'S) has Hugging Face Transformers, pgvector matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.8,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.49,
+      "evidence": [],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.8,
+      "evidence": [
+        "Upward career trajectory with upward progression"
+      ],
+      "gaps": []
+    },
+    "overall": 0.657
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Naina Desai",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Naina Desai (Junior ML Engineer at BYJU'S) scores 66/100 with Hugging Face Transformers aligned to role requirements. No critical gaps. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 77,
+    "likely_available": true,
+    "urgency_signal": "Recent role change pattern suggests may be open to new opportunities",
+    "estimated_notice_weeks": 8
+  },
+  "required_skills_matched": [
+    "Hugging Face Transformers",
+    "pgvector",
+    "NLP",
+    "LangChain"
+  ],
+  "overall_match_score": 0.666,
+  "top_evidence": [
+    "Naina Desai (Junior ML Engineer at BYJU'S) \u2014 Hugging Face Transformers, pgvector match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

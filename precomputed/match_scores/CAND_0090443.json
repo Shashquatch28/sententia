@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.15,
+    "Product-Sense & User-Facing AI": 0.459,
+    "Founding-Team Ownership": 0.621,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.713
+  },
+  "required_skills_matched": [
+    "Python",
+    "Weights & Biases"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+  ],
+  "overall_match_score": 0.429,
+  "match_evidence": [
+    "Avni Sharma (Backend Engineer at BYJU'S) \u2014 Python, Weights & Biases match LLM/RAG core requirements",
+    "40% product company exposure"
+  ],
+  "candidate_id": "CAND_0090443"
+}

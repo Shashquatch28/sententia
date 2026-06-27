@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0054822",
+  "name": "Aarohi Kumar",
+  "current_title": "Software Engineer",
+  "current_company": "HCL",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.437,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.261,
+  "top_skills": [
+    "Object Detection",
+    "Node.js",
+    "Project Management",
+    "Terraform",
+    "Machine Learning",
+    "Photoshop",
+    "Apache Beam",
+    "REST APIs"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership",
+    "Low interview completion rate (44%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 7.7,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 38.9,
+    "interview_completion_rate": 0.44,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.98,
+    "Product-Sense & User-Facing AI": 0.827,
+    "Founding-Team Ownership": 0.721,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.713
+  },
+  "required_skills_matched": [
+    "Hugging Face Transformers",
+    "Diffusion Models",
+    "Qdrant",
+    "Sentence Transformers",
+    "RAG"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.791,
+  "match_evidence": [
+    "Dhruv Dutta (AI Engineer at Flipkart) \u2014 Hugging Face Transformers, Diffusion Models match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0091534"
+}

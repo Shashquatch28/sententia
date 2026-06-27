@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.83,
+    "Product-Sense & User-Facing AI": 0.453,
+    "Founding-Team Ownership": 0.502,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.713
+  },
+  "required_skills_matched": [
+    "RAG",
+    "Kubernetes",
+    "Hugging Face Transformers",
+    "Terraform",
+    "LangChain"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.641,
+  "match_evidence": [
+    "Deepak Sethi (Backend Engineer at BYJU'S) \u2014 RAG, Kubernetes match LLM/RAG core requirements",
+    "39% product company exposure",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0076500"
+}

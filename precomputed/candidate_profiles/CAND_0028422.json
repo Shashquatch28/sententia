@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0028422",
+  "name": "Rahul Sharma",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Yellow.ai",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.112,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Pinecone",
+    "Deep Learning",
+    "pgvector",
+    "OpenSearch",
+    "MLflow",
+    "Vector Search",
+    "Prompt Engineering",
+    "Kubeflow"
+  ],
+  "career_trajectory": "mixed",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 71/100) \u2014 verifiable technical output",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: YOLO 79/100"
+  ],
+  "fast_score": 60.0,
+  "years_of_experience": 5.5,
+  "total_months": 65,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 71.5,
+    "profile_completeness_score": 73.0,
+    "interview_completion_rate": 0.97,
+    "offer_acceptance_rate": 0.83,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Pinecone": 46.6,
+      "MLflow": 49.2,
+      "Prompt Engineering": 61.2,
+      "YOLO": 79.1
+    }
+  }
+}

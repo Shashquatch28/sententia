@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.58,
+    "Product-Sense & User-Facing AI": 0.618,
+    "Founding-Team Ownership": 0.648,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.607
+  },
+  "required_skills_matched": [
+    "Airflow",
+    "NLP",
+    "Hugging Face Transformers"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.576,
+  "match_evidence": [
+    "Dhruv Verma (Backend Engineer at CRED) \u2014 Airflow, NLP match LLM/RAG core requirements",
+    "78% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0060080"
+}

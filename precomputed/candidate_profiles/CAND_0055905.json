@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0055905",
+  "name": "Anika Rao",
+  "current_title": "Senior Machine Learning Engineer",
+  "current_company": "Flipkart",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.517,
+  "outcome_language_score": 0.267,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Elasticsearch",
+    "ASR",
+    "Hugging Face Transformers",
+    "Haystack",
+    "Speech Recognition",
+    "LangChain",
+    "Python",
+    "LLMs"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Elasticsearch 83/100",
+    "Experience at tier-1 product company: Uber"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 8.1,
+  "total_months": 96,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 56.7,
+    "interview_completion_rate": 0.67,
+    "offer_acceptance_rate": 0.93,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Elasticsearch": 83.0,
+      "ASR": 69.5,
+      "Hugging Face Transformers": 64.8,
+      "Haystack": 61.8
+    }
+  }
+}

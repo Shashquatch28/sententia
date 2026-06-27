@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0065139",
+  "name": "Avni Tiwari",
+  "current_title": "AI Research Engineer",
+  "current_company": "Niramai",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.242,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "MLOps",
+    "Apache Beam",
+    "CNN",
+    "Speech Recognition",
+    "Statistical Modeling",
+    "Hugging Face Transformers",
+    "Accounting",
+    "QLoRA"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.4,
+  "years_of_experience": 5.2,
+  "total_months": 61,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 95.0,
+    "interview_completion_rate": 0.54,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "MLOps": 71.8,
+      "CNN": 71.0,
+      "Speech Recognition": 51.0
+    }
+  }
+}

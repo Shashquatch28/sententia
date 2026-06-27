@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.813,
+    "Founding-Team Ownership": 0.807,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "Fine-tuning LLMs",
+    "Milvus",
+    "Hugging Face Transformers"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.636,
+  "match_evidence": [
+    "Mira Reddy (Machine Learning Engineer at Ola) \u2014 Fine-tuning LLMs, Milvus match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0083879"
+}

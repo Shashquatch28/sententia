@@ -1,0 +1,21 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.43,
+    "Product-Sense & User-Facing AI": 0.7,
+    "Founding-Team Ownership": 0.335,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.75
+  },
+  "required_skills_matched": [
+    "Fine-tuning LLMs",
+    "Terraform",
+    "Python"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.533,
+  "match_evidence": [
+    "Aditya Krishnan (Senior Software Engineer (ML) at Sarvam AI) \u2014 Fine-tuning LLMs, Terraform match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0003609"
+}

@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0092079",
+  "name": "Aarohi Saxena",
+  "current_title": "Software Engineer",
+  "current_company": "Wayne Enterprises",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.593,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.705,
+  "top_skills": [
+    "Computer Vision",
+    "FastAPI",
+    "Object Detection",
+    "Recommendation Systems",
+    "Sales",
+    "Salesforce CRM",
+    "Forecasting",
+    "RAG"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (46%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Object Detection 78/100"
+  ],
+  "fast_score": 65.8,
+  "years_of_experience": 7.4,
+  "total_months": 88,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 61.0,
+    "interview_completion_rate": 0.46,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Computer Vision": 40.3,
+      "Object Detection": 78.9,
+      "Recommendation Systems": 50.9
+    }
+  }
+}

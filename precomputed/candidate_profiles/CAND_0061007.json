@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0061007",
+  "name": "Nikhil Menon",
+  "current_title": "Software Engineer",
+  "current_company": "PharmEasy",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.422,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.78,
+  "top_skills": [
+    "Kafka",
+    "Photoshop",
+    "TensorFlow",
+    "Sales",
+    "Computer Vision",
+    "CNN",
+    "Image Classification",
+    "YOLO"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 69/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: Computer Vision 80/100"
+  ],
+  "fast_score": 59.8,
+  "years_of_experience": 6.9,
+  "total_months": 82,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 69.6,
+    "profile_completeness_score": 66.3,
+    "interview_completion_rate": 0.56,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "TensorFlow": 76.6,
+      "Computer Vision": 80.0,
+      "Reinforcement Learning": 62.6
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0006060",
+  "name": "Sanjay Iyer",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Razorpay",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.412,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 0.682,
+  "top_skills": [
+    "Machine Learning",
+    "Time Series",
+    "Content Writing",
+    "Computer Vision",
+    "gRPC",
+    "Hugging Face Transformers",
+    "Speech Recognition",
+    "Databricks"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.4,
+  "years_of_experience": 7.2,
+  "total_months": 85,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 15.9,
+    "profile_completeness_score": 82.3,
+    "interview_completion_rate": 0.95,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {}
+  }
+}

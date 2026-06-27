@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0080344",
+  "name": "Rohan Mishra",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Zoho",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.231,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Sentence Transformers",
+    "scikit-learn",
+    "Photoshop",
+    "Statistical Modeling",
+    "Speech Recognition",
+    "dbt",
+    "Recommendation Systems",
+    "LlamaIndex"
+  ],
+  "career_trajectory": "mixed",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Sentence Transformers 79/100"
+  ],
+  "fast_score": 58.8,
+  "years_of_experience": 4.9,
+  "total_months": 57,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 27.3,
+    "profile_completeness_score": 94.7,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": 0.82,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Sentence Transformers": 79.1,
+      "scikit-learn": 52.8,
+      "PyTorch": 61.0
+    }
+  }
+}

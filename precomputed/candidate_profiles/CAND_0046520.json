@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0046520",
+  "name": "Amit Sen",
+  "current_title": "Software Engineer",
+  "current_company": "Razorpay",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.357,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.392,
+  "top_skills": [
+    "PostgreSQL",
+    "AWS",
+    "Machine Learning",
+    "Project Management",
+    "Data Pipelines",
+    "Data Science",
+    "Computer Vision",
+    "Sales"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (40%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 62.4,
+  "years_of_experience": 6.7,
+  "total_months": 79,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 34.8,
+    "interview_completion_rate": 0.4,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

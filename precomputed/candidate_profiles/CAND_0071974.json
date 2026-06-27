@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0071974",
+  "name": "Sai Verma",
+  "current_title": "Senior AI Engineer",
+  "current_company": "Netflix",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.37,
+  "outcome_language_score": 0.333,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "LoRA",
+    "Learning to Rank",
+    "Weaviate",
+    "PEFT",
+    "BM25",
+    "Pinecone",
+    "Machine Learning",
+    "Information Retrieval"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 82/100) \u2014 verifiable technical output",
+    "Actively open to work, 45-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: LoRA 86/100"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 7.8,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 82.8,
+    "profile_completeness_score": 87.1,
+    "interview_completion_rate": 0.85,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 45,
+    "skill_assessment_scores": {
+      "LoRA": 86.7,
+      "Learning to Rank": 77.2,
+      "Weaviate": 69.2,
+      "PEFT": 85.6
+    }
+  }
+}

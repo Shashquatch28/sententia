@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.33,
+    "Product-Sense & User-Facing AI": 0.622,
+    "Founding-Team Ownership": 0.653,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "Pinecone",
+    "Airflow",
+    "RAG"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.538,
+  "match_evidence": [
+    "Reyansh Patel (Software Engineer at Acme Corp) \u2014 Pinecone, Airflow match LLM/RAG core requirements",
+    "79% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0042620"
+}

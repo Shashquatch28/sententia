@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0000032",
+  "name": "Pranav Agarwal",
+  "current_title": ".NET Developer",
+  "current_company": "Cognizant",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.215,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.421,
+  "top_skills": [
+    "Speech Recognition",
+    "Project Management",
+    "REST APIs",
+    "CSS",
+    "Embeddings",
+    "Hadoop",
+    "Spark",
+    "Python"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 21.0,
+  "years_of_experience": 8.1,
+  "total_months": 95,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 35.4,
+    "interview_completion_rate": 0.78,
+    "offer_acceptance_rate": 0.25,
+    "open_to_work_flag": false,
+    "notice_period_days": 150,
+    "skill_assessment_scores": {}
+  }
+}

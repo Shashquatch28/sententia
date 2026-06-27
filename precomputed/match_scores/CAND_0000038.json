@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.0,
+    "Product-Sense & User-Facing AI": 0.7,
+    "Founding-Team Ownership": 0.534,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Weaviate",
+    "Docker"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+  ],
+  "overall_match_score": 0.41,
+  "match_evidence": [
+    "Myra Trivedi (Java Developer at Swiggy) \u2014 Weaviate, Docker match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0000038"
+}

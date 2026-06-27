@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0050454",
+  "name": "Saanvi Bansal",
+  "current_title": "AI Engineer",
+  "current_company": "Rephrase.ai",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.656,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "PyTorch",
+    "LangChain",
+    "QLoRA",
+    "Fine-tuning LLMs",
+    "FAISS",
+    "Qdrant",
+    "Image Classification",
+    "scikit-learn"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Experience at tier-1 product company: Uber"
+  ],
+  "fast_score": 62.6,
+  "years_of_experience": 6.8,
+  "total_months": 81,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 77.7,
+    "interview_completion_rate": 0.72,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "PyTorch": 59.0
+    }
+  }
+}

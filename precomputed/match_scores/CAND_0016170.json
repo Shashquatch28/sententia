@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.83,
+    "Product-Sense & User-Facing AI": 0.761,
+    "Founding-Team Ownership": 0.476,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Sentence Transformers",
+    "Embeddings",
+    "Kafka",
+    "LangChain"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.664,
+  "match_evidence": [
+    "Aditya Reddy (AI Research Engineer at Dream11) \u2014 Sentence Transformers, Embeddings match LLM/RAG core requirements",
+    "91% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0016170"
+}

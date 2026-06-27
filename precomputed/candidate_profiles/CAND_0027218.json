@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0027218",
+  "name": "Ishaan Patel",
+  "current_title": "AI Research Engineer",
+  "current_company": "Paytm",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.223,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "MLOps",
+    "Haystack",
+    "Diffusion Models",
+    "Fine-tuning LLMs",
+    "Object Detection",
+    "Deep Learning",
+    "Elasticsearch",
+    "Semantic Search"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "Active GitHub contributor (score: 77/100) \u2014 verifiable technical output",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 58.4,
+  "years_of_experience": 4.7,
+  "total_months": 55,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 77.4,
+    "profile_completeness_score": 49.3,
+    "interview_completion_rate": 0.8,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

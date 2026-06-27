@@ -1,0 +1,129 @@
+{
+  "candidate_id": "CAND_0088025",
+  "name": "Amit Arora",
+  "current_title": "Staff Machine Learning Engineer",
+  "current_company": "Yellow.ai",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 1.0,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Highly active GitHub contributor (score 74/100)",
+        "confidence": 0.95,
+        "field_name": "github_activity_score"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "High interview completion rate (95%)",
+        "confidence": 0.9,
+        "field_name": "interview_completion_rate"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed Pinecone: 93/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Verifiable technical output via GitHub (score 74/100)",
+      "Skill assessment score: Pinecone = 93/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.67,
+      "evidence": [
+        "Amit Arora (Staff Machine Learning Engineer at Yellow.ai) has Pinecone, LLMs matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.84,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.37,
+      "evidence": [],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.33,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.61
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Amit Arora",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Amit Arora (Staff Machine Learning Engineer at Yellow.ai) scores 74/100 with Pinecone aligned to role requirements. No critical gaps. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 102,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 90-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 12
+  },
+  "required_skills_matched": [
+    "Pinecone",
+    "LLMs",
+    "Hugging Face Transformers",
+    "RAG",
+    "TensorFlow"
+  ],
+  "overall_match_score": 0.744,
+  "top_evidence": [
+    "Amit Arora (Staff Machine Learning Engineer at Yellow.ai) \u2014 Pinecone, LLMs match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

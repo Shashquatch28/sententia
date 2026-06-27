@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0066376",
+  "name": "Amit Goyal",
+  "current_title": "Applied ML Engineer",
+  "current_company": "Dream11",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": false,
+  "ownership_language_score": 0.48,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Recommendation Systems",
+    "LoRA",
+    "Learning to Rank",
+    "LLMs",
+    "Fine-tuning LLMs",
+    "Deep Learning",
+    "NLP",
+    "Reinforcement Learning"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: LoRA 81/100"
+  ],
+  "fast_score": 58.4,
+  "years_of_experience": 5.7,
+  "total_months": 67,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 62.8,
+    "interview_completion_rate": 0.77,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Recommendation Systems": 68.2,
+      "LoRA": 81.8
+    }
+  }
+}

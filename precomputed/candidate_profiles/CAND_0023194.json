@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0023194",
+  "name": "Kiara Trivedi",
+  "current_title": "Backend Engineer",
+  "current_company": "CRED",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.357,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "TTS",
+    "Reinforcement Learning",
+    "PyTorch",
+    "Redux",
+    "GraphQL",
+    "FAISS",
+    "Statistical Modeling",
+    "Forecasting"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.6,
+  "years_of_experience": 6.3,
+  "total_months": 75,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 34.8,
+    "profile_completeness_score": 61.6,
+    "interview_completion_rate": 0.79,
+    "offer_acceptance_rate": 0.81,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Reinforcement Learning": 58.1,
+      "PyTorch": 49.2
+    }
+  }
+}

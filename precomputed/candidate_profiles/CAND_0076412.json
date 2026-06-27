@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0076412",
+  "name": "Meera Bhatia",
+  "current_title": "AI Research Engineer",
+  "current_company": "Wysa",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.172,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Agile",
+    "GANs",
+    "Hugging Face Transformers",
+    "Semantic Search",
+    "Deep Learning",
+    "Computer Vision",
+    "TTS",
+    "MLOps"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 63/100) \u2014 verifiable technical output",
+    "Actively open to work, 120-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 58.6,
+  "years_of_experience": 5.8,
+  "total_months": 69,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 63.7,
+    "profile_completeness_score": 61.8,
+    "interview_completion_rate": 0.6,
+    "offer_acceptance_rate": 0.8,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Semantic Search": 47.5
+    }
+  }
+}

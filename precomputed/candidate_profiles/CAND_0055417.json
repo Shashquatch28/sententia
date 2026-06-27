@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0055417",
+  "name": "Dev Sen",
+  "current_title": "Software Engineer",
+  "current_company": "Mindtree",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.515,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.849,
+  "top_skills": [
+    "React",
+    "MLOps",
+    "NLP",
+    "LangChain",
+    "Information Retrieval",
+    "Speech Recognition",
+    "Illustrator",
+    "GANs"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.6,
+  "years_of_experience": 7.3,
+  "total_months": 86,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 63.1,
+    "interview_completion_rate": 0.91,
+    "offer_acceptance_rate": 0.64,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "MLOps": 38.8
+    }
+  }
+}

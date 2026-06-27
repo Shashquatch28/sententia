@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0093299",
+  "name": "Om Mukherjee",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Ola",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.342,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Computer Vision",
+    "Statistical Modeling",
+    "Figma",
+    "Hadoop",
+    "BentoML",
+    "TTS",
+    "Terraform",
+    "Airflow"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 58.2,
+  "years_of_experience": 5.6,
+  "total_months": 66,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 40.7,
+    "profile_completeness_score": 55.6,
+    "interview_completion_rate": 0.87,
+    "offer_acceptance_rate": 0.54,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0083852",
+  "name": "Reyansh Banerjee",
+  "current_title": "Data Scientist",
+  "current_company": "Mad Street Den",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.36,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Qdrant",
+    "Kubeflow",
+    "QLoRA",
+    "Feature Engineering",
+    "Sales",
+    "TTS",
+    "Pinecone",
+    "PyTorch"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 70/100) \u2014 verifiable technical output",
+    "Actively open to work, 90-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 6.0,
+  "total_months": 71,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 70.8,
+    "profile_completeness_score": 91.5,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": 0.57,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Kubeflow": 68.6
+    }
+  }
+}

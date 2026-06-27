@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0050321",
+  "name": "Ira Shetty",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Zomato",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.451,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.6,
+  "top_skills": [
+    "CI/CD",
+    "Next.js",
+    "Elasticsearch",
+    "Haystack",
+    "TypeScript",
+    "CNN",
+    "Embeddings",
+    "Illustrator"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: BentoML 76/100"
+  ],
+  "fast_score": 58.8,
+  "years_of_experience": 5.9,
+  "total_months": 70,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 41.6,
+    "interview_completion_rate": 0.58,
+    "offer_acceptance_rate": 0.29,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Elasticsearch": 58.7,
+      "BentoML": 76.7
+    }
+  }
+}

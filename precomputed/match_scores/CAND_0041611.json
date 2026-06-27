@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.85,
+    "Product-Sense & User-Facing AI": 0.84,
+    "Founding-Team Ownership": 0.451,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.77
+  },
+  "required_skills_matched": [
+    "LlamaIndex",
+    "PyTorch",
+    "Qdrant",
+    "NLP",
+    "Weaviate"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.739,
+  "match_evidence": [
+    "Aarohi Chowdary (Staff Machine Learning Engineer at Locobuzz) \u2014 LlamaIndex, PyTorch match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0041611"
+}

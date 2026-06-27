@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0081261",
+  "name": "Advaith Chatterjee",
+  "current_title": "Software Engineer",
+  "current_company": "InMobi",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.463,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.896,
+  "top_skills": [
+    "Kubeflow",
+    "Webpack",
+    "Next.js",
+    "OpenSearch",
+    "RAG",
+    "Java",
+    "TTS",
+    "Weights & Biases"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: MLOps 77/100"
+  ],
+  "fast_score": 62.4,
+  "years_of_experience": 5.7,
+  "total_months": 67,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": 44.8,
+    "profile_completeness_score": 44.4,
+    "interview_completion_rate": 0.59,
+    "offer_acceptance_rate": 0.74,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "RAG": 46.8,
+      "Sentence Transformers": 62.1,
+      "MLOps": 77.8
+    }
+  }
+}

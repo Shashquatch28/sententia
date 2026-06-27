@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.515,
+    "Founding-Team Ownership": 0.596,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "MLflow",
+    "LlamaIndex",
+    "NLP"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.519,
+  "match_evidence": [
+    "Amit Sharma (Backend Engineer at PharmEasy) \u2014 MLflow, LlamaIndex match LLM/RAG core requirements",
+    "55% product company exposure",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0038631"
+}

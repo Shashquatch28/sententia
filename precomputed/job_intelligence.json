@@ -1,0 +1,100 @@
+{
+  "role_summary": "Redrob AI is a Series A, AI-native talent intelligence platform based in Pune/Noida, India. We are building the next generation of recruitment infrastructure powered by LLMs and RAG pipelines. We are looking for a Senior AI Engineer to join us as a founding-team hire. You will build LLM and RAG systems that power our core talent intelligence products \u2014 from candidate matching to recruiter copilots. This is a high-ownership, high-ambiguity role where your architecture decisions will directly shape the product roadmap.",
+  "implicit_requirements": [
+    "Comfort with ambiguity \u2014 founding-team scope will evolve rapidly without clear specs",
+    "Self-directed learning \u2014 AI field changes fast, must stay current independently",
+    "Async communication skills \u2014 distributed/remote-friendly work style implied",
+    "Context-switching tolerance \u2014 early-stage means wearing multiple hats",
+    "Production ML experience \u2014 notebook/research background alone is insufficient",
+    "Rapid iteration mindset \u2014 MVP ships first, polish follows signal",
+    "Ability to translate business needs into technical requirements without heavy PM support"
+  ],
+  "culture_signals": [
+    "Founding-team environment \u2014 early hire shaping technical culture from the ground up",
+    "Fast-paced execution bias \u2014 values shipping over perfecting",
+    "High ownership expected \u2014 autonomous end-to-end responsibility",
+    "Series A stage \u2014 scrappy, high-upside environment with limited process overhead",
+    "Product-minded engineers preferred \u2014 user impact matters as much as code quality",
+    "AI-native company \u2014 AI tooling is the default, not an add-on",
+    "Talent-intelligence domain \u2014 builds tools that directly shape hiring decisions",
+    "Startup mindset \u2014 initiative and adaptability valued over process adherence"
+  ],
+  "ideal_candidate_narrative": "The ideal hire is a senior ML engineer with 5-8 years experience who has built LLM or RAG pipelines at a product company and shipped them to real users at scale. They have worked at a startup or early-stage team, own work end-to-end, and speak in outcomes (latency reduced 40%, recall improved to 87%). They are Python-native with hands-on vector DB and model deployment experience, and excited to join a founding team where their architecture decisions shape the product roadmap.",
+  "discriminator_hierarchy": [
+    {
+      "rank": 1,
+      "name": "LLM & RAG Engineering",
+      "weight": 0.35,
+      "description": "Core capability \u2014 building production LLM/RAG pipelines is the primary function at Redrob AI",
+      "signals": [
+        "skills[].name contains: LLM, RAG, embedding, transformer, GPT, OpenAI, Anthropic, LangChain, LlamaIndex, BERT",
+        "skills[].name contains: NLP, natural language processing, semantic search, vector database",
+        "career_history[].description mentions building/fine-tuning/deploying language models in production",
+        "github_activity_score >= 50 \u2014 verifiable AI/ML open-source contributions",
+        "skill_assessment_scores contains ML/AI skill with score >= 70"
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Product-Sense & User-Facing AI",
+      "weight": 0.25,
+      "description": "Must build AI features real users interact with \u2014 not just internal tooling or research prototypes",
+      "signals": [
+        "career_history[].company is a product company (not consulting/services firm)",
+        "career_history[].description mentions A/B tests, user metrics, or feature launches",
+        "outcome_language_score > 0.4 \u2014 quantified user/business impact in role descriptions",
+        "current_title contains: Applied, Platform, Product AI Engineer at product company",
+        "product_company_fraction > 0.6"
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Founding-Team Ownership",
+      "weight": 0.2,
+      "description": "Early-stage hire must own deliverables end-to-end \u2014 architecture to deployment without hand-holding",
+      "signals": [
+        "career_history includes startup (pre-Series B) or founding/early-stage role",
+        "ownership_language_score > 0.5 \u2014 'led', 'built', 'architected', 'launched' language",
+        "narrative_type is DEEPENING_SPECIALIST or DOMAIN_PIVOTING (not STAGNANT or INCOHERENT)",
+        "career_trajectory is upward",
+        "career_history shows IC to senior-scope progression over time"
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Python & MLOps Stack",
+      "weight": 0.12,
+      "description": "Must deploy and maintain ML models in production \u2014 cloud, containers, monitoring",
+      "signals": [
+        "skills[].name contains: Python, FastAPI, Flask, Docker, Kubernetes",
+        "skills[].name contains: AWS, GCP, Azure \u2014 cloud deployment experience",
+        "skills[].name contains: Pinecone, Weaviate, Chroma, pgvector, Qdrant (vector DBs)",
+        "skills[].name contains: MLflow, Weights & Biases, model monitoring tooling",
+        "career_history[].description mentions CI/CD, model serving, or production deployment"
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "Communication & Cross-Functional Fit",
+      "weight": 0.08,
+      "description": "Senior IC must translate technical concepts clearly for non-technical stakeholders",
+      "signals": [
+        "years_of_experience >= 5 \u2014 baseline communication and seniority maturity",
+        "career_history[].description mentions collaboration with PM, design, or business teams",
+        "evidence of technical writing, documentation, or presenting",
+        "current_title contains 'Senior', 'Lead', 'Staff', or 'Principal'"
+      ]
+    }
+  ],
+  "red_line_requirements": [
+    "years_of_experience >= 5",
+    "skills must include at least one of: LLM, RAG, ML, deep learning, NLP, transformer",
+    "Must have shipped production ML/AI features (research-only background is disqualifying)",
+    "Python proficiency required",
+    "product_company_fraction > 0.3 \u2014 some product company exposure required"
+  ],
+  "company_stage_signals": "Series A AI-native startup (~15-40 person team). Post-PMF but pre-scale. Candidate must be comfortable in ambiguous, fast-moving environments with limited process. Equity is part of the compensation \u2014 prefer candidates who have joined early-stage companies before. Culture fit is critical: Redrob AI needs builders, not order-takers.",
+  "seniority_calibration": "Senior IC (L5-equivalent): years_of_experience in range 5-9. Title keywords: Senior Engineer, Staff Engineer, Tech Lead, Principal Engineer. Must show progression from IC to senior/lead-scope over career history. Founding-team hire implies readiness to grow into tech lead within 12-18 months.",
+  "generated_at": "2026-06-27T10:32:58.639268+00:00",
+  "jd_source": "C:\\Users\\Shashwat Kumar\\Desktop\\Labs\\Sententia\\job_description.md"
+}

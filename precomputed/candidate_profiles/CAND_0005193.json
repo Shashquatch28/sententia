@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0005193",
+  "name": "Vihaan Naidu",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Acme Corp",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.43,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "PyTorch",
+    "Java",
+    "OpenSearch",
+    "Data Science",
+    "MLOps",
+    "Statistical Modeling",
+    "TypeScript",
+    "Machine Learning"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 66/100) \u2014 verifiable technical output",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: OpenSearch 79/100"
+  ],
+  "fast_score": 61.4,
+  "years_of_experience": 6.2,
+  "total_months": 73,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 66.5,
+    "profile_completeness_score": 78.2,
+    "interview_completion_rate": 0.63,
+    "offer_acceptance_rate": 0.8,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "OpenSearch": 79.3,
+      "MLOps": 39.5,
+      "Machine Learning": 46.6
+    }
+  }
+}

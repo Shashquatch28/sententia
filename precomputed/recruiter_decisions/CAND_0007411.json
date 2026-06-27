@@ -1,0 +1,130 @@
+{
+  "candidate_id": "CAND_0007411",
+  "name": "Rahul Bansal",
+  "current_title": "Senior Machine Learning Engineer",
+  "current_company": "Amazon",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 1.0,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Highly active GitHub contributor (score 89/100)",
+        "confidence": 0.95,
+        "field_name": "github_activity_score"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "High interview completion rate (80%)",
+        "confidence": 0.9,
+        "field_name": "interview_completion_rate"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed Vector Search: 91/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Verifiable technical output via GitHub (score 89/100)",
+      "Skill assessment score: Vector Search = 91/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.5,
+      "evidence": [
+        "Rahul Bansal (Senior Machine Learning Engineer at Amazon) has Fine-tuning LLMs, Vector Search matching role requirements"
+      ],
+      "gaps": [
+        "MLOps/deployment stack not evident in skill profile"
+      ]
+    },
+    "product": {
+      "score": 0.83,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.45,
+      "evidence": [],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.62,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.607
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Skill Gap",
+      "severity": "MEDIUM",
+      "description": "Rahul Bansal: MLOps/deployment stack not evident in skill profile",
+      "mitigation": "Probe depth of adjacent skills and practical project examples in technical screen",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Rahul Bansal (Senior Machine Learning Engineer at Amazon) scores 71/100 with Fine-tuning LLMs aligned to role requirements. Gap: MLOps/deployment stack not evident in skill profile. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 95,
+    "likely_available": false,
+    "urgency_signal": "No active availability signal \u2014 outreach response rate unknown",
+    "estimated_notice_weeks": 2
+  },
+  "required_skills_matched": [
+    "Fine-tuning LLMs",
+    "Vector Search",
+    "PyTorch",
+    "Information Retrieval"
+  ],
+  "overall_match_score": 0.715,
+  "top_evidence": [
+    "Rahul Bansal (Senior Machine Learning Engineer at Amazon) \u2014 Fine-tuning LLMs, Vector Search match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

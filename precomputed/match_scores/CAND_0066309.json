@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.9,
+    "Product-Sense & User-Facing AI": 0.615,
+    "Founding-Team Ownership": 0.342,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.75
+  },
+  "required_skills_matched": [
+    "Diffusion Models",
+    "RAG",
+    "Deep Learning"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.597,
+  "match_evidence": [
+    "Meera Chopra (Senior Software Engineer (ML) at PharmEasy) \u2014 Diffusion Models, RAG match LLM/RAG core requirements",
+    "81% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0066309"
+}

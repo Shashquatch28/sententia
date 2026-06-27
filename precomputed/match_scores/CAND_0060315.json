@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.7,
+    "Founding-Team Ownership": 0.344,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.75
+  },
+  "required_skills_matched": [
+    "Milvus",
+    "Hugging Face Transformers",
+    "Fine-tuning LLMs",
+    "Weights & Biases",
+    "MLflow"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.599,
+  "match_evidence": [
+    "Naina Sharma (Senior Software Engineer (ML) at Glance) \u2014 Milvus, Hugging Face Transformers match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0060315"
+}

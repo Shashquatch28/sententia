@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.8,
+    "Product-Sense & User-Facing AI": 0.8,
+    "Founding-Team Ownership": 0.488,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Hugging Face Transformers",
+    "pgvector",
+    "NLP",
+    "LangChain"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.666,
+  "match_evidence": [
+    "Naina Desai (Junior ML Engineer at BYJU'S) \u2014 Hugging Face Transformers, pgvector match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Upward career trajectory \u2014 progressive responsibility growth"
+  ],
+  "candidate_id": "CAND_0080102"
+}

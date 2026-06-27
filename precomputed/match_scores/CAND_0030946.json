@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.709,
+    "Founding-Team Ownership": 0.567,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Diffusion Models",
+    "Machine Learning",
+    "Weights & Biases"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.554,
+  "match_evidence": [
+    "Diya Goyal (Junior ML Engineer at Yellow.ai) \u2014 Diffusion Models, Machine Learning match LLM/RAG core requirements",
+    "79% of career at product companies \u2014 strong user-facing context",
+    "Upward career trajectory \u2014 progressive responsibility growth"
+  ],
+  "candidate_id": "CAND_0030946"
+}

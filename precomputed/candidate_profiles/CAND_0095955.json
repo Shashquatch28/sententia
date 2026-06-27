@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0095955",
+  "name": "Om Patel",
+  "current_title": "Software Engineer",
+  "current_company": "Acme Corp",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.351,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Data Pipelines",
+    "NLP",
+    "Object Detection",
+    "Terraform",
+    "CNN",
+    "CSS",
+    "Diffusion Models",
+    "GANs"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 8.0,
+  "total_months": 95,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 32.3,
+    "profile_completeness_score": 73.5,
+    "interview_completion_rate": 0.61,
+    "offer_acceptance_rate": 0.46,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "CNN": 73.4,
+      "GANs": 35.5,
+      "MLOps": 72.9,
+      "Kubeflow": 35.5
+    }
+  }
+}

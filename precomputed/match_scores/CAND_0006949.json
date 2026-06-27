@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.521,
+    "Founding-Team Ownership": 0.437,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.7
+  },
+  "required_skills_matched": [
+    "Information Retrieval",
+    "PyTorch"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.449,
+  "match_evidence": [
+    "Kiara Mukherjee (Software Engineer at CRED) \u2014 Information Retrieval, PyTorch match LLM/RAG core requirements",
+    "60% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0006949"
+}

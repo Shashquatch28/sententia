@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0031651",
+  "name": "Vihaan Sethi",
+  "current_title": "Software Engineer",
+  "current_company": "Hooli",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.423,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Qdrant",
+    "Statistical Modeling",
+    "SAP",
+    "RAG",
+    "CNN",
+    "YOLO",
+    "Rust",
+    "Java"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 7.8,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": 19.2,
+    "profile_completeness_score": 68.5,
+    "interview_completion_rate": 0.72,
+    "offer_acceptance_rate": 0.53,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

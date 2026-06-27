@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.8,
+    "Founding-Team Ownership": 0.389,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Machine Learning",
+    "Semantic Search",
+    "Python",
+    "Weights & Biases"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.581,
+  "match_evidence": [
+    "Arnav Banerjee (ML Engineer at Vedantu) \u2014 Machine Learning, Semantic Search match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0044091"
+}

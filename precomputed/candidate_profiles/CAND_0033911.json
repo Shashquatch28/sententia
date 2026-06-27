@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0033911",
+  "name": "Kabir Mittal",
+  "current_title": "Data Scientist",
+  "current_company": "Mad Street Den",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.359,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.549,
+  "top_skills": [
+    "MLOps",
+    "Learning to Rank",
+    "AWS",
+    "ASR",
+    "FAISS",
+    "Sentence Transformers",
+    "Hugging Face Transformers",
+    "OpenCV"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 77/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 62.8,
+  "years_of_experience": 6.9,
+  "total_months": 82,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 77.9,
+    "profile_completeness_score": 77.0,
+    "interview_completion_rate": 0.68,
+    "offer_acceptance_rate": 0.6,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "MLOps": 68.1
+    }
+  }
+}

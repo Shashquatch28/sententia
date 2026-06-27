@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0094759",
+  "name": "Aditya Pillai",
+  "current_title": "Lead AI Engineer",
+  "current_company": "Meta",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.581,
+  "outcome_language_score": 0.2,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Prompt Engineering",
+    "scikit-learn",
+    "Hugging Face Transformers",
+    "Learning to Rank",
+    "Semantic Search",
+    "Qdrant",
+    "Fine-tuning LLMs",
+    "Agile"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 76/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: Prompt Engineering 80/100",
+    "Experience at tier-1 product company: Meta"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 8.6,
+  "total_months": 101,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 76.2,
+    "profile_completeness_score": 59.3,
+    "interview_completion_rate": 0.94,
+    "offer_acceptance_rate": 0.71,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Prompt Engineering": 80.9,
+      "scikit-learn": 65.9,
+      "Hugging Face Transformers": 80.5,
+      "Learning to Rank": 63.3
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0089414",
+  "name": "Om Mittal",
+  "current_title": "Software Engineer",
+  "current_company": "InMobi",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.458,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Weights & Biases",
+    "Tailwind",
+    "pgvector",
+    "MLflow",
+    "Fine-tuning LLMs",
+    "Six Sigma",
+    "Image Classification",
+    "Vector Search"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 61.2,
+  "years_of_experience": 7.1,
+  "total_months": 84,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 64.1,
+    "interview_completion_rate": 0.87,
+    "offer_acceptance_rate": 0.61,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

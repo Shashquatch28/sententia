@@ -1,0 +1,132 @@
+{
+  "candidate_id": "CAND_0008425",
+  "name": "Myra Krishnan",
+  "current_title": "Senior NLP Engineer",
+  "current_company": "Ola",
+  "recommendation": "STRONGLY_ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.8,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "Active GitHub contributor (score 53/100)",
+        "confidence": 0.85,
+        "field_name": "github_activity_score"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed Learning to Rank: 77/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Skill assessment score: Learning to Rank = 77/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.99,
+      "evidence": [
+        "Myra Krishnan (Senior NLP Engineer at Ola) has Qdrant, Weights & Biases matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.75,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.72,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.84,
+      "evidence": [
+        "Upward career trajectory with upward progression"
+      ],
+      "gaps": []
+    },
+    "overall": 0.841
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Myra Krishnan",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Walk me through the most complex LLM/RAG system you designed. What retrieval architecture did you choose and why?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Specific architectural decisions (chunking, reranking, hybrid search), production tradeoffs, latency vs accuracy choices"
+    },
+    {
+      "question": "Tell me about a time you pushed back on a product requirement due to technical constraints. What happened?",
+      "priority": "HIGH",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Directness, confidence in technical judgment, outcome orientation and how they handled stakeholder disagreement"
+    },
+    {
+      "question": "How do you measure success for an AI feature after it ships?",
+      "priority": "MEDIUM",
+      "dimension": "Product",
+      "what_to_listen_for": "Specific metrics (precision, recall, latency, engagement), A/B testing, evaluation frameworks like RAGAS"
+    },
+    {
+      "question": "Describe your approach to fine-tuning vs. RAG for a new use case. How do you decide?",
+      "priority": "MEDIUM",
+      "dimension": "Technical",
+      "what_to_listen_for": "Systematic thinking, tradeoff awareness (cost, latency, data requirements), real examples from their work"
+    }
+  ],
+  "recommendation_rationale": "Myra Krishnan (Senior NLP Engineer at Ola) is a strong match at 86/100 \u2014 Qdrant and Weights & Biases directly cover our core LLM/RAG requirements. No blocking gaps identified. Advance to technical screen immediately.",
+  "timing_assessment": {
+    "current_tenure_months": 92,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 90-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 12
+  },
+  "required_skills_matched": [
+    "Qdrant",
+    "Weights & Biases",
+    "pgvector",
+    "Sentence Transformers",
+    "NLP"
+  ],
+  "overall_match_score": 0.866,
+  "top_evidence": [
+    "Myra Krishnan (Senior NLP Engineer at Ola) \u2014 Qdrant, Weights & Biases match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

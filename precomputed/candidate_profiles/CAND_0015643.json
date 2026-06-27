@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0015643",
+  "name": "Saanvi Mukherjee",
+  "current_title": "AI Research Engineer",
+  "current_company": "Rephrase.ai",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.108,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "OpenSearch",
+    "CNN",
+    "Data Science",
+    "Kubeflow",
+    "Vue.js",
+    "YOLO",
+    "ASR",
+    "Image Classification"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.6,
+  "years_of_experience": 5.8,
+  "total_months": 69,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 68.5,
+    "interview_completion_rate": 0.68,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Kubeflow": 43.2,
+      "ASR": 43.7,
+      "Fine-tuning LLMs": 64.2
+    }
+  }
+}

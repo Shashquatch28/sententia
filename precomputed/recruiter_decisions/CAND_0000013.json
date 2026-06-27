@@ -1,0 +1,125 @@
+{
+  "candidate_id": "CAND_0000013",
+  "name": "Pari Nair",
+  "current_title": "Civil Engineer",
+  "current_company": "Globex Inc",
+  "recommendation": "REVIEW_FURTHER",
+  "trust_assessment": {
+    "overall_trust_score": 0.45,
+    "trust_tier": "LOW",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "SUSPICIOUS",
+        "description": "Low interview completion rate (33%)",
+        "confidence": 0.85,
+        "field_name": "interview_completion_rate"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": [
+      "Low interview completion rate (33%) \u2014 potential reliability risk"
+    ]
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.33,
+      "evidence": [
+        "Pari Nair (Civil Engineer at Globex Inc) has Spark, GCP matching role requirements"
+      ],
+      "gaps": [
+        "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+      ]
+    },
+    "product": {
+      "score": 0.7,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.6,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.5,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.52
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Skill Gap",
+      "severity": "HIGH",
+      "description": "Pari Nair: Limited LLM/RAG engineering skills \u2014 core requirement not met",
+      "mitigation": "Probe depth of adjacent skills and practical project examples in technical screen",
+      "is_blocking": false
+    },
+    {
+      "risk_type": "Skill Gap",
+      "severity": "HIGH",
+      "description": "Pari Nair: Under-qualified: 1 yrs experience vs 5+ required",
+      "mitigation": "Probe depth of adjacent skills and practical project examples in technical screen",
+      "is_blocking": false
+    },
+    {
+      "risk_type": "Profile Signal",
+      "severity": "MEDIUM",
+      "description": "Pari Nair: Low interview completion rate (33%) \u2014 potential reliability risk",
+      "mitigation": "Raise directly in intro call and assess candidate response",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "What is your experience with production LLM systems? Walk me through a specific example.",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Depth of real production experience vs. prototype or toy projects \u2014 look for specifics"
+    },
+    {
+      "question": "How have you dealt with AI model failures or degradations in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Monitoring setup, incident response, rollback strategy, root cause analysis"
+    },
+    {
+      "question": "What attracts you to an early-stage AI company vs. a larger tech firm?",
+      "priority": "MEDIUM",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Genuine startup motivation, comfort with ambiguity, equity mindset vs. job security"
+    }
+  ],
+  "recommendation_rationale": "Pari Nair (Civil Engineer at Globex Inc) shows adjacent fit at 41/100 via Spark, but Limited LLM/RAG engineering skills \u2014 core requirement not met needs verification. Review if primary pipeline candidates are unavailable.",
+  "timing_assessment": {
+    "current_tenure_months": 13,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 30-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 4
+  },
+  "required_skills_matched": [
+    "Spark",
+    "GCP"
+  ],
+  "overall_match_score": 0.411,
+  "top_evidence": [
+    "Pari Nair (Civil Engineer at Globex Inc) \u2014 Spark, GCP match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

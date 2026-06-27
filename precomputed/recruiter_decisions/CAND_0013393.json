@@ -1,0 +1,115 @@
+{
+  "candidate_id": "CAND_0013393",
+  "name": "Sneha Bansal",
+  "current_title": "ML Engineer",
+  "current_company": "Freshworks",
+  "recommendation": "REVIEW_FURTHER",
+  "trust_assessment": {
+    "overall_trust_score": 0.7,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "High interview completion rate (99%)",
+        "confidence": 0.9,
+        "field_name": "interview_completion_rate"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed Pinecone: 79/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      }
+    ],
+    "verified_claims": [
+      "Phone number verified",
+      "Skill assessment score: Pinecone = 79/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.8,
+      "evidence": [
+        "Sneha Bansal (ML Engineer at Freshworks) has Embeddings, MLflow matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.69,
+      "evidence": [
+        "75% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.44,
+      "evidence": [],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.6,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.665
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Sneha Bansal",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "What is your experience with production LLM systems? Walk me through a specific example.",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Depth of real production experience vs. prototype or toy projects \u2014 look for specifics"
+    },
+    {
+      "question": "How have you dealt with AI model failures or degradations in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Monitoring setup, incident response, rollback strategy, root cause analysis"
+    },
+    {
+      "question": "What attracts you to an early-stage AI company vs. a larger tech firm?",
+      "priority": "MEDIUM",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Genuine startup motivation, comfort with ambiguity, equity mindset vs. job security"
+    }
+  ],
+  "recommendation_rationale": "Sneha Bansal (ML Engineer at Freshworks) shows adjacent fit at 63/100 via Embeddings, but full role alignment needs verification. Review if primary pipeline candidates are unavailable.",
+  "timing_assessment": {
+    "current_tenure_months": 62,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 60-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 8
+  },
+  "required_skills_matched": [
+    "Embeddings",
+    "MLflow",
+    "Pinecone",
+    "Qdrant",
+    "BentoML"
+  ],
+  "overall_match_score": 0.639,
+  "top_evidence": [
+    "Sneha Bansal (ML Engineer at Freshworks) \u2014 Embeddings, MLflow match LLM/RAG core requirements",
+    "75% of career at product companies \u2014 strong user-facing context"
+  ]
+}

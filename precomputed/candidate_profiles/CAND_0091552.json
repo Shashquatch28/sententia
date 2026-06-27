@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0091552",
+  "name": "Rahul Verma",
+  "current_title": "Software Engineer",
+  "current_company": "Zomato",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.423,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.413,
+  "top_skills": [
+    "Sales",
+    "BentoML",
+    "Forecasting",
+    "PyTorch",
+    "GANs",
+    "Tailwind",
+    "LangChain",
+    "Recommendation Systems"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: BentoML 80/100"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 7.8,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 27.2,
+    "profile_completeness_score": 71.1,
+    "interview_completion_rate": 0.87,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "BentoML": 80.2,
+      "PyTorch": 63.7,
+      "GANs": 77.8,
+      "Recommendation Systems": 67.9
+    }
+  }
+}

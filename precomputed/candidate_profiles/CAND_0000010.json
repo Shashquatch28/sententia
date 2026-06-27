@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0000010",
+  "name": "Aarav Kapoor",
+  "current_title": "Data Engineer",
+  "current_company": "Ola",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.7,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.357,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "GCP",
+    "Spring Boot",
+    "Kubeflow",
+    "Java",
+    "GANs",
+    "Figma",
+    "Elasticsearch",
+    "OpenCV"
+  ],
+  "career_trajectory": "unknown",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Object Detection 81/100"
+  ],
+  "fast_score": 19.2,
+  "years_of_experience": 4.6,
+  "total_months": 55,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 33.7,
+    "profile_completeness_score": 81.6,
+    "interview_completion_rate": 0.53,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "GANs": 53.3,
+      "OpenCV": 65.5,
+      "Prompt Engineering": 73.8,
+      "Object Detection": 81.3
+    }
+  }
+}

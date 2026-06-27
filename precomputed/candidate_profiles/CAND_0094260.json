@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0094260",
+  "name": "Ved Sharma",
+  "current_title": "Software Engineer",
+  "current_company": "Vedantu",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.407,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "ASR",
+    "Rust",
+    "TensorFlow",
+    "Kubernetes",
+    "TTS",
+    "Microservices",
+    "Recommendation Systems",
+    "BentoML"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 66.0,
+  "years_of_experience": 7.5,
+  "total_months": 88,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 17.0,
+    "profile_completeness_score": 55.0,
+    "interview_completion_rate": 0.69,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "TTS": 74.3
+    }
+  }
+}

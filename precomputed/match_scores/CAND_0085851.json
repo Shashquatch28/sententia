@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.75,
+    "Product-Sense & User-Facing AI": 0.8,
+    "Founding-Team Ownership": 0.409,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.7
+  },
+  "required_skills_matched": [
+    "BentoML",
+    "LangChain",
+    "Embeddings",
+    "Hugging Face Transformers",
+    "MLflow"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.68,
+  "match_evidence": [
+    "Arnav Iyengar (ML Engineer at Genpact AI) \u2014 BentoML, LangChain match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0085851"
+}

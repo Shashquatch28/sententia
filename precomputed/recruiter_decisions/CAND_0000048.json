@@ -1,0 +1,118 @@
+{
+  "candidate_id": "CAND_0000048",
+  "name": "Vihaan Saxena",
+  "current_title": "Mobile Developer",
+  "current_company": "CRED",
+  "recommendation": "REVIEW_FURTHER",
+  "trust_assessment": {
+    "overall_trust_score": 0.4,
+    "trust_tier": "LOW",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "SUSPICIOUS",
+        "description": "Low interview completion rate (42%)",
+        "confidence": 0.85,
+        "field_name": "interview_completion_rate"
+      }
+    ],
+    "verified_claims": [
+      "Phone number verified"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": [
+      "Low interview completion rate (42%) \u2014 potential reliability risk"
+    ]
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.33,
+      "evidence": [
+        "Vihaan Saxena (Mobile Developer at CRED) has Terraform, AWS matching role requirements"
+      ],
+      "gaps": [
+        "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+      ]
+    },
+    "product": {
+      "score": 0.62,
+      "evidence": [
+        "82% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.62,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.6,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.515
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Skill Gap",
+      "severity": "HIGH",
+      "description": "Vihaan Saxena: Limited LLM/RAG engineering skills \u2014 core requirement not met",
+      "mitigation": "Probe depth of adjacent skills and practical project examples in technical screen",
+      "is_blocking": false
+    },
+    {
+      "risk_type": "Profile Signal",
+      "severity": "MEDIUM",
+      "description": "Vihaan Saxena: Low interview completion rate (42%) \u2014 potential reliability risk",
+      "mitigation": "Raise directly in intro call and assess candidate response",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "What is your experience with production LLM systems? Walk me through a specific example.",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Depth of real production experience vs. prototype or toy projects \u2014 look for specifics"
+    },
+    {
+      "question": "How have you dealt with AI model failures or degradations in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Monitoring setup, incident response, rollback strategy, root cause analysis"
+    },
+    {
+      "question": "What attracts you to an early-stage AI company vs. a larger tech firm?",
+      "priority": "MEDIUM",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Genuine startup motivation, comfort with ambiguity, equity mindset vs. job security"
+    }
+  ],
+  "recommendation_rationale": "Vihaan Saxena (Mobile Developer at CRED) shows adjacent fit at 41/100 via Terraform, but Limited LLM/RAG engineering skills \u2014 core requirement not met needs verification. Review if primary pipeline candidates are unavailable.",
+  "timing_assessment": {
+    "current_tenure_months": 114,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 120-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 17
+  },
+  "required_skills_matched": [
+    "Terraform",
+    "AWS"
+  ],
+  "overall_match_score": 0.415,
+  "top_evidence": [
+    "Vihaan Saxena (Mobile Developer at CRED) \u2014 Terraform, AWS match LLM/RAG core requirements",
+    "82% of career at product companies \u2014 strong user-facing context"
+  ]
+}

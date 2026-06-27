@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0000020",
+  "name": "Aditya Iyengar",
+  "current_title": "Mechanical Engineer",
+  "current_company": "Wipro",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.8,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.52,
+  "top_skills": [
+    "GraphQL",
+    "TypeScript",
+    "Flask",
+    "Weights & Biases",
+    "GCP",
+    "Salesforce CRM",
+    "HTML"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 23.6,
+  "years_of_experience": 6.3,
+  "total_months": 75,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 73.0,
+    "interview_completion_rate": 0.71,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Weights & Biases": 53.7
+    }
+  }
+}

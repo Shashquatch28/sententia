@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0000002",
+  "name": "Saanvi Sethi",
+  "current_title": "Operations Manager",
+  "current_company": "Wipro",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.731,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.617,
+  "top_skills": [
+    "Project Management",
+    "React",
+    "Photoshop",
+    "TypeScript",
+    "Marketing",
+    "Kafka",
+    "JavaScript",
+    "Feature Engineering"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 23.0,
+  "years_of_experience": 12.5,
+  "total_months": 149,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 78.7,
+    "interview_completion_rate": 0.62,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

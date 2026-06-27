@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0046353",
+  "name": "Sneha Tiwari",
+  "current_title": "ML Engineer",
+  "current_company": "Razorpay",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.223,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "MLflow",
+    "SAP",
+    "GANs",
+    "PyTorch",
+    "FAISS",
+    "Prompt Engineering",
+    "Statistical Modeling",
+    "BentoML"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 76/100) \u2014 verifiable technical output",
+    "Actively open to work, 120-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 61.8,
+  "years_of_experience": 6.4,
+  "total_months": 76,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 76.7,
+    "profile_completeness_score": 76.9,
+    "interview_completion_rate": 0.85,
+    "offer_acceptance_rate": 0.78,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "MLflow": 52.0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0075360",
+  "name": "Naina Subramanian",
+  "current_title": "Software Engineer",
+  "current_company": "Meesho",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.435,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.658,
+  "top_skills": [
+    "MLOps",
+    "Image Classification",
+    "Forecasting",
+    "React",
+    "Elasticsearch",
+    "Tailwind",
+    "NLP",
+    "Statistical Modeling"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: MLOps 81/100"
+  ],
+  "fast_score": 61.4,
+  "years_of_experience": 6.2,
+  "total_months": 73,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 45.3,
+    "interview_completion_rate": 0.94,
+    "offer_acceptance_rate": 0.6,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "MLOps": 81.1,
+      "Elasticsearch": 78.4,
+      "NLP": 68.8
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0057653",
+  "name": "Aditya Reddy",
+  "current_title": "Backend Engineer",
+  "current_company": "Zoho",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.337,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.447,
+  "top_skills": [
+    "Statistical Modeling",
+    "Reinforcement Learning",
+    "MLflow",
+    "Figma",
+    "PEFT",
+    "ASR",
+    "Tailwind",
+    "Fine-tuning LLMs"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 63.4,
+  "years_of_experience": 7.2,
+  "total_months": 85,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 58.4,
+    "interview_completion_rate": 0.75,
+    "offer_acceptance_rate": 0.47,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {}
+  }
+}

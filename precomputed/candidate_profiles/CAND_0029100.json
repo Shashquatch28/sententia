@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0029100",
+  "name": "Aisha Kapoor",
+  "current_title": "Software Engineer",
+  "current_company": "Paytm",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.532,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.71,
+  "top_skills": [
+    "Airflow",
+    "Time Series",
+    "Deep Learning",
+    "TTS",
+    "Next.js",
+    "Vue.js",
+    "Speech Recognition",
+    "AWS"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low offer acceptance rate (24%) \u2014 may use offers as leverage"
+  ],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 50/100) \u2014 verifiable technical output",
+    "Actively open to work, 30-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 7.9,
+  "total_months": 93,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 50.3,
+    "profile_completeness_score": 49.9,
+    "interview_completion_rate": 0.54,
+    "offer_acceptance_rate": 0.24,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Time Series": 57.2,
+      "Deep Learning": 35.8,
+      "Speech Recognition": 45.3,
+      "Machine Learning": 51.2
+    }
+  }
+}

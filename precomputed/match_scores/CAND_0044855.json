@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.85,
+    "Product-Sense & User-Facing AI": 0.827,
+    "Founding-Team Ownership": 0.434,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.763
+  },
+  "required_skills_matched": [
+    "Hugging Face Transformers",
+    "BentoML",
+    "Information Retrieval",
+    "Pinecone",
+    "Machine Learning"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.732,
+  "match_evidence": [
+    "Kavya Joshi (Senior Data Scientist at Flipkart) \u2014 Hugging Face Transformers, BentoML match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0044855"
+}

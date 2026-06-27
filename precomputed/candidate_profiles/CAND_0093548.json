@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0093548",
+  "name": "Vivaan Ghosh",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Dunder Mifflin",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.338,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Diffusion Models",
+    "Weights & Biases",
+    "LLMs",
+    "LlamaIndex",
+    "Object Detection",
+    "REST APIs",
+    "TTS",
+    "Data Science"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 120-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.4,
+  "years_of_experience": 7.2,
+  "total_months": 85,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 88.9,
+    "interview_completion_rate": 0.55,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Diffusion Models": 62.0
+    }
+  }
+}

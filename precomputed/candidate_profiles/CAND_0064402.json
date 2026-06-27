@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0064402",
+  "name": "Neha Iyengar",
+  "current_title": "Software Engineer",
+  "current_company": "Mphasis",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.515,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.167,
+  "top_skills": [
+    "gRPC",
+    "Speech Recognition",
+    "NLP",
+    "Hadoop",
+    "Kubeflow",
+    "Elasticsearch",
+    "Feature Engineering",
+    "Next.js"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 7.1,
+  "total_months": 84,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 38.8,
+    "profile_completeness_score": 73.0,
+    "interview_completion_rate": 0.73,
+    "offer_acceptance_rate": 0.64,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Kubeflow": 62.1
+    }
+  }
+}

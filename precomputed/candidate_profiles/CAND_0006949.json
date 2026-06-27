@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0006949",
+  "name": "Kiara Mukherjee",
+  "current_title": "Software Engineer",
+  "current_company": "CRED",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.249,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.603,
+  "top_skills": [
+    "JavaScript",
+    "Photoshop",
+    "Data Pipelines",
+    "Computer Vision",
+    "Information Retrieval",
+    "PyTorch",
+    "Redux",
+    "ASR"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 9.8,
+  "total_months": 116,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 62.6,
+    "interview_completion_rate": 0.65,
+    "offer_acceptance_rate": 0.58,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "ASR": 32.2,
+      "MLOps": 28.4
+    }
+  }
+}

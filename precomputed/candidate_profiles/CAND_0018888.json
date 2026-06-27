@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0018888",
+  "name": "Shreya Trivedi",
+  "current_title": "AI Research Engineer",
+  "current_company": "Razorpay",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.233,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Diffusion Models",
+    "GANs",
+    "MLflow",
+    "BentoML",
+    "Reinforcement Learning",
+    "Information Retrieval",
+    "Project Management",
+    "pgvector"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 51/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: GANs 82/100"
+  ],
+  "fast_score": 62.0,
+  "years_of_experience": 6.5,
+  "total_months": 76,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 51.4,
+    "profile_completeness_score": 72.6,
+    "interview_completion_rate": 0.97,
+    "offer_acceptance_rate": 0.39,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Diffusion Models": 70.0,
+      "GANs": 82.3
+    }
+  }
+}

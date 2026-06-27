@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0039727",
+  "name": "Aryan Kumar",
+  "current_title": "Software Engineer",
+  "current_company": "Infosys",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.805,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.256,
+  "top_skills": [
+    "Hugging Face Transformers",
+    "Recommendation Systems",
+    "HTML",
+    "Microservices",
+    "Airflow",
+    "Data Science",
+    "MLflow",
+    "Accounting"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.0,
+  "years_of_experience": 7.0,
+  "total_months": 82,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 55.9,
+    "interview_completion_rate": 0.76,
+    "offer_acceptance_rate": 0.42,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Data Science": 38.3,
+      "MLflow": 69.5
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0000021",
+  "name": "Rahul Joshi",
+  "current_title": "Project Manager",
+  "current_company": "Wipro",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.79,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.401,
+  "top_skills": [
+    "Hadoop",
+    "PostgreSQL",
+    "Kafka",
+    "Microservices",
+    "AWS",
+    "TypeScript",
+    "ETL",
+    "Spring Boot"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "4 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 45.0,
+  "years_of_experience": 14.5,
+  "total_months": 172,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 6.4,
+    "profile_completeness_score": 58.5,
+    "interview_completion_rate": 0.53,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

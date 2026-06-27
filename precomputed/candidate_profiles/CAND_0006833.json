@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0006833",
+  "name": "Vikram Trivedi",
+  "current_title": "AI Research Engineer",
+  "current_company": "Mad Street Den",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.12,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "TensorFlow",
+    "Semantic Search",
+    "Deep Learning",
+    "Data Science",
+    "Weights & Biases",
+    "Object Detection",
+    "GANs",
+    "Java"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 84/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 60.4,
+  "years_of_experience": 5.7,
+  "total_months": 68,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 84.0,
+    "profile_completeness_score": 90.3,
+    "interview_completion_rate": 0.6,
+    "offer_acceptance_rate": 0.51,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Deep Learning": 72.9,
+      "Data Science": 73.4,
+      "Object Detection": 60.1,
+      "GANs": 41.4
+    }
+  }
+}

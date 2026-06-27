@@ -1,0 +1,40 @@
+{
+  "candidate_id": "CAND_0000005",
+  "name": "Aisha Sethi",
+  "current_title": "Accountant",
+  "current_company": "Stark Industries",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.531,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.585,
+  "top_skills": [
+    "SQL",
+    "PowerPoint",
+    "Photoshop",
+    "Tailwind",
+    "Apache Flink",
+    "Image Classification"
+  ],
+  "career_trajectory": "mixed",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 31.0,
+  "years_of_experience": 11.0,
+  "total_months": 130,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 84.6,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {}
+  }
+}

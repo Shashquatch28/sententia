@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0042100",
+  "name": "Siya Trivedi",
+  "current_title": "Machine Learning Engineer",
+  "current_company": "Freshworks",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.584,
+  "outcome_language_score": 0.2,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Elasticsearch",
+    "Statistical Modeling",
+    "Learning to Rank",
+    "Recommendation Systems",
+    "Semantic Search",
+    "Fine-tuning LLMs",
+    "Image Classification",
+    "Pinecone"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Statistical Modeling 81/100",
+    "Experience at tier-1 product company: Netflix"
+  ],
+  "fast_score": 61.6,
+  "years_of_experience": 7.3,
+  "total_months": 86,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 43.3,
+    "profile_completeness_score": 96.7,
+    "interview_completion_rate": 0.67,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Elasticsearch": 68.7,
+      "Statistical Modeling": 81.5
+    }
+  }
+}

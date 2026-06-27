@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0052335",
+  "name": "Vivaan Sen",
+  "current_title": "Applied ML Engineer",
+  "current_company": "Aganitha",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.606,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Diffusion Models",
+    "PyTorch",
+    "GANs",
+    "Machine Learning",
+    "Learning to Rank",
+    "NLP",
+    "CNN",
+    "Semantic Search"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 59.8,
+  "years_of_experience": 6.4,
+  "total_months": 76,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 20.9,
+    "profile_completeness_score": 73.9,
+    "interview_completion_rate": 0.59,
+    "offer_acceptance_rate": 0.77,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

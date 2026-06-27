@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0072688",
+  "name": "Rajesh Goyal",
+  "current_title": "Data Scientist",
+  "current_company": "Niramai",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.345,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Milvus",
+    "Apache Flink",
+    "Data Science",
+    "Time Series",
+    "Object Detection",
+    "Forecasting",
+    "Deep Learning",
+    "LoRA"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 45-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Time Series 81/100"
+  ],
+  "fast_score": 60.8,
+  "years_of_experience": 6.9,
+  "total_months": 82,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 11.2,
+    "profile_completeness_score": 96.0,
+    "interview_completion_rate": 0.85,
+    "offer_acceptance_rate": 0.27,
+    "open_to_work_flag": true,
+    "notice_period_days": 45,
+    "skill_assessment_scores": {
+      "Time Series": 81.1,
+      "Object Detection": 44.8,
+      "Forecasting": 73.7,
+      "Recommendation Systems": 74.9,
+      "Qdrant": 56.7
+    }
+  }
+}

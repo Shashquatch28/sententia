@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.83,
+    "Product-Sense & User-Facing AI": 0.853,
+    "Founding-Team Ownership": 0.426,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.877
+  },
+  "required_skills_matched": [
+    "Semantic Search",
+    "pgvector",
+    "Pinecone",
+    "Information Retrieval"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.739,
+  "match_evidence": [
+    "Aarav Agarwal (Staff Machine Learning Engineer at Paytm) \u2014 Semantic Search, pgvector match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0077337"
+}

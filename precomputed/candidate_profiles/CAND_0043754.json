@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0043754",
+  "name": "Om Tiwari",
+  "current_title": "Software Engineer",
+  "current_company": "TCS",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.695,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.623,
+  "top_skills": [
+    "Webpack",
+    "Sales",
+    "Statistical Modeling",
+    "Tailwind",
+    "Flask",
+    "Object Detection",
+    "HTML",
+    "Data Science"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.0,
+  "years_of_experience": 9.0,
+  "total_months": 106,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 49.3,
+    "interview_completion_rate": 0.76,
+    "offer_acceptance_rate": 0.34,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Statistical Modeling": 61.8
+    }
+  }
+}

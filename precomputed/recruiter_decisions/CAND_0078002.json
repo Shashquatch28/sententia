@@ -1,0 +1,144 @@
+{
+  "candidate_id": "CAND_0078002",
+  "name": "Reyansh Sharma",
+  "current_title": "Machine Learning Engineer",
+  "current_company": "Meta",
+  "recommendation": "STRONGLY_ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.95,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "Active GitHub contributor (score 50/100)",
+        "confidence": 0.85,
+        "field_name": "github_activity_score"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "High interview completion rate (86%)",
+        "confidence": 0.9,
+        "field_name": "interview_completion_rate"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed pgvector: 80/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "High profile completeness (85%)",
+        "confidence": 0.8,
+        "field_name": "profile_completeness_score"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Skill assessment score: pgvector = 80/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.97,
+      "evidence": [
+        "Reyansh Sharma (Machine Learning Engineer at Meta) has pgvector, Flask matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.84,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.77,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.83,
+      "evidence": [
+        "Upward career trajectory with upward progression"
+      ],
+      "gaps": []
+    },
+    "overall": 0.87
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Reyansh Sharma",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Walk me through the most complex LLM/RAG system you designed. What retrieval architecture did you choose and why?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Specific architectural decisions (chunking, reranking, hybrid search), production tradeoffs, latency vs accuracy choices"
+    },
+    {
+      "question": "Tell me about a time you pushed back on a product requirement due to technical constraints. What happened?",
+      "priority": "HIGH",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Directness, confidence in technical judgment, outcome orientation and how they handled stakeholder disagreement"
+    },
+    {
+      "question": "How do you measure success for an AI feature after it ships?",
+      "priority": "MEDIUM",
+      "dimension": "Product",
+      "what_to_listen_for": "Specific metrics (precision, recall, latency, engagement), A/B testing, evaluation frameworks like RAGAS"
+    },
+    {
+      "question": "Describe your approach to fine-tuning vs. RAG for a new use case. How do you decide?",
+      "priority": "MEDIUM",
+      "dimension": "Technical",
+      "what_to_listen_for": "Systematic thinking, tradeoff awareness (cost, latency, data requirements), real examples from their work"
+    }
+  ],
+  "recommendation_rationale": "Reyansh Sharma (Machine Learning Engineer at Meta) is a strong match at 85/100 \u2014 pgvector and Flask directly cover our core LLM/RAG requirements. No blocking gaps identified. Advance to technical screen immediately.",
+  "timing_assessment": {
+    "current_tenure_months": 74,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 60-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 8
+  },
+  "required_skills_matched": [
+    "pgvector",
+    "Flask",
+    "FastAPI",
+    "TensorFlow",
+    "NLP"
+  ],
+  "overall_match_score": 0.859,
+  "top_evidence": [
+    "Reyansh Sharma (Machine Learning Engineer at Meta) \u2014 pgvector, Flask match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0020350",
+  "name": "Tanya Reddy",
+  "current_title": "AI Engineer",
+  "current_company": "Zoho",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.635,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Content Writing",
+    "MLOps",
+    "NLP",
+    "GANs",
+    "LoRA",
+    "LLMs",
+    "Tally",
+    "PEFT"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: NLP 87/100"
+  ],
+  "fast_score": 58.6,
+  "years_of_experience": 5.8,
+  "total_months": 69,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 94.7,
+    "interview_completion_rate": 0.79,
+    "offer_acceptance_rate": 0.43,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "NLP": 87.4,
+      "GANs": 55.2,
+      "LoRA": 51.3,
+      "LLMs": 55.8
+    }
+  }
+}

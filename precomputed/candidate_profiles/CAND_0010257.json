@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0010257",
+  "name": "Ira Shetty",
+  "current_title": "Senior Data Scientist",
+  "current_company": "Google",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.5,
+  "outcome_language_score": 0.2,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Milvus",
+    "TensorFlow",
+    "MLflow",
+    "Python",
+    "Forecasting",
+    "OpenSearch",
+    "Qdrant",
+    "JavaScript"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: OpenSearch 90/100",
+    "Experience at tier-1 product company: Google"
+  ],
+  "fast_score": 62.0,
+  "years_of_experience": 6.5,
+  "total_months": 77,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 45.5,
+    "profile_completeness_score": 85.1,
+    "interview_completion_rate": 0.92,
+    "offer_acceptance_rate": 0.74,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Milvus": 82.2,
+      "TensorFlow": 60.8,
+      "MLflow": 63.4,
+      "Python": 51.8,
+      "OpenSearch": 90.5
+    }
+  }
+}

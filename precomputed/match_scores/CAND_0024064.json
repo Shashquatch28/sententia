@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.83,
+    "Product-Sense & User-Facing AI": 0.594,
+    "Founding-Team Ownership": 0.512,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.7
+  },
+  "required_skills_matched": [
+    "LlamaIndex",
+    "LLMs",
+    "Diffusion Models"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.597,
+  "match_evidence": [
+    "Mira Desai (Software Engineer at Acme Corp) \u2014 LlamaIndex, LLMs match LLM/RAG core requirements",
+    "76% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0024064"
+}

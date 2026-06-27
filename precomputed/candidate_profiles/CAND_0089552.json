@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0089552",
+  "name": "Suresh Dutta",
+  "current_title": "Machine Learning Engineer",
+  "current_company": "Netflix",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.455,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Weaviate",
+    "Image Classification",
+    "TensorFlow",
+    "Qdrant",
+    "Semantic Search",
+    "TTS",
+    "Vector Search",
+    "Fine-tuning LLMs"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: TensorFlow 88/100",
+    "Experience at tier-1 product company: Netflix"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 6.0,
+  "total_months": 71,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 38.4,
+    "profile_completeness_score": 56.1,
+    "interview_completion_rate": 0.56,
+    "offer_acceptance_rate": 0.84,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Weaviate": 77.8,
+      "TensorFlow": 88.7,
+      "Qdrant": 65.9,
+      "Semantic Search": 67.0,
+      "Vector Search": 50.8
+    }
+  }
+}

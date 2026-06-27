@@ -1,0 +1,21 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.0,
+    "Product-Sense & User-Facing AI": 0.633,
+    "Founding-Team Ownership": 0.429,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Flask"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+  ],
+  "overall_match_score": 0.332,
+  "match_evidence": [
+    "Vihaan Mehta (Software Engineer at Globex Inc) \u2014 Flask match LLM/RAG core requirements",
+    "85% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0055985"
+}

@@ -1,0 +1,20 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.0,
+    "Product-Sense & User-Facing AI": 0.529,
+    "Founding-Team Ownership": 0.609,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.713
+  },
+  "required_skills_matched": [],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met",
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.311,
+  "match_evidence": [
+    "56% product company exposure",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0000017"
+}

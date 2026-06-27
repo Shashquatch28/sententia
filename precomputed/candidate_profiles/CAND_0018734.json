@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0018734",
+  "name": "Krishna Iyer",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Wipro",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.397,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 0.596,
+  "top_skills": [
+    "Redis",
+    "CNN",
+    "Databricks",
+    "PowerPoint",
+    "Angular",
+    "LangChain",
+    "Fine-tuning LLMs",
+    "PyTorch"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 65.0,
+  "years_of_experience": 8.0,
+  "total_months": 94,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 73.2,
+    "interview_completion_rate": 0.6,
+    "offer_acceptance_rate": 0.68,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "CNN": 67.1,
+      "Fine-tuning LLMs": 44.4,
+      "LLMs": 55.0,
+      "Speech Recognition": 68.9
+    }
+  }
+}

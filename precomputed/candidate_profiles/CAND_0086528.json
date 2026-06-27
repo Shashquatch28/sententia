@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0086528",
+  "name": "Nisha Sethi",
+  "current_title": "Backend Engineer",
+  "current_company": "Zoho",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.339,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "SAP",
+    "GCP",
+    "LLMs",
+    "Embeddings",
+    "dbt",
+    "MLflow",
+    "MLOps",
+    "OpenCV"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 6.0,
+  "total_months": 72,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 45.8,
+    "interview_completion_rate": 0.55,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Embeddings": 38.7,
+      "OpenCV": 49.3
+    }
+  }
+}

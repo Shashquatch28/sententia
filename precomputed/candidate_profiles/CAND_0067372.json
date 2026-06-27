@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0067372",
+  "name": "Aarav Reddy",
+  "current_title": "Backend Engineer",
+  "current_company": "Cognizant",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.34,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.239,
+  "top_skills": [
+    "Azure",
+    "Weights & Biases",
+    "MLflow",
+    "Data Pipelines",
+    "GCP",
+    "YOLO",
+    "Feature Engineering",
+    "Rust"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 63.0,
+  "years_of_experience": 7.5,
+  "total_months": 88,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 9.1,
+    "profile_completeness_score": 57.9,
+    "interview_completion_rate": 0.71,
+    "offer_acceptance_rate": 0.84,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "MLflow": 35.9,
+      "ASR": 61.5,
+      "PyTorch": 47.5
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0002222",
+  "name": "Advaith Kumar",
+  "current_title": "Senior Software Engineer",
+  "current_company": "InMobi",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.421,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.678,
+  "top_skills": [
+    "Photoshop",
+    "Marketing",
+    "YOLO",
+    "TTS",
+    "React",
+    "Kubeflow",
+    "PyTorch",
+    "Recommendation Systems"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "Actively open to work, 90-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 5.0,
+  "total_months": 59,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": 37.6,
+    "profile_completeness_score": 68.5,
+    "interview_completion_rate": 0.88,
+    "offer_acceptance_rate": 0.68,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

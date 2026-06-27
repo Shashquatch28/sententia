@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.9,
+    "Product-Sense & User-Facing AI": 0.704,
+    "Founding-Team Ownership": 0.312,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Machine Learning",
+    "PyTorch",
+    "Weaviate",
+    "Semantic Search"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.641,
+  "match_evidence": [
+    "Jay Chatterjee (ML Engineer at InMobi) \u2014 Machine Learning, PyTorch match LLM/RAG core requirements",
+    "78% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0092255"
+}

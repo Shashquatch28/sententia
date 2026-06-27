@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0028792",
+  "name": "Ananya Gupta",
+  "current_title": "Software Engineer",
+  "current_company": "Wayne Enterprises",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.131,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.402,
+  "top_skills": [
+    "Webpack",
+    "GCP",
+    "Angular",
+    "CSS",
+    "Excel",
+    "Redux",
+    "Data Science",
+    "Data Pipelines"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 63.0,
+  "years_of_experience": 9.1,
+  "total_months": 107,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 8.4,
+    "profile_completeness_score": 34.5,
+    "interview_completion_rate": 0.59,
+    "offer_acceptance_rate": 0.26,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Data Science": 53.3
+    }
+  }
+}

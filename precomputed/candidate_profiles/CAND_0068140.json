@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0068140",
+  "name": "Vihaan Shetty",
+  "current_title": "Software Engineer",
+  "current_company": "Freshworks",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.351,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "RAG",
+    "MLOps",
+    "BigQuery",
+    "Terraform",
+    "Next.js",
+    "REST APIs",
+    "Deep Learning",
+    "PowerPoint"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 7.6,
+  "total_months": 91,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 60.8,
+    "interview_completion_rate": 0.89,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Deep Learning": 51.4,
+      "Haystack": 72.3,
+      "OpenCV": 63.1,
+      "Feature Engineering": 43.7
+    }
+  }
+}

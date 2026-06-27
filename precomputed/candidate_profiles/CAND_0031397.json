@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0031397",
+  "name": "Pranav Bhatia",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Observe.AI",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.177,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Embeddings",
+    "MLOps",
+    "Hugging Face Transformers",
+    "Computer Vision",
+    "RAG",
+    "YOLO",
+    "Time Series",
+    "CNN"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 6.6,
+  "total_months": 79,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 12.3,
+    "profile_completeness_score": 93.8,
+    "interview_completion_rate": 0.6,
+    "offer_acceptance_rate": 0.28,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Embeddings": 64.7
+    }
+  }
+}

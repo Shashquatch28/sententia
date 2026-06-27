@@ -1,0 +1,114 @@
+{
+  "candidate_id": "CAND_0066713",
+  "name": "Dhruv Sharma",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Flipkart",
+  "recommendation": "REVIEW_FURTHER",
+  "trust_assessment": {
+    "overall_trust_score": 0.65,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed LlamaIndex: 85/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "High profile completeness (86%)",
+        "confidence": 0.8,
+        "field_name": "profile_completeness_score"
+      }
+    ],
+    "verified_claims": [
+      "Phone number verified",
+      "Skill assessment score: LlamaIndex = 85/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.63,
+      "evidence": [
+        "Dhruv Sharma (Senior Software Engineer (ML) at Flipkart) has LlamaIndex, Python matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.66,
+      "evidence": [
+        "91% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.34,
+      "evidence": [],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.3,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.531
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Dhruv Sharma",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "What is your experience with production LLM systems? Walk me through a specific example.",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Depth of real production experience vs. prototype or toy projects \u2014 look for specifics"
+    },
+    {
+      "question": "How have you dealt with AI model failures or degradations in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Monitoring setup, incident response, rollback strategy, root cause analysis"
+    },
+    {
+      "question": "What attracts you to an early-stage AI company vs. a larger tech firm?",
+      "priority": "MEDIUM",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Genuine startup motivation, comfort with ambiguity, equity mindset vs. job security"
+    }
+  ],
+  "recommendation_rationale": "Dhruv Sharma (Senior Software Engineer (ML) at Flipkart) shows adjacent fit at 58/100 via LlamaIndex, but full role alignment needs verification. Review if primary pipeline candidates are unavailable.",
+  "timing_assessment": {
+    "current_tenure_months": 67,
+    "likely_available": false,
+    "urgency_signal": "No active availability signal \u2014 outreach response rate unknown",
+    "estimated_notice_weeks": 17
+  },
+  "required_skills_matched": [
+    "LlamaIndex",
+    "Python",
+    "Hugging Face Transformers",
+    "Flask"
+  ],
+  "overall_match_score": 0.584,
+  "top_evidence": [
+    "Dhruv Sharma (Senior Software Engineer (ML) at Flipkart) \u2014 LlamaIndex, Python match LLM/RAG core requirements",
+    "91% of career at product companies \u2014 strong user-facing context"
+  ]
+}

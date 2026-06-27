@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.85,
+    "Product-Sense & User-Facing AI": 0.853,
+    "Founding-Team Ownership": 0.681,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.877
+  },
+  "required_skills_matched": [
+    "Hugging Face Transformers",
+    "LangChain",
+    "Python",
+    "LLMs"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.757,
+  "match_evidence": [
+    "Anika Rao (Senior Machine Learning Engineer at Flipkart) \u2014 Hugging Face Transformers, LangChain match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0055905"
+}

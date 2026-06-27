@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0046525",
+  "name": "Tanvi Mukherjee",
+  "current_title": "Senior Machine Learning Engineer",
+  "current_company": "Genpact AI",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.629,
+  "outcome_language_score": 0.2,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Elasticsearch",
+    "Redux",
+    "LangChain",
+    "Machine Learning",
+    "LlamaIndex",
+    "Information Retrieval",
+    "TensorFlow",
+    "LLMs"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: LangChain 96/100",
+    "Experience at tier-1 product company: LinkedIn"
+  ],
+  "fast_score": 59.2,
+  "years_of_experience": 6.1,
+  "total_months": 73,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 36.7,
+    "profile_completeness_score": 62.8,
+    "interview_completion_rate": 0.81,
+    "offer_acceptance_rate": 0.48,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Elasticsearch": 77.1,
+      "LangChain": 96.5,
+      "Machine Learning": 86.7,
+      "LlamaIndex": 96.1,
+      "Information Retrieval": 66.4
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.8,
+    "Founding-Team Ownership": 0.473,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "pgvector",
+    "Machine Learning"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.558,
+  "match_evidence": [
+    "Ira Saxena (Data Scientist at Sarvam AI) \u2014 pgvector, Machine Learning match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0081778"
+}

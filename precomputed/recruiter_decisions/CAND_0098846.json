@@ -1,0 +1,129 @@
+{
+  "candidate_id": "CAND_0098846",
+  "name": "Shreya Saxena",
+  "current_title": "AI Engineer",
+  "current_company": "upGrad",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.95,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Highly active GitHub contributor (score 86/100)",
+        "confidence": 0.95,
+        "field_name": "github_activity_score"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "High interview completion rate (80%)",
+        "confidence": 0.9,
+        "field_name": "interview_completion_rate"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "High profile completeness (90%)",
+        "confidence": 0.8,
+        "field_name": "profile_completeness_score"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Verifiable technical output via GitHub (score 86/100)"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.33,
+      "evidence": [
+        "Shreya Saxena (AI Engineer at upGrad) has Hugging Face Transformers, Machine Learning matching role requirements"
+      ],
+      "gaps": [
+        "MLOps/deployment stack not evident in skill profile"
+      ]
+    },
+    "product": {
+      "score": 0.83,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.72,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.62,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.601
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Skill Gap",
+      "severity": "MEDIUM",
+      "description": "Shreya Saxena: MLOps/deployment stack not evident in skill profile",
+      "mitigation": "Probe depth of adjacent skills and practical project examples in technical screen",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Shreya Saxena (AI Engineer at upGrad) scores 63/100 with Hugging Face Transformers aligned to role requirements. Gap: MLOps/deployment stack not evident in skill profile. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 90,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 45-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 6
+  },
+  "required_skills_matched": [
+    "Hugging Face Transformers",
+    "Machine Learning"
+  ],
+  "overall_match_score": 0.635,
+  "top_evidence": [
+    "Shreya Saxena (AI Engineer at upGrad) \u2014 Hugging Face Transformers, Machine Learning match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

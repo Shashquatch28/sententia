@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0005269",
+  "name": "Nisha Bose",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Sarvam AI",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.177,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Information Retrieval",
+    "Machine Learning",
+    "Object Detection",
+    "YOLO",
+    "Airflow",
+    "Hugging Face Transformers",
+    "Fine-tuning LLMs",
+    "Weights & Biases"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 55/100) \u2014 verifiable technical output",
+    "Actively open to work, 45-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Machine Learning 87/100"
+  ],
+  "fast_score": 59.2,
+  "years_of_experience": 6.1,
+  "total_months": 72,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 55.2,
+    "profile_completeness_score": 53.4,
+    "interview_completion_rate": 0.78,
+    "offer_acceptance_rate": 0.39,
+    "open_to_work_flag": true,
+    "notice_period_days": 45,
+    "skill_assessment_scores": {
+      "Machine Learning": 87.8,
+      "Weights & Biases": 76.6
+    }
+  }
+}

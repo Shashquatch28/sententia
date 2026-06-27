@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0053123",
+  "name": "Jay Goyal",
+  "current_title": "Software Engineer",
+  "current_company": "Swiggy",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.323,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.579,
+  "top_skills": [
+    "Tailwind",
+    "CNN",
+    "Data Pipelines",
+    "TensorFlow",
+    "Computer Vision",
+    "Sales",
+    "Azure",
+    "Agile"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 59.8,
+  "years_of_experience": 6.4,
+  "total_months": 76,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 81.5,
+    "interview_completion_rate": 0.64,
+    "offer_acceptance_rate": 0.32,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "CNN": 43.2
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.85,
+    "Product-Sense & User-Facing AI": 0.7,
+    "Founding-Team Ownership": 0.617,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.7
+  },
+  "required_skills_matched": [
+    "LangChain",
+    "Semantic Search",
+    "Weights & Biases",
+    "Diffusion Models"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.692,
+  "match_evidence": [
+    "Manish Joshi (Backend Engineer at CRED) \u2014 LangChain, Semantic Search match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0051441"
+}

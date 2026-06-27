@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0069059",
+  "name": "Advaith Sharma",
+  "current_title": "Senior Software Engineer",
+  "current_company": "BYJU'S",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.428,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.724,
+  "top_skills": [
+    "MLflow",
+    "LLMs",
+    "Apache Flink",
+    "Tally",
+    "Weights & Biases",
+    "Milvus",
+    "CNN",
+    "Figma"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [
+    "Low interview completion rate (48%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.8,
+  "years_of_experience": 6.4,
+  "total_months": 76,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 86.0,
+    "interview_completion_rate": 0.48,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "MLflow": 70.9,
+      "Milvus": 74.3
+    }
+  }
+}

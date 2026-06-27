@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0036709",
+  "name": "Rohan Tiwari",
+  "current_title": "Software Engineer",
+  "current_company": "Paytm",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.571,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.275,
+  "top_skills": [
+    "Kafka",
+    "Redux",
+    "TTS",
+    "ASR",
+    "MongoDB",
+    "Kubeflow",
+    "Computer Vision",
+    "Vue.js"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: MLflow 76/100"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 7.7,
+  "total_months": 91,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 52.5,
+    "interview_completion_rate": 0.83,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Computer Vision": 75.6,
+      "MLflow": 76.9
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0000030",
+  "name": "Ritu Pillai",
+  "current_title": "Marketing Manager",
+  "current_company": "Dunder Mifflin",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.93,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "gRPC",
+    "Apache Beam",
+    "GraphQL",
+    "Java",
+    "Spring Boot",
+    "Microservices",
+    "Six Sigma",
+    "Accounting"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 4.0,
+  "years_of_experience": 10.0,
+  "total_months": 118,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 21.7,
+    "profile_completeness_score": 59.7,
+    "interview_completion_rate": 0.73,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

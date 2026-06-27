@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0000008",
+  "name": "Shaurya Chatterjee",
+  "current_title": "Operations Manager",
+  "current_company": "Wipro",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.7,
+  "skill_duration_credible": true,
+  "ownership_language_score": 1.0,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.0,
+  "top_skills": [
+    "Java",
+    "BigQuery",
+    "Spark",
+    "Accounting",
+    "Kubernetes",
+    "TypeScript",
+    "Rust",
+    "HTML"
+  ],
+  "career_trajectory": "unknown",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 14.2,
+  "years_of_experience": 3.6,
+  "total_months": 43,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 63.0,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

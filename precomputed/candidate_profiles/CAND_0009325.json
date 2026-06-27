@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0009325",
+  "name": "Mira Malhotra",
+  "current_title": "Software Engineer",
+  "current_company": "Unacademy",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.449,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 0.713,
+  "top_skills": [
+    "SEO",
+    "Flask",
+    "Pinecone",
+    "Data Pipelines",
+    "Computer Vision",
+    "Apache Flink",
+    "Embeddings",
+    "PostgreSQL"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 62.6,
+  "years_of_experience": 6.8,
+  "total_months": 80,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 11.9,
+    "profile_completeness_score": 74.2,
+    "interview_completion_rate": 0.54,
+    "offer_acceptance_rate": 0.57,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Pinecone": 68.3,
+      "Computer Vision": 72.6,
+      "pgvector": 36.0,
+      "Data Science": 55.4
+    }
+  }
+}

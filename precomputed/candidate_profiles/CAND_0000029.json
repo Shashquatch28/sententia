@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0000029",
+  "name": "Priya Sethi",
+  "current_title": "Business Analyst",
+  "current_company": "Wipro",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.881,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.165,
+  "top_skills": [
+    "Node.js",
+    "Scrum",
+    "Tailwind",
+    "Hadoop",
+    "Spring Boot",
+    "CI/CD",
+    "gRPC",
+    "Terraform"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 25.4,
+  "years_of_experience": 7.2,
+  "total_months": 85,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 42.5,
+    "profile_completeness_score": 40.5,
+    "interview_completion_rate": 0.67,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

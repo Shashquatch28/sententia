@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0025533",
+  "name": "Ira Hegde",
+  "current_title": "Backend Engineer",
+  "current_company": "Dream11",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.508,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "MongoDB",
+    "Marketing",
+    "Computer Vision",
+    "Django",
+    "Deep Learning",
+    "Flask",
+    "Diffusion Models",
+    "QLoRA"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 8.0,
+  "total_months": 95,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 47.9,
+    "profile_completeness_score": 50.8,
+    "interview_completion_rate": 0.64,
+    "offer_acceptance_rate": 0.82,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Computer Vision": 48.9,
+      "QLoRA": 41.4,
+      "Fine-tuning LLMs": 55.5,
+      "GANs": 59.9,
+      "CNN": 64.5
+    }
+  }
+}

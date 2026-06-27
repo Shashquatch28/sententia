@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0088354",
+  "name": "Rohan Mishra",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Aganitha",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.359,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "OpenSearch",
+    "Hugging Face Transformers",
+    "AWS",
+    "PEFT",
+    "YOLO",
+    "MLOps",
+    "Machine Learning",
+    "Diffusion Models"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 72/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: OpenSearch 81/100"
+  ],
+  "fast_score": 62.0,
+  "years_of_experience": 6.5,
+  "total_months": 77,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 72.2,
+    "profile_completeness_score": 88.5,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": 0.36,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "OpenSearch": 81.2,
+      "PEFT": 45.0
+    }
+  }
+}

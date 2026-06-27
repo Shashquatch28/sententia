@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0004555",
+  "name": "Aditya Chowdary",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Dream11",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.221,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Content Writing",
+    "Docker",
+    "JavaScript",
+    "Diffusion Models",
+    "LoRA",
+    "GCP",
+    "LLMs",
+    "TensorFlow"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: OpenCV 85/100"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 5.0,
+  "total_months": 59,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 70.2,
+    "interview_completion_rate": 0.89,
+    "offer_acceptance_rate": 0.59,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Diffusion Models": 65.7,
+      "LLMs": 60.6,
+      "TensorFlow": 71.7,
+      "OpenCV": 85.4,
+      "Data Science": 42.2
+    }
+  }
+}

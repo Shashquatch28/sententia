@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0044222",
+  "name": "Dev Shah",
+  "current_title": "AI Engineer",
+  "current_company": "PolicyBazaar",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.625,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Vector Search",
+    "LlamaIndex",
+    "OpenSearch",
+    "Java",
+    "Qdrant",
+    "Feature Engineering",
+    "Time Series",
+    "Weaviate"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: LlamaIndex 84/100"
+  ],
+  "fast_score": 62.0,
+  "years_of_experience": 7.7,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 28.9,
+    "profile_completeness_score": 71.3,
+    "interview_completion_rate": 0.89,
+    "offer_acceptance_rate": 0.3,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Vector Search": 52.4,
+      "LlamaIndex": 84.6
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.813,
+    "Founding-Team Ownership": 0.372,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.757
+  },
+  "required_skills_matched": [
+    "pgvector",
+    "Deep Learning",
+    "Qdrant"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.593,
+  "match_evidence": [
+    "Aadhya Iyer (Lead AI Engineer at Sarvam AI) \u2014 pgvector, Deep Learning match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0068351"
+}

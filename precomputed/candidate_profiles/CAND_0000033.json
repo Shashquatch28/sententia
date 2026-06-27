@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0000033",
+  "name": "Shreya Nair",
+  "current_title": "Graphic Designer",
+  "current_company": "Wipro",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.476,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 0.696,
+  "top_skills": [
+    "Kubernetes",
+    "Data Pipelines",
+    "Snowflake",
+    "CI/CD",
+    "SEO",
+    "ETL",
+    "Airflow",
+    "TypeScript"
+  ],
+  "career_trajectory": "mixed",
+  "red_flags": [
+    "Low interview completion rate (37%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 26.0,
+  "years_of_experience": 8.6,
+  "total_months": 102,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 38.3,
+    "profile_completeness_score": 74.0,
+    "interview_completion_rate": 0.37,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {}
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0065927",
+  "name": "Aarav Arora",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Ola",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.37,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "LoRA",
+    "Hugging Face Transformers",
+    "Computer Vision",
+    "QLoRA",
+    "pgvector",
+    "LLMs",
+    "Spark",
+    "CNN"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.0,
+  "years_of_experience": 6.5,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 91.0,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

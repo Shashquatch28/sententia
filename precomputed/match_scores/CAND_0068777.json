@@ -1,0 +1,20 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.35,
+    "Product-Sense & User-Facing AI": 0.719,
+    "Founding-Team Ownership": 0.564,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Milvus",
+    "LlamaIndex"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.503,
+  "match_evidence": [
+    "Rahul Pandey (AI Research Engineer at PolicyBazaar) \u2014 Milvus, LlamaIndex match LLM/RAG core requirements",
+    "82% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0068777"
+}

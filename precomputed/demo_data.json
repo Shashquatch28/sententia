@@ -1,6 +1,6 @@
 {
   "job_intelligence": {
-    "role_summary": "Job Description: Senior AI Engineer \u2014 Founding Team Company: Redrob AI (Series A AI-native talent intelligence platform)",
+    "role_summary": "Redrob AI is a Series A, AI-native talent intelligence platform based in Pune/Noida, India. We are building the next generation of recruitment infrastructure powered by LLMs and RAG pipelines. We are looking for a Senior AI Engineer to join us as a founding-team hire. You will build LLM and RAG systems that power our core talent intelligence products \u2014 from candidate matching to recruiter copilots. This is a high-ownership, high-ambiguity role where your architecture decisions will directly shape the product roadmap.",
     "implicit_requirements": [
       "Comfort with ambiguity \u2014 founding-team scope will evolve rapidly without clear specs",
       "Self-directed learning \u2014 AI field changes fast, must stay current independently",
@@ -13,12 +13,12 @@
     "culture_signals": [
       "Founding-team environment \u2014 early hire shaping technical culture from the ground up",
       "Fast-paced execution bias \u2014 values shipping over perfecting",
+      "High ownership expected \u2014 autonomous end-to-end responsibility",
       "Series A stage \u2014 scrappy, high-upside environment with limited process overhead",
       "Product-minded engineers preferred \u2014 user impact matters as much as code quality",
       "AI-native company \u2014 AI tooling is the default, not an add-on",
       "Talent-intelligence domain \u2014 builds tools that directly shape hiring decisions",
-      "Startup mindset \u2014 initiative and adaptability valued over process adherence",
-      "Scale ambitions \u2014 building for growth from day one"
+      "Startup mindset \u2014 initiative and adaptability valued over process adherence"
     ],
     "ideal_candidate_narrative": "The ideal hire is a senior ML engineer with 5-8 years experience who has built LLM or RAG pipelines at a product company and shipped them to real users at scale. They have worked at a startup or early-stage team, own work end-to-end, and speak in outcomes (latency reduced 40%, recall improved to 87%). They are Python-native with hands-on vector DB and model deployment experience, and excited to join a founding team where their architecture decisions shape the product roadmap.",
     "discriminator_hierarchy": [
@@ -96,8 +96,8 @@
     ],
     "company_stage_signals": "Series A AI-native startup (~15-40 person team). Post-PMF but pre-scale. Candidate must be comfortable in ambiguous, fast-moving environments with limited process. Equity is part of the compensation \u2014 prefer candidates who have joined early-stage companies before. Culture fit is critical: Redrob AI needs builders, not order-takers.",
     "seniority_calibration": "Senior IC (L5-equivalent): years_of_experience in range 5-9. Title keywords: Senior Engineer, Staff Engineer, Tech Lead, Principal Engineer. Must show progression from IC to senior/lead-scope over career history. Founding-team hire implies readiness to grow into tech lead within 12-18 months.",
-    "generated_at": "2026-06-26T12:36:27.147845+00:00",
-    "jd_source": "C:\\Users\\Rishik Sinha\\Desktop\\Projects\\sententia\\[PUB] India_runs_data_and_ai_challenge (1)\\[PUB] India_runs_data_and_ai_challenge\\India_runs_data_and_ai_challenge\\job_description.docx"
+    "generated_at": "2026-06-27T10:32:58.639268+00:00",
+    "jd_source": "C:\\Users\\Shashwat Kumar\\Desktop\\Labs\\Sententia\\job_description.md"
   },
   "candidates_by_tier": {
     "STRONGLY_ADVANCE": [
@@ -112,7 +112,7 @@
           "Myra Krishnan (Senior NLP Engineer at Ola) \u2014 Qdrant, Weights & Biases match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Myra Krishnan (Senior NLP Engineer at Ola, 86/100) \u2014 Myra Krishnan (Senior NLP Engineer at Ola) \u2014 Qdrant, Weights & Biases match LLM/RAG core requirements; 100% of career at product companies \u2014 strong user-facing context. Watch: Standard background check and reference calls required for Myra Krishnan.",
+        "reasoning": "Strong hire at 86/100. Myra Krishnan brings Qdrant and Weights & Biases with demonstrated product-company depth (Ola). 100% of career at product companies \u2014 strong user-facing context. Watch: Standard background check and reference calls required for Myra Krishnan. Recommend immediate technical screen.",
         "fast_score": 64.0
       },
       {
@@ -126,7 +126,7 @@
           "Reyansh Sharma (Machine Learning Engineer at Meta) \u2014 pgvector, Flask match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Strong hire at 85/100. Reyansh Sharma brings pgvector and Flask with demonstrated product-company depth (Meta). 100% of career at product companies \u2014 strong user-facing context. Watch: Standard background check and reference calls required for Reyansh Sharma. Recommend immediate technical screen.",
+        "reasoning": "Reyansh Sharma (Machine Learning Engineer at Meta, 85/100) \u2014 Reyansh Sharma (Machine Learning Engineer at Meta) \u2014 pgvector, Flask match LLM/RAG core requirements; 100% of career at product companies \u2014 strong user-facing context. Watch: Standard background check and reference calls required for Reyansh Sharma.",
         "fast_score": 61.6
       },
       {
@@ -154,7 +154,7 @@
           "Shreya Trivedi (AI Research Engineer at Razorpay) \u2014 Diffusion Models, MLflow match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Strong hire at 81/100. Shreya Trivedi brings Diffusion Models and MLflow with demonstrated product-company depth (Razorpay). 100% of career at product companies \u2014 strong user-facing context. Watch: Standard background check and reference calls required for Shreya Trivedi. Recommend immediate technical screen.",
+        "reasoning": "81/100 match \u2014 Shreya Trivedi's 6-year career (AI Research Engineer, Razorpay) directly addresses LLM/RAG requirements via Diffusion Models and MLflow. 100% of career at product companies \u2014 strong user-facing context. Watch: Standard background check and reference calls required for Shreya Trivedi.",
         "fast_score": 62.0
       }
     ],
@@ -170,7 +170,7 @@
           "Dhruv Dutta (AI Engineer at Flipkart) \u2014 Hugging Face Transformers, Diffusion Models match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Dhruv Dutta (Flipkart) scores 79/100 \u2014 Hugging Face Transformers and Diffusion Models aligns with role. Key check: no critical gaps identified.",
+        "reasoning": "Dhruv Dutta (AI Engineer at Flipkart, 79/100) \u2014 Dhruv Dutta (AI Engineer at Flipkart) \u2014 Hugging Face Transformers, Diffusion Models match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 64.0
       },
       {
@@ -226,7 +226,7 @@
           "Mira Banerjee (Senior Applied Scientist at Meta) \u2014 Fine-tuning LLMs, LlamaIndex match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Mira Banerjee (Meta) scores 77/100 \u2014 Fine-tuning LLMs and LlamaIndex aligns with role. Key check: no critical gaps identified.",
+        "reasoning": "Mira Banerjee (Senior Applied Scientist at Meta, 77/100) \u2014 Mira Banerjee (Senior Applied Scientist at Meta) \u2014 Fine-tuning LLMs, LlamaIndex match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 64.0
       },
       {
@@ -240,7 +240,7 @@
           "Deepak Bansal (AI Engineer at CRED) \u2014 Information Retrieval, MLflow match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Deepak Bansal (AI Engineer, 76/100) \u2014 Deepak Bansal (AI Engineer at CRED) \u2014 Information Retrieval, MLflow match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
+        "reasoning": "Advance to phone screen. Deepak Bansal (CRED) scores 76/100 \u2014 Information Retrieval and MLflow aligns with role. Key check: no critical gaps identified.",
         "fast_score": 66.0
       },
       {
@@ -254,7 +254,7 @@
           "Aditya Pillai (Lead AI Engineer at Meta) \u2014 Hugging Face Transformers, Semantic Search match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Aditya Pillai (Lead AI Engineer at Meta, 76/100) \u2014 Aditya Pillai (Lead AI Engineer at Meta) \u2014 Hugging Face Transformers, Semantic Search match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
+        "reasoning": "Aditya Pillai (Lead AI Engineer, 76/100) \u2014 Aditya Pillai (Lead AI Engineer at Meta) \u2014 Hugging Face Transformers, Semantic Search match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 64.0
       },
       {
@@ -291,12 +291,12 @@
         "current_title": "AI Research Engineer",
         "current_company": "PharmEasy",
         "recommendation": "ADVANCE",
-        "overall_match_score": 0.751,
+        "overall_match_score": 0.75,
         "top_evidence": [
           "Shaurya Tiwari (AI Research Engineer at PharmEasy) \u2014 LlamaIndex, Semantic Search match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Shaurya Tiwari (AI Research Engineer, 75/100) \u2014 Shaurya Tiwari (AI Research Engineer at PharmEasy) \u2014 LlamaIndex, Semantic Search match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
+        "reasoning": "Shaurya Tiwari (AI Research Engineer at PharmEasy, 75/100) \u2014 Shaurya Tiwari (AI Research Engineer at PharmEasy) \u2014 LlamaIndex, Semantic Search match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 63.4
       },
       {
@@ -310,7 +310,7 @@
           "Amit Arora (Staff Machine Learning Engineer at Yellow.ai) \u2014 Pinecone, LLMs match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Amit Arora (Staff Machine Learning Engineer, 74/100) \u2014 Amit Arora (Staff Machine Learning Engineer at Yellow.ai) \u2014 Pinecone, LLMs match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
+        "reasoning": "Amit Arora (Staff Machine Learning Engineer at Yellow.ai, 74/100) \u2014 Amit Arora (Staff Machine Learning Engineer at Yellow.ai) \u2014 Pinecone, LLMs match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 64.0
       },
       {
@@ -324,7 +324,7 @@
           "Aarohi Chowdary (Staff Machine Learning Engineer at Locobuzz) \u2014 LlamaIndex, PyTorch match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Aarohi Chowdary (Staff Machine Learning Engineer at Locobuzz, 73/100) \u2014 Aarohi Chowdary (Staff Machine Learning Engineer at Locobuzz) \u2014 LlamaIndex, PyTorch match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
+        "reasoning": "Advance to phone screen. Aarohi Chowdary (Locobuzz) scores 73/100 \u2014 LlamaIndex and PyTorch aligns with role. Key check: no critical gaps identified.",
         "fast_score": 61.8
       },
       {
@@ -338,7 +338,7 @@
           "Aarav Agarwal (Staff Machine Learning Engineer at Paytm) \u2014 Semantic Search, pgvector match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Aarav Agarwal (Paytm) scores 73/100 \u2014 Semantic Search and pgvector aligns with role. Key check: no critical gaps identified.",
+        "reasoning": "Aarav Agarwal (Staff Machine Learning Engineer, 73/100) \u2014 Aarav Agarwal (Staff Machine Learning Engineer at Paytm) \u2014 Semantic Search, pgvector match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 65.0
       },
       {
@@ -352,7 +352,7 @@
           "Kiara Sen (Applied ML Engineer at Zoho) \u2014 NLP, Hugging Face Transformers match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Kiara Sen (Applied ML Engineer at Zoho, 73/100) \u2014 Kiara Sen (Applied ML Engineer at Zoho) \u2014 NLP, Hugging Face Transformers match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
+        "reasoning": "Kiara Sen (Applied ML Engineer, 73/100) \u2014 Kiara Sen (Applied ML Engineer at Zoho) \u2014 NLP, Hugging Face Transformers match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 62.6
       },
       {
@@ -366,7 +366,7 @@
           "Rajesh Kapoor (AI Research Engineer at Dream11) \u2014 CI/CD, Sentence Transformers match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Rajesh Kapoor (Dream11) scores 73/100 \u2014 CI/CD and Sentence Transformers aligns with role. Key check: no critical gaps identified.",
+        "reasoning": "Rajesh Kapoor (AI Research Engineer, 73/100) \u2014 Rajesh Kapoor (AI Research Engineer at Dream11) \u2014 CI/CD, Sentence Transformers match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 62.4
       },
       {
@@ -380,7 +380,7 @@
           "Om Mittal (Software Engineer at InMobi) \u2014 Weights & Biases, pgvector match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Om Mittal (Software Engineer at InMobi, 73/100) \u2014 Om Mittal (Software Engineer at InMobi) \u2014 Weights & Biases, pgvector match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
+        "reasoning": "Om Mittal (Software Engineer, 73/100) \u2014 Om Mittal (Software Engineer at InMobi) \u2014 Weights & Biases, pgvector match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 61.2
       },
       {
@@ -436,7 +436,7 @@
           "Neha Arora (Senior Software Engineer (ML) at Genpact AI) \u2014 Flask, LLMs match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Neha Arora (Senior Software Engineer (ML), 73/100) \u2014 Neha Arora (Senior Software Engineer (ML) at Genpact AI) \u2014 Flask, LLMs match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
+        "reasoning": "Advance to phone screen. Neha Arora (Genpact AI) scores 73/100 \u2014 Flask and LLMs aligns with role. Key check: no critical gaps identified.",
         "fast_score": 62.0
       },
       {
@@ -450,7 +450,7 @@
           "Riya Kapoor (Senior Data Scientist at Sarvam AI) \u2014 Redis, Deep Learning match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Riya Kapoor (Senior Data Scientist, 72/100) \u2014 Riya Kapoor (Senior Data Scientist at Sarvam AI) \u2014 Redis, Deep Learning match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
+        "reasoning": "Advance to phone screen. Riya Kapoor (Sarvam AI) scores 72/100 \u2014 Redis and Deep Learning aligns with role. Key check: no critical gaps identified.",
         "fast_score": 65.8
       },
       {
@@ -464,7 +464,7 @@
           "Suresh Kapoor (Senior Data Scientist at Niramai) \u2014 RAG, pgvector match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Suresh Kapoor (Senior Data Scientist at Niramai, 72/100) \u2014 Suresh Kapoor (Senior Data Scientist at Niramai) \u2014 RAG, pgvector match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
+        "reasoning": "Advance to phone screen. Suresh Kapoor (Niramai) scores 72/100 \u2014 RAG and pgvector aligns with role. Key check: no critical gaps identified.",
         "fast_score": 66.0
       },
       {
@@ -492,7 +492,7 @@
           "Rahul Bansal (Senior Machine Learning Engineer at Amazon) \u2014 Fine-tuning LLMs, Vector Search match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Rahul Bansal (Senior Machine Learning Engineer at Amazon, 71/100) \u2014 Rahul Bansal (Senior Machine Learning Engineer at Amazon) \u2014 Fine-tuning LLMs, Vector Search match LLM/RAG core requirements; gap to probe: MLOps/deployment stack not evident in skill profile. Advancing for technical screen.",
+        "reasoning": "Rahul Bansal (Senior Machine Learning Engineer, 71/100) \u2014 Rahul Bansal (Senior Machine Learning Engineer at Amazon) \u2014 Fine-tuning LLMs, Vector Search match LLM/RAG core requirements. Gap to probe: mlops/deployment stack not evident in skill profile. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 62.0
       },
       {
@@ -506,7 +506,7 @@
           "Saanvi Bansal (AI Engineer at Rephrase.ai) \u2014 PyTorch, LangChain match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Saanvi Bansal (Rephrase.ai) scores 70/100 \u2014 PyTorch and LangChain aligns with role. Key check: no critical gaps identified.",
+        "reasoning": "Saanvi Bansal (AI Engineer at Rephrase.ai, 70/100) \u2014 Saanvi Bansal (AI Engineer at Rephrase.ai) \u2014 PyTorch, LangChain match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 62.6
       },
       {
@@ -548,7 +548,7 @@
           "Manish Joshi (Backend Engineer at CRED) \u2014 LangChain, Semantic Search match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Manish Joshi (Backend Engineer at CRED, 69/100) \u2014 Manish Joshi (Backend Engineer at CRED) \u2014 LangChain, Semantic Search match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
+        "reasoning": "Advance to phone screen. Manish Joshi (CRED) scores 69/100 \u2014 LangChain and Semantic Search aligns with role. Key check: no critical gaps identified.",
         "fast_score": 64.0
       },
       {
@@ -562,7 +562,7 @@
           "Shreya Tiwari (Senior NLP Engineer at Niramai) \u2014 TensorFlow, Embeddings match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Shreya Tiwari (Senior NLP Engineer, 69/100) \u2014 Shreya Tiwari (Senior NLP Engineer at Niramai) \u2014 TensorFlow, Embeddings match LLM/RAG core requirements. Gap to probe: mlops/deployment stack not evident in skill profile. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
+        "reasoning": "Shreya Tiwari (Senior NLP Engineer at Niramai, 69/100) \u2014 Shreya Tiwari (Senior NLP Engineer at Niramai) \u2014 TensorFlow, Embeddings match LLM/RAG core requirements; gap to probe: MLOps/deployment stack not evident in skill profile. Advancing for technical screen.",
         "fast_score": 62.0
       },
       {
@@ -576,7 +576,7 @@
           "Ananya Arora (Senior NLP Engineer at Microsoft) \u2014 TensorFlow, Machine Learning match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Ananya Arora (Senior NLP Engineer, 68/100) \u2014 Ananya Arora (Senior NLP Engineer at Microsoft) \u2014 TensorFlow, Machine Learning match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
+        "reasoning": "Advance to phone screen. Ananya Arora (Microsoft) scores 68/100 \u2014 TensorFlow and Machine Learning aligns with role. Key check: no critical gaps identified.",
         "fast_score": 62.6
       },
       {
@@ -604,7 +604,7 @@
           "Arnav Iyengar (ML Engineer at Genpact AI) \u2014 BentoML, LangChain match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Arnav Iyengar (Genpact AI) scores 68/100 \u2014 BentoML and LangChain aligns with role. Key check: no critical gaps identified.",
+        "reasoning": "Arnav Iyengar (ML Engineer at Genpact AI, 68/100) \u2014 Arnav Iyengar (ML Engineer at Genpact AI) \u2014 BentoML, LangChain match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 65.0
       },
       {
@@ -618,7 +618,7 @@
           "Siya Trivedi (Machine Learning Engineer at Freshworks) \u2014 Semantic Search, Fine-tuning LLMs match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Siya Trivedi (Freshworks) scores 67/100 \u2014 Semantic Search and Fine-tuning LLMs aligns with role. Key check: no critical gaps identified.",
+        "reasoning": "Siya Trivedi (Machine Learning Engineer at Freshworks, 67/100) \u2014 Siya Trivedi (Machine Learning Engineer at Freshworks) \u2014 Semantic Search, Fine-tuning LLMs match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 61.6
       },
       {
@@ -632,7 +632,7 @@
           "Manish Patel (Senior Software Engineer at Initech) \u2014 Vector Search, Kubernetes match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Manish Patel (Initech) scores 66/100 \u2014 Vector Search and Kubernetes aligns with role. Key check: no critical gaps identified.",
+        "reasoning": "Manish Patel (Senior Software Engineer, 66/100) \u2014 Manish Patel (Senior Software Engineer at Initech) \u2014 Vector Search, Kubernetes match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 66.0
       },
       {
@@ -646,7 +646,7 @@
           "Naina Desai (Junior ML Engineer at BYJU'S) \u2014 Hugging Face Transformers, pgvector match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Naina Desai (Junior ML Engineer, 66/100) \u2014 Naina Desai (Junior ML Engineer at BYJU'S) \u2014 Hugging Face Transformers, pgvector match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
+        "reasoning": "Naina Desai (Junior ML Engineer at BYJU'S, 66/100) \u2014 Naina Desai (Junior ML Engineer at BYJU'S) \u2014 Hugging Face Transformers, pgvector match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 62.0
       },
       {
@@ -660,7 +660,7 @@
           "Aditya Reddy (AI Research Engineer at Dream11) \u2014 Sentence Transformers, Embeddings match LLM/RAG core requirements",
           "91% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Aditya Reddy (Dream11) scores 66/100 \u2014 Sentence Transformers and Embeddings aligns with role. Key check: no critical gaps identified.",
+        "reasoning": "Aditya Reddy (AI Research Engineer at Dream11, 66/100) \u2014 Aditya Reddy (AI Research Engineer at Dream11) \u2014 Sentence Transformers, Embeddings match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 62.6
       },
       {
@@ -674,7 +674,7 @@
           "Riya Chowdary (ML Engineer at Sarvam AI) \u2014 NLP, BentoML match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Riya Chowdary (Sarvam AI) scores 66/100 \u2014 NLP and BentoML aligns with role. Key check: no critical gaps identified.",
+        "reasoning": "Riya Chowdary (ML Engineer, 66/100) \u2014 Riya Chowdary (ML Engineer at Sarvam AI) \u2014 NLP, BentoML match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 61.2
       },
       {
@@ -725,12 +725,12 @@
         "current_title": "Junior ML Engineer",
         "current_company": "Glance",
         "recommendation": "ADVANCE",
-        "overall_match_score": 0.653,
+        "overall_match_score": 0.652,
         "top_evidence": [
           "Manish Kapoor (Junior ML Engineer at Glance) \u2014 Diffusion Models, Sentence Transformers match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Manish Kapoor (Junior ML Engineer at Glance, 65/100) \u2014 Manish Kapoor (Junior ML Engineer at Glance) \u2014 Diffusion Models, Sentence Transformers match LLM/RAG core requirements; gap to probe: MLOps/deployment stack not evident in skill profile. Advancing for technical screen.",
+        "reasoning": "Manish Kapoor (Junior ML Engineer, 65/100) \u2014 Manish Kapoor (Junior ML Engineer at Glance) \u2014 Diffusion Models, Sentence Transformers match LLM/RAG core requirements. Gap to probe: mlops/deployment stack not evident in skill profile. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 62.8
       },
       {
@@ -744,7 +744,7 @@
           "Jay Chatterjee (ML Engineer at InMobi) \u2014 Machine Learning, PyTorch match LLM/RAG core requirements",
           "78% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Jay Chatterjee (ML Engineer, 64/100) \u2014 Jay Chatterjee (ML Engineer at InMobi) \u2014 Machine Learning, PyTorch match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
+        "reasoning": "Jay Chatterjee (ML Engineer at InMobi, 64/100) \u2014 Jay Chatterjee (ML Engineer at InMobi) \u2014 Machine Learning, PyTorch match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 61.4
       },
       {
@@ -758,7 +758,7 @@
           "Mira Reddy (Machine Learning Engineer at Ola) \u2014 Fine-tuning LLMs, Milvus match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Mira Reddy (Machine Learning Engineer at Ola, 63/100) \u2014 Mira Reddy (Machine Learning Engineer at Ola) \u2014 Fine-tuning LLMs, Milvus match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
+        "reasoning": "Advance to phone screen. Mira Reddy (Ola) scores 63/100 \u2014 Fine-tuning LLMs and Milvus aligns with role. Key check: no critical gaps identified.",
         "fast_score": 63.2
       },
       {
@@ -772,7 +772,7 @@
           "Shreya Saxena (AI Engineer at upGrad) \u2014 Hugging Face Transformers, Machine Learning match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Shreya Saxena (upGrad) scores 63/100 \u2014 Hugging Face Transformers and Machine Learning aligns with role. Key check: gap to probe: MLOps/deployment stack not evident in skill profile.",
+        "reasoning": "Shreya Saxena (AI Engineer, 63/100) \u2014 Shreya Saxena (AI Engineer at upGrad) \u2014 Hugging Face Transformers, Machine Learning match LLM/RAG core requirements. Gap to probe: mlops/deployment stack not evident in skill profile. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 66.0
       },
       {
@@ -800,7 +800,7 @@
           "Ishaan Singh (Senior Software Engineer (ML) at Dream11) \u2014 Sentence Transformers, BentoML match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Ishaan Singh (Senior Software Engineer (ML), 63/100) \u2014 Ishaan Singh (Senior Software Engineer (ML) at Dream11) \u2014 Sentence Transformers, BentoML match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
+        "reasoning": "Ishaan Singh (Senior Software Engineer (ML) at Dream11, 63/100) \u2014 Ishaan Singh (Senior Software Engineer (ML) at Dream11) \u2014 Sentence Transformers, BentoML match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 62.8
       },
       {
@@ -814,7 +814,7 @@
           "Sunil Mishra (NLP Engineer at Rephrase.ai) \u2014 LlamaIndex, Deep Learning match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Sunil Mishra (Rephrase.ai) scores 62/100 \u2014 LlamaIndex and Deep Learning aligns with role. Key check: gap to probe: MLOps/deployment stack not evident in skill profile.",
+        "reasoning": "Sunil Mishra (NLP Engineer, 62/100) \u2014 Sunil Mishra (NLP Engineer at Rephrase.ai) \u2014 LlamaIndex, Deep Learning match LLM/RAG core requirements. Gap to probe: mlops/deployment stack not evident in skill profile. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 64.4
       },
       {
@@ -842,7 +842,7 @@
           "Pari Trivedi (Software Engineer at Vedantu) \u2014 Spark, Fine-tuning LLMs match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Pari Trivedi (Software Engineer at Vedantu, 61/100) \u2014 Pari Trivedi (Software Engineer at Vedantu) \u2014 Spark, Fine-tuning LLMs match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
+        "reasoning": "Pari Trivedi (Software Engineer, 61/100) \u2014 Pari Trivedi (Software Engineer at Vedantu) \u2014 Spark, Fine-tuning LLMs match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 62.2
       },
       {
@@ -856,7 +856,7 @@
           "Vihaan Naidu (Senior Software Engineer at Acme Corp) \u2014 PyTorch, Machine Learning match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Vihaan Naidu (Senior Software Engineer at Acme Corp, 60/100) \u2014 Vihaan Naidu (Senior Software Engineer at Acme Corp) \u2014 PyTorch, Machine Learning match LLM/RAG core requirements; gap to probe: MLOps/deployment stack not evident in skill profile. Advancing for technical screen.",
+        "reasoning": "Advance to phone screen. Vihaan Naidu (Acme Corp) scores 60/100 \u2014 PyTorch and Machine Learning aligns with role. Key check: gap to probe: MLOps/deployment stack not evident in skill profile.",
         "fast_score": 61.4
       },
       {
@@ -898,7 +898,7 @@
           "Ira Hegde (Backend Engineer at Dream11) \u2014 Deep Learning, Flask match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Ira Hegde (Backend Engineer, 58/100) \u2014 Ira Hegde (Backend Engineer at Dream11) \u2014 Deep Learning, Flask match LLM/RAG core requirements. No critical gaps identified. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
+        "reasoning": "Ira Hegde (Backend Engineer at Dream11, 58/100) \u2014 Ira Hegde (Backend Engineer at Dream11) \u2014 Deep Learning, Flask match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
         "fast_score": 64.0
       },
       {
@@ -912,7 +912,7 @@
           "Riya Naidu (Software Engineer at Vedantu) \u2014 TensorFlow, PyTorch match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Riya Naidu (Software Engineer at Vedantu, 58/100) \u2014 Riya Naidu (Software Engineer at Vedantu) \u2014 TensorFlow, PyTorch match LLM/RAG core requirements; no critical gaps identified. Advancing for technical screen.",
+        "reasoning": "Advance to phone screen. Riya Naidu (Vedantu) scores 58/100 \u2014 TensorFlow and PyTorch aligns with role. Key check: no critical gaps identified.",
         "fast_score": 63.0
       },
       {
@@ -926,7 +926,7 @@
           "Riya Malhotra (Applied ML Engineer at Meesho) \u2014 Hugging Face Transformers match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Riya Malhotra (Applied ML Engineer at Meesho, 58/100) \u2014 Riya Malhotra (Applied ML Engineer at Meesho) \u2014 Hugging Face Transformers match LLM/RAG core requirements; gap to probe: MLOps/deployment stack not evident in skill profile. Advancing for technical screen.",
+        "reasoning": "Advance to phone screen. Riya Malhotra (Meesho) scores 58/100 \u2014 Hugging Face Transformers and FAISS aligns with role. Key check: gap to probe: MLOps/deployment stack not evident in skill profile.",
         "fast_score": 63.2
       },
       {
@@ -940,7 +940,7 @@
           "Pari Pillai (Software Engineer at BYJU'S) \u2014 Diffusion Models, Sentence Transformers match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Advance to phone screen. Pari Pillai (BYJU'S) scores 57/100 \u2014 Diffusion Models and Sentence Transformers aligns with role. Key check: gap to probe: MLOps/deployment stack not evident in skill profile.",
+        "reasoning": "Pari Pillai (Software Engineer, 57/100) \u2014 Pari Pillai (Software Engineer at BYJU'S) \u2014 Diffusion Models, Sentence Transformers match LLM/RAG core requirements. Gap to probe: mlops/deployment stack not evident in skill profile. Profile is strong enough for a technical screen; verify depth in LLM/RAG ownership.",
         "fast_score": 64.0
       },
       {
@@ -970,7 +970,7 @@
           "Dhruv Agarwal (Backend Engineer at Ola) \u2014 Airflow, Vector Search match LLM/RAG core requirements",
           "78% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Dhruv Agarwal (Backend Engineer at Ola, 74/100) \u2014 adjacent fit via Airflow; gap in full role alignment. Review if top candidates are unavailable.",
+        "reasoning": "Dhruv Agarwal (Backend Engineer, Ola) has adjacent ML skills (Airflow) but full role alignment is unverified at 74/100. Borderline \u2014 include only if pipeline is thin.",
         "fast_score": 64.0
       },
       {
@@ -984,7 +984,7 @@
           "Ritu Bhatia (Software Engineer at Meesho) \u2014 Airflow, GCP match LLM/RAG core requirements",
           "67% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Ritu Bhatia (Software Engineer at Meesho, 70/100) \u2014 adjacent fit via Airflow; gap in full role alignment. Review if top candidates are unavailable.",
+        "reasoning": "Ritu Bhatia (Software Engineer, Meesho) has adjacent ML skills (Airflow) but full role alignment is unverified at 70/100. Borderline \u2014 include only if pipeline is thin.",
         "fast_score": 63.0
       },
       {
@@ -998,7 +998,7 @@
           "Dev Shah (AI Engineer at PolicyBazaar) \u2014 Vector Search, LlamaIndex match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Dev Shah (AI Engineer at PolicyBazaar, 66/100) \u2014 adjacent fit via Vector Search; gap in full role alignment. Review if top candidates are unavailable.",
+        "reasoning": "Dev Shah (AI Engineer, PolicyBazaar) has adjacent ML skills (Vector Search) but full role alignment is unverified at 66/100. Borderline \u2014 include only if pipeline is thin.",
         "fast_score": 62.0
       },
       {
@@ -1012,7 +1012,7 @@
           "Avni Gupta (Software Engineer at BYJU'S) \u2014 TensorFlow, MLflow match LLM/RAG core requirements",
           "38% product company exposure"
         ],
-        "reasoning": "Avni Gupta (Software Engineer at BYJU'S, 65/100) \u2014 adjacent fit via TensorFlow; gap in full role alignment. Review if top candidates are unavailable.",
+        "reasoning": "Avni Gupta (Software Engineer, BYJU'S) has adjacent ML skills (TensorFlow) but full role alignment is unverified at 65/100. Borderline \u2014 include only if pipeline is thin.",
         "fast_score": 61.2
       },
       {
@@ -1040,7 +1040,7 @@
           "Ira Shetty (Senior Data Scientist at Google) \u2014 Milvus, TensorFlow match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Ira Shetty (Senior Data Scientist, Google) has adjacent ML skills (Milvus) but full role alignment is unverified at 64/100. Borderline \u2014 include only if pipeline is thin.",
+        "reasoning": "Ira Shetty (Senior Data Scientist at Google, 64/100) \u2014 adjacent fit via Milvus; gap in full role alignment. Review if top candidates are unavailable.",
         "fast_score": 62.0
       },
       {
@@ -1110,7 +1110,7 @@
           "Krishna Iyer (Senior Software Engineer at Wipro) \u2014 Redis, LangChain match LLM/RAG core requirements",
           "59% product company exposure"
         ],
-        "reasoning": "Krishna Iyer (Senior Software Engineer, Wipro) has adjacent ML skills (Redis) but full role alignment is unverified at 63/100. Borderline \u2014 include only if pipeline is thin.",
+        "reasoning": "Krishna Iyer (Senior Software Engineer at Wipro, 63/100) \u2014 adjacent fit via Redis; gap in full role alignment. Review if top candidates are unavailable.",
         "fast_score": 65.0
       },
       {
@@ -1166,7 +1166,7 @@
           "Neha Singh (Backend Engineer at Wayne Enterprises) \u2014 Diffusion Models, LangChain match LLM/RAG core requirements",
           "58% product company exposure"
         ],
-        "reasoning": "Neha Singh (Backend Engineer at Wayne Enterprises, 62/100) \u2014 adjacent fit via Diffusion Models; gap in full role alignment. Review if top candidates are unavailable.",
+        "reasoning": "Neha Singh (Backend Engineer, Wayne Enterprises) has adjacent ML skills (Diffusion Models) but full role alignment is unverified at 62/100. Borderline \u2014 include only if pipeline is thin.",
         "fast_score": 62.8
       },
       {
@@ -1194,7 +1194,7 @@
           "Aarohi Chopra (Senior Software Engineer at Zomato) \u2014 Diffusion Models, RAG match LLM/RAG core requirements",
           "51% product company exposure"
         ],
-        "reasoning": "Aarohi Chopra (Senior Software Engineer at Zomato, 62/100) \u2014 adjacent fit via Diffusion Models; gap in full role alignment. Review if top candidates are unavailable.",
+        "reasoning": "Aarohi Chopra (Senior Software Engineer, Zomato) has adjacent ML skills (Diffusion Models) but full role alignment is unverified at 62/100. Borderline \u2014 include only if pipeline is thin.",
         "fast_score": 63.0
       },
       {
@@ -1250,7 +1250,7 @@
           "Krishna Banerjee (ML Engineer at PolicyBazaar) \u2014 Weights & Biases, FastAPI match LLM/RAG core requirements",
           "76% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Krishna Banerjee (ML Engineer, PolicyBazaar) has adjacent ML skills (Weights & Biases) but full role alignment is unverified at 60/100. Borderline \u2014 include only if pipeline is thin.",
+        "reasoning": "Krishna Banerjee (ML Engineer at PolicyBazaar, 60/100) \u2014 adjacent fit via Weights & Biases; gap in full role alignment. Review if top candidates are unavailable.",
         "fast_score": 64.6
       },
       {
@@ -1264,7 +1264,7 @@
           "Naina Sharma (Senior Software Engineer (ML) at Glance) \u2014 Milvus, Hugging Face Transformers match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Naina Sharma (Senior Software Engineer (ML) at Glance, 59/100) \u2014 adjacent fit via Milvus; gap in full role alignment. Review if top candidates are unavailable.",
+        "reasoning": "Naina Sharma (Senior Software Engineer (ML), Glance) has adjacent ML skills (Milvus) but full role alignment is unverified at 59/100. Borderline \u2014 include only if pipeline is thin.",
         "fast_score": 61.8
       },
       {
@@ -1320,7 +1320,7 @@
           "Ayaan Naidu (AI Research Engineer at CRED) \u2014 Hugging Face Transformers, Vector Search match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Ayaan Naidu (AI Research Engineer, CRED) has adjacent ML skills (Hugging Face Transformers) but full role alignment is unverified at 59/100. Borderline \u2014 include only if pipeline is thin.",
+        "reasoning": "Ayaan Naidu (AI Research Engineer at CRED, 59/100) \u2014 adjacent fit via Hugging Face Transformers; gap in full role alignment. Review if top candidates are unavailable.",
         "fast_score": 61.6
       },
       {
@@ -1348,7 +1348,7 @@
           "Sneha Tiwari (ML Engineer at Razorpay) \u2014 MLflow, PyTorch match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Sneha Tiwari (ML Engineer at Razorpay, 58/100) \u2014 adjacent fit via MLflow; gap in full role alignment. Review if top candidates are unavailable.",
+        "reasoning": "Sneha Tiwari (ML Engineer, Razorpay) has adjacent ML skills (MLflow) but full role alignment is unverified at 58/100. Borderline \u2014 include only if pipeline is thin.",
         "fast_score": 61.8
       },
       {
@@ -1404,8 +1404,22 @@
           "Arnav Banerjee (ML Engineer at Vedantu) \u2014 Machine Learning, Semantic Search match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Arnav Banerjee (ML Engineer, Vedantu) has adjacent ML skills (Machine Learning) but full role alignment is unverified at 58/100. Borderline \u2014 include only if pipeline is thin.",
+        "reasoning": "Arnav Banerjee (ML Engineer at Vedantu, 58/100) \u2014 adjacent fit via Machine Learning; gap in full role alignment. Review if top candidates are unavailable.",
         "fast_score": 62.0
+      },
+      {
+        "candidate_id": "CAND_0000031",
+        "name": "Ela Singh",
+        "current_title": "Recommendation Systems Engineer",
+        "current_company": "Swiggy",
+        "recommendation": "REVIEW_FURTHER",
+        "overall_match_score": 0.578,
+        "top_evidence": [
+          "Ela Singh (Recommendation Systems Engineer at Swiggy) \u2014 MLflow, Pinecone match LLM/RAG core requirements",
+          "100% of career at product companies \u2014 strong user-facing context"
+        ],
+        "reasoning": "Ela Singh (Recommendation Systems Engineer, Swiggy) has adjacent ML skills (MLflow) but full role alignment is unverified at 57/100. Borderline \u2014 include only if pipeline is thin.",
+        "fast_score": 43.0
       },
       {
         "candidate_id": "CAND_0007412",
@@ -1418,7 +1432,7 @@
           "Pranav Shah (Applied ML Engineer at Zoho) \u2014 Pinecone, Milvus match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Pranav Shah (Applied ML Engineer at Zoho, 57/100) \u2014 adjacent fit via Pinecone; gap in Limited LLM/RAG engineering skills \u2014 core requirement not met. Review if top candidates are unavailable.",
+        "reasoning": "Pranav Shah (Applied ML Engineer, Zoho) has adjacent ML skills (Pinecone) but Limited LLM/RAG engineering skills \u2014 core requirement not met is unverified at 57/100. Borderline \u2014 include only if pipeline is thin.",
         "fast_score": 62.8
       },
       {
@@ -1432,7 +1446,7 @@
           "Ira Trivedi (Software Engineer at InMobi) \u2014 MLflow, Airflow match LLM/RAG core requirements",
           "57% product company exposure"
         ],
-        "reasoning": "Ira Trivedi (Software Engineer, InMobi) has adjacent ML skills (MLflow) but full role alignment is unverified at 57/100. Borderline \u2014 include only if pipeline is thin.",
+        "reasoning": "Ira Trivedi (Software Engineer at InMobi, 57/100) \u2014 adjacent fit via MLflow; gap in full role alignment. Review if top candidates are unavailable.",
         "fast_score": 64.0
       },
       {
@@ -1446,7 +1460,7 @@
           "Dhruv Verma (Backend Engineer at CRED) \u2014 Airflow, NLP match LLM/RAG core requirements",
           "78% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Dhruv Verma (Backend Engineer at CRED, 57/100) \u2014 adjacent fit via Airflow; gap in full role alignment. Review if top candidates are unavailable.",
+        "reasoning": "Dhruv Verma (Backend Engineer, CRED) has adjacent ML skills (Airflow) but full role alignment is unverified at 57/100. Borderline \u2014 include only if pipeline is thin.",
         "fast_score": 62.0
       },
       {
@@ -1474,7 +1488,7 @@
           "Reyansh Reddy (Senior Software Engineer at Swiggy) \u2014 Docker, BentoML match LLM/RAG core requirements",
           "100% of career at product companies \u2014 strong user-facing context"
         ],
-        "reasoning": "Reyansh Reddy (Senior Software Engineer, Swiggy) has adjacent ML skills (Docker) but full role alignment is unverified at 56/100. Borderline \u2014 include only if pipeline is thin.",
+        "reasoning": "Reyansh Reddy (Senior Software Engineer at Swiggy, 56/100) \u2014 adjacent fit via Docker; gap in full role alignment. Review if top candidates are unavailable.",
         "fast_score": 63.2
       },
       {
@@ -1490,20 +1504,6 @@
         ],
         "reasoning": "Vivaan Subramanian (Backend Engineer, Wayne Enterprises) has adjacent ML skills (CI/CD) but full role alignment is unverified at 56/100. Borderline \u2014 include only if pipeline is thin.",
         "fast_score": 62.0
-      },
-      {
-        "candidate_id": "CAND_0063650",
-        "name": "Meera Verma",
-        "current_title": "Software Engineer",
-        "current_company": "Wayne Enterprises",
-        "recommendation": "REVIEW_FURTHER",
-        "overall_match_score": 0.564,
-        "top_evidence": [
-          "Meera Verma (Software Engineer at Wayne Enterprises) \u2014 LLMs, Docker match LLM/RAG core requirements",
-          "85% of career at product companies \u2014 strong user-facing context"
-        ],
-        "reasoning": "Meera Verma (Software Engineer, Wayne Enterprises) has adjacent ML skills (LLMs) but full role alignment is unverified at 56/100. Borderline \u2014 include only if pipeline is thin.",
-        "fast_score": 63.6
       }
     ],
     "ADVANCE_IF_POOL_THIN": [],
@@ -3303,7 +3303,7 @@
         "Milvus",
         "BentoML"
       ],
-      "overall_match_score": 0.751,
+      "overall_match_score": 0.75,
       "top_evidence": [
         "Shaurya Tiwari (AI Research Engineer at PharmEasy) \u2014 LlamaIndex, Semantic Search match LLM/RAG core requirements",
         "100% of career at product companies \u2014 strong user-facing context"
@@ -7381,7 +7381,7 @@
         "Sentence Transformers",
         "NLP"
       ],
-      "overall_match_score": 0.653,
+      "overall_match_score": 0.652,
       "top_evidence": [
         "Manish Kapoor (Junior ML Engineer at Glance) \u2014 Diffusion Models, Sentence Transformers match LLM/RAG core requirements",
         "100% of career at product companies \u2014 strong user-facing context"
@@ -12364,6 +12364,121 @@
       ]
     },
     {
+      "candidate_id": "CAND_0000031",
+      "name": "Ela Singh",
+      "current_title": "Recommendation Systems Engineer",
+      "current_company": "Swiggy",
+      "recommendation": "REVIEW_FURTHER",
+      "trust_assessment": {
+        "overall_trust_score": 0.65,
+        "trust_tier": "MEDIUM",
+        "signals": [
+          {
+            "signal_type": "VERIFIED",
+            "description": "Phone number verified",
+            "confidence": 1.0,
+            "field_name": "verified_phone"
+          },
+          {
+            "signal_type": "VERIFIED",
+            "description": "Platform-assessed MLflow: 75/100",
+            "confidence": 0.95,
+            "field_name": "skill_assessment_scores"
+          },
+          {
+            "signal_type": "PLAUSIBLE",
+            "description": "High profile completeness (83%)",
+            "confidence": 0.8,
+            "field_name": "profile_completeness_score"
+          }
+        ],
+        "verified_claims": [
+          "Phone number verified",
+          "Skill assessment score: MLflow = 75/100"
+        ],
+        "unverifiable_claims": [
+          "Career history claims beyond platform verification require reference checks",
+          "Skill proficiency levels self-reported \u2014 validate in technical screen"
+        ],
+        "red_flags": []
+      },
+      "fit_assessment": {
+        "technical": {
+          "score": 0.51,
+          "evidence": [
+            "Ela Singh (Recommendation Systems Engineer at Swiggy) has MLflow, Pinecone matching role requirements"
+          ],
+          "gaps": []
+        },
+        "product": {
+          "score": 0.74,
+          "evidence": [
+            "100% of career at product companies"
+          ],
+          "gaps": []
+        },
+        "cultural": {
+          "score": 0.7,
+          "evidence": [
+            "Ownership language in career descriptions suggests initiative"
+          ],
+          "gaps": []
+        },
+        "growth": {
+          "score": 0.63,
+          "evidence": [],
+          "gaps": []
+        },
+        "overall": 0.635
+      },
+      "hiring_risks": [
+        {
+          "risk_type": "Standard Verification",
+          "severity": "LOW",
+          "description": "Standard background check and reference calls required for Ela Singh",
+          "mitigation": "Include in post-offer process",
+          "is_blocking": false
+        }
+      ],
+      "interview_focus": [
+        {
+          "question": "What is your experience with production LLM systems? Walk me through a specific example.",
+          "priority": "HIGH",
+          "dimension": "Technical",
+          "what_to_listen_for": "Depth of real production experience vs. prototype or toy projects \u2014 look for specifics"
+        },
+        {
+          "question": "How have you dealt with AI model failures or degradations in production?",
+          "priority": "HIGH",
+          "dimension": "Technical",
+          "what_to_listen_for": "Monitoring setup, incident response, rollback strategy, root cause analysis"
+        },
+        {
+          "question": "What attracts you to an early-stage AI company vs. a larger tech firm?",
+          "priority": "MEDIUM",
+          "dimension": "Cultural",
+          "what_to_listen_for": "Genuine startup motivation, comfort with ambiguity, equity mindset vs. job security"
+        }
+      ],
+      "recommendation_rationale": "Ela Singh (Recommendation Systems Engineer at Swiggy) shows adjacent fit at 57/100 via MLflow, but full role alignment needs verification. Review if primary pipeline candidates are unavailable.",
+      "timing_assessment": {
+        "current_tenure_months": 70,
+        "likely_available": true,
+        "urgency_signal": "Actively open to work with 60-day notice \u2014 high availability signal",
+        "estimated_notice_weeks": 8
+      },
+      "required_skills_matched": [
+        "MLflow",
+        "Pinecone",
+        "Machine Learning"
+      ],
+      "overall_match_score": 0.578,
+      "top_evidence": [
+        "Ela Singh (Recommendation Systems Engineer at Swiggy) \u2014 MLflow, Pinecone match LLM/RAG core requirements",
+        "100% of career at product companies \u2014 strong user-facing context"
+      ]
+    },
+    {
       "candidate_id": "CAND_0007412",
       "name": "Pranav Shah",
       "current_title": "Applied ML Engineer",
@@ -13269,124 +13384,6 @@
       "top_evidence": [
         "Vivaan Subramanian (Backend Engineer at Wayne Enterprises) \u2014 CI/CD, Diffusion Models match LLM/RAG core requirements",
         "100% of career at product companies \u2014 strong user-facing context"
-      ]
-    },
-    {
-      "candidate_id": "CAND_0063650",
-      "name": "Meera Verma",
-      "current_title": "Software Engineer",
-      "current_company": "Wayne Enterprises",
-      "recommendation": "REVIEW_FURTHER",
-      "trust_assessment": {
-        "overall_trust_score": 0.7,
-        "trust_tier": "MEDIUM",
-        "signals": [
-          {
-            "signal_type": "VERIFIED",
-            "description": "Phone number verified",
-            "confidence": 1.0,
-            "field_name": "verified_phone"
-          },
-          {
-            "signal_type": "PLAUSIBLE",
-            "description": "Active GitHub contributor (score 55/100)",
-            "confidence": 0.85,
-            "field_name": "github_activity_score"
-          },
-          {
-            "signal_type": "VERIFIED",
-            "description": "Platform-assessed Prompt Engineering: 77/100",
-            "confidence": 0.95,
-            "field_name": "skill_assessment_scores"
-          }
-        ],
-        "verified_claims": [
-          "Phone number verified",
-          "Skill assessment score: Prompt Engineering = 77/100"
-        ],
-        "unverifiable_claims": [
-          "Career history claims beyond platform verification require reference checks",
-          "Skill proficiency levels self-reported \u2014 validate in technical screen"
-        ],
-        "red_flags": [
-          "Low offer acceptance rate (23%) \u2014 may use offers as leverage"
-        ]
-      },
-      "fit_assessment": {
-        "technical": {
-          "score": 0.38,
-          "evidence": [
-            "Meera Verma (Software Engineer at Wayne Enterprises) has LLMs, Docker matching role requirements"
-          ],
-          "gaps": []
-        },
-        "product": {
-          "score": 0.65,
-          "evidence": [
-            "85% of career at product companies"
-          ],
-          "gaps": []
-        },
-        "cultural": {
-          "score": 0.78,
-          "evidence": [
-            "Ownership language in career descriptions suggests initiative"
-          ],
-          "gaps": []
-        },
-        "growth": {
-          "score": 0.81,
-          "evidence": [
-            "Upward career trajectory with upward progression"
-          ],
-          "gaps": []
-        },
-        "overall": 0.605
-      },
-      "hiring_risks": [
-        {
-          "risk_type": "Profile Signal",
-          "severity": "MEDIUM",
-          "description": "Meera Verma: Low offer acceptance rate (23%) \u2014 may use offers as leverage",
-          "mitigation": "Raise directly in intro call and assess candidate response",
-          "is_blocking": false
-        }
-      ],
-      "interview_focus": [
-        {
-          "question": "What is your experience with production LLM systems? Walk me through a specific example.",
-          "priority": "HIGH",
-          "dimension": "Technical",
-          "what_to_listen_for": "Depth of real production experience vs. prototype or toy projects \u2014 look for specifics"
-        },
-        {
-          "question": "How have you dealt with AI model failures or degradations in production?",
-          "priority": "HIGH",
-          "dimension": "Technical",
-          "what_to_listen_for": "Monitoring setup, incident response, rollback strategy, root cause analysis"
-        },
-        {
-          "question": "What attracts you to an early-stage AI company vs. a larger tech firm?",
-          "priority": "MEDIUM",
-          "dimension": "Cultural",
-          "what_to_listen_for": "Genuine startup motivation, comfort with ambiguity, equity mindset vs. job security"
-        }
-      ],
-      "recommendation_rationale": "Meera Verma (Software Engineer at Wayne Enterprises) shows adjacent fit at 56/100 via LLMs, but full role alignment needs verification. Review if primary pipeline candidates are unavailable.",
-      "timing_assessment": {
-        "current_tenure_months": 87,
-        "likely_available": false,
-        "urgency_signal": "No active availability signal \u2014 outreach response rate unknown",
-        "estimated_notice_weeks": 17
-      },
-      "required_skills_matched": [
-        "LLMs",
-        "Docker"
-      ],
-      "overall_match_score": 0.564,
-      "top_evidence": [
-        "Meera Verma (Software Engineer at Wayne Enterprises) \u2014 LLMs, Docker match LLM/RAG core requirements",
-        "85% of career at product companies \u2014 strong user-facing context"
       ]
     }
   ],

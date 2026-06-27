@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0076956",
+  "name": "Myra Mittal",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Paytm",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.227,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "BentoML",
+    "Forecasting",
+    "CNN",
+    "SEO",
+    "Diffusion Models",
+    "Sentence Transformers",
+    "TTS",
+    "Illustrator"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Diffusion Models 81/100"
+  ],
+  "fast_score": 60.4,
+  "years_of_experience": 5.7,
+  "total_months": 68,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 58.9,
+    "interview_completion_rate": 0.63,
+    "offer_acceptance_rate": 0.77,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "CNN": 54.7,
+      "Diffusion Models": 81.6,
+      "Sentence Transformers": 71.1,
+      "TTS": 61.1,
+      "Reinforcement Learning": 75.9
+    }
+  }
+}

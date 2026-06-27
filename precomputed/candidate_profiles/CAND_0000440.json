@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0000440",
+  "name": "Ira Trivedi",
+  "current_title": "Software Engineer",
+  "current_company": "InMobi",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.341,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.573,
+  "top_skills": [
+    "MLflow",
+    "GANs",
+    "Airflow",
+    "RAG",
+    "Vector Search",
+    "Photoshop",
+    "Accounting",
+    "BentoML"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low offer acceptance rate (22%) \u2014 may use offers as leverage"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 7.5,
+  "total_months": 89,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 69.6,
+    "interview_completion_rate": 0.76,
+    "offer_acceptance_rate": 0.22,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

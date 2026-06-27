@@ -1,0 +1,21 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.35,
+    "Product-Sense & User-Facing AI": 0.567,
+    "Founding-Team Ownership": 0.708,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.7
+  },
+  "required_skills_matched": [
+    "FastAPI",
+    "RAG"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.502,
+  "match_evidence": [
+    "Aarohi Saxena (Software Engineer at Wayne Enterprises) \u2014 FastAPI, RAG match LLM/RAG core requirements",
+    "70% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0092079"
+}

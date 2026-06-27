@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0057098",
+  "name": "Sai Dalal",
+  "current_title": "Software Engineer",
+  "current_company": "Razorpay",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.335,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Object Detection",
+    "Diffusion Models",
+    "Qdrant",
+    "Sentence Transformers",
+    "Embeddings",
+    "Kubernetes",
+    "Deep Learning",
+    "Project Management"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (46%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: ASR 77/100"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 8.5,
+  "total_months": 101,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 45.9,
+    "interview_completion_rate": 0.46,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Sentence Transformers": 42.2,
+      "ASR": 77.7
+    }
+  }
+}

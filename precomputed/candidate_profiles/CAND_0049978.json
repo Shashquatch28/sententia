@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0049978",
+  "name": "Kabir Arora",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Sarvam AI",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.198,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Deep Learning",
+    "Weaviate",
+    "BM25",
+    "GANs",
+    "LoRA",
+    "BentoML",
+    "Recommendation Systems",
+    "YOLO"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 69/100) \u2014 verifiable technical output",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 6.6,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 69.4,
+    "profile_completeness_score": 93.1,
+    "interview_completion_rate": 0.65,
+    "offer_acceptance_rate": 0.29,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Deep Learning": 46.2,
+      "GANs": 72.4,
+      "PyTorch": 64.7
+    }
+  }
+}

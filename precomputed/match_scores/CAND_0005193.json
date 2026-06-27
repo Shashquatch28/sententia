@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.68,
+    "Product-Sense & User-Facing AI": 0.7,
+    "Founding-Team Ownership": 0.65,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.75
+  },
+  "required_skills_matched": [
+    "PyTorch",
+    "Machine Learning"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.603,
+  "match_evidence": [
+    "Vihaan Naidu (Senior Software Engineer at Acme Corp) \u2014 PyTorch, Machine Learning match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0005193"
+}

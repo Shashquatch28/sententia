@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0042620",
+  "name": "Reyansh Patel",
+  "current_title": "Software Engineer",
+  "current_company": "Acme Corp",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.437,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.798,
+  "top_skills": [
+    "Pinecone",
+    "Airflow",
+    "RAG",
+    "Spring Boot",
+    "Image Classification",
+    "MLOps",
+    "PostgreSQL",
+    "Computer Vision"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low offer acceptance rate (24%) \u2014 may use offers as leverage"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 67/100) \u2014 verifiable technical output",
+    "Actively open to work, 90-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 7.5,
+  "total_months": 89,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": 67.7,
+    "profile_completeness_score": 43.6,
+    "interview_completion_rate": 0.51,
+    "offer_acceptance_rate": 0.24,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Pinecone": 54.2,
+      "RAG": 68.6,
+      "Image Classification": 49.1,
+      "MLOps": 73.9
+    }
+  }
+}

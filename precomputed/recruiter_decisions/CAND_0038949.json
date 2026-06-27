@@ -1,0 +1,108 @@
+{
+  "candidate_id": "CAND_0038949",
+  "name": "Tanya Mukherjee",
+  "current_title": "ML Engineer",
+  "current_company": "CRED",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.6,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.71,
+      "evidence": [
+        "Tanya Mukherjee (ML Engineer at CRED) has pgvector, Diffusion Models matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.68,
+      "evidence": [
+        "73% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.35,
+      "evidence": [],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.6,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.612
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Tanya Mukherjee",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Tanya Mukherjee (ML Engineer at CRED) scores 63/100 with pgvector aligned to role requirements. No critical gaps. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 76,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 120-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 17
+  },
+  "required_skills_matched": [
+    "pgvector",
+    "Diffusion Models",
+    "CI/CD",
+    "Hugging Face Transformers"
+  ],
+  "overall_match_score": 0.631,
+  "top_evidence": [
+    "Tanya Mukherjee (ML Engineer at CRED) \u2014 pgvector, Diffusion Models match LLM/RAG core requirements",
+    "73% of career at product companies \u2014 strong user-facing context"
+  ]
+}

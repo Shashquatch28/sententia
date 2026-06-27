@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.552,
+    "Founding-Team Ownership": 0.508,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "NLP",
+    "Fine-tuning LLMs",
+    "Weights & Biases"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.503,
+  "match_evidence": [
+    "Ira Vora (Backend Engineer at Mindtree) \u2014 NLP, Fine-tuning LLMs match LLM/RAG core requirements",
+    "67% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0000001"
+}

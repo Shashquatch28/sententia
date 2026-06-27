@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0058426",
+  "name": "Aisha Dutta",
+  "current_title": "Data Scientist",
+  "current_company": "Wysa",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.177,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Feature Engineering",
+    "Weaviate",
+    "Time Series",
+    "YOLO",
+    "Fine-tuning LLMs",
+    "Data Science",
+    "Java",
+    "GANs"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 45-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Hugging Face Transformers 85/100"
+  ],
+  "fast_score": 60.0,
+  "years_of_experience": 6.5,
+  "total_months": 77,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 39.0,
+    "profile_completeness_score": 62.5,
+    "interview_completion_rate": 0.56,
+    "offer_acceptance_rate": 0.75,
+    "open_to_work_flag": true,
+    "notice_period_days": 45,
+    "skill_assessment_scores": {
+      "Feature Engineering": 45.6,
+      "Weaviate": 76.7,
+      "YOLO": 67.8,
+      "GANs": 74.6,
+      "Hugging Face Transformers": 85.8
+    }
+  }
+}

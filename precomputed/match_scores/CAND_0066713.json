@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.6,
+    "Product-Sense & User-Facing AI": 0.659,
+    "Founding-Team Ownership": 0.345,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.75
+  },
+  "required_skills_matched": [
+    "LlamaIndex",
+    "Python",
+    "Hugging Face Transformers",
+    "Flask"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.584,
+  "match_evidence": [
+    "Dhruv Sharma (Senior Software Engineer (ML) at Flipkart) \u2014 LlamaIndex, Python match LLM/RAG core requirements",
+    "91% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0066713"
+}

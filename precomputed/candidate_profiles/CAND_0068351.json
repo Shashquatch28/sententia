@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0068351",
+  "name": "Aadhya Iyer",
+  "current_title": "Lead AI Engineer",
+  "current_company": "Sarvam AI",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.348,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "pgvector",
+    "Deep Learning",
+    "Qdrant",
+    "Elasticsearch",
+    "Feature Engineering",
+    "Text Encoders",
+    "PEFT",
+    "Spring Boot"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Experience at tier-1 product company: Microsoft"
+  ],
+  "fast_score": 61.8,
+  "years_of_experience": 6.4,
+  "total_months": 76,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 94.5,
+    "interview_completion_rate": 0.95,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 0,
+    "skill_assessment_scores": {}
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "candidate_id": "CAND_0050001",
+  "name": "Manish Sen",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Swiggy",
+  "recommendation": "REVIEW_FURTHER",
+  "trust_assessment": {
+    "overall_trust_score": 0.6,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "High interview completion rate (81%)",
+        "confidence": 0.9,
+        "field_name": "interview_completion_rate"
+      }
+    ],
+    "verified_claims": [
+      "Phone number verified"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.58,
+      "evidence": [
+        "Manish Sen (Senior Software Engineer at Swiggy) has LlamaIndex, MLflow matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.7,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.43,
+      "evidence": [],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.3,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.544
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Manish Sen",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "What is your experience with production LLM systems? Walk me through a specific example.",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Depth of real production experience vs. prototype or toy projects \u2014 look for specifics"
+    },
+    {
+      "question": "How have you dealt with AI model failures or degradations in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Monitoring setup, incident response, rollback strategy, root cause analysis"
+    },
+    {
+      "question": "What attracts you to an early-stage AI company vs. a larger tech firm?",
+      "priority": "MEDIUM",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Genuine startup motivation, comfort with ambiguity, equity mindset vs. job security"
+    }
+  ],
+  "recommendation_rationale": "Manish Sen (Senior Software Engineer at Swiggy) shows adjacent fit at 58/100 via LlamaIndex, but full role alignment needs verification. Review if primary pipeline candidates are unavailable.",
+  "timing_assessment": {
+    "current_tenure_months": 82,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 90-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 12
+  },
+  "required_skills_matched": [
+    "LlamaIndex",
+    "MLflow",
+    "GCP",
+    "Information Retrieval"
+  ],
+  "overall_match_score": 0.584,
+  "top_evidence": [
+    "Manish Sen (Senior Software Engineer at Swiggy) \u2014 LlamaIndex, MLflow match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

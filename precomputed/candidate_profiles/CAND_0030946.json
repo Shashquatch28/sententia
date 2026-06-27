@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0030946",
+  "name": "Diya Goyal",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Yellow.ai",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.335,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.797,
+  "top_skills": [
+    "BM25",
+    "Learning to Rank",
+    "Diffusion Models",
+    "Machine Learning",
+    "Elasticsearch",
+    "Weights & Biases",
+    "ETL",
+    "Computer Vision"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 62.4,
+  "years_of_experience": 6.7,
+  "total_months": 79,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 21.3,
+    "profile_completeness_score": 92.6,
+    "interview_completion_rate": 0.95,
+    "offer_acceptance_rate": 0.26,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Computer Vision": 65.9
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.65,
+    "Product-Sense & User-Facing AI": 0.7,
+    "Founding-Team Ownership": 0.331,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.75
+  },
+  "required_skills_matched": [
+    "Embeddings",
+    "LLMs"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.529,
+  "match_evidence": [
+    "Ritu Gupta (Senior Software Engineer (ML) at Meesho) \u2014 Embeddings, LLMs match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0087783"
+}

@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0052209",
+  "name": "Ishaan Naidu",
+  "current_title": "Software Engineer",
+  "current_company": "Tech Mahindra",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.316,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.489,
+  "top_skills": [
+    "Redux",
+    "BentoML",
+    "Computer Vision",
+    "Azure",
+    "Data Pipelines",
+    "Content Writing",
+    "Sentence Transformers",
+    "Project Management"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 7.5,
+  "total_months": 88,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 40.3,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": 0.54,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "BentoML": 39.9,
+      "Computer Vision": 72.9
+    }
+  }
+}

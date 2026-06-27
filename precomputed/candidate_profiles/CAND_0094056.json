@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0094056",
+  "name": "Diya Pillai",
+  "current_title": "NLP Engineer",
+  "current_company": "Rephrase.ai",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.661,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "MLflow",
+    "Pinecone",
+    "Milvus",
+    "Forecasting",
+    "Data Science",
+    "Hugging Face Transformers",
+    "GANs",
+    "PEFT"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 64/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 58.8,
+  "years_of_experience": 5.9,
+  "total_months": 70,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 64.8,
+    "profile_completeness_score": 59.8,
+    "interview_completion_rate": 0.89,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {}
+  }
+}

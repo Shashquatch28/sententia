@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.98,
+    "Product-Sense & User-Facing AI": 0.753,
+    "Founding-Team Ownership": 0.721,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.877
+  },
+  "required_skills_matched": [
+    "Qdrant",
+    "Weights & Biases",
+    "pgvector",
+    "Sentence Transformers",
+    "NLP"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.866,
+  "match_evidence": [
+    "Myra Krishnan (Senior NLP Engineer at Ola) \u2014 Qdrant, Weights & Biases match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Upward career trajectory \u2014 progressive responsibility growth"
+  ],
+  "candidate_id": "CAND_0008425"
+}

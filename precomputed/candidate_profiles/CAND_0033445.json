@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0033445",
+  "name": "Ved Bhatia",
+  "current_title": "ML Engineer",
+  "current_company": "Vedantu",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.341,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Deep Learning",
+    "Image Classification",
+    "Agile",
+    "Information Retrieval",
+    "pgvector",
+    "Recommendation Systems",
+    "Semantic Search",
+    "Hugging Face Transformers"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Semantic Search 84/100"
+  ],
+  "fast_score": 62.6,
+  "years_of_experience": 6.8,
+  "total_months": 80,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 89.5,
+    "interview_completion_rate": 0.53,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Image Classification": 49.6,
+      "Information Retrieval": 45.0,
+      "Semantic Search": 84.7,
+      "TTS": 53.1
+    }
+  }
+}

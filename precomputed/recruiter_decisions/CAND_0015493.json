@@ -1,0 +1,119 @@
+{
+  "candidate_id": "CAND_0015493",
+  "name": "Tanvi Shetty",
+  "current_title": "Data Scientist",
+  "current_company": "CRED",
+  "recommendation": "REVIEW_FURTHER",
+  "trust_assessment": {
+    "overall_trust_score": 0.8,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "Active GitHub contributor (score 65/100)",
+        "confidence": 0.85,
+        "field_name": "github_activity_score"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed NLP: 86/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "High profile completeness (90%)",
+        "confidence": 0.8,
+        "field_name": "profile_completeness_score"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Skill assessment score: NLP = 86/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.51,
+      "evidence": [
+        "Tanvi Shetty (Data Scientist at CRED) has Semantic Search, TensorFlow matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.8,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.44,
+      "evidence": [],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.6,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.596
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Tanvi Shetty",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "What is your experience with production LLM systems? Walk me through a specific example.",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Depth of real production experience vs. prototype or toy projects \u2014 look for specifics"
+    },
+    {
+      "question": "How have you dealt with AI model failures or degradations in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Monitoring setup, incident response, rollback strategy, root cause analysis"
+    },
+    {
+      "question": "What attracts you to an early-stage AI company vs. a larger tech firm?",
+      "priority": "MEDIUM",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Genuine startup motivation, comfort with ambiguity, equity mindset vs. job security"
+    }
+  ],
+  "recommendation_rationale": "Tanvi Shetty (Data Scientist at CRED) shows adjacent fit at 61/100 via Semantic Search, but full role alignment needs verification. Review if primary pipeline candidates are unavailable.",
+  "timing_assessment": {
+    "current_tenure_months": 75,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 30-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 4
+  },
+  "required_skills_matched": [
+    "Semantic Search",
+    "TensorFlow",
+    "Redis"
+  ],
+  "overall_match_score": 0.613,
+  "top_evidence": [
+    "Tanvi Shetty (Data Scientist at CRED) \u2014 Semantic Search, TensorFlow match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

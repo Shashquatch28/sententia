@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0021037",
+  "name": "Aarohi Rao",
+  "current_title": "Software Engineer",
+  "current_company": "Capgemini",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.491,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.667,
+  "top_skills": [
+    "Java",
+    "Hugging Face Transformers",
+    "Azure",
+    "Photoshop",
+    "Tailwind",
+    "Computer Vision",
+    "TTS",
+    "Django"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (49%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 7.1,
+  "total_months": 84,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 56.1,
+    "interview_completion_rate": 0.49,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Hugging Face Transformers": 38.0,
+      "Computer Vision": 55.2,
+      "TTS": 37.6,
+      "Recommendation Systems": 40.5
+    }
+  }
+}

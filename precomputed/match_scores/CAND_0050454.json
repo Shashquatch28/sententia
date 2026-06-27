@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.75,
+    "Product-Sense & User-Facing AI": 0.827,
+    "Founding-Team Ownership": 0.73,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.613
+  },
+  "required_skills_matched": [
+    "PyTorch",
+    "LangChain",
+    "Fine-tuning LLMs",
+    "Qdrant"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.704,
+  "match_evidence": [
+    "Saanvi Bansal (AI Engineer at Rephrase.ai) \u2014 PyTorch, LangChain match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0050454"
+}

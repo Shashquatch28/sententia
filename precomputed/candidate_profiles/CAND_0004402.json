@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0004402",
+  "name": "Priya Malhotra",
+  "current_title": "AI Research Engineer",
+  "current_company": "Yellow.ai",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.37,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "TypeScript",
+    "TTS",
+    "OpenSearch",
+    "Speech Recognition",
+    "Object Detection",
+    "Kubeflow",
+    "PEFT",
+    "PyTorch"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: TTS 85/100"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 6.0,
+  "total_months": 71,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 93.4,
+    "interview_completion_rate": 0.6,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "TTS": 85.8,
+      "Speech Recognition": 72.2,
+      "PEFT": 51.6,
+      "PyTorch": 84.9,
+      "BentoML": 68.2
+    }
+  }
+}

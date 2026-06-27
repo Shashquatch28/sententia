@@ -1,0 +1,110 @@
+{
+  "candidate_id": "CAND_0000039",
+  "name": "Sai Saxena",
+  "current_title": "Marketing Manager",
+  "current_company": "Acme Corp",
+  "recommendation": "REVIEW_FURTHER",
+  "trust_assessment": {
+    "overall_trust_score": 0.5,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      }
+    ],
+    "verified_claims": [
+      "Phone number verified"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.33,
+      "evidence": [
+        "Sai Saxena (Marketing Manager at Acme Corp) has Spark, CI/CD matching role requirements"
+      ],
+      "gaps": [
+        "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+      ]
+    },
+    "product": {
+      "score": 0.7,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.69,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.3,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.509
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Skill Gap",
+      "severity": "HIGH",
+      "description": "Sai Saxena: Limited LLM/RAG engineering skills \u2014 core requirement not met",
+      "mitigation": "Probe depth of adjacent skills and practical project examples in technical screen",
+      "is_blocking": false
+    },
+    {
+      "risk_type": "Skill Gap",
+      "severity": "HIGH",
+      "description": "Sai Saxena: Under-qualified: 4 yrs experience vs 5+ required",
+      "mitigation": "Probe depth of adjacent skills and practical project examples in technical screen",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "What is your experience with production LLM systems? Walk me through a specific example.",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Depth of real production experience vs. prototype or toy projects \u2014 look for specifics"
+    },
+    {
+      "question": "How have you dealt with AI model failures or degradations in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Monitoring setup, incident response, rollback strategy, root cause analysis"
+    },
+    {
+      "question": "What attracts you to an early-stage AI company vs. a larger tech firm?",
+      "priority": "MEDIUM",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Genuine startup motivation, comfort with ambiguity, equity mindset vs. job security"
+    }
+  ],
+  "recommendation_rationale": "Sai Saxena (Marketing Manager at Acme Corp) shows adjacent fit at 43/100 via Spark, but Limited LLM/RAG engineering skills \u2014 core requirement not met needs verification. Review if primary pipeline candidates are unavailable.",
+  "timing_assessment": {
+    "current_tenure_months": 46,
+    "likely_available": false,
+    "urgency_signal": "No active availability signal \u2014 outreach response rate unknown",
+    "estimated_notice_weeks": 4
+  },
+  "required_skills_matched": [
+    "Spark",
+    "CI/CD"
+  ],
+  "overall_match_score": 0.433,
+  "top_evidence": [
+    "Sai Saxena (Marketing Manager at Acme Corp) \u2014 Spark, CI/CD match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0083409",
+  "name": "Aanya Desai",
+  "current_title": "Software Engineer",
+  "current_company": "Initech",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.599,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "BentoML",
+    "Accounting",
+    "CSS",
+    "LLMs",
+    "Milvus",
+    "Terraform",
+    "GraphQL",
+    "Scrum"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: BentoML 77/100"
+  ],
+  "fast_score": 58.6,
+  "years_of_experience": 7.3,
+  "total_months": 87,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": 21.4,
+    "profile_completeness_score": 85.4,
+    "interview_completion_rate": 0.81,
+    "offer_acceptance_rate": 0.53,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "BentoML": 77.5,
+      "LLMs": 68.6
+    }
+  }
+}

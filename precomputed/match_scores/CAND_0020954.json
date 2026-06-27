@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.33,
+    "Product-Sense & User-Facing AI": 0.713,
+    "Founding-Team Ownership": 0.43,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.857
+  },
+  "required_skills_matched": [
+    "Docker",
+    "BentoML",
+    "Semantic Search",
+    "Flask"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.568,
+  "match_evidence": [
+    "Reyansh Reddy (Senior Software Engineer at Swiggy) \u2014 Docker, BentoML match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0020954"
+}

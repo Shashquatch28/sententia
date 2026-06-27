@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0058407",
+  "name": "Myra Desai",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Ola",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.508,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.418,
+  "top_skills": [
+    "Data Science",
+    "MLOps",
+    "Statistical Modeling",
+    "Airflow",
+    "FastAPI",
+    "Java",
+    "Reinforcement Learning",
+    "LoRA"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 62.4,
+  "years_of_experience": 6.7,
+  "total_months": 79,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 42.0,
+    "profile_completeness_score": 60.7,
+    "interview_completion_rate": 0.94,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Data Science": 35.0,
+      "MLOps": 39.5
+    }
+  }
+}

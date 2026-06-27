@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0028022",
+  "name": "Jay Rao",
+  "current_title": "Software Engineer",
+  "current_company": "Razorpay",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.415,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.63,
+  "top_skills": [
+    "SAP",
+    "Next.js",
+    "Photoshop",
+    "Kafka",
+    "MLOps",
+    "dbt",
+    "SEO",
+    "Tailwind"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "4 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 120-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 63.0,
+  "years_of_experience": 10.0,
+  "total_months": 119,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 40.0,
+    "profile_completeness_score": 50.9,
+    "interview_completion_rate": 0.92,
+    "offer_acceptance_rate": 0.44,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {}
+  }
+}

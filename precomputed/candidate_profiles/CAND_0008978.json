@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0008978",
+  "name": "Dev Pandey",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Tech Mahindra",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.248,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.3,
+  "top_skills": [
+    "Sales",
+    "Machine Learning",
+    "Embeddings",
+    "Elasticsearch",
+    "Feature Engineering",
+    "NLP",
+    "TypeScript",
+    "Deep Learning"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 74/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: Embeddings 85/100"
+  ],
+  "fast_score": 59.4,
+  "years_of_experience": 6.7,
+  "total_months": 80,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 74.8,
+    "profile_completeness_score": 68.7,
+    "interview_completion_rate": 0.98,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Embeddings": 85.2,
+      "Feature Engineering": 74.1,
+      "NLP": 79.2,
+      "Reinforcement Learning": 60.6,
+      "Diffusion Models": 43.8
+    }
+  }
+}

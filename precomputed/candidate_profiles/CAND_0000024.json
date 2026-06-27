@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0000024",
+  "name": "Rajesh Arora",
+  "current_title": "HR Manager",
+  "current_company": "TCS",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.672,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.0,
+  "top_skills": [
+    "Figma",
+    "Kubernetes",
+    "Forecasting",
+    "ETL",
+    "Node.js",
+    "Docker"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 0.0,
+  "years_of_experience": 7.5,
+  "total_months": 89,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 46.3,
+    "profile_completeness_score": 63.7,
+    "interview_completion_rate": 0.72,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Forecasting": 65.1
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0080102",
+  "name": "Naina Desai",
+  "current_title": "Junior ML Engineer",
+  "current_company": "BYJU'S",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.11,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Hugging Face Transformers",
+    "Feature Engineering",
+    "pgvector",
+    "PostgreSQL",
+    "BigQuery",
+    "NLP",
+    "LangChain",
+    "Excel"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 62.0,
+  "years_of_experience": 6.5,
+  "total_months": 77,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": 31.4,
+    "profile_completeness_score": 77.1,
+    "interview_completion_rate": 0.84,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Feature Engineering": 56.8,
+      "NLP": 47.3,
+      "Computer Vision": 53.9,
+      "Fine-tuning LLMs": 63.7
+    }
+  }
+}

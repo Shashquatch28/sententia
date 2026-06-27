@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0008728",
+  "name": "Meera Singh",
+  "current_title": "Backend Engineer",
+  "current_company": "Freshworks",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.357,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.579,
+  "top_skills": [
+    "Object Detection",
+    "Forecasting",
+    "PyTorch",
+    "NLP",
+    "TTS",
+    "MLflow",
+    "LlamaIndex",
+    "BentoML"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.8,
+  "years_of_experience": 6.4,
+  "total_months": 76,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 5.6,
+    "profile_completeness_score": 44.5,
+    "interview_completion_rate": 0.82,
+    "offer_acceptance_rate": 0.85,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "PyTorch": 60.3,
+      "NLP": 52.2
+    }
+  }
+}

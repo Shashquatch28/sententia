@@ -1,0 +1,21 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.692,
+    "Founding-Team Ownership": 0.388,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.7
+  },
+  "required_skills_matched": [
+    "Sentence Transformers",
+    "Qdrant",
+    "RAG"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.522,
+  "match_evidence": [
+    "Divya Chowdary (Data Scientist at Dream11) \u2014 Sentence Transformers, Qdrant match LLM/RAG core requirements",
+    "75% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0073982"
+}

@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0068985",
+  "name": "Nikhil Sharma",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Locobuzz",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.244,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Prompt Engineering",
+    "TensorFlow",
+    "Reinforcement Learning",
+    "Rust",
+    "Time Series",
+    "Hugging Face Transformers",
+    "Azure",
+    "Machine Learning"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 62/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: TensorFlow 80/100"
+  ],
+  "fast_score": 59.4,
+  "years_of_experience": 5.2,
+  "total_months": 61,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 62.3,
+    "profile_completeness_score": 53.6,
+    "interview_completion_rate": 0.73,
+    "offer_acceptance_rate": 0.46,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Prompt Engineering": 63.6,
+      "TensorFlow": 80.4
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0000034",
+  "name": "Yash Chatterjee",
+  "current_title": "Business Analyst",
+  "current_company": "Wipro",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.417,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.529,
+  "top_skills": [
+    "GraphQL",
+    "Excel",
+    "Node.js",
+    "Terraform",
+    "Salesforce CRM",
+    "Flask",
+    "React",
+    "Azure"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (41%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 25.0,
+  "years_of_experience": 14.5,
+  "total_months": 170,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 41.2,
+    "interview_completion_rate": 0.41,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

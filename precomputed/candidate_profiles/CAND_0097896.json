@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0097896",
+  "name": "Sanjay Joshi",
+  "current_title": "AI Research Engineer",
+  "current_company": "upGrad",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.385,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "YOLO",
+    "Information Retrieval",
+    "Tally",
+    "Milvus",
+    "Statistical Modeling",
+    "Fine-tuning LLMs",
+    "Weights & Biases",
+    "Hugging Face Transformers"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 60/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 58.6,
+  "years_of_experience": 4.8,
+  "total_months": 56,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 60.8,
+    "profile_completeness_score": 93.6,
+    "interview_completion_rate": 0.52,
+    "offer_acceptance_rate": 0.57,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "YOLO": 40.9
+    }
+  }
+}

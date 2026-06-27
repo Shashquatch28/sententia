@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0084888",
+  "name": "Krishna Ghosh",
+  "current_title": "ML Engineer",
+  "current_company": "Glance",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.336,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "CNN",
+    "Hugging Face Transformers",
+    "OpenSearch",
+    "MLflow",
+    "Weights & Biases",
+    "ASR",
+    "Sentence Transformers",
+    "PEFT"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.6,
+  "years_of_experience": 6.8,
+  "total_months": 81,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 52.8,
+    "interview_completion_rate": 0.54,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "CNN": 62.9,
+      "Hugging Face Transformers": 48.7,
+      "Weights & Biases": 56.9,
+      "Sentence Transformers": 57.4
+    }
+  }
+}

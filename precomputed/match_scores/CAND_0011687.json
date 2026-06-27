@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 1.0,
+    "Product-Sense & User-Facing AI": 0.727,
+    "Founding-Team Ownership": 0.446,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.863
+  },
+  "required_skills_matched": [
+    "TensorFlow",
+    "Embeddings",
+    "LangChain"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.69,
+  "match_evidence": [
+    "Shreya Tiwari (Senior NLP Engineer at Niramai) \u2014 TensorFlow, Embeddings match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0011687"
+}

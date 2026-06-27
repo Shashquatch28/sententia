@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0013393",
+  "name": "Sneha Bansal",
+  "current_title": "ML Engineer",
+  "current_company": "Freshworks",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.258,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.758,
+  "top_skills": [
+    "Excel",
+    "Embeddings",
+    "MLflow",
+    "Pinecone",
+    "Qdrant",
+    "Data Science",
+    "BentoML",
+    "PyTorch"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Pinecone 79/100"
+  ],
+  "fast_score": 61.6,
+  "years_of_experience": 5.3,
+  "total_months": 62,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 74.2,
+    "interview_completion_rate": 0.99,
+    "offer_acceptance_rate": 0.75,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Embeddings": 41.2,
+      "Pinecone": 79.2
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0074731",
+  "name": "Vikram Naidu",
+  "current_title": "Data Scientist",
+  "current_company": "InMobi",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.172,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Hugging Face Transformers",
+    "Weaviate",
+    "PyTorch",
+    "TensorFlow",
+    "Python",
+    "dbt",
+    "MLflow",
+    "YOLO"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 74/100) \u2014 verifiable technical output",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 6.6,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 74.6,
+    "profile_completeness_score": 62.8,
+    "interview_completion_rate": 0.81,
+    "offer_acceptance_rate": 0.46,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Weaviate": 44.0
+    }
+  }
+}

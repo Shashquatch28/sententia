@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0052682",
+  "name": "Ira Mukherjee",
+  "current_title": "NLP Engineer",
+  "current_company": "Aganitha",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.455,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Statistical Modeling",
+    "QLoRA",
+    "Semantic Search",
+    "FAISS",
+    "PyTorch",
+    "gRPC",
+    "LLMs",
+    "Excel"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 72/100) \u2014 verifiable technical output",
+    "Actively open to work, 30-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 6.6,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 72.4,
+    "profile_completeness_score": 85.4,
+    "interview_completion_rate": 0.88,
+    "offer_acceptance_rate": 0.85,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "QLoRA": 65.8,
+      "Semantic Search": 53.3
+    }
+  }
+}

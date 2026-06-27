@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0000006",
+  "name": "Rajesh Desai",
+  "current_title": "Business Analyst",
+  "current_company": "Wayne Enterprises",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.536,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Content Writing",
+    "SEO",
+    "Redux",
+    "SQL",
+    "Sales",
+    "gRPC",
+    "Django",
+    "Terraform"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 19.0,
+  "years_of_experience": 6.0,
+  "total_months": 71,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 29.7,
+    "interview_completion_rate": 0.57,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 150,
+    "skill_assessment_scores": {}
+  }
+}

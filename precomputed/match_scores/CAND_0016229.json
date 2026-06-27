@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.75,
+    "Product-Sense & User-Facing AI": 0.727,
+    "Founding-Team Ownership": 0.372,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.863
+  },
+  "required_skills_matched": [
+    "Vector Search",
+    "Kubernetes",
+    "LLMs",
+    "AWS",
+    "Fine-tuning LLMs"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.668,
+  "match_evidence": [
+    "Manish Patel (Senior Software Engineer at Initech) \u2014 Vector Search, Kubernetes match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0016229"
+}

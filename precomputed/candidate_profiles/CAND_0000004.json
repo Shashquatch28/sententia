@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0000004",
+  "name": "Anil Bose",
+  "current_title": "Marketing Manager",
+  "current_company": "Dunder Mifflin",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.755,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.545,
+  "top_skills": [
+    "Node.js",
+    "Content Writing",
+    "Redux",
+    "Airflow",
+    "GraphQL",
+    "Object Detection",
+    "Webpack",
+    "Six Sigma"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [
+    "Low interview completion rate (35%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [],
+  "fast_score": 0.0,
+  "years_of_experience": 3.8,
+  "total_months": 44,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 28.5,
+    "interview_completion_rate": 0.35,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {}
+  }
+}

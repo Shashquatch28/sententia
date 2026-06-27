@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.6,
+    "Product-Sense & User-Facing AI": 0.691,
+    "Founding-Team Ownership": 0.44,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Embeddings",
+    "MLflow",
+    "Pinecone",
+    "Qdrant",
+    "BentoML"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.639,
+  "match_evidence": [
+    "Sneha Bansal (ML Engineer at Freshworks) \u2014 Embeddings, MLflow match LLM/RAG core requirements",
+    "75% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0013393"
+}

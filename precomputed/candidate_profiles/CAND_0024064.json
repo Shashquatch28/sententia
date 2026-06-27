@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0024064",
+  "name": "Mira Desai",
+  "current_title": "Software Engineer",
+  "current_company": "Acme Corp",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.463,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.764,
+  "top_skills": [
+    "LlamaIndex",
+    "LLMs",
+    "Speech Recognition",
+    "Time Series",
+    "Diffusion Models",
+    "dbt",
+    "Webpack",
+    "Tailwind"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 55/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 7.6,
+  "total_months": 89,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 55.1,
+    "profile_completeness_score": 78.5,
+    "interview_completion_rate": 0.62,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "LlamaIndex": 42.7
+    }
+  }
+}

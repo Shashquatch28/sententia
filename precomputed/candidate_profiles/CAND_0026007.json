@@ -1,0 +1,42 @@
+{
+  "candidate_id": "CAND_0026007",
+  "name": "Jay Dutta",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Nykaa",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.417,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.452,
+  "top_skills": [
+    "OpenCV",
+    "Object Detection",
+    "NLP",
+    "Machine Learning",
+    "GANs",
+    "Photoshop",
+    "GraphQL",
+    "Time Series"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 61/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 61.4,
+  "years_of_experience": 6.2,
+  "total_months": 73,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 61.4,
+    "profile_completeness_score": 50.2,
+    "interview_completion_rate": 0.97,
+    "offer_acceptance_rate": 0.72,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0099947",
+  "name": "Kabir Iyengar",
+  "current_title": "Software Engineer",
+  "current_company": "Cognizant",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.469,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.402,
+  "top_skills": [
+    "Data Science",
+    "CNN",
+    "Agile",
+    "CI/CD",
+    "TTS",
+    "MLflow",
+    "ASR",
+    "LlamaIndex"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 74/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 63.0,
+  "years_of_experience": 7.8,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": 74.0,
+    "profile_completeness_score": 66.1,
+    "interview_completion_rate": 0.7,
+    "offer_acceptance_rate": 0.71,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Data Science": 53.5
+    }
+  }
+}

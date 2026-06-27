@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0039754",
+  "name": "Mira Banerjee",
+  "current_title": "Senior Applied Scientist",
+  "current_company": "Meta",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.504,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Fine-tuning LLMs",
+    "LlamaIndex",
+    "Qdrant",
+    "Reinforcement Learning",
+    "NLP",
+    "Statistical Modeling",
+    "Kubeflow",
+    "ASR"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 77/100) \u2014 verifiable technical output",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Fine-tuning LLMs 96/100"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 16.2,
+  "total_months": 98,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 77.5,
+    "profile_completeness_score": 67.1,
+    "interview_completion_rate": 0.98,
+    "offer_acceptance_rate": 0.55,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Fine-tuning LLMs": 96.5,
+      "LlamaIndex": 65.2,
+      "Qdrant": 61.5,
+      "NLP": 80.5,
+      "Kubeflow": 74.1
+    }
+  }
+}

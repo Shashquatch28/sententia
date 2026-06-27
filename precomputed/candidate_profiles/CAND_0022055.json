@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0022055",
+  "name": "Dev Arora",
+  "current_title": "Software Engineer",
+  "current_company": "Initech",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.568,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Weights & Biases",
+    "Databricks",
+    "Node.js",
+    "Airflow",
+    "GCP",
+    "Spring Boot",
+    "Content Writing",
+    "Go"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 9.7,
+  "total_months": 115,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 42.7,
+    "interview_completion_rate": 0.75,
+    "offer_acceptance_rate": 0.4,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

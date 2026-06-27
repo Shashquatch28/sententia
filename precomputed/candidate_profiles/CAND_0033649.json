@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0033649",
+  "name": "Aarohi Iyer",
+  "current_title": "Data Scientist",
+  "current_company": "Krutrim",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.335,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "BM25",
+    "MLflow",
+    "Airflow",
+    "Kubernetes",
+    "Object Detection",
+    "Deep Learning",
+    "Agile",
+    "Flask"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: PyTorch 79/100"
+  ],
+  "fast_score": 59.6,
+  "years_of_experience": 5.3,
+  "total_months": 62,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 69.4,
+    "interview_completion_rate": 0.87,
+    "offer_acceptance_rate": 0.31,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "MLflow": 57.6,
+      "PyTorch": 79.2
+    }
+  }
+}

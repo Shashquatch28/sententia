@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0058146",
+  "name": "Rahul Arora",
+  "current_title": "AI Research Engineer",
+  "current_company": "PolicyBazaar",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.0,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Information Retrieval",
+    "LLMs",
+    "Computer Vision",
+    "Scrum",
+    "MLOps",
+    "Tailwind",
+    "OpenCV",
+    "Recommendation Systems"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 80/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 59.2,
+  "years_of_experience": 5.1,
+  "total_months": 60,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 80.0,
+    "profile_completeness_score": 77.5,
+    "interview_completion_rate": 0.95,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 45,
+    "skill_assessment_scores": {
+      "LLMs": 74.3,
+      "Recommendation Systems": 47.7
+    }
+  }
+}

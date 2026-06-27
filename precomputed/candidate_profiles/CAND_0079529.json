@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0079529",
+  "name": "Aryan Chopra",
+  "current_title": "Software Engineer",
+  "current_company": "CRED",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.515,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.576,
+  "top_skills": [
+    "CNN",
+    "scikit-learn",
+    "Next.js",
+    "BentoML",
+    "Computer Vision",
+    "Excel",
+    "Vue.js",
+    "Django"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Computer Vision 79/100"
+  ],
+  "fast_score": 58.4,
+  "years_of_experience": 7.2,
+  "total_months": 85,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 12.1,
+    "profile_completeness_score": 72.2,
+    "interview_completion_rate": 0.91,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "CNN": 67.7,
+      "scikit-learn": 73.8,
+      "BentoML": 54.4,
+      "Computer Vision": 79.7
+    }
+  }
+}

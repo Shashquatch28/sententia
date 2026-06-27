@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0000019",
+  "name": "Myra Mishra",
+  "current_title": "Project Manager",
+  "current_company": "Wayne Enterprises",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.526,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Figma",
+    "GraphQL",
+    "Six Sigma",
+    "Scrum",
+    "YOLO",
+    "gRPC",
+    "AWS",
+    "Azure"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [
+    "Low interview completion rate (31%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 22.0,
+  "years_of_experience": 6.5,
+  "total_months": 77,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 38.6,
+    "interview_completion_rate": 0.31,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

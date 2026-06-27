@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0040162",
+  "name": "Ayaan Saxena",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Paytm",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.588,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Time Series",
+    "GCP",
+    "Machine Learning",
+    "TypeScript",
+    "Feature Engineering",
+    "Sales",
+    "HTML",
+    "PowerPoint"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low offer acceptance rate (22%) \u2014 may use offers as leverage"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 7.5,
+  "total_months": 89,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 49.6,
+    "profile_completeness_score": 42.3,
+    "interview_completion_rate": 0.93,
+    "offer_acceptance_rate": 0.22,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

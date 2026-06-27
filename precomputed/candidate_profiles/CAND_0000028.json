@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0000028",
+  "name": "Rohan Krishnan",
+  "current_title": "Operations Manager",
+  "current_company": "Wipro",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.7,
+  "skill_duration_credible": true,
+  "ownership_language_score": 1.0,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.0,
+  "top_skills": [
+    "Snowflake",
+    "React",
+    "JavaScript",
+    "Tailwind",
+    "REST APIs",
+    "Photoshop",
+    "Data Pipelines",
+    "Terraform"
+  ],
+  "career_trajectory": "unknown",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [],
+  "fast_score": 9.2,
+  "years_of_experience": 1.1,
+  "total_months": 13,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 51.2,
+    "interview_completion_rate": 0.86,
+    "offer_acceptance_rate": 0.49,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0072948",
+  "name": "Avni Bhatia",
+  "current_title": "Senior Software Engineer",
+  "current_company": "upGrad",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.556,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "ETL",
+    "Kubeflow",
+    "HTML",
+    "Machine Learning",
+    "ASR",
+    "Spark",
+    "Photoshop",
+    "Speech Recognition"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.4,
+  "years_of_experience": 6.2,
+  "total_months": 73,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 80.2,
+    "interview_completion_rate": 0.78,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Kubeflow": 66.0,
+      "Machine Learning": 54.8,
+      "Speech Recognition": 58.8,
+      "GANs": 41.3,
+      "Hugging Face Transformers": 37.8
+    }
+  }
+}

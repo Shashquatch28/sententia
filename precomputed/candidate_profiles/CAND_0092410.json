@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0092410",
+  "name": "Ayaan Chatterjee",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Initech",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.492,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "SAP",
+    "Databricks",
+    "Prompt Engineering",
+    "BentoML",
+    "Speech Recognition",
+    "CSS",
+    "Salesforce CRM",
+    "Accounting"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 58.8,
+  "years_of_experience": 5.9,
+  "total_months": 70,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 20.4,
+    "profile_completeness_score": 89.4,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": 0.39,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Time Series": 61.2,
+      "Computer Vision": 51.1,
+      "CNN": 62.4
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0063645",
+  "name": "Anjali Agarwal",
+  "current_title": "Software Engineer",
+  "current_company": "Vedantu",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.345,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.446,
+  "top_skills": [
+    "MLflow",
+    "OpenCV",
+    "Spring Boot",
+    "MLOps",
+    "Time Series",
+    "Reinforcement Learning",
+    "Prompt Engineering",
+    "Airflow"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 72/100) \u2014 verifiable technical output",
+    "Actively open to work, 120-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 7.8,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 72.4,
+    "profile_completeness_score": 61.9,
+    "interview_completion_rate": 0.76,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "MLflow": 55.9,
+      "OpenCV": 65.8,
+      "MLOps": 39.2,
+      "Reinforcement Learning": 73.5
+    }
+  }
+}

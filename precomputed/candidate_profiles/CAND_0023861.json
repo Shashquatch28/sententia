@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0023861",
+  "name": "Ira Rao",
+  "current_title": "Software Engineer",
+  "current_company": "Mphasis",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.357,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.43,
+  "top_skills": [
+    "Docker",
+    "Spark",
+    "Airflow",
+    "GANs",
+    "PyTorch",
+    "Redis",
+    "Flask",
+    "Computer Vision"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 30-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 7.9,
+  "total_months": 93,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 39.6,
+    "interview_completion_rate": 0.57,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "PyTorch": 30.7,
+      "Sentence Transformers": 33.1
+    }
+  }
+}

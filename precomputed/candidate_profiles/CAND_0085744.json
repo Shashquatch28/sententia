@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0085744",
+  "name": "Zara Tiwari",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Stark Industries",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.423,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.227,
+  "top_skills": [
+    "Hugging Face Transformers",
+    "BentoML",
+    "gRPC",
+    "PowerPoint",
+    "REST APIs",
+    "Milvus",
+    "Computer Vision",
+    "Kafka"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 58.8,
+  "years_of_experience": 7.4,
+  "total_months": 88,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 79.9,
+    "interview_completion_rate": 0.87,
+    "offer_acceptance_rate": 0.4,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "BentoML": 73.4
+    }
+  }
+}

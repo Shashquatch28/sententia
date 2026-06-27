@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.557,
+    "Founding-Team Ownership": 0.432,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.85
+  },
+  "required_skills_matched": [
+    "Diffusion Models",
+    "PyTorch",
+    "Terraform"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.509,
+  "match_evidence": [
+    "Deepak Joshi (Senior Software Engineer at Initech) \u2014 Diffusion Models, PyTorch match LLM/RAG core requirements",
+    "68% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0031153"
+}

@@ -1,0 +1,130 @@
+{
+  "candidate_id": "CAND_0016163",
+  "name": "Suresh Shah",
+  "current_title": "Applied ML Engineer",
+  "current_company": "Dream11",
+  "recommendation": "ADVANCE",
+  "trust_assessment": {
+    "overall_trust_score": 0.95,
+    "trust_tier": "HIGH",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Phone number verified",
+        "confidence": 1.0,
+        "field_name": "verified_phone"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Highly active GitHub contributor (score 95/100)",
+        "confidence": 0.95,
+        "field_name": "github_activity_score"
+      },
+      {
+        "signal_type": "VERIFIED",
+        "description": "Platform-assessed Time Series: 89/100",
+        "confidence": 0.95,
+        "field_name": "skill_assessment_scores"
+      },
+      {
+        "signal_type": "PLAUSIBLE",
+        "description": "High profile completeness (89%)",
+        "confidence": 0.8,
+        "field_name": "profile_completeness_score"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform",
+      "Phone number verified",
+      "Verifiable technical output via GitHub (score 95/100)",
+      "Skill assessment score: Time Series = 89/100"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.67,
+      "evidence": [
+        "Suresh Shah (Applied ML Engineer at Dream11) has Hugging Face Transformers, Weaviate matching role requirements"
+      ],
+      "gaps": []
+    },
+    "product": {
+      "score": 0.81,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.73,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.61,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.715
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Standard Verification",
+      "severity": "LOW",
+      "description": "Standard background check and reference calls required for Suresh Shah",
+      "mitigation": "Include in post-offer process",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "Tell me about the most impactful AI/ML feature you shipped. What was the business outcome?",
+      "priority": "HIGH",
+      "dimension": "Product",
+      "what_to_listen_for": "Quantified impact, user empathy, product thinking beyond the model itself"
+    },
+    {
+      "question": "How do you handle evaluation of LLM outputs in production?",
+      "priority": "HIGH",
+      "dimension": "Technical",
+      "what_to_listen_for": "Automated evals, human-in-the-loop, regression testing, specific frameworks"
+    },
+    {
+      "question": "Describe a situation where you had to learn a new technology quickly to unblock the team.",
+      "priority": "MEDIUM",
+      "dimension": "Growth",
+      "what_to_listen_for": "Speed of learning, resourcefulness, self-direction without hand-holding"
+    }
+  ],
+  "recommendation_rationale": "Suresh Shah (Applied ML Engineer at Dream11) scores 78/100 with Hugging Face Transformers aligned to role requirements. No critical gaps. Strong enough profile to advance to phone screen.",
+  "timing_assessment": {
+    "current_tenure_months": 79,
+    "likely_available": true,
+    "urgency_signal": "Actively open to work with 120-day notice \u2014 high availability signal",
+    "estimated_notice_weeks": 17
+  },
+  "required_skills_matched": [
+    "Hugging Face Transformers",
+    "Weaviate",
+    "Deep Learning",
+    "TensorFlow"
+  ],
+  "overall_match_score": 0.787,
+  "top_evidence": [
+    "Suresh Shah (Applied ML Engineer at Dream11) \u2014 Hugging Face Transformers, Weaviate match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

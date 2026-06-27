@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0058688",
+  "name": "Anjali Kapoor",
+  "current_title": "AI Engineer",
+  "current_company": "Vedantu",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.462,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "OpenCV",
+    "CNN",
+    "scikit-learn",
+    "Object Detection",
+    "LlamaIndex",
+    "Computer Vision",
+    "Embeddings",
+    "Snowflake"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 15-day notice \u2014 immediately actionable",
+    "Experience at tier-1 product company: Apple"
+  ],
+  "fast_score": 60.4,
+  "years_of_experience": 6.7,
+  "total_months": 80,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 39.1,
+    "profile_completeness_score": 68.4,
+    "interview_completion_rate": 0.96,
+    "offer_acceptance_rate": 0.7,
+    "open_to_work_flag": true,
+    "notice_period_days": 15,
+    "skill_assessment_scores": {
+      "scikit-learn": 66.7
+    }
+  }
+}

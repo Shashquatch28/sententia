@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0099957",
+  "name": "Rahul Kumar",
+  "current_title": "Software Engineer",
+  "current_company": "Globex Inc",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.437,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.616,
+  "top_skills": [
+    "ASR",
+    "Computer Vision",
+    "Data Science",
+    "Time Series",
+    "PEFT",
+    "NLP",
+    "Elasticsearch",
+    "YOLO"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 9.4,
+  "total_months": 112,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 32.0,
+    "profile_completeness_score": 49.3,
+    "interview_completion_rate": 0.5,
+    "offer_acceptance_rate": 0.64,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Milvus": 32.2
+    }
+  }
+}

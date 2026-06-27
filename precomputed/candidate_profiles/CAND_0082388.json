@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0082388",
+  "name": "Sai Khanna",
+  "current_title": "Software Engineer",
+  "current_company": "Freshworks",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.435,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Prompt Engineering",
+    "Sentence Transformers",
+    "REST APIs",
+    "MLflow",
+    "LoRA",
+    "MLOps",
+    "GANs",
+    "Spring Boot"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: LoRA 77/100"
+  ],
+  "fast_score": 58.6,
+  "years_of_experience": 4.8,
+  "total_months": 56,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 61.0,
+    "interview_completion_rate": 0.91,
+    "offer_acceptance_rate": 0.8,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Sentence Transformers": 49.8,
+      "LoRA": 77.5,
+      "MLOps": 50.0
+    }
+  }
+}

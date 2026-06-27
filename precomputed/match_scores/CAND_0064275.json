@@ -1,0 +1,21 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.43,
+    "Product-Sense & User-Facing AI": 0.713,
+    "Founding-Team Ownership": 0.648,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.757
+  },
+  "required_skills_matched": [
+    "pgvector",
+    "Airflow"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.599,
+  "match_evidence": [
+    "Ved Bose (Senior Software Engineer at BYJU'S) \u2014 pgvector, Airflow match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0064275"
+}

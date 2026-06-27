@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0001767",
+  "name": "Jay Malhotra",
+  "current_title": "Software Engineer",
+  "current_company": "Flipkart",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.606,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.737,
+  "top_skills": [
+    "FastAPI",
+    "Kubernetes",
+    "CI/CD",
+    "Kubeflow",
+    "Angular",
+    "Go",
+    "BentoML",
+    "Airflow"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 8.3,
+  "total_months": 99,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 66.2,
+    "interview_completion_rate": 0.75,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

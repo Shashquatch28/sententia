@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.8,
+    "Founding-Team Ownership": 0.337,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Python",
+    "Milvus",
+    "Vector Search",
+    "LlamaIndex",
+    "Azure"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.61,
+  "match_evidence": [
+    "Reyansh Chatterjee (AI Research Engineer at Haptik) \u2014 Python, Milvus match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0061175"
+}

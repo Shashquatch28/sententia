@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.7,
+    "Founding-Team Ownership": 0.431,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.85
+  },
+  "required_skills_matched": [
+    "LlamaIndex",
+    "MLflow",
+    "GCP",
+    "Information Retrieval"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.584,
+  "match_evidence": [
+    "Manish Sen (Senior Software Engineer at Swiggy) \u2014 LlamaIndex, MLflow match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0050001"
+}

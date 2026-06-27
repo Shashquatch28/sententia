@@ -1,0 +1,21 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.0,
+    "Product-Sense & User-Facing AI": 0.532,
+    "Founding-Team Ownership": 0.37,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.863
+  },
+  "required_skills_matched": [
+    "Airflow"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+  ],
+  "overall_match_score": 0.316,
+  "match_evidence": [
+    "Mira Hegde (Senior Software Engineer at Vedantu) \u2014 Airflow match LLM/RAG core requirements",
+    "56% product company exposure"
+  ],
+  "candidate_id": "CAND_0033662"
+}

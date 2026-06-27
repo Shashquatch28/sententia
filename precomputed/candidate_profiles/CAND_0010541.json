@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0010541",
+  "name": "Meera Krishnan",
+  "current_title": "AI Research Engineer",
+  "current_company": "Wysa",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.198,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Pinecone",
+    "GANs",
+    "Weaviate",
+    "Computer Vision",
+    "TTS",
+    "MLOps",
+    "Data Science",
+    "LoRA"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Weaviate 76/100"
+  ],
+  "fast_score": 59.4,
+  "years_of_experience": 6.2,
+  "total_months": 74,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 18.2,
+    "profile_completeness_score": 75.3,
+    "interview_completion_rate": 0.87,
+    "offer_acceptance_rate": 0.83,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Pinecone": 44.4,
+      "Weaviate": 76.8,
+      "Computer Vision": 45.9
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0076500",
+  "name": "Deepak Sethi",
+  "current_title": "Backend Engineer",
+  "current_company": "BYJU'S",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.435,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 0.393,
+  "top_skills": [
+    "RAG",
+    "Kubernetes",
+    "Hugging Face Transformers",
+    "Terraform",
+    "Image Classification",
+    "LangChain",
+    "Speech Recognition",
+    "Computer Vision"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 67/100) \u2014 verifiable technical output"
+  ],
+  "fast_score": 63.2,
+  "years_of_experience": 7.1,
+  "total_months": 84,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 67.0,
+    "profile_completeness_score": 56.9,
+    "interview_completion_rate": 0.5,
+    "offer_acceptance_rate": 0.43,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "RAG": 41.6
+    }
+  }
+}

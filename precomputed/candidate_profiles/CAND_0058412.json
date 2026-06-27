@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0058412",
+  "name": "Aadhya Shetty",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "InMobi",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.365,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Embeddings",
+    "Speech Recognition",
+    "Data Science",
+    "Object Detection",
+    "Milvus",
+    "Time Series",
+    "gRPC",
+    "Statistical Modeling"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 64.2,
+  "years_of_experience": 6.6,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 31.0,
+    "profile_completeness_score": 85.8,
+    "interview_completion_rate": 0.91,
+    "offer_acceptance_rate": 0.87,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Embeddings": 68.8
+    }
+  }
+}

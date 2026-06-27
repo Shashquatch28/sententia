@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0044681",
+  "name": "Divya Subramanian",
+  "current_title": "Software Engineer",
+  "current_company": "Infosys",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.465,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.409,
+  "top_skills": [
+    "PyTorch",
+    "ASR",
+    "Speech Recognition",
+    "Hugging Face Transformers",
+    "Semantic Search",
+    "MongoDB",
+    "Kafka",
+    "Data Science"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 9.7,
+  "total_months": 115,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 8.8,
+    "profile_completeness_score": 57.5,
+    "interview_completion_rate": 0.71,
+    "offer_acceptance_rate": 0.44,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

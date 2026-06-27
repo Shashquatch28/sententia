@@ -1,0 +1,102 @@
+{
+  "candidate_id": "CAND_0000049",
+  "name": "Tanya Chowdary",
+  "current_title": "Mechanical Engineer",
+  "current_company": "Wayne Enterprises",
+  "recommendation": "ADVANCE_IF_POOL_THIN",
+  "trust_assessment": {
+    "overall_trust_score": 0.55,
+    "trust_tier": "MEDIUM",
+    "signals": [
+      {
+        "signal_type": "VERIFIED",
+        "description": "Email verified on Redrob platform",
+        "confidence": 1.0,
+        "field_name": "verified_email"
+      }
+    ],
+    "verified_claims": [
+      "Email address verified by Redrob platform"
+    ],
+    "unverifiable_claims": [
+      "Career history claims beyond platform verification require reference checks",
+      "Skill proficiency levels self-reported \u2014 validate in technical screen"
+    ],
+    "red_flags": []
+  },
+  "fit_assessment": {
+    "technical": {
+      "score": 0.17,
+      "evidence": [
+        "Tanya Chowdary (Mechanical Engineer at Wayne Enterprises) has Kubernetes matching role requirements"
+      ],
+      "gaps": [
+        "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+      ]
+    },
+    "product": {
+      "score": 0.74,
+      "evidence": [
+        "100% of career at product companies"
+      ],
+      "gaps": []
+    },
+    "cultural": {
+      "score": 0.69,
+      "evidence": [
+        "Ownership language in career descriptions suggests initiative"
+      ],
+      "gaps": []
+    },
+    "growth": {
+      "score": 0.63,
+      "evidence": [],
+      "gaps": []
+    },
+    "overall": 0.514
+  },
+  "hiring_risks": [
+    {
+      "risk_type": "Skill Gap",
+      "severity": "HIGH",
+      "description": "Tanya Chowdary: Limited LLM/RAG engineering skills \u2014 core requirement not met",
+      "mitigation": "Probe depth of adjacent skills and practical project examples in technical screen",
+      "is_blocking": false
+    }
+  ],
+  "interview_focus": [
+    {
+      "question": "What specific AI/ML area are you most excited to grow in over the next 12 months?",
+      "priority": "HIGH",
+      "dimension": "Growth",
+      "what_to_listen_for": "Awareness of own gaps, concrete learning plan, genuine motivation to stretch beyond current skills"
+    },
+    {
+      "question": "Tell me about a project where you had to deliver with limited guidance or resources.",
+      "priority": "HIGH",
+      "dimension": "Cultural",
+      "what_to_listen_for": "Self-directedness, initiative, creative problem-solving under constraints"
+    },
+    {
+      "question": "What is your experience with vector databases and semantic search?",
+      "priority": "MEDIUM",
+      "dimension": "Technical",
+      "what_to_listen_for": "Hands-on vs. theoretical knowledge, specific tools, real use cases vs. tutorials"
+    }
+  ],
+  "recommendation_rationale": "Tanya Chowdary (Mechanical Engineer at Wayne Enterprises) is below primary threshold at 42/100 \u2014 Limited LLM/RAG engineering skills \u2014 core requirement not met. Include as backup if top-tier pool is insufficient.",
+  "timing_assessment": {
+    "current_tenure_months": 141,
+    "likely_available": false,
+    "urgency_signal": "No active availability signal \u2014 outreach response rate unknown",
+    "estimated_notice_weeks": 17
+  },
+  "required_skills_matched": [
+    "Kubernetes"
+  ],
+  "overall_match_score": 0.42,
+  "top_evidence": [
+    "Tanya Chowdary (Mechanical Engineer at Wayne Enterprises) \u2014 Kubernetes match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ]
+}

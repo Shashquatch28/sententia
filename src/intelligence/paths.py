@@ -13,12 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 # Dataset directory (hackathon challenge folder)
 # ---------------------------------------------------------------------------
 
-DATASET_DIR = (
-    ROOT
-    / "[PUB] India_runs_data_and_ai_challenge (1)"
-    / "[PUB] India_runs_data_and_ai_challenge"
-    / "India_runs_data_and_ai_challenge"
-)
+DATASET_DIR = ROOT / "datasets"
 
 # Primary input files
 CANDIDATES_JSONL = DATASET_DIR / "candidates.jsonl"

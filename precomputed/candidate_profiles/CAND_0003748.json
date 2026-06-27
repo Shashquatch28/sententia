@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0003748",
+  "name": "Pooja Nair",
+  "current_title": "Software Engineer",
+  "current_company": "Dunder Mifflin",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.467,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.593,
+  "top_skills": [
+    "ETL",
+    "Haystack",
+    "Diffusion Models",
+    "Webpack",
+    "HTML",
+    "Redis",
+    "MLOps",
+    "Figma"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (45%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 10.0,
+  "total_months": 118,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": 25.4,
+    "profile_completeness_score": 47.3,
+    "interview_completion_rate": 0.45,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Haystack": 52.5,
+      "MLOps": 58.6
+    }
+  }
+}

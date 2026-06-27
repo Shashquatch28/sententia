@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0091909",
+  "name": "Pooja Tiwari",
+  "current_title": "Machine Learning Engineer",
+  "current_company": "Rephrase.ai",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.438,
+  "outcome_language_score": 0.2,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "LLMs",
+    "Image Classification",
+    "Pinecone",
+    "Diffusion Models",
+    "QLoRA",
+    "Qdrant",
+    "OpenSearch",
+    "BentoML"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 45-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Image Classification 89/100",
+    "Experience at tier-1 product company: Meta"
+  ],
+  "fast_score": 60.8,
+  "years_of_experience": 6.9,
+  "total_months": 82,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 49.7,
+    "profile_completeness_score": 71.5,
+    "interview_completion_rate": 0.66,
+    "offer_acceptance_rate": 0.34,
+    "open_to_work_flag": true,
+    "notice_period_days": 45,
+    "skill_assessment_scores": {
+      "LLMs": 84.9,
+      "Image Classification": 89.5
+    }
+  }
+}

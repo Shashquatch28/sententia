@@ -1,0 +1,25 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.0,
+    "Product-Sense & User-Facing AI": 0.713,
+    "Founding-Team Ownership": 0.95,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "Docker",
+    "Flask",
+    "AWS",
+    "Terraform"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met"
+  ],
+  "overall_match_score": 0.545,
+  "match_evidence": [
+    "Ved Sen (Business Analyst at Stark Industries) \u2014 Docker, Flask match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0000037"
+}

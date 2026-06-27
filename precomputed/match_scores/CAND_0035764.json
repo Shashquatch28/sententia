@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.7,
+    "Founding-Team Ownership": 0.295,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.75
+  },
+  "required_skills_matched": [
+    "Sentence Transformers",
+    "Hugging Face Transformers"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.469,
+  "match_evidence": [
+    "Amit Chowdary (Senior Software Engineer (ML) at Zomato) \u2014 Sentence Transformers, Hugging Face Transformers match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0035764"
+}

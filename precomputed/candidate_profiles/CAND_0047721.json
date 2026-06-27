@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0047721",
+  "name": "Om Verma",
+  "current_title": "Senior Data Scientist",
+  "current_company": "Microsoft",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.448,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Learning to Rank",
+    "MLOps",
+    "Milvus",
+    "BM25",
+    "RAG",
+    "Diffusion Models",
+    "Image Classification",
+    "Redux"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 90/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: Information Retrieval 87/100",
+    "Experience at tier-1 product company: Microsoft"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 7.0,
+  "total_months": 84,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 90.1,
+    "profile_completeness_score": 64.6,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": 0.45,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Learning to Rank": 82.8,
+      "Milvus": 73.6,
+      "BM25": 82.4,
+      "RAG": 60.3,
+      "Information Retrieval": 87.8
+    }
+  }
+}

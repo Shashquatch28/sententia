@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0013456",
+  "name": "Rohan Mehta",
+  "current_title": "Data Scientist",
+  "current_company": "Aganitha",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.335,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Microservices",
+    "BentoML",
+    "Vector Search",
+    "Reinforcement Learning",
+    "CNN",
+    "Data Science",
+    "Learning to Rank",
+    "MLflow"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 77/100) \u2014 verifiable technical output",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Learning to Rank 84/100"
+  ],
+  "fast_score": 58.4,
+  "years_of_experience": 4.7,
+  "total_months": 55,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 77.0,
+    "profile_completeness_score": 51.6,
+    "interview_completion_rate": 0.84,
+    "offer_acceptance_rate": 0.71,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Vector Search": 68.4,
+      "Reinforcement Learning": 48.5,
+      "Learning to Rank": 84.9,
+      "MLOps": 61.2
+    }
+  }
+}

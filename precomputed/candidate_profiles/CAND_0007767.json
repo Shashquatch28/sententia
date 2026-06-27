@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0007767",
+  "name": "Atharv Dalal",
+  "current_title": "Senior Software Engineer",
+  "current_company": "Paytm",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.426,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.75,
+  "top_skills": [
+    "Hadoop",
+    "Databricks",
+    "Statistical Modeling",
+    "Sentence Transformers",
+    "Data Science",
+    "Salesforce CRM",
+    "Recommendation Systems",
+    "Qdrant"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: TTS 75/100"
+  ],
+  "fast_score": 60.0,
+  "years_of_experience": 5.5,
+  "total_months": 64,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 65.3,
+    "interview_completion_rate": 0.56,
+    "offer_acceptance_rate": 0.77,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Machine Learning": 48.9,
+      "TTS": 75.9
+    }
+  }
+}

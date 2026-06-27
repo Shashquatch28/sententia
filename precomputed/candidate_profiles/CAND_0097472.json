@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0097472",
+  "name": "Kiara Reddy",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Flipkart",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.385,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "PyTorch",
+    "OpenCV",
+    "Deep Learning",
+    "Forecasting",
+    "BentoML",
+    "CNN",
+    "YOLO",
+    "LangChain"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 58.6,
+  "years_of_experience": 5.8,
+  "total_months": 69,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 80.3,
+    "interview_completion_rate": 0.66,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Forecasting": 57.6,
+      "CNN": 43.5,
+      "Information Retrieval": 69.7
+    }
+  }
+}

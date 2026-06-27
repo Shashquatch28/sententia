@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0025555",
+  "name": "Aarohi Shah",
+  "current_title": "Software Engineer",
+  "current_company": "Flipkart",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.341,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "FAISS",
+    "Sales",
+    "Reinforcement Learning",
+    "Time Series",
+    "MLOps",
+    "Data Science",
+    "Apache Flink",
+    "Illustrator"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 63.4,
+  "years_of_experience": 7.2,
+  "total_months": 85,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 45.3,
+    "profile_completeness_score": 63.6,
+    "interview_completion_rate": 0.5,
+    "offer_acceptance_rate": 0.39,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Reinforcement Learning": 63.5
+    }
+  }
+}

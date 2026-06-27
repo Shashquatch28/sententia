@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0008425",
+  "name": "Myra Krishnan",
+  "current_title": "Senior NLP Engineer",
+  "current_company": "Ola",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.346,
+  "outcome_language_score": 0.267,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Learning to Rank",
+    "Qdrant",
+    "Weights & Biases",
+    "pgvector",
+    "Sentence Transformers",
+    "NLP",
+    "Haystack",
+    "TensorFlow"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 53/100) \u2014 verifiable technical output",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Learning to Rank 77/100"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 7.8,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 53.3,
+    "profile_completeness_score": 57.2,
+    "interview_completion_rate": 0.77,
+    "offer_acceptance_rate": 0.41,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Learning to Rank": 77.8
+    }
+  }
+}

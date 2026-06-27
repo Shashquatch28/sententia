@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.477,
+    "Founding-Team Ownership": 0.491,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.7
+  },
+  "required_skills_matched": [
+    "Airflow",
+    "Fine-tuning LLMs",
+    "TensorFlow"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.488,
+  "match_evidence": [
+    "Aarav Sen (Cloud Engineer at Swiggy) \u2014 Airflow, Fine-tuning LLMs match LLM/RAG core requirements",
+    "50% product company exposure",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0000043"
+}

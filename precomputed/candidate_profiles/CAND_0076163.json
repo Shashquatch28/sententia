@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0076163",
+  "name": "Nikhil Mittal",
+  "current_title": "NLP Engineer",
+  "current_company": "Ola",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.597,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Weaviate",
+    "LangChain",
+    "YOLO",
+    "Reinforcement Learning",
+    "Statistical Modeling",
+    "BM25",
+    "Semantic Search",
+    "LlamaIndex"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 84/100) \u2014 verifiable technical output",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: BM25 91/100"
+  ],
+  "fast_score": 60.8,
+  "years_of_experience": 6.9,
+  "total_months": 82,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 84.6,
+    "profile_completeness_score": 89.7,
+    "interview_completion_rate": 0.72,
+    "offer_acceptance_rate": 0.48,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Weaviate": 78.5,
+      "LangChain": 50.7,
+      "Statistical Modeling": 71.0,
+      "BM25": 91.8,
+      "Semantic Search": 58.2
+    }
+  }
+}

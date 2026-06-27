@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0068777",
+  "name": "Rahul Pandey",
+  "current_title": "AI Research Engineer",
+  "current_company": "PolicyBazaar",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.184,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.821,
+  "top_skills": [
+    "Rust",
+    "ETL",
+    "Milvus",
+    "Forecasting",
+    "YOLO",
+    "Data Science",
+    "BM25",
+    "LlamaIndex"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: YOLO 87/100"
+  ],
+  "fast_score": 64.2,
+  "years_of_experience": 6.6,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 43.8,
+    "profile_completeness_score": 68.1,
+    "interview_completion_rate": 0.52,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Forecasting": 81.4,
+      "YOLO": 87.9,
+      "Qdrant": 86.3,
+      "BentoML": 76.3
+    }
+  }
+}

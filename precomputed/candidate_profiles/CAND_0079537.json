@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0079537",
+  "name": "Ayaan Kapoor",
+  "current_title": "Software Engineer",
+  "current_company": "Acme Corp",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.427,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.728,
+  "top_skills": [
+    "ASR",
+    "Node.js",
+    "NLP",
+    "MLOps",
+    "MLflow",
+    "dbt",
+    "Java",
+    "MongoDB"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 9.6,
+  "total_months": 114,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 81.1,
+    "interview_completion_rate": 0.9,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "ASR": 29.5,
+      "MLOps": 35.2
+    }
+  }
+}

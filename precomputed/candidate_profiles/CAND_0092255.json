@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0092255",
+  "name": "Jay Chatterjee",
+  "current_title": "ML Engineer",
+  "current_company": "InMobi",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.177,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.787,
+  "top_skills": [
+    "Machine Learning",
+    "PyTorch",
+    "Statistical Modeling",
+    "Figma",
+    "Weaviate",
+    "Semantic Search",
+    "CNN",
+    "Data Science"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "Active GitHub contributor (score: 77/100) \u2014 verifiable technical output",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 61.4,
+  "years_of_experience": 5.2,
+  "total_months": 61,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 77.9,
+    "profile_completeness_score": 72.3,
+    "interview_completion_rate": 0.73,
+    "offer_acceptance_rate": 0.66,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Machine Learning": 55.0
+    }
+  }
+}

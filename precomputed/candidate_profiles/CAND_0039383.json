@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0039383",
+  "name": "Riya Malhotra",
+  "current_title": "Applied ML Engineer",
+  "current_company": "Meesho",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.606,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "GANs",
+    "FAISS",
+    "ASR",
+    "Kubeflow",
+    "Recommendation Systems",
+    "Hugging Face Transformers",
+    "QLoRA",
+    "Feature Engineering"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 86/100) \u2014 verifiable technical output",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Hugging Face Transformers 85/100"
+  ],
+  "fast_score": 63.2,
+  "years_of_experience": 7.1,
+  "total_months": 84,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 86.4,
+    "profile_completeness_score": 89.0,
+    "interview_completion_rate": 0.97,
+    "offer_acceptance_rate": 0.78,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "GANs": 59.0,
+      "FAISS": 62.8,
+      "Kubeflow": 50.1,
+      "Recommendation Systems": 64.9,
+      "Hugging Face Transformers": 85.8
+    }
+  }
+}

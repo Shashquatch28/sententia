@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.83,
+    "Product-Sense & User-Facing AI": 0.575,
+    "Founding-Team Ownership": 0.505,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.607
+  },
+  "required_skills_matched": [
+    "Diffusion Models",
+    "Hugging Face Transformers",
+    "LLMs",
+    "Weights & Biases"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.624,
+  "match_evidence": [
+    "Arjun Desai (Backend Engineer at Stark Industries) \u2014 Diffusion Models, Hugging Face Transformers match LLM/RAG core requirements",
+    "69% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0072154"
+}

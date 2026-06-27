@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0042421",
+  "name": "Suresh Dalal",
+  "current_title": "Senior Software Engineer",
+  "current_company": "upGrad",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.442,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Azure",
+    "Embeddings",
+    "Weights & Biases",
+    "Data Science",
+    "LLMs",
+    "Feature Engineering",
+    "Milvus",
+    "MLOps"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Milvus 78/100"
+  ],
+  "fast_score": 62.4,
+  "years_of_experience": 6.7,
+  "total_months": 79,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 74.3,
+    "interview_completion_rate": 0.85,
+    "offer_acceptance_rate": 0.83,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Weights & Biases": 36.7,
+      "LLMs": 40.1,
+      "Feature Engineering": 45.5,
+      "Milvus": 78.2
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0080766",
+  "name": "Kiara Mittal",
+  "current_title": "Staff Machine Learning Engineer",
+  "current_company": "Salesforce",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.397,
+  "outcome_language_score": 0.2,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Search Backend",
+    "LoRA",
+    "Vue.js",
+    "Tally",
+    "Search & Discovery",
+    "MLOps",
+    "Search Infrastructure",
+    "MLflow"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Weaviate 84/100"
+  ],
+  "fast_score": 66.0,
+  "years_of_experience": 8.8,
+  "total_months": 105,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 32.9,
+    "profile_completeness_score": 92.0,
+    "interview_completion_rate": 0.88,
+    "offer_acceptance_rate": 0.63,
+    "open_to_work_flag": false,
+    "notice_period_days": 0,
+    "skill_assessment_scores": {
+      "Weaviate": 84.5
+    }
+  }
+}

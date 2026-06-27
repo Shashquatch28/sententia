@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0032133",
+  "name": "Aadhya Goyal",
+  "current_title": "Senior Software Engineer",
+  "current_company": "InMobi",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.449,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Redis",
+    "Computer Vision",
+    "Statistical Modeling",
+    "Speech Recognition",
+    "PyTorch",
+    "Elasticsearch",
+    "Information Retrieval",
+    "Weaviate"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 64.0,
+  "years_of_experience": 7.8,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 80.0,
+    "interview_completion_rate": 0.76,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Speech Recognition": 61.1
+    }
+  }
+}

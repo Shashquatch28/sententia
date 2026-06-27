@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.5,
+    "Product-Sense & User-Facing AI": 0.521,
+    "Founding-Team Ownership": 0.469,
+    "Python & MLOps Stack": 1.0,
+    "Communication & Cross-Functional Fit": 0.707
+  },
+  "required_skills_matched": [
+    "MLflow",
+    "Airflow",
+    "RAG",
+    "Vector Search",
+    "BentoML"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.576,
+  "match_evidence": [
+    "Ira Trivedi (Software Engineer at InMobi) \u2014 MLflow, Airflow match LLM/RAG core requirements",
+    "57% product company exposure"
+  ],
+  "candidate_id": "CAND_0000440"
+}

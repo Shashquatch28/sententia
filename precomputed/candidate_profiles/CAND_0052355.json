@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0052355",
+  "name": "Rohan Tiwari",
+  "current_title": "Software Engineer",
+  "current_company": "Flipkart",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.631,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Docker",
+    "Illustrator",
+    "REST APIs",
+    "Microservices",
+    "Django",
+    "Kafka",
+    "LLMs",
+    "PowerPoint"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (43%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "3 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 9.8,
+  "total_months": 116,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 30.3,
+    "interview_completion_rate": 0.43,
+    "offer_acceptance_rate": 0.67,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "LLMs": 46.1,
+      "Semantic Search": 43.9
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.25,
+    "Product-Sense & User-Facing AI": 0.713,
+    "Founding-Team Ownership": 0.53,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.757
+  },
+  "required_skills_matched": [
+    "Information Retrieval"
+  ],
+  "identified_gaps": [
+    "Limited LLM/RAG engineering skills \u2014 core requirement not met",
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.432,
+  "match_evidence": [
+    "Diya Khanna (Senior Software Engineer at CRED) \u2014 Information Retrieval match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0045170"
+}

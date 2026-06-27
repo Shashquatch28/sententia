@@ -1,0 +1,24 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 1.0,
+    "Product-Sense & User-Facing AI": 0.827,
+    "Founding-Team Ownership": 0.446,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.863
+  },
+  "required_skills_matched": [
+    "Fine-tuning LLMs",
+    "Vector Search",
+    "PyTorch",
+    "Information Retrieval"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.715,
+  "match_evidence": [
+    "Rahul Bansal (Senior Machine Learning Engineer at Amazon) \u2014 Fine-tuning LLMs, Vector Search match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0007411"
+}

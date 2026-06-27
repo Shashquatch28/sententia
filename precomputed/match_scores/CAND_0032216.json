@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.75,
+    "Product-Sense & User-Facing AI": 0.8,
+    "Founding-Team Ownership": 0.325,
+    "Python & MLOps Stack": 0.333,
+    "Communication & Cross-Functional Fit": 0.6
+  },
+  "required_skills_matched": [
+    "Information Retrieval",
+    "PyTorch",
+    "Qdrant",
+    "Sentence Transformers"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.615,
+  "match_evidence": [
+    "Rahul Shetty (ML Engineer at upGrad) \u2014 Information Retrieval, PyTorch match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0032216"
+}

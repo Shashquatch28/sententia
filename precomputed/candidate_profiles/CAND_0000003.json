@@ -1,0 +1,39 @@
+{
+  "candidate_id": "CAND_0000003",
+  "name": "Yash Agarwal",
+  "current_title": "Customer Support",
+  "current_company": "TCS",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.7,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.0,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.0,
+  "top_skills": [
+    "Angular",
+    "SEO",
+    "Excel",
+    "Accounting",
+    "Kubernetes",
+    "Databricks"
+  ],
+  "career_trajectory": "unknown",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [],
+  "fast_score": 0.0,
+  "years_of_experience": 1.1,
+  "total_months": 13,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 31.9,
+    "interview_completion_rate": 0.86,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 150,
+    "skill_assessment_scores": {}
+  }
+}

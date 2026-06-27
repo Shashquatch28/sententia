@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0061126",
+  "name": "Avni Hegde",
+  "current_title": "Software Engineer",
+  "current_company": "Flipkart",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.342,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Flask",
+    "Object Detection",
+    "LlamaIndex",
+    "Forecasting",
+    "Content Writing",
+    "Excel",
+    "SEO",
+    "HTML"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: LlamaIndex 81/100"
+  ],
+  "fast_score": 59.2,
+  "years_of_experience": 6.1,
+  "total_months": 72,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 44.9,
+    "interview_completion_rate": 0.74,
+    "offer_acceptance_rate": 0.43,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Object Detection": 76.1,
+      "LlamaIndex": 81.3,
+      "Forecasting": 79.0
+    }
+  }
+}

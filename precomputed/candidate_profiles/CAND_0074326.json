@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0074326",
+  "name": "Aanya Rao",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Tech Mahindra",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.237,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.0,
+  "top_skills": [
+    "NLP",
+    "Marketing",
+    "Object Detection",
+    "LangChain",
+    "MLOps",
+    "Diffusion Models",
+    "OpenCV",
+    "Speech Recognition"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 58.8,
+  "years_of_experience": 6.4,
+  "total_months": 75,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 93.4,
+    "interview_completion_rate": 0.69,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Object Detection": 50.4
+    }
+  }
+}

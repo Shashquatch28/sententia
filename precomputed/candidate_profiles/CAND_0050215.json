@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0050215",
+  "name": "Aryan Subramanian",
+  "current_title": "Software Engineer",
+  "current_company": "BYJU'S",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.428,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.803,
+  "top_skills": [
+    "Forecasting",
+    "Databricks",
+    "MLflow",
+    "Content Writing",
+    "Terraform",
+    "Speech Recognition",
+    "GANs",
+    "Weaviate"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 5.6,
+  "total_months": 66,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 22.5,
+    "profile_completeness_score": 77.9,
+    "interview_completion_rate": 0.8,
+    "offer_acceptance_rate": 0.45,
+    "open_to_work_flag": false,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Forecasting": 54.7
+    }
+  }
+}

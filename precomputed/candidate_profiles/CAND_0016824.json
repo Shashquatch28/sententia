@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0016824",
+  "name": "Sai Ghosh",
+  "current_title": "Software Engineer",
+  "current_company": "TCS",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.424,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.52,
+  "top_skills": [
+    "Machine Learning",
+    "Apache Beam",
+    "Accounting",
+    "MLflow",
+    "Data Science",
+    "Data Pipelines",
+    "Figma",
+    "Kafka"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 90-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 60.6,
+  "years_of_experience": 6.3,
+  "total_months": 75,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 68.9,
+    "interview_completion_rate": 0.88,
+    "offer_acceptance_rate": 0.29,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Machine Learning": 51.9,
+      "MLflow": 66.3
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "candidate_id": "CAND_0005538",
+  "name": "Aryan Goyal",
+  "current_title": "Senior AI Engineer",
+  "current_company": "Adobe",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.342,
+  "outcome_language_score": 0.267,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Project Management",
+    "Vector Representations",
+    "Deep Learning",
+    "Content Matching",
+    "Apache Flink",
+    "Feature Engineering",
+    "Statistical Modeling",
+    "QLoRA"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 58/100) \u2014 verifiable technical output",
+    "Actively open to work, 90-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Embeddings 92/100"
+  ],
+  "fast_score": 62.8,
+  "years_of_experience": 5.9,
+  "total_months": 69,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 58.0,
+    "profile_completeness_score": 88.2,
+    "interview_completion_rate": 0.76,
+    "offer_acceptance_rate": 0.81,
+    "open_to_work_flag": true,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Embeddings": 92.9
+    }
+  }
+}

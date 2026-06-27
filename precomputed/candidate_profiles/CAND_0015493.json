@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0015493",
+  "name": "Tanvi Shetty",
+  "current_title": "Data Scientist",
+  "current_company": "CRED",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.248,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "gRPC",
+    "Image Classification",
+    "scikit-learn",
+    "Semantic Search",
+    "TensorFlow",
+    "LoRA",
+    "Time Series",
+    "Redis"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 65/100) \u2014 verifiable technical output",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: NLP 86/100"
+  ],
+  "fast_score": 61.8,
+  "years_of_experience": 6.4,
+  "total_months": 75,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 65.5,
+    "profile_completeness_score": 90.1,
+    "interview_completion_rate": 0.61,
+    "offer_acceptance_rate": 0.73,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Image Classification": 72.1,
+      "scikit-learn": 53.9,
+      "TensorFlow": 60.5,
+      "Weights & Biases": 49.8,
+      "NLP": 86.2
+    }
+  }
+}

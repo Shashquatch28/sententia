@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0046571",
+  "name": "Rohan Menon",
+  "current_title": "Backend Engineer",
+  "current_company": "Mindtree",
+  "narrative_type": "INCOHERENT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.437,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.099,
+  "top_skills": [
+    "Sentence Transformers",
+    "Computer Vision",
+    "YOLO",
+    "REST APIs",
+    "Hugging Face Transformers",
+    "Airflow",
+    "MLflow",
+    "Elasticsearch"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Majority career at service/consulting firms \u2014 limited product ownership"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.6,
+  "years_of_experience": 6.8,
+  "total_months": 81,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 72.7,
+    "interview_completion_rate": 0.62,
+    "offer_acceptance_rate": 0.71,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Sentence Transformers": 57.3,
+      "Computer Vision": 68.6,
+      "YOLO": 72.9,
+      "Hugging Face Transformers": 54.8,
+      "Qdrant": 63.1
+    }
+  }
+}

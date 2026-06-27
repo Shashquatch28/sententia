@@ -1,0 +1,41 @@
+{
+  "candidate_id": "CAND_0036491",
+  "name": "Reyansh Chowdary",
+  "current_title": "Backend Engineer",
+  "current_company": "Paytm",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.357,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "SEO",
+    "Redis",
+    "Machine Learning",
+    "Computer Vision",
+    "Diffusion Models",
+    "SQL",
+    "Milvus",
+    "BentoML"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 58.8,
+  "years_of_experience": 4.9,
+  "total_months": 58,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 43.3,
+    "profile_completeness_score": 67.4,
+    "interview_completion_rate": 0.84,
+    "offer_acceptance_rate": 0.6,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {}
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_0005311",
+  "name": "Naina Tiwari",
+  "current_title": "AI Research Engineer",
+  "current_company": "Aganitha",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.325,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "LoRA",
+    "Feature Engineering",
+    "BentoML",
+    "Prompt Engineering",
+    "FastAPI",
+    "Semantic Search",
+    "Qdrant",
+    "Forecasting"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 70/100) \u2014 verifiable technical output",
+    "Actively open to work, 30-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Feature Engineering 85/100"
+  ],
+  "fast_score": 58.4,
+  "years_of_experience": 5.7,
+  "total_months": 67,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 70.2,
+    "profile_completeness_score": 64.5,
+    "interview_completion_rate": 0.52,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "LoRA": 58.0,
+      "Feature Engineering": 85.0,
+      "BentoML": 62.0
+    }
+  }
+}

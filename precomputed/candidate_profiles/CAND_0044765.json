@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0044765",
+  "name": "Reyansh Singh",
+  "current_title": "Backend Engineer",
+  "current_company": "Dunder Mifflin",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.428,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "LangChain",
+    "Reinforcement Learning",
+    "Six Sigma",
+    "React",
+    "Haystack",
+    "Tally",
+    "Angular",
+    "YOLO"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 59.0,
+  "years_of_experience": 7.9,
+  "total_months": 94,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 21.0,
+    "profile_completeness_score": 51.8,
+    "interview_completion_rate": 0.97,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "LangChain": 73.4,
+      "Object Detection": 54.8,
+      "Forecasting": 57.4
+    }
+  }
+}

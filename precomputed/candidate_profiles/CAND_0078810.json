@@ -1,0 +1,47 @@
+{
+  "candidate_id": "CAND_0078810",
+  "name": "Ishaan Singh",
+  "current_title": "Senior Software Engineer (ML)",
+  "current_company": "Dream11",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.112,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Recommendation Systems",
+    "Sentence Transformers",
+    "dbt",
+    "BentoML",
+    "Diffusion Models",
+    "Elasticsearch",
+    "Kubeflow",
+    "LangChain"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Kubeflow 81/100"
+  ],
+  "fast_score": 62.8,
+  "years_of_experience": 6.9,
+  "total_months": 81,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": 11.8,
+    "profile_completeness_score": 69.8,
+    "interview_completion_rate": 0.7,
+    "offer_acceptance_rate": 0.63,
+    "open_to_work_flag": false,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Kubeflow": 81.7,
+      "Object Detection": 49.0,
+      "Embeddings": 42.7,
+      "Deep Learning": 79.6
+    }
+  }
+}

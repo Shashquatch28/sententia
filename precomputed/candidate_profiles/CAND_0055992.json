@@ -1,0 +1,50 @@
+{
+  "candidate_id": "CAND_0055992",
+  "name": "Deepak Bansal",
+  "current_title": "AI Engineer",
+  "current_company": "CRED",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.545,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Information Retrieval",
+    "MLflow",
+    "FAISS",
+    "RAG",
+    "Feature Engineering",
+    "Data Science",
+    "LangChain",
+    "SQL"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "1 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 65/100) \u2014 verifiable technical output",
+    "Actively open to work, 60-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: RAG 87/100"
+  ],
+  "fast_score": 66.0,
+  "years_of_experience": 16.9,
+  "total_months": 80,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 65.3,
+    "profile_completeness_score": 61.1,
+    "interview_completion_rate": 0.91,
+    "offer_acceptance_rate": 0.74,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Information Retrieval": 80.5,
+      "MLflow": 71.2,
+      "FAISS": 51.2,
+      "RAG": 87.1,
+      "Data Science": 64.7
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "candidate_id": "CAND_0040955",
+  "name": "Ritu Shah",
+  "current_title": "Junior ML Engineer",
+  "current_company": "Rephrase.ai",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.357,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.487,
+  "top_skills": [
+    "Kubeflow",
+    "Sentence Transformers",
+    "OpenCV",
+    "Vector Search",
+    "dbt",
+    "Speech Recognition",
+    "Data Science",
+    "MLOps"
+  ],
+  "career_trajectory": "upward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment"
+  ],
+  "fast_score": 60.2,
+  "years_of_experience": 6.6,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": false,
+    "verified_phone": true,
+    "github_activity_score": -1,
+    "profile_completeness_score": 70.4,
+    "interview_completion_rate": 0.64,
+    "offer_acceptance_rate": 0.53,
+    "open_to_work_flag": false,
+    "notice_period_days": 30,
+    "skill_assessment_scores": {
+      "Kubeflow": 70.3
+    }
+  }
+}

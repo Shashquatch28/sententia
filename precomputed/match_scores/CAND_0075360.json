@@ -1,0 +1,22 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.35,
+    "Product-Sense & User-Facing AI": 0.559,
+    "Founding-Team Ownership": 0.652,
+    "Python & MLOps Stack": 0.0,
+    "Communication & Cross-Functional Fit": 0.607
+  },
+  "required_skills_matched": [
+    "NLP"
+  ],
+  "identified_gaps": [
+    "MLOps/deployment stack not evident in skill profile"
+  ],
+  "overall_match_score": 0.441,
+  "match_evidence": [
+    "Naina Subramanian (Software Engineer at Meesho) \u2014 NLP match LLM/RAG core requirements",
+    "65% of career at product companies \u2014 strong user-facing context",
+    "Ownership language in career history signals initiative and scope"
+  ],
+  "candidate_id": "CAND_0075360"
+}

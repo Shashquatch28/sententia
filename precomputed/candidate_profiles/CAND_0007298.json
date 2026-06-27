@@ -1,0 +1,51 @@
+{
+  "candidate_id": "CAND_0007298",
+  "name": "Aarav Naidu",
+  "current_title": "Software Engineer",
+  "current_company": "Initech",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.503,
+  "outcome_language_score": 0.0,
+  "product_company_fraction": 0.643,
+  "top_skills": [
+    "Kubeflow",
+    "Sales",
+    "Computer Vision",
+    "SEO",
+    "Speech Recognition",
+    "Vue.js",
+    "Object Detection",
+    "BentoML"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low offer acceptance rate (22%) \u2014 may use offers as leverage"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 50/100) \u2014 verifiable technical output",
+    "Platform-verified skill score: Fine-tuning LLMs 77/100"
+  ],
+  "fast_score": 60.8,
+  "years_of_experience": 5.9,
+  "total_months": 70,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 50.1,
+    "profile_completeness_score": 58.3,
+    "interview_completion_rate": 0.83,
+    "offer_acceptance_rate": 0.22,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Kubeflow": 63.0,
+      "Computer Vision": 47.9,
+      "Object Detection": 43.3,
+      "Fine-tuning LLMs": 77.6,
+      "Milvus": 69.0
+    }
+  }
+}

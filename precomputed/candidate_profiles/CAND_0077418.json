@@ -1,0 +1,44 @@
+{
+  "candidate_id": "CAND_0077418",
+  "name": "Aanya Banerjee",
+  "current_title": "Senior Software Engineer",
+  "current_company": "upGrad",
+  "narrative_type": "STAGNANT",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.469,
+  "outcome_language_score": 0.133,
+  "product_company_fraction": 0.717,
+  "top_skills": [
+    "Data Science",
+    "BentoML",
+    "Object Detection",
+    "Next.js",
+    "Kubeflow",
+    "Hadoop",
+    "Recommendation Systems",
+    "Photoshop"
+  ],
+  "career_trajectory": "downward",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Platform-verified skill score: Data Science 81/100"
+  ],
+  "fast_score": 61.0,
+  "years_of_experience": 7.8,
+  "total_months": 92,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": 35.7,
+    "profile_completeness_score": 47.9,
+    "interview_completion_rate": 0.53,
+    "offer_acceptance_rate": 0.78,
+    "open_to_work_flag": false,
+    "notice_period_days": 90,
+    "skill_assessment_scores": {
+      "Data Science": 81.8
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0072154",
+  "name": "Arjun Desai",
+  "current_title": "Backend Engineer",
+  "current_company": "Stark Industries",
+  "narrative_type": "GENERALIST_BROADENING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.442,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 0.692,
+  "top_skills": [
+    "Diffusion Models",
+    "GANs",
+    "Hugging Face Transformers",
+    "HTML",
+    "Hadoop",
+    "CSS",
+    "LLMs",
+    "Weights & Biases"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [
+    "Low interview completion rate (47%) \u2014 potential reliability risk"
+  ],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 60/100) \u2014 verifiable technical output",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 62.2,
+  "years_of_experience": 6.6,
+  "total_months": 78,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 60.5,
+    "profile_completeness_score": 68.4,
+    "interview_completion_rate": 0.47,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {}
+  }
+}

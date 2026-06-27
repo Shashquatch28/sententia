@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND_0016163",
+  "name": "Suresh Shah",
+  "current_title": "Applied ML Engineer",
+  "current_company": "Dream11",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.652,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Hugging Face Transformers",
+    "Computer Vision",
+    "gRPC",
+    "Time Series",
+    "Weaviate",
+    "CNN",
+    "Deep Learning",
+    "TensorFlow"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Active GitHub contributor (score: 95/100) \u2014 verifiable technical output",
+    "Actively open to work, 120-day notice \u2014 immediately actionable",
+    "Platform-verified skill score: Time Series 89/100"
+  ],
+  "fast_score": 62.4,
+  "years_of_experience": 6.7,
+  "total_months": 79,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": true,
+    "github_activity_score": 95.0,
+    "profile_completeness_score": 89.5,
+    "interview_completion_rate": 0.62,
+    "offer_acceptance_rate": 0.85,
+    "open_to_work_flag": true,
+    "notice_period_days": 120,
+    "skill_assessment_scores": {
+      "Hugging Face Transformers": 53.3,
+      "Computer Vision": 86.4,
+      "Time Series": 89.1,
+      "Weaviate": 88.3
+    }
+  }
+}

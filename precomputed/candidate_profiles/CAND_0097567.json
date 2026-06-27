@@ -1,0 +1,45 @@
+{
+  "candidate_id": "CAND_0097567",
+  "name": "Sai Krishnan",
+  "current_title": "Software Engineer",
+  "current_company": "PharmEasy",
+  "narrative_type": "DOMAIN_PIVOTING",
+  "consistency_score": 0.85,
+  "skill_duration_credible": true,
+  "ownership_language_score": 0.449,
+  "outcome_language_score": 0.067,
+  "product_company_fraction": 1.0,
+  "top_skills": [
+    "Computer Vision",
+    "REST APIs",
+    "LangChain",
+    "Data Science",
+    "Sentence Transformers",
+    "Microservices",
+    "Terraform",
+    "TTS"
+  ],
+  "career_trajectory": "lateral",
+  "red_flags": [],
+  "green_flags": [
+    "2 role(s) with 2+ years tenure \u2014 demonstrates commitment",
+    "Actively open to work, 60-day notice \u2014 immediately actionable"
+  ],
+  "fast_score": 61.6,
+  "years_of_experience": 6.3,
+  "total_months": 74,
+  "redrob_trust": {
+    "verified_email": true,
+    "verified_phone": false,
+    "github_activity_score": -1,
+    "profile_completeness_score": 68.0,
+    "interview_completion_rate": 0.75,
+    "offer_acceptance_rate": -1,
+    "open_to_work_flag": true,
+    "notice_period_days": 60,
+    "skill_assessment_scores": {
+      "Data Science": 39.8,
+      "Sentence Transformers": 39.6
+    }
+  }
+}

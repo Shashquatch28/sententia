@@ -1,0 +1,21 @@
+{
+  "discriminator_scores": {
+    "LLM & RAG Engineering": 0.6,
+    "Product-Sense & User-Facing AI": 0.827,
+    "Founding-Team Ownership": 0.455,
+    "Python & MLOps Stack": 0.667,
+    "Communication & Cross-Functional Fit": 0.713
+  },
+  "required_skills_matched": [
+    "Flask",
+    "pgvector",
+    "NLP"
+  ],
+  "identified_gaps": [],
+  "overall_match_score": 0.645,
+  "match_evidence": [
+    "Aisha Rao (AI Engineer at Vedantu) \u2014 Flask, pgvector match LLM/RAG core requirements",
+    "100% of career at product companies \u2014 strong user-facing context"
+  ],
+  "candidate_id": "CAND_0087630"
+}
