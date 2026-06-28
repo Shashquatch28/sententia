@@ -61,6 +61,7 @@ src/models/**/*.py[cod]
 # Data (large/local datasets — download separately)
 datasets/
 data/
+*.db
 docs/
 
 # Hackathon dataset folder (large files — not committed)
