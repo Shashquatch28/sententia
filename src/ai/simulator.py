@@ -18,13 +18,15 @@ from src.ai.prompts import SYSTEM_PROMPT
 from src.ai.retrieval import get_complete_context
 
 
-class DecisionSimulator:
+from src.ai.base import AIBase
+
+class DecisionSimulator(AIBase):
     """
     Simulates hypothetical recruiter decisions.
     """
 
     def __init__(self):
-        self.client = get_client()
+        super().__init__()
 
     def simulate(
         self,
@@ -32,12 +34,12 @@ class DecisionSimulator:
         scenario: str,
     ) -> str:
 
-        context = get_complete_context(candidate_id)
+        context = self._get_context(candidate_id)
 
         if context["candidate_profile"] is None:
             return "Candidate not found."
 
-        formatted = format_candidate_context(context)
+        formatted = self._format_context(candidate_id)
 
         prompt = f"""
 Candidate Context

@@ -29,14 +29,15 @@ from src.ai.retrieval import (
 )
 
 
-class RecruiterCopilot:
+from src.ai.base import AIBase
+
+class RecruiterCopilot(AIBase):
     """
     Main AI entrypoint.
     """
 
     def __init__(self):
-
-        self.client = get_client()
+        super().__init__()
 
     def answer_candidate_question(
         self,
@@ -47,11 +48,11 @@ class RecruiterCopilot:
         Answer a recruiter question about one candidate.
         """
 
-        context = get_complete_context(candidate_id)
+        context = self._get_context(candidate_id)
 
         from src.ai.formatter import format_candidate_context
 
-        formatted_context = format_candidate_context(context)
+        formatted_context = self._format_context(candidate_id)
 
         if (
             context["candidate_profile"] is None
