@@ -42,9 +42,8 @@ class AIService(AIBase):
         if context["candidate_profile"] is None:
             return "Candidate not found."
 
-        formatted = self._format_context(candidate_id)
-
         if task == "copilot":
+            formatted = self._format_context(candidate_id)
 
             prompt = f"""
 {formatted}
@@ -63,6 +62,7 @@ Answer only using the supplied context.
             )
 
         elif task == "memo":
+            formatted = self._format_context(candidate_id)
 
             prompt = f"""
 {formatted}
@@ -77,6 +77,7 @@ Generate a recruiter memo.
             )
 
         elif task == "interview":
+            formatted = self._format_context(candidate_id)
 
             prompt = f"""
 {formatted}
@@ -91,15 +92,34 @@ Generate an interview guide.
             )
 
         elif task == "simulation":
+            candidate = context["candidate_profile"] or {}
+            match = context["match_score"] or {}
+            decision = context["recruiter_decision"] or {}
+            job = context["job_intelligence"] or {}
 
             prompt = f"""
-{formatted}
+Candidate
+---------
+Name: {candidate.get("name", "N/A")}
+Current Title: {candidate.get("current_title", "N/A")}
+Company: {candidate.get("current_company", "N/A")}
+
+Current Recommendation
+----------------------
+Recommendation: {decision.get("recommendation", "N/A")}
+Match Score: {match.get("overall_match_score", "N/A")}
+Top Evidence: {", ".join((decision.get("top_evidence", []) or [])[:2]) or "N/A"}
+Notice Period: {decision.get("timing_assessment", {}).get("estimated_notice_weeks", "N/A")} weeks
+
+Role
+----
+{job.get("role_summary", "N/A")}
 
 Scenario
 
 {scenario}
 
-Assume only this scenario changes.
+Assume only this scenario changes. Keep the response to 3 short bullets max.
 
 Would your recommendation change?
 Why?

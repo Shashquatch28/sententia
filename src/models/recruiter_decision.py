@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import List, Optional
+from typing import Any, List, Optional
 
 
 class Recommendation(Enum):
@@ -177,6 +177,93 @@ class RecruiterDecision:
             "top_evidence": self.top_evidence,
         }
 
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> "RecruiterDecision":
+        trust = data.get("trust_assessment", {}) or {}
+        fit = data.get("fit_assessment", {}) or {}
+
+        return cls(
+            candidate_id=str(data.get("candidate_id", "")),
+            recommendation=Recommendation(str(data.get("recommendation", "REVIEW_FURTHER"))),
+            trust_assessment=TrustAssessment(
+                overall_trust_score=float(trust.get("overall_trust_score", 0.0)),
+                trust_tier=str(trust.get("trust_tier", "LOW")),
+                signals=[
+                    TrustSignal(
+                        signal_type=str(s.get("signal_type", "")),
+                        description=str(s.get("description", "")),
+                        confidence=float(s.get("confidence", 0.0)),
+                        field_name=str(s.get("field_name", "")),
+                    )
+                    for s in trust.get("signals", []) or []
+                    if isinstance(s, dict)
+                ],
+                verified_claims=list(trust.get("verified_claims", []) or []),
+                unverifiable_claims=list(trust.get("unverifiable_claims", []) or []),
+                red_flags=list(trust.get("red_flags", []) or []),
+            ),
+            fit_assessment=FitAssessment(
+                technical=FitDimension(
+                    score=float(fit.get("technical", {}).get("score", 0.0)),
+                    evidence=list(fit.get("technical", {}).get("evidence", []) or []),
+                    gaps=list(fit.get("technical", {}).get("gaps", []) or []),
+                ),
+                product=FitDimension(
+                    score=float(fit.get("product", {}).get("score", 0.0)),
+                    evidence=list(fit.get("product", {}).get("evidence", []) or []),
+                    gaps=list(fit.get("product", {}).get("gaps", []) or []),
+                ),
+                cultural=FitDimension(
+                    score=float(fit.get("cultural", {}).get("score", 0.0)),
+                    evidence=list(fit.get("cultural", {}).get("evidence", []) or []),
+                    gaps=list(fit.get("cultural", {}).get("gaps", []) or []),
+                ),
+                growth=FitDimension(
+                    score=float(fit.get("growth", {}).get("score", 0.0)),
+                    evidence=list(fit.get("growth", {}).get("evidence", []) or []),
+                    gaps=list(fit.get("growth", {}).get("gaps", []) or []),
+                ),
+            ),
+            hiring_risks=[
+                HiringRisk(
+                    risk_type=str(r.get("risk_type", "")),
+                    severity=str(r.get("severity", "LOW")),
+                    description=str(r.get("description", "")),
+                    mitigation=str(r.get("mitigation", "")),
+                    is_blocking=bool(r.get("is_blocking", False)),
+                )
+                for r in data.get("hiring_risks", []) or []
+                if isinstance(r, dict)
+            ],
+            interview_focus=[
+                InterviewQuestion(
+                    question=str(q.get("question", "")),
+                    priority=str(q.get("priority", "LOW")),
+                    dimension=str(q.get("dimension", "")),
+                    what_to_listen_for=str(q.get("what_to_listen_for", "")),
+                )
+                for q in data.get("interview_focus", []) or []
+                if isinstance(q, dict)
+            ],
+            recommendation_rationale=str(data.get("recommendation_rationale", "")),
+            timing_assessment=(
+                TimingAssessment(
+                    current_tenure_months=int(data.get("timing_assessment", {}).get("current_tenure_months", 0)),
+                    likely_available=bool(data.get("timing_assessment", {}).get("likely_available", False)),
+                    urgency_signal=str(data.get("timing_assessment", {}).get("urgency_signal", "")),
+                    estimated_notice_weeks=int(data.get("timing_assessment", {}).get("estimated_notice_weeks", 4)),
+                )
+                if data.get("timing_assessment")
+                else None
+            ),
+            required_skills_matched=list(data.get("required_skills_matched", []) or []),
+            overall_match_score=float(data.get("overall_match_score", 0.0)),
+            top_evidence=list(data.get("top_evidence", []) or []),
+            name=str(data.get("name", "")),
+            current_title=str(data.get("current_title", "")),
+            current_company=str(data.get("current_company", "")),
+        )
+
 
 @dataclass
 class CandidateIntelligenceProfile:
@@ -198,6 +285,7 @@ class CandidateIntelligenceProfile:
     fast_score: float = 0.0
     years_of_experience: float = 0.0
     total_months: int = 0
+    redrob_trust: dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> dict:
         return {
@@ -218,4 +306,28 @@ class CandidateIntelligenceProfile:
             "fast_score": self.fast_score,
             "years_of_experience": self.years_of_experience,
             "total_months": self.total_months,
+            "redrob_trust": self.redrob_trust,
         }
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> "CandidateIntelligenceProfile":
+        return cls(
+            candidate_id=str(data.get("candidate_id", "")),
+            name=str(data.get("name", "")),
+            current_title=str(data.get("current_title", "")),
+            current_company=str(data.get("current_company", "")),
+            narrative_type=str(data.get("narrative_type", "mixed")),
+            consistency_score=float(data.get("consistency_score", 0.0)),
+            skill_duration_credible=bool(data.get("skill_duration_credible", False)),
+            ownership_language_score=float(data.get("ownership_language_score", 0.0)),
+            outcome_language_score=float(data.get("outcome_language_score", 0.0)),
+            product_company_fraction=float(data.get("product_company_fraction", 0.0)),
+            top_skills=list(data.get("top_skills", []) or []),
+            career_trajectory=str(data.get("career_trajectory", "mixed")),
+            red_flags=list(data.get("red_flags", []) or []),
+            green_flags=list(data.get("green_flags", []) or []),
+            fast_score=float(data.get("fast_score", 0.0)),
+            years_of_experience=float(data.get("years_of_experience", 0.0)),
+            total_months=int(data.get("total_months", 0)),
+            redrob_trust=dict(data.get("redrob_trust", {}) or {}),
+        )

@@ -12,6 +12,7 @@ from src.scoring.education_score import score_education
 from src.scoring.experience_depth_score import score_experience_depth
 from src.scoring.skill_match_score import score_skill_match
 from src.scoring.title_role_score import score_title_role
+from src.scoring.semantic_score import semantic_score
 
 
 WEIGHTS = {
@@ -44,7 +45,15 @@ def score_candidate(candidate: dict[str, Any], jd: dict[str, Any]) -> CandidateF
         )
 
     title_score, title_risks = score_title_role(candidate, jd)
-    skill_score, top_skills, missing_skills, skill_risks = score_skill_match(candidate, jd)
+
+    keyword_skill_score, top_skills, missing_skills, skill_risks = score_skill_match(candidate, jd)
+
+    semantic = semantic_score(candidate_id)
+
+    skill_score = (
+        0.90 * keyword_skill_score +
+        0.10 * semantic
+    )
     career_score, career_metrics, career_risks = score_career_progression(candidate, jd)
     exp_score, exp_risks = score_experience_depth(candidate, jd)
     edu_score = score_education(candidate)

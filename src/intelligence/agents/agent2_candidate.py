@@ -14,6 +14,7 @@ import re
 from pathlib import Path
 from typing import Iterator
 
+from src.models.recruiter_decision import CandidateIntelligenceProfile
 from src.intelligence.paths import (
     CANDIDATES_JSONL,
     PROFILES_DIR,
@@ -176,6 +177,44 @@ def _load_top_candidates() -> list:
     top = candidates[:TOP_N]
     logger.info(f"Selected top {len(top)} candidates")
     return top
+
+
+def _load_candidates_for_ids(candidate_ids: list[str]) -> list[dict]:
+    """
+    Load the exact ranked candidate set from the shared manifest order.
+    """
+
+    if not candidate_ids:
+        return []
+
+    wanted = list(dict.fromkeys(candidate_ids))
+    target = set(wanted)
+    by_id: dict[str, dict] = {}
+
+    if is_test_mode() and SAMPLE_CANDIDATES_JSON.exists():
+        with open(SAMPLE_CANDIDATES_JSON, encoding="utf-8") as f:
+            sample = json.load(f)
+        if isinstance(sample, dict):
+            sample = [sample]
+        for candidate in sample or []:
+            cid = candidate.get("candidate_id")
+            if cid in target:
+                candidate["fast_score"] = _keyword_fast_score(candidate)
+                by_id[cid] = candidate
+    elif CANDIDATES_JSONL.exists():
+        for candidate in _iter_jsonl(CANDIDATES_JSONL):
+            cid = candidate.get("candidate_id")
+            if cid in target:
+                candidate["fast_score"] = _keyword_fast_score(candidate)
+                by_id[cid] = candidate
+                if len(by_id) == len(target):
+                    break
+
+    ordered = [by_id[cid] for cid in wanted if cid in by_id]
+    missing = [cid for cid in wanted if cid not in by_id]
+    if missing:
+        logger.warning("Missing %d candidate(s) from shared ranking manifest", len(missing))
+    return ordered
 
 
 # ---------------------------------------------------------------------------
@@ -428,7 +467,7 @@ def _flags(candidate: dict) -> tuple:
 # Main
 # ---------------------------------------------------------------------------
 
-def run() -> list:
+def run(candidate_ids: list[str] | None = None) -> list:
     logger.info("=" * 60)
     mode_label = "TEST MODE — sample_candidates.json" if is_test_mode() else "FULL MODE — candidates.jsonl"
     logger.info(f"Agent 2: Candidate Intelligence  [{mode_label}]  [Rule-Based — No LLM]")
@@ -436,7 +475,11 @@ def run() -> list:
 
     PROFILES_DIR.mkdir(parents=True, exist_ok=True)
 
-    candidates = _load_top_candidates()
+    if candidate_ids:
+        logger.info(f"Using shared ranked candidate set ({len(candidate_ids)} candidates)")
+        candidates = _load_candidates_for_ids(candidate_ids)
+    else:
+        candidates = _load_top_candidates()
     if not candidates:
         logger.error("No candidates to process.")
         return []
@@ -459,7 +502,7 @@ def run() -> list:
             red, green = _flags(candidate)
             narrative_type = _heuristic_narrative_type(candidate)
 
-            data = {
+            profile_data = {
                 "candidate_id": cid,
                 "name": _candidate_name(candidate),
                 "current_title": profile.get("current_title", ""),
@@ -490,6 +533,9 @@ def run() -> list:
                 },
             }
 
+            profile_model = CandidateIntelligenceProfile.from_dict(profile_data)
+            data = profile_model.to_dict()
+
             with open(out_path, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2)
             processed += 1
@@ -500,7 +546,7 @@ def run() -> list:
 
     logger.info(f"✓ Agent 2 complete — processed: {processed}, skipped: {skipped}, failed: {failed}")
     return [
-        json.loads(open(PROFILES_DIR / f"{c.get('candidate_id')}.json").read())
+        json.loads((PROFILES_DIR / f"{c.get('candidate_id')}.json").read_text(encoding="utf-8"))
         for c in candidates
         if (PROFILES_DIR / f"{c.get('candidate_id')}.json").exists()
     ]
