@@ -28,4 +28,9 @@ class AIBase:
         if context["candidate_profile"] is None:
             return None
 
+        if context["match_score"] is None:
+            raise ValueError(
+                f"Candidate {candidate_id} has not been match-scored."
+            )
+
         return format_candidate_context(context)

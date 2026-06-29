@@ -20,17 +20,23 @@ def _parse(payload: str | None) -> dict:
 
 
 def format_candidate_context(context: dict) -> str:
+    """
+    Convert retrieved candidate context into a compact,
+    LLM-friendly representation.
 
-    candidate = context["candidate_profile"]
-    match = context["match_score"]
-    decision = context["recruiter_decision"]
+    Handles partially populated evaluation records safely.
+    """
+
+    candidate = context.get("candidate_profile")
+    match = context.get("match_score") or {}
+    decision = context.get("recruiter_decision") or {}
 
     if candidate is None:
         return "Candidate not found."
 
     candidate_payload = _parse(candidate.get("payload"))
-    match_payload = _parse(match.get("payload"))
-    decision_payload = _parse(decision.get("payload"))
+    match_payload = _parse(match.get("payload")) if match else {}
+    decision_payload = _parse(decision.get("payload")) if decision else {}
 
     matched_skills = ", ".join(
         match_payload.get("required_skills_matched", [])[:5]
@@ -43,7 +49,7 @@ def format_candidate_context(context: dict) -> str:
     evidence = "\n".join(
         f"- {e}"
         for e in match_payload.get("match_evidence", [])[:3]
-    )
+    ) or "None"
 
     rationale = decision_payload.get(
         "recommendation_rationale",
@@ -51,33 +57,33 @@ def format_candidate_context(context: dict) -> str:
     )
 
     interview_focus = "\n".join(
-        f"- {q['question']}"
+        f"- {q.get('question', '')}"
         for q in decision_payload.get(
             "interview_focus",
             []
         )[:2]
-    )
+    ) or "N/A"
 
     risks = "\n".join(
-        f"- {r['description']}"
+        f"- {r.get('description', '')}"
         for r in decision_payload.get(
             "hiring_risks",
             []
         )[:2]
-    )
+    ) or "N/A"
 
     return f"""
 Candidate
 ---------
-Name: {candidate["name"]}
-Current Title: {candidate["current_title"]}
-Company: {candidate["current_company"]}
-Experience: {candidate["years_of_experience"]:.1f} years
-Narrative: {candidate["narrative_type"]}
+Name: {candidate.get("name", "N/A")}
+Current Title: {candidate.get("current_title", "N/A")}
+Company: {candidate.get("current_company", "N/A")}
+Experience: {candidate.get("years_of_experience", 0):.1f} years
+Narrative: {candidate.get("narrative_type", "N/A")}
 
 Match
 -----
-Overall Score: {match["overall_match_score"]:.3f}
+Overall Score: {match.get("overall_match_score", "N/A")}
 
 Matched Skills:
 {matched_skills}
@@ -90,7 +96,7 @@ Top Evidence:
 
 Recommendation
 --------------
-{decision["recommendation"]}
+{decision.get("recommendation", "N/A")}
 
 Rationale:
 {rationale}

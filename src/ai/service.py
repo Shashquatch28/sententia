@@ -21,6 +21,8 @@ from src.ai.prompts import (
     INTERVIEW_GUIDE_PROMPT,
 )
 
+from src.ai.retrieval import get_complete_context
+
 
 class AIService(AIBase):
 
@@ -110,5 +112,65 @@ Why?
 
         return self.client.generate(
             system_prompt=system,
+            user_prompt=prompt,
+        )
+    
+
+    def compare(
+        self,
+        candidate_a: str,
+        candidate_b: str,
+    ) -> str:
+        """
+        Compare two match-scored candidates.
+        """
+
+        context_a = get_complete_context(candidate_a)
+        context_b = get_complete_context(candidate_b)
+
+        if (
+            context_a["match_score"] is None
+            or context_b["match_score"] is None
+        ):
+            return (
+                "Comparison unavailable. One or both candidates "
+                "have not completed match scoring."
+            )
+
+        formatted_a = self._format_context(candidate_a)
+        formatted_b = self._format_context(candidate_b)
+
+        prompt = f"""
+    Candidate A
+    ===========
+
+    {formatted_a}
+
+    Candidate B
+    ===========
+
+    {formatted_b}
+
+    Compare the two candidates.
+
+    Include:
+
+    - Technical strengths
+    - Technical weaknesses
+    - Skill gaps
+    - Hiring risks
+    - Match quality
+    - Interview priority
+    - Final hiring recommendation
+
+    Use only the supplied evidence.
+    """
+
+        return self.client.generate(
+            system_prompt=(
+                SYSTEM_PROMPT
+                + "\n\n"
+                + COMPARISON_PROMPT
+            ),
             user_prompt=prompt,
         )

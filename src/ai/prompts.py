@@ -61,6 +61,8 @@ Include:
 - Final recommendation
 
 Use only supplied context.
+Do not invent placeholders, signatures, dates, or metadata.
+Return only the recruiter memo, unless memo unavilable.
 """
 
 # ---------------------------------------------------------------------
@@ -80,6 +82,9 @@ Explain:
 - Why
 
 Use only supplied context.
+Start with a comparison table.
+
+| Category | Candidate A | Candidate B |
 """
 
 # ---------------------------------------------------------------------
@@ -97,6 +102,7 @@ Include:
 - Risk validation questions
 
 Base every question on retrieved evidence only.
+Generate questions that validate the evidence rather than repeating it.
 """
 
 # ---------------------------------------------------------------------
@@ -120,4 +126,4 @@ Do not introduce any new facts.
 # Prompt Version
 # ---------------------------------------------------------------------
 
-PROMPT_VERSION = "v1.0"
+PROMPT_VERSION = "v1.1"
