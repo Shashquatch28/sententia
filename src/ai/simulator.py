@@ -1,32 +1,18 @@
 """
 src/ai/simulator.py
 
-Hiring decision simulator.
-
-Responsibilities
-----------------
-- Simulate hypothetical hiring scenarios.
-- Reuse retrieval, formatter and client.
-- Never modify stored data.
+Backward-compatible wrapper around AIService.
 """
 
 from __future__ import annotations
 
-from src.ai.client import get_client
-from src.ai.formatter import format_candidate_context
-from src.ai.prompts import SYSTEM_PROMPT
-from src.ai.retrieval import get_complete_context
+from src.ai.service import AIService
 
 
-from src.ai.base import AIBase
-
-class DecisionSimulator(AIBase):
-    """
-    Simulates hypothetical recruiter decisions.
-    """
+class DecisionSimulator:
 
     def __init__(self):
-        super().__init__()
+        self.service = AIService()
 
     def simulate(
         self,
@@ -34,40 +20,8 @@ class DecisionSimulator(AIBase):
         scenario: str,
     ) -> str:
 
-        context = self._get_context(candidate_id)
-
-        if context["candidate_profile"] is None:
-            return "Candidate not found."
-
-        formatted = self._format_context(candidate_id)
-
-        prompt = f"""
-Candidate Context
-=================
-
-{formatted}
-
-Scenario
-========
-
-{scenario}
-
-Instructions
-============
-
-Assume ONLY the scenario above changes.
-
-Everything else remains unchanged.
-
-Explain:
-
-1. Would your hiring recommendation change?
-2. Why?
-3. What evidence supports your reasoning?
-4. What risks remain?
-"""
-
-        return self.client.generate(
-            system_prompt=SYSTEM_PROMPT,
-            user_prompt=prompt,
+        return self.service.generate(
+            task="simulation",
+            candidate_id=candidate_id,
+            scenario=scenario,
         )
