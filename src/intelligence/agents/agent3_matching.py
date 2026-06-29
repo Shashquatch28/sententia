@@ -73,6 +73,30 @@ def _load_top_profiles(n: int = TOP_N) -> list:
     return top
 
 
+def _load_profiles_for_ids(candidate_ids: list[str]) -> list[dict]:
+    if not candidate_ids:
+        return []
+
+    wanted = list(dict.fromkeys(candidate_ids))
+    by_id: dict[str, dict] = {}
+
+    for cid in wanted:
+        path = PROFILES_DIR / f"{cid}.json"
+        if not path.exists():
+            continue
+        try:
+            with open(path, encoding="utf-8") as f:
+                by_id[cid] = json.load(f)
+        except Exception as exc:
+            logger.warning(f"Could not load {path}: {exc}")
+
+    missing = [cid for cid in wanted if cid not in by_id]
+    if missing:
+        logger.warning("Missing %d profile(s) from shared ranking manifest", len(missing))
+
+    return [by_id[cid] for cid in wanted if cid in by_id]
+
+
 def _skill_hit(skills_lower: set, keywords: set) -> int:
     """Count how many keywords appear in the candidate's skill set."""
     return sum(1 for s in skills_lower if any(kw in s for kw in keywords))
@@ -221,7 +245,7 @@ def _score_candidate(profile: dict, discriminators: list) -> dict:
     }
 
 
-def run() -> list:
+def run(candidate_ids: list[str] | None = None) -> list:
     logger.info("=" * 60)
     mode_label = "TEST" if is_test_mode() else "FULL"
     logger.info(f"Agent 3: Matching Intelligence  [{mode_label} — top-{TOP_N}]  [Rule-Based — No LLM]")
@@ -233,7 +257,11 @@ def run() -> list:
     discriminators = job_intel.get("discriminator_hierarchy", [])
     logger.info(f"Role: {job_intel.get('role_summary', '')[:80]}...")
 
-    profiles = _load_top_profiles(TOP_N)
+    if candidate_ids:
+        logger.info(f"Using shared ranked candidate set ({len(candidate_ids)} candidates)")
+        profiles = _load_profiles_for_ids(candidate_ids)
+    else:
+        profiles = _load_top_profiles(TOP_N)
 
     pending = [
         p for p in profiles

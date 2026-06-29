@@ -1,104 +1,79 @@
 # Sententia
 
-**Sententia** is a constraint-aware candidate screening, ranking, and recruiter intelligence system built for the Redrob AI hiring challenge. It processes large applicant datasets (100,000+ candidates) and produces structured, audit-ready hiring decisions under strict resource limits: CPU-only, no GPU, under 16 GB RAM, and under five minutes end-to-end.
+**Sententia** is a constraint-aware candidate screening, ranking, and recruiter intelligence system built for the Redrob AI hiring challenge. It processes large applicant datasets and produces structured, audit-ready hiring decisions under strict resource limits: CPU-only, no GPU, under 16 GB RAM, and under five minutes for the ranking path.
 
-The codebase implements **HireIQ** — a two-phase architecture that separates deep offline recruiter analysis from a high-speed streaming ranker. The system answers not just *who* to hire, but *why*, *what to ask in interviews*, and *how candidates compare* to one another.
+The codebase implements **HireIQ**, a two-phase architecture that separates a high-speed streaming ranker from an offline recruiter intelligence pipeline. The system answers not just who to hire, but why, what to ask in interviews, and how candidates compare.
 
 **Repository:** [github.com/Shashquatch28/sententia](https://github.com/Shashquatch28/sententia)
 
 ---
 
-## Table of Contents
-
-1. [Summary](#summary)
-2. [What It Does](#what-it-does)
-3. [How It Works](#how-it-works)
-4. [Tech Stack](#tech-stack)
-5. [Project Structure](#project-structure)
-6. [Installation](#installation)
-7. [Dataset Setup](#dataset-setup)
-8. [Usage Guide](#usage-guide)
-9. [Scoring & Ranking Logic](#scoring--ranking-logic)
-10. [The 5-Agent Intelligence Pipeline](#the-5-agent-intelligence-pipeline)
-11. [Streamlit Dashboard](#streamlit-dashboard)
-12. [Knowledge Store & AI Layer (Optional)](#knowledge-store--ai-layer-optional)
-13. [Validation](#validation)
-14. [Configuration](#configuration)
-15. [Team & Constraints](#team--constraints)
-
----
-
 ## Summary
 
-Sententia is a deterministic, rule-based hiring intelligence platform for ranking Senior AI Engineer candidates at Redrob AI. It combines:
+Sententia combines:
 
-- A **streaming ranker** that scores 100K+ profiles in seconds with constant memory
-- A **5-agent offline pipeline** that builds recruiter-ready profiles, match scores, decisions, and reasoning
-- A **Streamlit dashboard** for exploring role intelligence, shortlists, candidate deep-dives, and pairwise comparisons
-- Optional **SQLite knowledge store** and **LLM copilot** layer for interactive recruiter Q&A (not used during ranking)
+- A streaming ranker that scores 100K+ profiles with constant memory.
+- A deterministic 5-agent intelligence pipeline that operates on the same ranked candidate set used for submission.
+- Canonical dataclass models for candidate intelligence and recruiter decisions.
+- A single reasoning-generation path shared by reporting and CSV output, with emergency fallback reasoning only when precomputed reasoning is unavailable.
+- Deterministic semantic-score enrichment generated offline before ranking.
+- Optional SQLite-backed AI copilot layer for recruiter Q&A, memos, comparisons, interview guides, and simulations.
 
-All ranking and agent logic is fully deterministic — no AI API calls are made during the ranking step, and the pipeline makes zero network calls at inference time.
+Ranking and agent execution are deterministic. No AI API calls are made during ranking.
 
 ---
 
 ## What It Does
 
-Naive screening tools often fail in two ways:
-
-1. **Keyword stuffing** — candidates game the system by packing profiles with relevant terms without real experience.
-2. **Score-only outputs** — a sorted list with no context on *why* someone ranks where they do, what to probe in interviews, or how adjacent candidates differ.
-
-Sententia addresses both:
-
 | Capability | Description |
 |---|---|
-| Honeypot detection | Heuristic filters penalize keyword stuffers and inconsistent profiles |
-| Hard rules | Disqualifiers cap scores for wrong titles or consulting-only careers |
-| Multi-dimensional scoring | Six weighted fit dimensions plus a behavioral reachability multiplier |
-| Recommendation tiers | `STRONGLY_ADVANCE`, `ADVANCE`, `REVIEW_FURTHER`, `ADVANCE_IF_POOL_THIN`, `DECLINE` |
-| Pairwise reasoning | Explains why Candidate A ranks above adjacent Candidate B |
-| Interview questions | Tailored question sets per recommendation tier |
-| Validator-compliant CSV | Top-100 `submission.csv` with unique, candidate-specific reasoning strings |
+| Streaming ranking | Scores candidates from JSON, JSONL, or JSONL.GZ without loading the whole dataset into memory. |
+| Honeypot detection | Penalizes suspicious keyword-stuffed profiles and inconsistent skill claims. |
+| Hard rules | Caps scores for disqualified titles or consulting-only career patterns. |
+| Multi-dimensional scoring | Combines skill match, career progression, title fit, availability, experience depth, education, and behavioral signals. |
+| Semantic enrichment | Adds deterministic offline semantic alignment into the skill-score path. |
+| Recruiter intelligence | Generates candidate profiles, match scores, hiring decisions, interview questions, comparisons, and trust assessments. |
+| Validator-compliant output | Produces top-100 `submission.csv` with unique candidate-specific reasoning. |
 
 ---
 
-## How It Works
+## Architecture
 
-The system splits work into an **offline pre-computation phase** (Dev B) and an **online streaming phase** (Dev A):
+The current pipeline follows Blueprint v3.10 by keeping the scorer deterministic and making the ranked candidate manifest the contract between ranking and recruiter intelligence.
 
 ```text
-┌─────────────────────────────────────────────────────────┐
-│                    OFFLINE PHASE                        │
-│     (Batch analysis of JD + top candidates)             │
-│                                                         │
-│   Job Desc (DOCX/MD) ──► Agent 1: Job Intelligence      │
-│   Candidates (JSONL) ──► Agent 2: Candidate Intel       │
-│   Profiles (JSON)    ──► Agent 3: Matching Intel        │
-│   Match Scores       ──► Agent 4: Recruiter Intel       │
-│   Decisions (JSON)   ──► Agent 5: Reporting             │
-│                                 │                       │
-└─────────────────────────────────┼───────────────────────┘
-                                  ▼
-                    precomputed/reasoning_map.json
-                                  │
-┌─────────────────────────────────┼───────────────────────┐
-│                    ONLINE PHASE                         │
-│        (High-speed streaming & heap-based ranking)      │
-│                                                         │
-│   100K Candidates ──► Stream Parser ──► Final Scorer    │
-│                             │                  ▲        │
-│                             ▼                  │        │
-│                         Honeypots &        Reasoning    │
-│                         Hard Rules         Map (JSON)   │
-│                             │                           │
-│                             ▼                           │
-│                        Top-200 Heap ──► submission.csv    │
-└─────────────────────────────────────────────────────────┘
+datasets/candidates/candidates.jsonl
+        |
+        v
+scripts/generate_semantic_scores.py
+        |
+        v
+precomputed/semantic_scores.json
+        |
+        v
+rank.py
+        |
+        +--> submission.csv
+        |
+        +--> precomputed/ranked_candidates.json
+                  |
+                  v
+              run_agents.py
+                  |
+                  +--> Agent 1: Job Intelligence
+                  +--> Agent 2: Candidate Intelligence
+                  +--> Agent 3: Matching Intelligence
+                  +--> Agent 4: Recruiter Decisions
+                  +--> Agent 5: Reporting and Reasoning Map
+                  |
+                  v
+precomputed/reasoning_map.json
+precomputed/comparisons.json
+precomputed/demo_data.json
+precomputed/recruiter_decisions/*.json
 ```
 
-**Offline phase** (`run_agents.py`) analyzes the job description and progressively narrows the candidate pool (500 → 200 → 100 in full mode), producing JSON artifacts under `precomputed/`.
-
-**Online phase** (`rank.py`) streams every candidate from disk, scores them through the weighted scorer, maintains only a top-200 min-heap in memory, and writes the top 100 to CSV. Reasoning strings come from the precomputed map when available, with a deterministic fallback generator otherwise.
+`rank.py` writes `precomputed/ranked_candidates.json`. `run_agents.py` consumes that manifest so Agents 2-5 operate on the same ranked candidates used by the submission path.
 
 ---
 
@@ -107,20 +82,12 @@ The system splits work into an **offline pre-computation phase** (Dev B) and an 
 | Layer | Technology |
 |---|---|
 | Language | Python 3.11+ |
-| Dashboard | [Streamlit](https://streamlit.io/) 1.58 |
-| Core ranking | Standard library (`json`, `gzip`, `csv`, `heapq`, `pathlib`, `argparse`) |
-| Job description parsing | Zero-dependency DOCX extractor (`zipfile` + XML) |
-| Knowledge store | SQLite (`knowledge/storage.py`) |
-| AI copilot (optional) | Pluggable LLM client (Ollama / OpenAI-compatible) via `src/ai/` |
-| Config | JSON (`config/jd_requirements.json`) |
-
-**Design constraints met:**
-
-- No GPU required
-- No external databases during ranking (PostgreSQL, Redis, etc.)
-- No network calls during ranking
-- Constant-memory streaming via `heapq` top-K buffer
-- Core scorer uses no Pandas; Streamlit installs Pandas/NumPy as transitive UI dependencies
+| Dashboard | Streamlit |
+| Ranking | Python standard library: `json`, `gzip`, `csv`, `heapq`, `pathlib`, `argparse` |
+| Job parsing | Zero-dependency DOCX extractor using `zipfile` and XML |
+| Knowledge store | SQLite |
+| AI copilot | Optional Ollama or OpenAI-compatible provider through `src/ai/` |
+| Config | JSON in `config/jd_requirements.json` |
 
 ---
 
@@ -128,93 +95,68 @@ The system splits work into an **offline pre-computation phase** (Dev B) and an 
 
 ```text
 Sententia/
-├── app/
-│   └── streamlit_app.py          # Recruiter dashboard (reads precomputed JSON only)
-├── config/
-│   └── jd_requirements.json      # Role requirements, skill aliases, disqualifiers, weights
-├── datasets/                     # Input data (not committed — see Dataset Setup)
-│   ├── candidates.jsonl          # Full 100K candidate pool
-│   ├── sample_candidates.json    # 50-candidate test set
-│   ├── job_description.docx      # Primary JD source
-│   └── candidate_schema.json     # Candidate record schema
-├── knowledge/
-│   ├── schema.sql                # SQLite schema for knowledge store
-│   ├── storage.py                # DB connection & initialization
-│   └── ingest.py                 # Import precomputed JSON into SQLite
-├── precomputed/                  # Generated artifacts (partially committed for demo)
-│   ├── job_intelligence.json
-│   ├── candidate_profiles/       # One JSON per candidate (Agent 2)
-│   ├── match_scores/             # One JSON per candidate (Agent 3)
-│   ├── recruiter_decisions/      # One JSON per candidate (Agent 4)
-│   ├── reasoning_map.json        # 100 candidate-specific reasoning strings (Agent 5)
-│   ├── comparisons.json          # Adjacent pairwise comparisons (Agent 5)
-│   └── demo_data.json            # Aggregated UI payload (Agent 5)
-├── src/
-│   ├── pipeline/                 # Streaming ranker (Dev A)
-│   │   ├── runner.py             # Main ranking orchestration
-│   │   ├── stream_parser.py      # JSON / JSONL / JSONL.GZ streaming
-│   │   ├── top_k_buffer.py       # Constant-memory min-heap top-K
-│   │   ├── csv_writer.py         # Submission CSV writer
-│   │   └── reasoning.py          # Fallback reasoning generator
-│   ├── scoring/                  # Six-dimension scorer + behavioral multiplier
-│   │   ├── final_scorer.py       # Weighted score aggregation
-│   │   ├── title_role_score.py
-│   │   ├── skill_match_score.py
-│   │   ├── career_progression_score.py
-│   │   ├── experience_depth_score.py
-│   │   ├── education_score.py
-│   │   ├── availability_score.py
-│   │   └── behavioral_multiplier.py
-│   ├── intelligence/             # 5-agent offline pipeline (Dev B)
-│   │   ├── agents/               # agent1_job … agent5_reporting
-│   │   ├── paths.py              # Shared path constants & test-mode config
-│   │   └── docx_reader.py        # Zero-dependency DOCX text extractor
-│   ├── ai/                       # Optional LLM copilot layer (V3.10)
-│   │   ├── service.py            # Unified AI entrypoint
-│   │   ├── retrieval.py          # SQLite-backed context retrieval
-│   │   ├── client.py             # Ollama / OpenAI-compatible provider
-│   │   ├── copilot.py            # Recruiter Q&A wrapper
-│   │   └── simulator.py          # Decision scenario simulator
-│   ├── models/                   # Data classes (feature vectors, decisions)
-│   ├── hard_rules.py             # Disqualifiers and score caps
-│   └── honeypot.py                 # Keyword-stuffing detection
-├── rank.py                       # Entry point: online ranking pipeline
-├── run_agents.py                 # Entry point: offline 5-agent pipeline
-├── precompute_v3.py              # Build SQLite knowledge store from JSON artifacts
-├── validate_output.py            # Validate submission.csv against spec
-├── job_description.md            # Markdown fallback for JD parsing
-├── submission.csv                # Example ranked output (top 100)
-├── submission_metadata.yaml      # Hackathon submission metadata
-└── requirements.txt
+|-- app/
+|   `-- streamlit_app.py
+|-- config/
+|   `-- jd_requirements.json
+|-- datasets/
+|   |-- candidates/
+|   |   |-- candidates.jsonl
+|   |   |-- sample_candidates.json
+|   |   `-- candidate_schema.json
+|   |-- docs/
+|   |   |-- job_description.docx
+|   |   `-- redrob_signals_doc.docx
+|   `-- validation/
+|       `-- validate_submission.py
+|-- knowledge/
+|   |-- schema.sql
+|   |-- storage.py
+|   `-- ingest.py
+|-- precomputed/
+|   |-- job_intelligence.json
+|   |-- ranked_candidates.json
+|   |-- semantic_scores.json
+|   |-- reasoning_map.json
+|   |-- comparisons.json
+|   |-- demo_data.json
+|   |-- candidate_profiles/
+|   |-- match_scores/
+|   `-- recruiter_decisions/
+|-- scripts/
+|   `-- generate_semantic_scores.py
+|-- src/
+|   |-- ai/
+|   |-- intelligence/
+|   |-- models/
+|   |-- pipeline/
+|   `-- scoring/
+|-- rank.py
+|-- run_agents.py
+|-- precompute_v3.py
+|-- validate_output.py
+|-- submission.csv
+`-- requirements.txt
 ```
+
+Large datasets and generated local stores are intentionally ignored by Git.
 
 ---
 
 ## Installation
 
-### Prerequisites
-
-- Python 3.11+ (tested on Windows; works on macOS/Linux)
-- Git
-- ~16 GB RAM recommended for full 100K run
-- No GPU required
-
-### Steps
-
 ```bash
 git clone https://github.com/Shashquatch28/sententia.git
 cd sententia
 
-# Create and activate a virtual environment
 python -m venv .venv
 
-# Windows
-.venv\Scripts\activate
+# Windows PowerShell
+.\.venv\Scripts\activate
 
 # macOS / Linux
 source .venv/bin/activate
 
-# Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -222,272 +164,264 @@ pip install -r requirements.txt
 
 ## Dataset Setup
 
-Large dataset files are **not committed** to the repository (see `.gitignore`). Place the hackathon data under `datasets/` with this layout:
+Place the challenge data under `datasets/` using this layout:
 
 ```text
 datasets/
-├── candidates.jsonl              # Full candidate pool (~100K records)
-├── sample_candidates.json        # 50-candidate smoke-test set
-├── job_description.docx          # Job description document
-├── candidate_schema.json         # Candidate record schema
-└── redrob_signals_doc.docx       # Redrob platform signals reference (optional)
+|-- candidates/
+|   |-- candidates.jsonl
+|   |-- sample_candidates.json
+|   `-- candidate_schema.json
+|-- docs/
+|   |-- job_description.docx
+|   `-- redrob_signals_doc.docx
+`-- validation/
+    `-- validate_submission.py
 ```
 
-If your download uses a nested folder structure (e.g. `datasets/candidates/candidates.jsonl`), copy or symlink files to the flat paths above. Agent 2 and the ranker read from the paths defined in `src/intelligence/paths.py`.
-
-A markdown fallback (`job_description.md` at the project root) is used automatically if the DOCX is missing or empty.
+The backend paths are centralized in `src/intelligence/paths.py`.
 
 ---
 
-## Usage Guide
+## Quick Verification
 
-### Quick start (test mode)
-
-Run the full pipeline on 50 sample candidates in seconds:
+Use this flow to verify the backend locally on the full dataset:
 
 ```bash
-# Step 1: Offline intelligence (Agents 1–5)
-python run_agents.py --test
+# 1. Generate deterministic semantic scores
+python scripts/generate_semantic_scores.py --out precomputed/semantic_scores.json
 
-# Step 2: Rank candidates and write submission CSV
-python rank.py --candidates datasets/sample_candidates.json --out submission.csv
+# 2. Create the ranked manifest and initial submission
+python rank.py --candidates datasets/candidates/candidates.jsonl --out submission.csv --precomputed precomputed
 
-# Step 3: Launch the dashboard
-streamlit run app/streamlit_app.py
-```
-
-### Full production run (100K candidates)
-
-```bash
-# Step 1: Pre-compute intelligence (~10 minutes)
+# 3. Run the 5-agent intelligence pipeline on the ranked manifest
 python run_agents.py
 
-# Step 2: Stream-rank all candidates
-python rank.py --candidates datasets/candidates.jsonl --out submission.csv --precomputed precomputed
+# 4. Rebuild the final submission using the generated reasoning map
+python rank.py --candidates datasets/candidates/candidates.jsonl --out submission.csv --precomputed precomputed
 
-# Step 3: Validate output
-python validate_output.py submission.csv
-
-# Step 4: Explore results in the dashboard
-streamlit run app/streamlit_app.py
+# 5. Validate the final submission
+python datasets/validation/validate_submission.py submission.csv
 ```
 
-### `run_agents.py` options
-
-```bash
-python run_agents.py              # Full run: 500 → 200 → 100 → report
-python run_agents.py --test       # Test run: 50 → 50 → 20 → report
-python run_agents.py --from 3       # Resume from Agent 3
-python run_agents.py --only 1       # Run only Agent 1
-python run_agents.py --test --from 2  # Test mode, resume from Agent 2
-```
-
-Agents checkpoint their outputs — re-running skips already-written files.
-
-### `rank.py` options
-
-```bash
-python rank.py \
-  --candidates datasets/candidates.jsonl \
-  --out submission.csv \
-  --precomputed precomputed
-```
-
-| Flag | Description |
-|---|---|
-| `--candidates` | Path to `.json`, `.jsonl`, or `.jsonl.gz` candidate file (required) |
-| `--out` | Output CSV path (required) |
-| `--precomputed` | Directory containing `reasoning_map.json` (default: `precomputed`) |
-
-Progress is logged to stderr every 10,000 candidates. The ranker maintains a top-200 heap and writes the top 100 to CSV.
-
-### Reproduce command (hackathon)
-
-```bash
-python rank.py --candidates <path_to_candidates.jsonl> --out submission.csv --precomputed precomputed
-```
-
----
-
-## Scoring & Ranking Logic
-
-Every candidate is evaluated across **six weighted dimensions** in `src/scoring/final_scorer.py`:
-
-| Dimension | Weight | Module | What it measures |
-|---|---|---|---|
-| Skill match | 30% | `skill_match_score.py` | Required skills vs. claimed skills, proficiency, endorsements, duration |
-| Career progression | 25% | `career_progression_score.py` | Upward mobility, AI/product career fractions, production evidence |
-| Title & role fit | 15% | `title_role_score.py` | Current and past titles vs. target Senior AI Engineer role |
-| Availability | 15% | `availability_score.py` | Location, notice period, work mode preferences |
-| Experience depth | 10% | `experience_depth_score.py` | Relevant years of experience vs. 5–9 year target bracket |
-| Education | 5% | `education_score.py` | CS/ML degrees and tier credentials |
-
-After the weighted base score is computed, a **behavioral multiplier** (0.20–1.20) adjusts for Redrob platform signals: recency, recruiter response rate, open-to-work flag, GitHub activity, interview completion rate, and offer acceptance history.
-
-**Guards applied before scoring:**
-
-- **Honeypots** (`src/honeypot.py`) — profiles with suspicious skill claims (expert proficiency with <6 months, zero-endorsement experts, title/skill mismatches) receive a score of 0 and are excluded from the heap.
-- **Hard rules** (`src/hard_rules.py`) — disqualified titles cap at 0.05; consulting-only careers (>95% at IT services firms) cap at 0.10.
-
-Requirements and disqualifiers are driven by `config/jd_requirements.json`.
-
----
-
-## The 5-Agent Intelligence Pipeline
-
-Located in `src/intelligence/agents/`, the offline pipeline runs as a sequence of deterministic, rule-based agents with no LLM calls:
-
-### Agent 1 — Job Intelligence (`agent1_job.py`)
-
-Reads the job description (DOCX or markdown fallback) and extracts role summary, implicit requirements, culture signals, discriminator hierarchy, evaluation weights, and red-line disqualifiers.
-
-**Output:** `precomputed/job_intelligence.json`
-
-### Agent 2 — Candidate Intelligence (`agent2_candidate.py`)
-
-Profiles the top-N candidates (500 full / 50 test) with career narrative typing, momentum analysis, trust metrics, product-sense fractions, and a fast keyword score for funnel narrowing.
-
-**Output:** `precomputed/candidate_profiles/CAND_*.json`
-
-### Agent 3 — Matching Intelligence (`agent3_matching.py`)
-
-Scores profiles against JD discriminators (LLM/RAG engineering, MLOps/deployment, product sense, ownership) using keyword overlap and Agent 2 metrics.
-
-**Output:** `precomputed/match_scores/CAND_*.json`
-
-### Agent 4 — Recruiter Intelligence (`agent4_recruiter.py`)
-
-Applies a decision tree to assign recommendation tiers, trust assessments, hiring risks, fit dimensions (technical/product/cultural/growth), and tailored interview questions.
-
-**Output:** `precomputed/recruiter_decisions/CAND_*.json`
-
-### Agent 5 — Reporting (`agent5_reporting.py`)
-
-Consolidates all decisions into:
-
-- `reasoning_map.json` — exactly 100 unique, candidate-specific reasoning strings for CSV injection
-- `comparisons.json` — pairwise comparisons for adjacent top-50 candidates
-- `demo_data.json` — aggregated payload for the Streamlit dashboard
-
----
-
-## Streamlit Dashboard
-
-The dashboard (`app/streamlit_app.py`) is the recruiter command center. It reads **only** from precomputed JSON files — no computation on page load, sub-second response times.
-
-**Four views:**
-
-| Tab | Purpose |
-|---|---|
-| Role brief | Discriminator hierarchies, culture signals, red-line requirements |
-| Shortlist | Candidates grouped by recommendation tier with match percentages and top evidence |
-| Candidate review | Fit dimensions, trust assessment, hiring risks, tailored interview questions |
-| Compare | Side-by-side pairwise comparison with dimension-by-dimension score deltas |
-
-Launch:
-
-```bash
-streamlit run app/streamlit_app.py
-```
-
-Requires `precomputed/demo_data.json` and related artifacts (produced by Agent 5).
-
----
-
-## Knowledge Store & AI Layer (Optional)
-
-The V3.10 knowledge layer adds SQLite-backed retrieval and an optional LLM copilot. **This is not used during ranking.**
-
-### Build the knowledge store
-
-After running the 5-agent pipeline:
-
-```bash
-python precompute_v3.py
-```
-
-This initializes `data/hireiq.db` and imports all precomputed JSON artifacts via `knowledge/ingest.py`.
-
-### AI copilot features
-
-The `src/ai/` module provides (when an LLM provider is configured):
-
-- **Recruiter copilot** — answer questions about a specific candidate using retrieved context
-- **Decision simulator** — explore hypothetical hiring scenarios
-- **Candidate memos, interview guides, comparisons** — generated via `AIService`
-
-Configure the provider through environment variables (see `src/ai/client.py` for Ollama and OpenAI-compatible endpoints). The ranking pipeline and agents do not depend on this layer.
-
----
-
-## Validation
-
-Validate that `submission.csv` meets the hackathon schema:
-
-```bash
-python validate_output.py submission.csv
-```
-
-A successful run prints:
+A valid run prints:
 
 ```text
 Submission is valid.
 ```
 
-The validator checks column schema (`candidate_id`, `rank`, `score`, `reasoning`), rank ordering, score formatting, and reasoning uniqueness constraints defined in `datasets/validation/validate_submission.py`.
+---
+
+## Test Mode
+
+For a faster local smoke test:
+
+```bash
+python scripts/generate_semantic_scores.py --limit 50 --out precomputed/semantic_scores.json
+python rank.py --candidates datasets/candidates/sample_candidates.json --out submission.csv --precomputed precomputed
+python run_agents.py --test
+python rank.py --candidates datasets/candidates/sample_candidates.json --out submission.csv --precomputed precomputed
+python datasets/validation/validate_submission.py submission.csv
+```
+
+---
+
+## Main Commands
+
+### Generate semantic scores
+
+```bash
+python scripts/generate_semantic_scores.py --out precomputed/semantic_scores.json
+```
+
+Optional flags:
+
+| Flag | Description |
+|---|---|
+| `--candidates` | Candidate file to read. Defaults to `datasets/candidates/candidates.jsonl`. |
+| `--out` | Output JSON path. Defaults to `precomputed/semantic_scores.json`. |
+| `--limit` | Optional candidate limit for smoke testing. |
+
+### Rank candidates
+
+```bash
+python rank.py --candidates datasets/candidates/candidates.jsonl --out submission.csv --precomputed precomputed
+```
+
+| Flag | Description |
+|---|---|
+| `--candidates` | Path to `.json`, `.jsonl`, or `.jsonl.gz` candidate file. |
+| `--out` | Output CSV path. |
+| `--precomputed` | Directory containing semantic scores, reasoning map, and ranked manifest. |
+
+### Run recruiter intelligence agents
+
+```bash
+python run_agents.py
+```
+
+Useful options:
+
+| Command | Description |
+|---|---|
+| `python run_agents.py` | Full pipeline from the shared ranked manifest. |
+| `python run_agents.py --test` | Reduced test-mode pipeline. |
+| `python run_agents.py --from 3` | Resume from Agent 3. |
+| `python run_agents.py --only 1` | Run only Agent 1. |
+
+`run_agents.py` expects `precomputed/ranked_candidates.json`, which is produced by `rank.py`.
+
+### Build knowledge store
+
+```bash
+python precompute_v3.py
+```
+
+This creates `data/hireiq.db` from the precomputed JSON artifacts.
+
+---
+
+## Scoring and Ranking
+
+The final score is computed in `src/scoring/final_scorer.py` from six dimensions:
+
+| Dimension | Weight | Purpose |
+|---|---:|---|
+| Skill match | 30% | Required and adjacent technical skill fit. |
+| Career progression | 25% | Growth, ownership, and AI/product career trajectory. |
+| Title and role fit | 15% | Fit to Senior AI Engineer style roles. |
+| Availability | 15% | Location, work mode, notice period, and reachability. |
+| Experience depth | 10% | Relevant experience depth against the target bracket. |
+| Education | 5% | CS/ML degree and credential signals. |
+
+The skill dimension blends keyword scoring with deterministic semantic alignment. A behavioral multiplier then adjusts for Redrob-style platform signals such as recency, responsiveness, open-to-work status, GitHub activity, interview completion, and offer acceptance history.
+
+Before scoring, honeypot checks and hard rules cap or exclude profiles with suspicious claims, disqualified titles, or consulting-only career patterns.
+
+---
+
+## 5-Agent Intelligence Pipeline
+
+All agents are deterministic and run offline.
+
+| Agent | Output | Purpose |
+|---|---|---|
+| Agent 1: Job Intelligence | `precomputed/job_intelligence.json` | Extracts role requirements, discriminators, culture signals, and red-line requirements. |
+| Agent 2: Candidate Intelligence | `precomputed/candidate_profiles/*.json` | Builds canonical `CandidateIntelligenceProfile` artifacts. |
+| Agent 3: Matching Intelligence | `precomputed/match_scores/*.json` | Scores candidate profiles against role discriminators. |
+| Agent 4: Recruiter Intelligence | `precomputed/recruiter_decisions/*.json` | Builds canonical `RecruiterDecision` artifacts with risks, recommendations, and interview questions. |
+| Agent 5: Reporting | `precomputed/reasoning_map.json`, `comparisons.json`, `demo_data.json` | Generates reporting payloads, comparisons, and CSV-ready reasoning. |
+
+Agent 5 uses the shared reasoning generator in `src/pipeline/reasoning.py`. The CSV writer uses the precomputed reasoning map when available and keeps fallback reasoning as an emergency safeguard.
+
+---
+
+## Streamlit Dashboard
+
+The dashboard reads precomputed JSON files only:
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+Expected backend artifacts:
+
+- `precomputed/demo_data.json`
+- `precomputed/comparisons.json`
+- `precomputed/reasoning_map.json`
+- `precomputed/recruiter_decisions/*.json`
+- `precomputed/candidate_profiles/*.json`
+- `precomputed/match_scores/*.json`
+
+---
+
+## Optional AI Layer
+
+The AI layer is not part of ranking. It sits on top of the precomputed artifacts and SQLite knowledge store.
+
+### Start Ollama
+
+```bash
+ollama serve
+ollama pull qwen2.5:7b
+```
+
+### Confirm the provider is reachable
+
+PowerShell:
+
+```powershell
+Invoke-RestMethod -UseBasicParsing http://localhost:11434/api/tags
+```
+
+### Build and inspect the knowledge store
+
+```bash
+python precompute_v3.py
+python -c "from knowledge.storage import table_counts; print(table_counts())"
+```
+
+### Verify retrieval and AI generation
+
+```bash
+python -c "from src.ai.retrieval import get_complete_context; print(get_complete_context('CAND_0002025').keys())"
+python -c "from src.ai.service import AIService; s=AIService(); print(s.generate(task='memo', candidate_id='CAND_0002025')[:500])"
+python -c "from src.ai.service import AIService; s=AIService(); print(s.generate(task='interview', candidate_id='CAND_0002025')[:500])"
+python -c "from src.ai.service import AIService; s=AIService(); print(s.generate(task='simulation', candidate_id='CAND_0002025', scenario='Prefer 30-day notice.')[:500])"
+```
+
+---
+
+## Validation
+
+Use the challenge validator:
+
+```bash
+python datasets/validation/validate_submission.py submission.csv
+```
+
+The validator checks:
+
+- Required columns: `candidate_id`, `rank`, `score`, `reasoning`.
+- Rank ordering and uniqueness.
+- Score formatting.
+- Candidate-specific reasoning constraints.
 
 ---
 
 ## Configuration
 
-### Job requirements (`config/jd_requirements.json`)
+`config/jd_requirements.json` controls:
 
-Central configuration for the online scorer:
+- Required skill groups and aliases.
+- Nice-to-have skills.
+- Disqualifier titles and consulting company patterns.
+- Preferred locations and notice-period thresholds.
+- Experience brackets and scoring weights.
 
-- Required skill groups and aliases (`llm_rag`, `python_ml_stack`, `vector_databases`, etc.)
-- Nice-to-have skills
-- Disqualifier titles and consulting companies
-- Preferred locations and notice period thresholds
-- Experience year brackets and scoring weights
-
-### Test mode
-
-Set `HIREIQ_TEST=1` or pass `--test` to `run_agents.py` to use the 50-candidate sample set and reduced funnel sizes:
-
-| Stage | Full mode | Test mode |
-|---|---|---|
-| Agent 2 profiles | 500 | 50 |
-| Agent 3 matches | 200 | 50 |
-| Agent 4 decisions | 100 | 20 |
-| Agent 5 reasoning map | 100 | 20 |
-
-### Environment variables
+Environment variables:
 
 | Variable | Purpose |
 |---|---|
-| `HIREIQ_TEST=1` | Enable test-mode funnel sizes |
-| LLM provider vars | See `src/ai/client.py` (optional copilot only) |
+| `HIREIQ_TEST=1` | Enables reduced funnel sizes for agent test mode. |
+| LLM provider variables | Optional; see `src/ai/client.py`. |
 
 ---
 
-## Team & Constraints
-
-**Team:** Sententia
+## Team and Constraints
 
 | Member | Role |
 |---|---|
-| Shashwat Kumar | Core Pipeline Engineer (Dev A) — scoring pipeline, streaming ranker, CSV writer |
-| Rishik Sinha | Intelligence Layer Engineer (Dev B) — 5-agent offline pipeline, Streamlit UI |
+| Shashwat Kumar | Core pipeline, scorer, streaming ranker, CSV writer |
+| Rishik Sinha | Intelligence layer, recruiter outputs, UI integration |
 
-**Compute profile (ranking step):**
+Ranking constraints:
 
-- Platform: Local CPU (8 cores, 16 GB RAM)
-- Python 3.11, Windows
-- No GPU, no network during ranking
-- Pre-computation required (~10 minutes offline)
-- Processes 100K candidates in under 30 seconds with <1 GB RAM for the heap
-
-**Methodology:** Streaming rule-based ranker with honeypot detection, hard caps for disqualified titles or consulting-only careers, six weighted fit dimensions, and a behavioral reachability multiplier. Maintains a top-200 heap during streaming, writes a validator-compliant top-100 CSV with Dev B precomputed reasoning or candidate-specific fallback reasoning.
+- CPU-only.
+- No GPU.
+- No network calls during ranking.
+- Constant-memory top-K heap.
+- Deterministic outputs.
 
 ---
 

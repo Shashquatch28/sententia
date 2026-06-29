@@ -1,43 +1,105 @@
 {
-  "CAND_0008425_CAND_0078002": {
-    "pair_key": "CAND_0008425_CAND_0078002",
+  "CAND_0002025_CAND_0011687": {
+    "pair_key": "CAND_0002025_CAND_0011687",
     "dimension_comparison": {
       "Technical": {
-        "winner": "TIE",
-        "a_score": 0.99,
-        "b_score": 0.97,
-        "rationale": "Comparable technical fit (99% vs 97%)"
+        "winner": "A",
+        "a_score": 0.62,
+        "b_score": 0.5,
+        "rationale": "Ira Dalal leads on technical (62% vs 50%)"
+      },
+      "Product": {
+        "winner": "A",
+        "a_score": 0.87,
+        "b_score": 0.73,
+        "rationale": "Ira Dalal leads on product (87% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "A",
+        "a_score": 0.6,
+        "b_score": 0.45,
+        "rationale": "Ira Dalal leads on cultural (60% vs 45%)"
+      },
+      "Growth": {
+        "winner": "A",
+        "a_score": 0.85,
+        "b_score": 0.62,
+        "rationale": "Ira Dalal leads on growth (85% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Ira Dalal (Senior AI Engineer at Apple) ranks higher at 75 vs 69 overall. Stronger on Technical, Product.",
+    "b_salvage_scenario": "Shreya Tiwari would be preferred if the role scope narrows to focus on TensorFlow, or if Ira Dalal declines the offer."
+  },
+  "CAND_0011687_CAND_0096142": {
+    "pair_key": "CAND_0011687_CAND_0096142",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.5,
+        "b_score": 0.62,
+        "rationale": "Pranav Sethi leads on technical (62% vs 50%)"
       },
       "Product": {
         "winner": "B",
-        "a_score": 0.75,
+        "a_score": 0.73,
         "b_score": 0.84,
-        "rationale": "Reyansh Sharma leads on product (84% vs 75%)"
+        "rationale": "Pranav Sethi leads on product (84% vs 73%)"
       },
       "Cultural": {
-        "winner": "B",
-        "a_score": 0.72,
-        "b_score": 0.77,
-        "rationale": "Reyansh Sharma leads on cultural (77% vs 72%)"
+        "winner": "TIE",
+        "a_score": 0.45,
+        "b_score": 0.5,
+        "rationale": "Comparable cultural fit (45% vs 50%)"
       },
       "Growth": {
         "winner": "TIE",
-        "a_score": 0.84,
-        "b_score": 0.83,
-        "rationale": "Comparable growth fit (84% vs 83%)"
+        "a_score": 0.62,
+        "b_score": 0.63,
+        "rationale": "Comparable growth fit (62% vs 63%)"
       }
     },
-    "why_a_over_b": "Myra Krishnan (Senior NLP Engineer at Ola) ranks higher at 86 vs 85 overall. Stronger on overall fit.",
-    "b_salvage_scenario": "Reyansh Sharma would be preferred if the role scope narrows to focus on Statistical Modeling, or if Myra Krishnan declines the offer."
+    "why_a_over_b": "Shreya Tiwari (Senior NLP Engineer at Niramai) ranks higher at 69 vs 56 overall. Stronger on overall fit.",
+    "b_salvage_scenario": "Pranav Sethi would be preferred if the role scope narrows to focus on Kubeflow, or if Shreya Tiwari declines the offer."
   },
-  "CAND_0078002_CAND_0015528": {
-    "pair_key": "CAND_0078002_CAND_0015528",
+  "CAND_0096142_CAND_0078002": {
+    "pair_key": "CAND_0096142_CAND_0078002",
     "dimension_comparison": {
       "Technical": {
-        "winner": "TIE",
-        "a_score": 0.97,
+        "winner": "B",
+        "a_score": 0.62,
         "b_score": 0.97,
-        "rationale": "Comparable technical fit (97% vs 97%)"
+        "rationale": "Reyansh Sharma leads on technical (97% vs 62%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.84,
+        "b_score": 0.84,
+        "rationale": "Comparable product fit (84% vs 84%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.5,
+        "b_score": 0.77,
+        "rationale": "Reyansh Sharma leads on cultural (77% vs 50%)"
+      },
+      "Growth": {
+        "winner": "B",
+        "a_score": 0.63,
+        "b_score": 0.83,
+        "rationale": "Reyansh Sharma leads on growth (83% vs 63%)"
+      }
+    },
+    "why_a_over_b": "Pranav Sethi (Applied ML Engineer at upGrad) ranks higher at 56 vs 85 overall. Stronger on overall fit.",
+    "b_salvage_scenario": "Reyansh Sharma would be preferred if the role scope narrows to focus on Statistical Modeling, or if Pranav Sethi declines the offer."
+  },
+  "CAND_0078002_CAND_0039754": {
+    "pair_key": "CAND_0078002_CAND_0039754",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.97,
+        "b_score": 0.67,
+        "rationale": "Reyansh Sharma leads on technical (97% vs 67%)"
       },
       "Product": {
         "winner": "TIE",
@@ -48,430 +110,89 @@
       "Cultural": {
         "winner": "A",
         "a_score": 0.77,
-        "b_score": 0.59,
-        "rationale": "Reyansh Sharma leads on cultural (77% vs 59%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.83,
-        "b_score": 0.82,
-        "rationale": "Comparable growth fit (83% vs 82%)"
-      }
-    },
-    "why_a_over_b": "Reyansh Sharma (Machine Learning Engineer at Meta) ranks higher at 85 vs 82 overall. Stronger on Cultural.",
-    "b_salvage_scenario": "Aisha Reddy would be preferred if the role scope narrows to focus on Docker, or if Reyansh Sharma declines the offer."
-  },
-  "CAND_0015528_CAND_0018888": {
-    "pair_key": "CAND_0015528_CAND_0018888",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "TIE",
-        "a_score": 0.97,
-        "b_score": 0.97,
-        "rationale": "Comparable technical fit (97% vs 97%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.83,
-        "b_score": 0.8,
-        "rationale": "Comparable product fit (83% vs 80%)"
-      },
-      "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.59,
-        "b_score": 0.58,
-        "rationale": "Comparable cultural fit (59% vs 58%)"
-      },
-      "Growth": {
-        "winner": "A",
-        "a_score": 0.82,
-        "b_score": 0.6,
-        "rationale": "Aisha Reddy leads on growth (82% vs 60%)"
-      }
-    },
-    "why_a_over_b": "Aisha Reddy (Applied ML Engineer at Krutrim) ranks higher at 82 vs 81 overall. Stronger on Growth.",
-    "b_salvage_scenario": "Shreya Trivedi would be preferred if the role scope narrows to focus on Diffusion Models, or if Aisha Reddy declines the offer."
-  },
-  "CAND_0018888_CAND_0091534": {
-    "pair_key": "CAND_0018888_CAND_0091534",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "A",
-        "a_score": 0.97,
-        "b_score": 0.66,
-        "rationale": "Shreya Trivedi leads on technical (97% vs 66%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.8,
-        "b_score": 0.83,
-        "rationale": "Comparable product fit (80% vs 83%)"
-      },
-      "Cultural": {
-        "winner": "B",
-        "a_score": 0.58,
-        "b_score": 0.72,
-        "rationale": "Dhruv Dutta leads on cultural (72% vs 58%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.6,
-        "b_score": 0.62,
-        "rationale": "Comparable growth fit (60% vs 62%)"
-      }
-    },
-    "why_a_over_b": "Shreya Trivedi (AI Research Engineer at Razorpay) ranks higher at 81 vs 79 overall. Stronger on Technical.",
-    "b_salvage_scenario": "Dhruv Dutta would be preferred if the role scope narrows to focus on Hugging Face Transformers, or if Shreya Trivedi declines the offer."
-  },
-  "CAND_0091534_CAND_0016163": {
-    "pair_key": "CAND_0091534_CAND_0016163",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "TIE",
-        "a_score": 0.66,
-        "b_score": 0.67,
-        "rationale": "Comparable technical fit (66% vs 67%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.83,
-        "b_score": 0.81,
-        "rationale": "Comparable product fit (83% vs 81%)"
-      },
-      "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.72,
-        "b_score": 0.73,
-        "rationale": "Comparable cultural fit (72% vs 73%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.62,
-        "b_score": 0.61,
-        "rationale": "Comparable growth fit (62% vs 61%)"
-      }
-    },
-    "why_a_over_b": "Dhruv Dutta (AI Engineer at Flipkart) ranks higher at 79 vs 78 overall. Stronger on overall fit.",
-    "b_salvage_scenario": "Suresh Shah would be preferred if the role scope narrows to focus on Hugging Face Transformers, or if Dhruv Dutta declines the offer."
-  },
-  "CAND_0016163_CAND_0013536": {
-    "pair_key": "CAND_0016163_CAND_0013536",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "TIE",
-        "a_score": 0.67,
-        "b_score": 0.66,
-        "rationale": "Comparable technical fit (67% vs 66%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.81,
-        "b_score": 0.81,
-        "rationale": "Comparable product fit (81% vs 81%)"
-      },
-      "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.73,
-        "b_score": 0.7,
-        "rationale": "Comparable cultural fit (73% vs 70%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.61,
-        "b_score": 0.61,
-        "rationale": "Comparable growth fit (61% vs 61%)"
-      }
-    },
-    "why_a_over_b": "Suresh Shah (Applied ML Engineer at Dream11) ranks higher at 78 vs 78 overall. Stronger on overall fit.",
-    "b_salvage_scenario": "Nisha Sen would be preferred if the role scope narrows to focus on PyTorch, or if Suresh Shah declines the offer."
-  },
-  "CAND_0013536_CAND_0088354": {
-    "pair_key": "CAND_0013536_CAND_0088354",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "TIE",
-        "a_score": 0.66,
-        "b_score": 0.67,
-        "rationale": "Comparable technical fit (66% vs 67%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.81,
-        "b_score": 0.8,
-        "rationale": "Comparable product fit (81% vs 80%)"
-      },
-      "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.7,
-        "b_score": 0.73,
-        "rationale": "Comparable cultural fit (70% vs 73%)"
-      },
-      "Growth": {
-        "winner": "B",
-        "a_score": 0.61,
-        "b_score": 0.8,
-        "rationale": "Rohan Mishra leads on growth (80% vs 61%)"
-      }
-    },
-    "why_a_over_b": "Nisha Sen (Applied ML Engineer at Haptik) ranks higher at 78 vs 78 overall. Stronger on overall fit.",
-    "b_salvage_scenario": "Rohan Mishra would be preferred if the role scope narrows to focus on OpenSearch, or if Nisha Sen declines the offer."
-  },
-  "CAND_0088354_CAND_0039754": {
-    "pair_key": "CAND_0088354_CAND_0039754",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "TIE",
-        "a_score": 0.67,
-        "b_score": 0.67,
-        "rationale": "Comparable technical fit (67% vs 67%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.8,
-        "b_score": 0.83,
-        "rationale": "Comparable product fit (80% vs 83%)"
-      },
-      "Cultural": {
-        "winner": "A",
-        "a_score": 0.73,
         "b_score": 0.53,
-        "rationale": "Rohan Mishra leads on cultural (73% vs 53%)"
+        "rationale": "Reyansh Sharma leads on cultural (77% vs 53%)"
       },
       "Growth": {
         "winner": "A",
-        "a_score": 0.8,
-        "b_score": 0.62,
-        "rationale": "Rohan Mishra leads on growth (80% vs 62%)"
-      }
-    },
-    "why_a_over_b": "Rohan Mishra (Junior ML Engineer at Aganitha) ranks higher at 78 vs 77 overall. Stronger on Cultural, Growth.",
-    "b_salvage_scenario": "Mira Banerjee would be preferred if the role scope narrows to focus on Fine-tuning LLMs, or if Rohan Mishra declines the offer."
-  },
-  "CAND_0039754_CAND_0055992": {
-    "pair_key": "CAND_0039754_CAND_0055992",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "TIE",
-        "a_score": 0.67,
-        "b_score": 0.63,
-        "rationale": "Comparable technical fit (67% vs 63%)"
-      },
-      "Product": {
-        "winner": "TIE",
         "a_score": 0.83,
-        "b_score": 0.83,
-        "rationale": "Comparable product fit (83% vs 83%)"
-      },
-      "Cultural": {
-        "winner": "B",
-        "a_score": 0.53,
-        "b_score": 0.69,
-        "rationale": "Deepak Bansal leads on cultural (69% vs 53%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.62,
         "b_score": 0.62,
-        "rationale": "Comparable growth fit (62% vs 62%)"
+        "rationale": "Reyansh Sharma leads on growth (83% vs 62%)"
       }
     },
-    "why_a_over_b": "Mira Banerjee (Senior Applied Scientist at Meta) ranks higher at 77 vs 76 overall. Stronger on overall fit.",
-    "b_salvage_scenario": "Deepak Bansal would be preferred if the role scope narrows to focus on Information Retrieval, or if Mira Banerjee declines the offer."
+    "why_a_over_b": "Reyansh Sharma (Machine Learning Engineer at Meta) ranks higher at 85 vs 77 overall. Stronger on Technical, Cultural.",
+    "b_salvage_scenario": "Mira Banerjee would be preferred if the role scope narrows to focus on Fine-tuning LLMs, or if Reyansh Sharma declines the offer."
   },
-  "CAND_0055992_CAND_0094759": {
-    "pair_key": "CAND_0055992_CAND_0094759",
+  "CAND_0039754_CAND_0095619": {
+    "pair_key": "CAND_0039754_CAND_0095619",
     "dimension_comparison": {
       "Technical": {
-        "winner": "TIE",
-        "a_score": 0.63,
-        "b_score": 0.67,
-        "rationale": "Comparable technical fit (63% vs 67%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.83,
-        "b_score": 0.84,
-        "rationale": "Comparable product fit (83% vs 84%)"
-      },
-      "Cultural": {
-        "winner": "A",
-        "a_score": 0.69,
-        "b_score": 0.45,
-        "rationale": "Deepak Bansal leads on cultural (69% vs 45%)"
-      },
-      "Growth": {
-        "winner": "A",
-        "a_score": 0.62,
-        "b_score": 0.33,
-        "rationale": "Deepak Bansal leads on growth (62% vs 33%)"
-      }
-    },
-    "why_a_over_b": "Deepak Bansal (AI Engineer at CRED) ranks higher at 76 vs 76 overall. Stronger on Cultural, Growth.",
-    "b_salvage_scenario": "Aditya Pillai would be preferred if the role scope narrows to focus on Prompt Engineering, or if Deepak Bansal declines the offer."
-  },
-  "CAND_0094759_CAND_0055905": {
-    "pair_key": "CAND_0094759_CAND_0055905",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "A",
+        "winner": "B",
         "a_score": 0.67,
-        "b_score": 0.59,
-        "rationale": "Aditya Pillai leads on technical (67% vs 59%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.84,
-        "b_score": 0.85,
-        "rationale": "Comparable product fit (84% vs 85%)"
-      },
-      "Cultural": {
-        "winner": "B",
-        "a_score": 0.45,
-        "b_score": 0.68,
-        "rationale": "Anika Rao leads on cultural (68% vs 45%)"
-      },
-      "Growth": {
-        "winner": "B",
-        "a_score": 0.33,
-        "b_score": 0.64,
-        "rationale": "Anika Rao leads on growth (64% vs 33%)"
-      }
-    },
-    "why_a_over_b": "Aditya Pillai (Lead AI Engineer at Meta) ranks higher at 76 vs 75 overall. Stronger on Technical.",
-    "b_salvage_scenario": "Anika Rao would be preferred if the role scope narrows to focus on Elasticsearch, or if Aditya Pillai declines the offer."
-  },
-  "CAND_0055905_CAND_0033861": {
-    "pair_key": "CAND_0055905_CAND_0033861",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "TIE",
-        "a_score": 0.59,
-        "b_score": 0.62,
-        "rationale": "Comparable technical fit (59% vs 62%)"
-      },
-      "Product": {
-        "winner": "A",
-        "a_score": 0.85,
-        "b_score": 0.78,
-        "rationale": "Anika Rao leads on product (85% vs 78%)"
-      },
-      "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.68,
-        "b_score": 0.66,
-        "rationale": "Comparable cultural fit (68% vs 66%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.64,
-        "b_score": 0.66,
-        "rationale": "Comparable growth fit (64% vs 66%)"
-      }
-    },
-    "why_a_over_b": "Anika Rao (Senior Machine Learning Engineer at Flipkart) ranks higher at 75 vs 75 overall. Stronger on Product.",
-    "b_salvage_scenario": "Kabir Kapoor would be preferred if the role scope narrows to focus on Reinforcement Learning, or if Anika Rao declines the offer."
-  },
-  "CAND_0033861_CAND_0086028": {
-    "pair_key": "CAND_0033861_CAND_0086028",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.62,
-        "b_score": 0.88,
-        "rationale": "Shaurya Tiwari leads on technical (88% vs 62%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.78,
         "b_score": 0.8,
-        "rationale": "Comparable product fit (78% vs 80%)"
+        "rationale": "Vivaan Dalal leads on technical (80% vs 67%)"
+      },
+      "Product": {
+        "winner": "A",
+        "a_score": 0.83,
+        "b_score": 0.73,
+        "rationale": "Mira Banerjee leads on product (83% vs 73%)"
       },
       "Cultural": {
         "winner": "A",
-        "a_score": 0.66,
-        "b_score": 0.6,
-        "rationale": "Kabir Kapoor leads on cultural (66% vs 60%)"
+        "a_score": 0.53,
+        "b_score": 0.46,
+        "rationale": "Mira Banerjee leads on cultural (53% vs 46%)"
       },
       "Growth": {
         "winner": "A",
-        "a_score": 0.66,
-        "b_score": 0.6,
-        "rationale": "Kabir Kapoor leads on growth (66% vs 60%)"
+        "a_score": 0.62,
+        "b_score": 0.52,
+        "rationale": "Mira Banerjee leads on growth (62% vs 52%)"
       }
     },
-    "why_a_over_b": "Kabir Kapoor (Senior NLP Engineer at Mad Street Den) ranks higher at 75 vs 75 overall. Stronger on Cultural, Growth.",
-    "b_salvage_scenario": "Shaurya Tiwari would be preferred if the role scope narrows to focus on Reinforcement Learning, or if Kabir Kapoor declines the offer."
+    "why_a_over_b": "Mira Banerjee (Senior Applied Scientist at Meta) ranks higher at 77 vs 66 overall. Stronger on Product, Cultural.",
+    "b_salvage_scenario": "Vivaan Dalal would be preferred if the role scope narrows to focus on Feature Engineering, or if Mira Banerjee declines the offer."
   },
-  "CAND_0086028_CAND_0047278": {
-    "pair_key": "CAND_0086028_CAND_0047278",
+  "CAND_0095619_CAND_0088025": {
+    "pair_key": "CAND_0095619_CAND_0088025",
     "dimension_comparison": {
       "Technical": {
-        "winner": "TIE",
-        "a_score": 0.88,
-        "b_score": 0.92,
-        "rationale": "Comparable technical fit (88% vs 92%)"
-      },
-      "Product": {
         "winner": "A",
         "a_score": 0.8,
-        "b_score": 0.6,
-        "rationale": "Shaurya Tiwari leads on product (80% vs 60%)"
-      },
-      "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.6,
-        "b_score": 0.64,
-        "rationale": "Comparable cultural fit (60% vs 64%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.6,
-        "b_score": 0.6,
-        "rationale": "Comparable growth fit (60% vs 60%)"
-      }
-    },
-    "why_a_over_b": "Shaurya Tiwari (AI Research Engineer at PharmEasy) ranks higher at 75 vs 74 overall. Stronger on Product.",
-    "b_salvage_scenario": "Dhruv Agarwal would be preferred if the role scope narrows to focus on Time Series, or if Shaurya Tiwari declines the offer."
-  },
-  "CAND_0047278_CAND_0088025": {
-    "pair_key": "CAND_0047278_CAND_0088025",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "A",
-        "a_score": 0.92,
         "b_score": 0.67,
-        "rationale": "Dhruv Agarwal leads on technical (92% vs 67%)"
+        "rationale": "Vivaan Dalal leads on technical (80% vs 67%)"
       },
       "Product": {
         "winner": "B",
-        "a_score": 0.6,
+        "a_score": 0.73,
         "b_score": 0.84,
-        "rationale": "Amit Arora leads on product (84% vs 60%)"
+        "rationale": "Amit Arora leads on product (84% vs 73%)"
       },
       "Cultural": {
         "winner": "A",
-        "a_score": 0.64,
+        "a_score": 0.46,
         "b_score": 0.37,
-        "rationale": "Dhruv Agarwal leads on cultural (64% vs 37%)"
+        "rationale": "Vivaan Dalal leads on cultural (46% vs 37%)"
       },
       "Growth": {
         "winner": "A",
-        "a_score": 0.6,
+        "a_score": 0.52,
         "b_score": 0.33,
-        "rationale": "Dhruv Agarwal leads on growth (60% vs 33%)"
+        "rationale": "Vivaan Dalal leads on growth (52% vs 33%)"
       }
     },
-    "why_a_over_b": "Dhruv Agarwal (Backend Engineer at Ola) ranks higher at 74 vs 74 overall. Stronger on Technical, Cultural.",
-    "b_salvage_scenario": "Amit Arora would be preferred if the role scope narrows to focus on Pinecone, or if Dhruv Agarwal declines the offer."
+    "why_a_over_b": "Vivaan Dalal (NLP Engineer at Nykaa) ranks higher at 66 vs 74 overall. Stronger on Technical, Cultural.",
+    "b_salvage_scenario": "Amit Arora would be preferred if the role scope narrows to focus on Pinecone, or if Vivaan Dalal declines the offer."
   },
-  "CAND_0088025_CAND_0041611": {
-    "pair_key": "CAND_0088025_CAND_0041611",
+  "CAND_0088025_CAND_0046525": {
+    "pair_key": "CAND_0088025_CAND_0046525",
     "dimension_comparison": {
       "Technical": {
-        "winner": "B",
+        "winner": "A",
         "a_score": 0.67,
-        "b_score": 0.76,
-        "rationale": "Aarohi Chowdary leads on technical (76% vs 67%)"
+        "b_score": 0.45,
+        "rationale": "Amit Arora leads on technical (67% vs 45%)"
       },
       "Product": {
         "winner": "TIE",
@@ -482,27 +203,27 @@
       "Cultural": {
         "winner": "B",
         "a_score": 0.37,
-        "b_score": 0.45,
-        "rationale": "Aarohi Chowdary leads on cultural (45% vs 37%)"
+        "b_score": 0.57,
+        "rationale": "Tanvi Mukherjee leads on cultural (57% vs 37%)"
       },
       "Growth": {
         "winner": "B",
         "a_score": 0.33,
-        "b_score": 0.53,
-        "rationale": "Aarohi Chowdary leads on growth (53% vs 33%)"
+        "b_score": 0.63,
+        "rationale": "Tanvi Mukherjee leads on growth (63% vs 33%)"
       }
     },
-    "why_a_over_b": "Amit Arora (Staff Machine Learning Engineer at Yellow.ai) ranks higher at 74 vs 73 overall. Stronger on overall fit.",
-    "b_salvage_scenario": "Aarohi Chowdary would be preferred if the role scope narrows to focus on LlamaIndex, or if Amit Arora declines the offer."
+    "why_a_over_b": "Amit Arora (Staff Machine Learning Engineer at Yellow.ai) ranks higher at 74 vs 70 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Tanvi Mukherjee would be preferred if the role scope narrows to focus on Elasticsearch, or if Amit Arora declines the offer."
   },
-  "CAND_0041611_CAND_0077337": {
-    "pair_key": "CAND_0041611_CAND_0077337",
+  "CAND_0046525_CAND_0077337": {
+    "pair_key": "CAND_0046525_CAND_0077337",
     "dimension_comparison": {
       "Technical": {
-        "winner": "TIE",
-        "a_score": 0.76,
+        "winner": "B",
+        "a_score": 0.45,
         "b_score": 0.75,
-        "rationale": "Comparable technical fit (76% vs 75%)"
+        "rationale": "Aarav Agarwal leads on technical (75% vs 45%)"
       },
       "Product": {
         "winner": "TIE",
@@ -511,277 +232,215 @@
         "rationale": "Comparable product fit (84% vs 85%)"
       },
       "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.45,
+        "winner": "A",
+        "a_score": 0.57,
         "b_score": 0.43,
-        "rationale": "Comparable cultural fit (45% vs 43%)"
+        "rationale": "Tanvi Mukherjee leads on cultural (57% vs 43%)"
       },
       "Growth": {
         "winner": "A",
-        "a_score": 0.53,
+        "a_score": 0.63,
         "b_score": 0.34,
-        "rationale": "Aarohi Chowdary leads on growth (53% vs 34%)"
+        "rationale": "Tanvi Mukherjee leads on growth (63% vs 34%)"
       }
     },
-    "why_a_over_b": "Aarohi Chowdary (Staff Machine Learning Engineer at Locobuzz) ranks higher at 73 vs 73 overall. Stronger on Growth.",
-    "b_salvage_scenario": "Aarav Agarwal would be preferred if the role scope narrows to focus on GANs, or if Aarohi Chowdary declines the offer."
+    "why_a_over_b": "Tanvi Mukherjee (Senior Machine Learning Engineer at Genpact AI) ranks higher at 70 vs 73 overall. Stronger on Cultural, Growth.",
+    "b_salvage_scenario": "Aarav Agarwal would be preferred if the role scope narrows to focus on GANs, or if Tanvi Mukherjee declines the offer."
   },
-  "CAND_0077337_CAND_0043228": {
-    "pair_key": "CAND_0077337_CAND_0043228",
+  "CAND_0077337_CAND_0006418": {
+    "pair_key": "CAND_0077337_CAND_0006418",
     "dimension_comparison": {
       "Technical": {
-        "winner": "A",
+        "winner": "B",
         "a_score": 0.75,
-        "b_score": 0.59,
-        "rationale": "Aarav Agarwal leads on technical (75% vs 59%)"
+        "b_score": 0.8,
+        "rationale": "Rahul Mukherjee leads on technical (80% vs 75%)"
       },
       "Product": {
         "winner": "TIE",
         "a_score": 0.85,
-        "b_score": 0.83,
-        "rationale": "Comparable product fit (85% vs 83%)"
+        "b_score": 0.81,
+        "rationale": "Comparable product fit (85% vs 81%)"
       },
       "Cultural": {
         "winner": "B",
         "a_score": 0.43,
-        "b_score": 0.72,
-        "rationale": "Kiara Sen leads on cultural (72% vs 43%)"
+        "b_score": 0.71,
+        "rationale": "Rahul Mukherjee leads on cultural (71% vs 43%)"
       },
       "Growth": {
         "winner": "B",
         "a_score": 0.34,
-        "b_score": 0.62,
-        "rationale": "Kiara Sen leads on growth (62% vs 34%)"
-      }
-    },
-    "why_a_over_b": "Aarav Agarwal (Staff Machine Learning Engineer at Paytm) ranks higher at 73 vs 73 overall. Stronger on Technical.",
-    "b_salvage_scenario": "Kiara Sen would be preferred if the role scope narrows to focus on BigQuery, or if Aarav Agarwal declines the offer."
-  },
-  "CAND_0043228_CAND_0043958": {
-    "pair_key": "CAND_0043228_CAND_0043958",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.59,
-        "b_score": 0.75,
-        "rationale": "Rajesh Kapoor leads on technical (75% vs 59%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.83,
-        "b_score": 0.8,
-        "rationale": "Comparable product fit (83% vs 80%)"
-      },
-      "Cultural": {
-        "winner": "A",
-        "a_score": 0.72,
-        "b_score": 0.59,
-        "rationale": "Kiara Sen leads on cultural (72% vs 59%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.62,
-        "b_score": 0.6,
-        "rationale": "Comparable growth fit (62% vs 60%)"
-      }
-    },
-    "why_a_over_b": "Kiara Sen (Applied ML Engineer at Zoho) ranks higher at 73 vs 73 overall. Stronger on Cultural.",
-    "b_salvage_scenario": "Rajesh Kapoor would be preferred if the role scope narrows to focus on CI/CD, or if Kiara Sen declines the offer."
-  },
-  "CAND_0043958_CAND_0089414": {
-    "pair_key": "CAND_0043958_CAND_0089414",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.75,
-        "b_score": 0.88,
-        "rationale": "Om Mittal leads on technical (88% vs 75%)"
-      },
-      "Product": {
-        "winner": "A",
-        "a_score": 0.8,
-        "b_score": 0.7,
-        "rationale": "Rajesh Kapoor leads on product (80% vs 70%)"
-      },
-      "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.59,
         "b_score": 0.61,
-        "rationale": "Comparable cultural fit (59% vs 61%)"
-      },
-      "Growth": {
-        "winner": "B",
-        "a_score": 0.6,
-        "b_score": 0.8,
-        "rationale": "Om Mittal leads on growth (80% vs 60%)"
+        "rationale": "Rahul Mukherjee leads on growth (61% vs 34%)"
       }
     },
-    "why_a_over_b": "Rajesh Kapoor (AI Research Engineer at Dream11) ranks higher at 73 vs 73 overall. Stronger on Product.",
-    "b_salvage_scenario": "Om Mittal would be preferred if the role scope narrows to focus on Weights & Biases, or if Rajesh Kapoor declines the offer."
+    "why_a_over_b": "Aarav Agarwal (Staff Machine Learning Engineer at Paytm) ranks higher at 73 vs 80 overall. Stronger on overall fit.",
+    "b_salvage_scenario": "Rahul Mukherjee would be preferred if the role scope narrows to focus on Kubernetes, or if Aarav Agarwal declines the offer."
   },
-  "CAND_0089414_CAND_0070398": {
-    "pair_key": "CAND_0089414_CAND_0070398",
+  "CAND_0006418_CAND_0069905": {
+    "pair_key": "CAND_0006418_CAND_0069905",
     "dimension_comparison": {
       "Technical": {
-        "winner": "A",
-        "a_score": 0.88,
-        "b_score": 0.47,
-        "rationale": "Om Mittal leads on technical (88% vs 47%)"
-      },
-      "Product": {
-        "winner": "B",
-        "a_score": 0.7,
-        "b_score": 0.83,
-        "rationale": "Riya Saxena leads on product (83% vs 70%)"
-      },
-      "Cultural": {
-        "winner": "B",
-        "a_score": 0.61,
-        "b_score": 0.73,
-        "rationale": "Riya Saxena leads on cultural (73% vs 61%)"
-      },
-      "Growth": {
         "winner": "A",
         "a_score": 0.8,
-        "b_score": 0.62,
-        "rationale": "Om Mittal leads on growth (80% vs 62%)"
-      }
-    },
-    "why_a_over_b": "Om Mittal (Software Engineer at InMobi) ranks higher at 73 vs 73 overall. Stronger on Technical, Growth.",
-    "b_salvage_scenario": "Riya Saxena would be preferred if the role scope narrows to focus on Image Classification, or if Om Mittal declines the offer."
-  },
-  "CAND_0070398_CAND_0004131": {
-    "pair_key": "CAND_0070398_CAND_0004131",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.47,
-        "b_score": 0.8,
-        "rationale": "Vivaan Bose leads on technical (80% vs 47%)"
+        "b_score": 0.29,
+        "rationale": "Rahul Mukherjee leads on technical (80% vs 29%)"
       },
       "Product": {
         "winner": "TIE",
-        "a_score": 0.83,
-        "b_score": 0.8,
-        "rationale": "Comparable product fit (83% vs 80%)"
+        "a_score": 0.81,
+        "b_score": 0.81,
+        "rationale": "Comparable product fit (81% vs 81%)"
+      },
+      "Cultural": {
+        "winner": "TIE",
+        "a_score": 0.71,
+        "b_score": 0.73,
+        "rationale": "Comparable cultural fit (71% vs 73%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.61,
+        "b_score": 0.61,
+        "rationale": "Comparable growth fit (61% vs 61%)"
+      }
+    },
+    "why_a_over_b": "Rahul Mukherjee (Machine Learning Engineer at Verloop.io) ranks higher at 80 vs 52 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Nisha Bansal would be preferred if the role scope narrows to focus on Flask, or if Rahul Mukherjee declines the offer."
+  },
+  "CAND_0069905_CAND_0037566": {
+    "pair_key": "CAND_0069905_CAND_0037566",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.29,
+        "b_score": 0.54,
+        "rationale": "Ritu Nair leads on technical (54% vs 29%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.81,
+        "b_score": 0.81,
+        "rationale": "Comparable product fit (81% vs 81%)"
       },
       "Cultural": {
         "winner": "A",
         "a_score": 0.73,
-        "b_score": 0.39,
-        "rationale": "Riya Saxena leads on cultural (73% vs 39%)"
+        "b_score": 0.56,
+        "rationale": "Nisha Bansal leads on cultural (73% vs 56%)"
       },
       "Growth": {
         "winner": "TIE",
-        "a_score": 0.62,
-        "b_score": 0.6,
-        "rationale": "Comparable growth fit (62% vs 60%)"
+        "a_score": 0.61,
+        "b_score": 0.61,
+        "rationale": "Comparable growth fit (61% vs 61%)"
       }
     },
-    "why_a_over_b": "Riya Saxena (Machine Learning Engineer at Genpact AI) ranks higher at 73 vs 73 overall. Stronger on Cultural.",
-    "b_salvage_scenario": "Vivaan Bose would be preferred if the role scope narrows to focus on Information Retrieval, or if Riya Saxena declines the offer."
+    "why_a_over_b": "Nisha Bansal (Applied ML Engineer at Sarvam AI) ranks higher at 52 vs 66 overall. Stronger on Cultural.",
+    "b_salvage_scenario": "Ritu Nair would be preferred if the role scope narrows to focus on Pinecone, or if Nisha Bansal declines the offer."
   },
-  "CAND_0004131_CAND_0044855": {
-    "pair_key": "CAND_0004131_CAND_0044855",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "TIE",
-        "a_score": 0.8,
-        "b_score": 0.76,
-        "rationale": "Comparable technical fit (80% vs 76%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.8,
-        "b_score": 0.83,
-        "rationale": "Comparable product fit (80% vs 83%)"
-      },
-      "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.39,
-        "b_score": 0.43,
-        "rationale": "Comparable cultural fit (39% vs 43%)"
-      },
-      "Growth": {
-        "winner": "A",
-        "a_score": 0.6,
-        "b_score": 0.32,
-        "rationale": "Vivaan Bose leads on growth (60% vs 32%)"
-      }
-    },
-    "why_a_over_b": "Vivaan Bose (Junior ML Engineer at Flipkart) ranks higher at 73 vs 73 overall. Stronger on Growth.",
-    "b_salvage_scenario": "Kavya Joshi would be preferred if the role scope narrows to focus on Object Detection, or if Vivaan Bose declines the offer."
-  },
-  "CAND_0044855_CAND_0063097": {
-    "pair_key": "CAND_0044855_CAND_0063097",
+  "CAND_0037566_CAND_0018499": {
+    "pair_key": "CAND_0037566_CAND_0018499",
     "dimension_comparison": {
       "Technical": {
         "winner": "B",
-        "a_score": 0.76,
-        "b_score": 0.83,
-        "rationale": "Neha Arora leads on technical (83% vs 76%)"
+        "a_score": 0.54,
+        "b_score": 1.0,
+        "rationale": "Aarav Trivedi leads on technical (100% vs 54%)"
       },
       "Product": {
-        "winner": "A",
-        "a_score": 0.83,
-        "b_score": 0.7,
-        "rationale": "Kavya Joshi leads on product (83% vs 70%)"
+        "winner": "TIE",
+        "a_score": 0.81,
+        "b_score": 0.83,
+        "rationale": "Comparable product fit (81% vs 83%)"
       },
       "Cultural": {
         "winner": "A",
-        "a_score": 0.43,
+        "a_score": 0.56,
+        "b_score": 0.47,
+        "rationale": "Ritu Nair leads on cultural (56% vs 47%)"
+      },
+      "Growth": {
+        "winner": "A",
+        "a_score": 0.61,
+        "b_score": 0.52,
+        "rationale": "Ritu Nair leads on growth (61% vs 52%)"
+      }
+    },
+    "why_a_over_b": "Ritu Nair (Machine Learning Engineer at LinkedIn) ranks higher at 66 vs 84 overall. Stronger on Cultural, Growth.",
+    "b_salvage_scenario": "Aarav Trivedi would be preferred if the role scope narrows to focus on Deep Learning, or if Ritu Nair declines the offer."
+  },
+  "CAND_0018499_CAND_0086022": {
+    "pair_key": "CAND_0018499_CAND_0086022",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 1.0,
+        "b_score": 0.83,
+        "rationale": "Aarav Trivedi leads on technical (100% vs 83%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.83,
+        "b_score": 0.84,
+        "rationale": "Comparable product fit (83% vs 84%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.47,
+        "b_score": 0.57,
+        "rationale": "Dhruv Naidu leads on cultural (57% vs 47%)"
+      },
+      "Growth": {
+        "winner": "B",
+        "a_score": 0.52,
+        "b_score": 0.63,
+        "rationale": "Dhruv Naidu leads on growth (63% vs 52%)"
+      }
+    },
+    "why_a_over_b": "Aarav Trivedi (Senior Machine Learning Engineer at Zomato) ranks higher at 84 vs 81 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Dhruv Naidu would be preferred if the role scope narrows to focus on Vector Search, or if Aarav Trivedi declines the offer."
+  },
+  "CAND_0086022_CAND_0098846": {
+    "pair_key": "CAND_0086022_CAND_0098846",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.83,
         "b_score": 0.33,
-        "rationale": "Kavya Joshi leads on cultural (43% vs 33%)"
+        "rationale": "Dhruv Naidu leads on technical (83% vs 33%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.84,
+        "b_score": 0.83,
+        "rationale": "Comparable product fit (84% vs 83%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.57,
+        "b_score": 0.72,
+        "rationale": "Shreya Saxena leads on cultural (72% vs 57%)"
       },
       "Growth": {
         "winner": "TIE",
-        "a_score": 0.32,
-        "b_score": 0.3,
-        "rationale": "Comparable growth fit (32% vs 30%)"
+        "a_score": 0.63,
+        "b_score": 0.62,
+        "rationale": "Comparable growth fit (63% vs 62%)"
       }
     },
-    "why_a_over_b": "Kavya Joshi (Senior Data Scientist at Flipkart) ranks higher at 73 vs 73 overall. Stronger on Product, Cultural.",
-    "b_salvage_scenario": "Neha Arora would be preferred if the role scope narrows to focus on Forecasting, or if Kavya Joshi declines the offer."
+    "why_a_over_b": "Dhruv Naidu (Senior Applied Scientist at Sarvam AI) ranks higher at 81 vs 63 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Shreya Saxena would be preferred if the role scope narrows to focus on YOLO, or if Dhruv Naidu declines the offer."
   },
-  "CAND_0063097_CAND_0005649": {
-    "pair_key": "CAND_0063097_CAND_0005649",
+  "CAND_0098846_CAND_0050454": {
+    "pair_key": "CAND_0098846_CAND_0050454",
     "dimension_comparison": {
       "Technical": {
-        "winner": "A",
-        "a_score": 0.83,
-        "b_score": 0.62,
-        "rationale": "Neha Arora leads on technical (83% vs 62%)"
-      },
-      "Product": {
-        "winner": "B",
-        "a_score": 0.7,
-        "b_score": 0.83,
-        "rationale": "Riya Kapoor leads on product (83% vs 70%)"
-      },
-      "Cultural": {
         "winner": "B",
         "a_score": 0.33,
-        "b_score": 0.47,
-        "rationale": "Riya Kapoor leads on cultural (47% vs 33%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.3,
-        "b_score": 0.32,
-        "rationale": "Comparable growth fit (30% vs 32%)"
-      }
-    },
-    "why_a_over_b": "Neha Arora (Senior Software Engineer (ML) at Genpact AI) ranks higher at 73 vs 72 overall. Stronger on Technical.",
-    "b_salvage_scenario": "Riya Kapoor would be preferred if the role scope narrows to focus on Haystack, or if Neha Arora declines the offer."
-  },
-  "CAND_0005649_CAND_0065878": {
-    "pair_key": "CAND_0005649_CAND_0065878",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.62,
-        "b_score": 0.73,
-        "rationale": "Suresh Kapoor leads on technical (73% vs 62%)"
+        "b_score": 0.54,
+        "rationale": "Saanvi Bansal leads on technical (54% vs 33%)"
       },
       "Product": {
         "winner": "TIE",
@@ -791,288 +450,226 @@
       },
       "Cultural": {
         "winner": "TIE",
-        "a_score": 0.47,
-        "b_score": 0.43,
-        "rationale": "Comparable cultural fit (47% vs 43%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.32,
-        "b_score": 0.32,
-        "rationale": "Comparable growth fit (32% vs 32%)"
-      }
-    },
-    "why_a_over_b": "Riya Kapoor (Senior Data Scientist at Sarvam AI) ranks higher at 72 vs 72 overall. Stronger on overall fit.",
-    "b_salvage_scenario": "Suresh Kapoor would be preferred if the role scope narrows to focus on scikit-learn, or if Riya Kapoor declines the offer."
-  },
-  "CAND_0065878_CAND_0057098": {
-    "pair_key": "CAND_0065878_CAND_0057098",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.73,
-        "b_score": 0.78,
-        "rationale": "Sai Dalal leads on technical (78% vs 73%)"
-      },
-      "Product": {
-        "winner": "A",
-        "a_score": 0.83,
-        "b_score": 0.7,
-        "rationale": "Suresh Kapoor leads on product (83% vs 70%)"
-      },
-      "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.43,
-        "b_score": 0.47,
-        "rationale": "Comparable cultural fit (43% vs 47%)"
-      },
-      "Growth": {
-        "winner": "B",
-        "a_score": 0.32,
-        "b_score": 0.6,
-        "rationale": "Sai Dalal leads on growth (60% vs 32%)"
-      }
-    },
-    "why_a_over_b": "Suresh Kapoor (Senior Data Scientist at Niramai) ranks higher at 72 vs 71 overall. Stronger on Product.",
-    "b_salvage_scenario": "Sai Dalal would be preferred if the role scope narrows to focus on Object Detection, or if Suresh Kapoor declines the offer."
-  },
-  "CAND_0057098_CAND_0007411": {
-    "pair_key": "CAND_0057098_CAND_0007411",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "A",
-        "a_score": 0.78,
-        "b_score": 0.5,
-        "rationale": "Sai Dalal leads on technical (78% vs 50%)"
-      },
-      "Product": {
-        "winner": "B",
-        "a_score": 0.7,
-        "b_score": 0.83,
-        "rationale": "Rahul Bansal leads on product (83% vs 70%)"
-      },
-      "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.47,
-        "b_score": 0.45,
-        "rationale": "Comparable cultural fit (47% vs 45%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.6,
-        "b_score": 0.62,
-        "rationale": "Comparable growth fit (60% vs 62%)"
-      }
-    },
-    "why_a_over_b": "Sai Dalal (Software Engineer at Razorpay) ranks higher at 71 vs 71 overall. Stronger on Technical.",
-    "b_salvage_scenario": "Rahul Bansal would be preferred if the role scope narrows to focus on OpenSearch, or if Sai Dalal declines the offer."
-  },
-  "CAND_0007411_CAND_0040521": {
-    "pair_key": "CAND_0007411_CAND_0040521",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.5,
-        "b_score": 0.88,
-        "rationale": "Ritu Bhatia leads on technical (88% vs 50%)"
-      },
-      "Product": {
-        "winner": "A",
-        "a_score": 0.83,
-        "b_score": 0.57,
-        "rationale": "Rahul Bansal leads on product (83% vs 57%)"
-      },
-      "Cultural": {
-        "winner": "B",
-        "a_score": 0.45,
-        "b_score": 0.62,
-        "rationale": "Ritu Bhatia leads on cultural (62% vs 45%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.62,
-        "b_score": 0.61,
-        "rationale": "Comparable growth fit (62% vs 61%)"
-      }
-    },
-    "why_a_over_b": "Rahul Bansal (Senior Machine Learning Engineer at Amazon) ranks higher at 71 vs 70 overall. Stronger on Product.",
-    "b_salvage_scenario": "Ritu Bhatia would be preferred if the role scope narrows to focus on Airflow, or if Rahul Bansal declines the offer."
-  },
-  "CAND_0040521_CAND_0050454": {
-    "pair_key": "CAND_0040521_CAND_0050454",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "A",
-        "a_score": 0.88,
-        "b_score": 0.54,
-        "rationale": "Ritu Bhatia leads on technical (88% vs 54%)"
-      },
-      "Product": {
-        "winner": "B",
-        "a_score": 0.57,
-        "b_score": 0.83,
-        "rationale": "Saanvi Bansal leads on product (83% vs 57%)"
-      },
-      "Cultural": {
-        "winner": "B",
-        "a_score": 0.62,
+        "a_score": 0.72,
         "b_score": 0.73,
-        "rationale": "Saanvi Bansal leads on cultural (73% vs 62%)"
+        "rationale": "Comparable cultural fit (72% vs 73%)"
       },
       "Growth": {
         "winner": "TIE",
-        "a_score": 0.61,
+        "a_score": 0.62,
         "b_score": 0.62,
-        "rationale": "Comparable growth fit (61% vs 62%)"
+        "rationale": "Comparable growth fit (62% vs 62%)"
       }
     },
-    "why_a_over_b": "Ritu Bhatia (Software Engineer at Meesho) ranks higher at 70 vs 70 overall. Stronger on Technical.",
-    "b_salvage_scenario": "Saanvi Bansal would be preferred if the role scope narrows to focus on PyTorch, or if Ritu Bhatia declines the offer."
+    "why_a_over_b": "Shreya Saxena (AI Engineer at upGrad) ranks higher at 63 vs 70 overall. Stronger on overall fit.",
+    "b_salvage_scenario": "Saanvi Bansal would be preferred if the role scope narrows to focus on PyTorch, or if Shreya Saxena declines the offer."
   },
-  "CAND_0050454_CAND_0033445": {
-    "pair_key": "CAND_0050454_CAND_0033445",
+  "CAND_0050454_CAND_0079387": {
+    "pair_key": "CAND_0050454_CAND_0079387",
     "dimension_comparison": {
       "Technical": {
-        "winner": "B",
+        "winner": "TIE",
         "a_score": 0.54,
-        "b_score": 0.62,
-        "rationale": "Ved Bhatia leads on technical (62% vs 54%)"
+        "b_score": 0.51,
+        "rationale": "Comparable technical fit (54% vs 51%)"
       },
       "Product": {
         "winner": "TIE",
         "a_score": 0.83,
-        "b_score": 0.8,
-        "rationale": "Comparable product fit (83% vs 80%)"
+        "b_score": 0.83,
+        "rationale": "Comparable product fit (83% vs 83%)"
       },
       "Cultural": {
-        "winner": "A",
+        "winner": "TIE",
         "a_score": 0.73,
-        "b_score": 0.47,
-        "rationale": "Saanvi Bansal leads on cultural (73% vs 47%)"
+        "b_score": 0.69,
+        "rationale": "Comparable cultural fit (73% vs 69%)"
       },
       "Growth": {
         "winner": "TIE",
         "a_score": 0.62,
-        "b_score": 0.6,
-        "rationale": "Comparable growth fit (62% vs 60%)"
-      }
-    },
-    "why_a_over_b": "Saanvi Bansal (AI Engineer at Rephrase.ai) ranks higher at 70 vs 69 overall. Stronger on Cultural.",
-    "b_salvage_scenario": "Ved Bhatia would be preferred if the role scope narrows to focus on Deep Learning, or if Saanvi Bansal declines the offer."
-  },
-  "CAND_0033445_CAND_0002706": {
-    "pair_key": "CAND_0033445_CAND_0002706",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "A",
-        "a_score": 0.62,
-        "b_score": 0.5,
-        "rationale": "Ved Bhatia leads on technical (62% vs 50%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.8,
-        "b_score": 0.8,
-        "rationale": "Comparable product fit (80% vs 80%)"
-      },
-      "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.47,
-        "b_score": 0.49,
-        "rationale": "Comparable cultural fit (47% vs 49%)"
-      },
-      "Growth": {
-        "winner": "B",
-        "a_score": 0.6,
-        "b_score": 0.8,
-        "rationale": "Shaurya Dutta leads on growth (80% vs 60%)"
-      }
-    },
-    "why_a_over_b": "Ved Bhatia (ML Engineer at Vedantu) ranks higher at 69 vs 69 overall. Stronger on Technical.",
-    "b_salvage_scenario": "Shaurya Dutta would be preferred if the role scope narrows to focus on Six Sigma, or if Ved Bhatia declines the offer."
-  },
-  "CAND_0002706_CAND_0051441": {
-    "pair_key": "CAND_0002706_CAND_0051441",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.5,
-        "b_score": 0.59,
-        "rationale": "Manish Joshi leads on technical (59% vs 50%)"
-      },
-      "Product": {
-        "winner": "A",
-        "a_score": 0.8,
-        "b_score": 0.7,
-        "rationale": "Shaurya Dutta leads on product (80% vs 70%)"
-      },
-      "Cultural": {
-        "winner": "B",
-        "a_score": 0.49,
         "b_score": 0.62,
-        "rationale": "Manish Joshi leads on cultural (62% vs 49%)"
-      },
-      "Growth": {
-        "winner": "A",
-        "a_score": 0.8,
-        "b_score": 0.6,
-        "rationale": "Shaurya Dutta leads on growth (80% vs 60%)"
+        "rationale": "Comparable growth fit (62% vs 62%)"
       }
     },
-    "why_a_over_b": "Shaurya Dutta (Junior ML Engineer at Zoho) ranks higher at 69 vs 69 overall. Stronger on Product, Growth.",
-    "b_salvage_scenario": "Manish Joshi would be preferred if the role scope narrows to focus on TypeScript, or if Shaurya Dutta declines the offer."
+    "why_a_over_b": "Saanvi Bansal (AI Engineer at Rephrase.ai) ranks higher at 70 vs 67 overall. Stronger on overall fit.",
+    "b_salvage_scenario": "Sneha Arora would be preferred if the role scope narrows to focus on scikit-learn, or if Saanvi Bansal declines the offer."
   },
-  "CAND_0051441_CAND_0011687": {
-    "pair_key": "CAND_0051441_CAND_0011687",
+  "CAND_0079387_CAND_0071974": {
+    "pair_key": "CAND_0079387_CAND_0071974",
     "dimension_comparison": {
       "Technical": {
-        "winner": "A",
-        "a_score": 0.59,
-        "b_score": 0.5,
-        "rationale": "Manish Joshi leads on technical (59% vs 50%)"
+        "winner": "B",
+        "a_score": 0.51,
+        "b_score": 0.71,
+        "rationale": "Sai Verma leads on technical (71% vs 51%)"
       },
       "Product": {
         "winner": "TIE",
-        "a_score": 0.7,
+        "a_score": 0.83,
+        "b_score": 0.87,
+        "rationale": "Comparable product fit (83% vs 87%)"
+      },
+      "Cultural": {
+        "winner": "TIE",
+        "a_score": 0.69,
         "b_score": 0.73,
-        "rationale": "Comparable product fit (70% vs 73%)"
-      },
-      "Cultural": {
-        "winner": "A",
-        "a_score": 0.62,
-        "b_score": 0.45,
-        "rationale": "Manish Joshi leads on cultural (62% vs 45%)"
+        "rationale": "Comparable cultural fit (69% vs 73%)"
       },
       "Growth": {
-        "winner": "TIE",
-        "a_score": 0.6,
-        "b_score": 0.62,
-        "rationale": "Comparable growth fit (60% vs 62%)"
+        "winner": "B",
+        "a_score": 0.62,
+        "b_score": 0.85,
+        "rationale": "Sai Verma leads on growth (85% vs 62%)"
       }
     },
-    "why_a_over_b": "Manish Joshi (Backend Engineer at CRED) ranks higher at 69 vs 69 overall. Stronger on Technical, Cultural.",
-    "b_salvage_scenario": "Shreya Tiwari would be preferred if the role scope narrows to focus on TensorFlow, or if Manish Joshi declines the offer."
+    "why_a_over_b": "Sneha Arora (AI Engineer at Microsoft) ranks higher at 67 vs 77 overall. Stronger on overall fit.",
+    "b_salvage_scenario": "Sai Verma would be preferred if the role scope narrows to focus on LoRA, or if Sneha Arora declines the offer."
   },
-  "CAND_0011687_CAND_0092278": {
-    "pair_key": "CAND_0011687_CAND_0092278",
+  "CAND_0071974_CAND_0050876": {
+    "pair_key": "CAND_0071974_CAND_0050876",
     "dimension_comparison": {
       "Technical": {
-        "winner": "B",
-        "a_score": 0.5,
-        "b_score": 0.57,
-        "rationale": "Ananya Arora leads on technical (57% vs 50%)"
+        "winner": "A",
+        "a_score": 0.71,
+        "b_score": 0.58,
+        "rationale": "Sai Verma leads on technical (71% vs 58%)"
       },
       "Product": {
         "winner": "TIE",
+        "a_score": 0.87,
+        "b_score": 0.83,
+        "rationale": "Comparable product fit (87% vs 83%)"
+      },
+      "Cultural": {
+        "winner": "A",
         "a_score": 0.73,
-        "b_score": 0.74,
-        "rationale": "Comparable product fit (73% vs 74%)"
+        "b_score": 0.64,
+        "rationale": "Sai Verma leads on cultural (73% vs 64%)"
+      },
+      "Growth": {
+        "winner": "A",
+        "a_score": 0.85,
+        "b_score": 0.62,
+        "rationale": "Sai Verma leads on growth (85% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Sai Verma (Senior AI Engineer at Netflix) ranks higher at 77 vs 63 overall. Stronger on Technical, Cultural.",
+    "b_salvage_scenario": "Vivaan Shah would be preferred if the role scope narrows to focus on SQL, or if Sai Verma declines the offer."
+  },
+  "CAND_0050876_CAND_0065195": {
+    "pair_key": "CAND_0050876_CAND_0065195",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.58,
+        "b_score": 0.78,
+        "rationale": "Kiara Mukherjee leads on technical (78% vs 58%)"
+      },
+      "Product": {
+        "winner": "A",
+        "a_score": 0.83,
+        "b_score": 0.71,
+        "rationale": "Vivaan Shah leads on product (83% vs 71%)"
       },
       "Cultural": {
         "winner": "B",
-        "a_score": 0.45,
-        "b_score": 0.58,
-        "rationale": "Ananya Arora leads on cultural (58% vs 45%)"
+        "a_score": 0.64,
+        "b_score": 0.82,
+        "rationale": "Kiara Mukherjee leads on cultural (82% vs 64%)"
+      },
+      "Growth": {
+        "winner": "B",
+        "a_score": 0.62,
+        "b_score": 0.81,
+        "rationale": "Kiara Mukherjee leads on growth (81% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Vivaan Shah (Applied ML Engineer at Freshworks) ranks higher at 63 vs 78 overall. Stronger on Product.",
+    "b_salvage_scenario": "Kiara Mukherjee would be preferred if the role scope narrows to focus on LLMs, or if Vivaan Shah declines the offer."
+  },
+  "CAND_0065195_CAND_0064326": {
+    "pair_key": "CAND_0065195_CAND_0064326",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "TIE",
+        "a_score": 0.78,
+        "b_score": 0.82,
+        "rationale": "Comparable technical fit (78% vs 82%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.71,
+        "b_score": 0.74,
+        "rationale": "Comparable product fit (71% vs 74%)"
+      },
+      "Cultural": {
+        "winner": "A",
+        "a_score": 0.82,
+        "b_score": 0.56,
+        "rationale": "Kiara Mukherjee leads on cultural (82% vs 56%)"
+      },
+      "Growth": {
+        "winner": "A",
+        "a_score": 0.81,
+        "b_score": 0.63,
+        "rationale": "Kiara Mukherjee leads on growth (81% vs 63%)"
+      }
+    },
+    "why_a_over_b": "Kiara Mukherjee (Search Engineer at CRED) ranks higher at 78 vs 77 overall. Stronger on Cultural, Growth.",
+    "b_salvage_scenario": "Nisha Pillai would be preferred if the role scope narrows to focus on scikit-learn, or if Kiara Mukherjee declines the offer."
+  },
+  "CAND_0064326_CAND_0041669": {
+    "pair_key": "CAND_0064326_CAND_0041669",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.82,
+        "b_score": 0.71,
+        "rationale": "Nisha Pillai leads on technical (82% vs 71%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.74,
+        "b_score": 0.73,
+        "rationale": "Comparable product fit (74% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "TIE",
+        "a_score": 0.56,
+        "b_score": 0.53,
+        "rationale": "Comparable cultural fit (56% vs 53%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.63,
+        "b_score": 0.62,
+        "rationale": "Comparable growth fit (63% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Nisha Pillai (Search Engineer at Sarvam AI) ranks higher at 77 vs 68 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Aisha Banerjee would be preferred if the role scope narrows to focus on FAISS, or if Nisha Pillai declines the offer."
+  },
+  "CAND_0041669_CAND_0030031": {
+    "pair_key": "CAND_0041669_CAND_0030031",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.71,
+        "b_score": 0.62,
+        "rationale": "Aisha Banerjee leads on technical (71% vs 62%)"
+      },
+      "Product": {
+        "winner": "B",
+        "a_score": 0.73,
+        "b_score": 0.84,
+        "rationale": "Anil Joshi leads on product (84% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.53,
+        "b_score": 0.68,
+        "rationale": "Anil Joshi leads on cultural (68% vs 53%)"
       },
       "Growth": {
         "winner": "TIE",
@@ -1081,172 +678,792 @@
         "rationale": "Comparable growth fit (62% vs 63%)"
       }
     },
-    "why_a_over_b": "Shreya Tiwari (Senior NLP Engineer at Niramai) ranks higher at 69 vs 68 overall. Stronger on overall fit.",
-    "b_salvage_scenario": "Ananya Arora would be preferred if the role scope narrows to focus on TensorFlow, or if Shreya Tiwari declines the offer."
+    "why_a_over_b": "Aisha Banerjee (Recommendation Systems Engineer at CRED) ranks higher at 68 vs 75 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Anil Joshi would be preferred if the role scope narrows to focus on Information Retrieval, or if Aisha Banerjee declines the offer."
   },
-  "CAND_0092278_CAND_0074123": {
-    "pair_key": "CAND_0092278_CAND_0074123",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "TIE",
-        "a_score": 0.57,
-        "b_score": 0.59,
-        "rationale": "Comparable technical fit (57% vs 59%)"
-      },
-      "Product": {
-        "winner": "B",
-        "a_score": 0.74,
-        "b_score": 0.8,
-        "rationale": "Karan Sen leads on product (80% vs 74%)"
-      },
-      "Cultural": {
-        "winner": "A",
-        "a_score": 0.58,
-        "b_score": 0.48,
-        "rationale": "Ananya Arora leads on cultural (58% vs 48%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.63,
-        "b_score": 0.6,
-        "rationale": "Comparable growth fit (63% vs 60%)"
-      }
-    },
-    "why_a_over_b": "Ananya Arora (Senior NLP Engineer at Microsoft) ranks higher at 68 vs 68 overall. Stronger on Cultural.",
-    "b_salvage_scenario": "Karan Sen would be preferred if the role scope narrows to focus on Object Detection, or if Ananya Arora declines the offer."
-  },
-  "CAND_0074123_CAND_0085851": {
-    "pair_key": "CAND_0074123_CAND_0085851",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.59,
-        "b_score": 0.71,
-        "rationale": "Arnav Iyengar leads on technical (71% vs 59%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.8,
-        "b_score": 0.8,
-        "rationale": "Comparable product fit (80% vs 80%)"
-      },
-      "Cultural": {
-        "winner": "A",
-        "a_score": 0.48,
-        "b_score": 0.41,
-        "rationale": "Karan Sen leads on cultural (48% vs 41%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.6,
-        "b_score": 0.6,
-        "rationale": "Comparable growth fit (60% vs 60%)"
-      }
-    },
-    "why_a_over_b": "Karan Sen (Data Scientist at CRED) ranks higher at 68 vs 68 overall. Stronger on Cultural.",
-    "b_salvage_scenario": "Arnav Iyengar would be preferred if the role scope narrows to focus on BentoML, or if Karan Sen declines the offer."
-  },
-  "CAND_0085851_CAND_0042100": {
-    "pair_key": "CAND_0085851_CAND_0042100",
+  "CAND_0030031_CAND_0052328": {
+    "pair_key": "CAND_0030031_CAND_0052328",
     "dimension_comparison": {
       "Technical": {
         "winner": "A",
-        "a_score": 0.71,
-        "b_score": 0.47,
-        "rationale": "Arnav Iyengar leads on technical (71% vs 47%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.8,
-        "b_score": 0.84,
-        "rationale": "Comparable product fit (80% vs 84%)"
-      },
-      "Cultural": {
-        "winner": "B",
-        "a_score": 0.41,
-        "b_score": 0.8,
-        "rationale": "Siya Trivedi leads on cultural (80% vs 41%)"
-      },
-      "Growth": {
-        "winner": "B",
-        "a_score": 0.6,
-        "b_score": 0.83,
-        "rationale": "Siya Trivedi leads on growth (83% vs 60%)"
-      }
-    },
-    "why_a_over_b": "Arnav Iyengar (ML Engineer at Genpact AI) ranks higher at 68 vs 67 overall. Stronger on Technical.",
-    "b_salvage_scenario": "Siya Trivedi would be preferred if the role scope narrows to focus on Elasticsearch, or if Arnav Iyengar declines the offer."
-  },
-  "CAND_0042100_CAND_0016229": {
-    "pair_key": "CAND_0042100_CAND_0016229",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.47,
-        "b_score": 0.71,
-        "rationale": "Manish Patel leads on technical (71% vs 47%)"
+        "a_score": 0.62,
+        "b_score": 0.12,
+        "rationale": "Anil Joshi leads on technical (62% vs 12%)"
       },
       "Product": {
         "winner": "A",
         "a_score": 0.84,
+        "b_score": 0.71,
+        "rationale": "Anil Joshi leads on product (84% vs 71%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.68,
+        "b_score": 0.82,
+        "rationale": "Vikram Banerjee leads on cultural (82% vs 68%)"
+      },
+      "Growth": {
+        "winner": "B",
+        "a_score": 0.63,
+        "b_score": 0.81,
+        "rationale": "Vikram Banerjee leads on growth (81% vs 63%)"
+      }
+    },
+    "why_a_over_b": "Anil Joshi (AI Engineer at Microsoft) ranks higher at 75 vs 47 overall. Stronger on Technical, Product.",
+    "b_salvage_scenario": "Vikram Banerjee would be preferred if the role scope narrows to focus on Object Detection, or if Anil Joshi declines the offer."
+  },
+  "CAND_0052328_CAND_0005260": {
+    "pair_key": "CAND_0052328_CAND_0005260",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.12,
+        "b_score": 0.42,
+        "rationale": "Mira Ghosh leads on technical (42% vs 12%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.71,
         "b_score": 0.73,
-        "rationale": "Siya Trivedi leads on product (84% vs 73%)"
+        "rationale": "Comparable product fit (71% vs 73%)"
       },
       "Cultural": {
         "winner": "A",
-        "a_score": 0.8,
-        "b_score": 0.37,
-        "rationale": "Siya Trivedi leads on cultural (80% vs 37%)"
+        "a_score": 0.82,
+        "b_score": 0.54,
+        "rationale": "Vikram Banerjee leads on cultural (82% vs 54%)"
       },
       "Growth": {
         "winner": "A",
-        "a_score": 0.83,
-        "b_score": 0.32,
-        "rationale": "Siya Trivedi leads on growth (83% vs 32%)"
+        "a_score": 0.81,
+        "b_score": 0.62,
+        "rationale": "Vikram Banerjee leads on growth (81% vs 62%)"
       }
     },
-    "why_a_over_b": "Siya Trivedi (Machine Learning Engineer at Freshworks) ranks higher at 67 vs 66 overall. Stronger on Product, Cultural.",
-    "b_salvage_scenario": "Manish Patel would be preferred if the role scope narrows to focus on Vector Search, or if Siya Trivedi declines the offer."
+    "why_a_over_b": "Vikram Banerjee (Recommendation Systems Engineer at Amazon) ranks higher at 47 vs 64 overall. Stronger on Cultural, Growth.",
+    "b_salvage_scenario": "Mira Ghosh would be preferred if the role scope narrows to focus on Statistical Modeling, or if Vikram Banerjee declines the offer."
   },
-  "CAND_0016229_CAND_0044222": {
-    "pair_key": "CAND_0016229_CAND_0044222",
+  "CAND_0005260_CAND_0006567": {
+    "pair_key": "CAND_0005260_CAND_0006567",
     "dimension_comparison": {
       "Technical": {
         "winner": "A",
-        "a_score": 0.71,
-        "b_score": 0.63,
-        "rationale": "Manish Patel leads on technical (71% vs 63%)"
+        "a_score": 0.42,
+        "b_score": 0.17,
+        "rationale": "Mira Ghosh leads on technical (42% vs 17%)"
       },
       "Product": {
         "winner": "B",
         "a_score": 0.73,
         "b_score": 0.83,
-        "rationale": "Dev Shah leads on product (83% vs 73%)"
+        "rationale": "Aditya Subramanian leads on product (83% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "A",
+        "a_score": 0.54,
+        "b_score": 0.45,
+        "rationale": "Mira Ghosh leads on cultural (54% vs 45%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.62,
+        "b_score": 0.62,
+        "rationale": "Comparable growth fit (62% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Mira Ghosh (Senior NLP Engineer at Netflix) ranks higher at 64 vs 48 overall. Stronger on Technical, Cultural.",
+    "b_salvage_scenario": "Aditya Subramanian would be preferred if the role scope narrows to focus on Speech Recognition, or if Mira Ghosh declines the offer."
+  },
+  "CAND_0006567_CAND_0081846": {
+    "pair_key": "CAND_0006567_CAND_0081846",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.17,
+        "b_score": 0.57,
+        "rationale": "Arjun Khanna leads on technical (57% vs 17%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.83,
+        "b_score": 0.83,
+        "rationale": "Comparable product fit (83% vs 83%)"
       },
       "Cultural": {
         "winner": "B",
-        "a_score": 0.37,
-        "b_score": 0.57,
-        "rationale": "Dev Shah leads on cultural (57% vs 37%)"
+        "a_score": 0.45,
+        "b_score": 0.62,
+        "rationale": "Arjun Khanna leads on cultural (62% vs 45%)"
+      },
+      "Growth": {
+        "winner": "A",
+        "a_score": 0.62,
+        "b_score": 0.32,
+        "rationale": "Aditya Subramanian leads on growth (62% vs 32%)"
+      }
+    },
+    "why_a_over_b": "Aditya Subramanian (Senior AI Engineer at Meta) ranks higher at 48 vs 71 overall. Stronger on Growth.",
+    "b_salvage_scenario": "Arjun Khanna would be preferred if the role scope narrows to focus on Data Science, or if Aditya Subramanian declines the offer."
+  },
+  "CAND_0081846_CAND_0081053": {
+    "pair_key": "CAND_0081846_CAND_0081053",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.57,
+        "b_score": 0.83,
+        "rationale": "Om Chopra leads on technical (83% vs 57%)"
+      },
+      "Product": {
+        "winner": "A",
+        "a_score": 0.83,
+        "b_score": 0.73,
+        "rationale": "Arjun Khanna leads on product (83% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "A",
+        "a_score": 0.62,
+        "b_score": 0.51,
+        "rationale": "Arjun Khanna leads on cultural (62% vs 51%)"
       },
       "Growth": {
         "winner": "B",
         "a_score": 0.32,
         "b_score": 0.62,
-        "rationale": "Dev Shah leads on growth (62% vs 32%)"
+        "rationale": "Om Chopra leads on growth (62% vs 32%)"
       }
     },
-    "why_a_over_b": "Manish Patel (Senior Software Engineer at Initech) ranks higher at 66 vs 66 overall. Stronger on Technical.",
-    "b_salvage_scenario": "Dev Shah would be preferred if the role scope narrows to focus on Vector Search, or if Manish Patel declines the offer."
+    "why_a_over_b": "Arjun Khanna (Lead AI Engineer at Razorpay) ranks higher at 71 vs 76 overall. Stronger on Product, Cultural.",
+    "b_salvage_scenario": "Om Chopra would be preferred if the role scope narrows to focus on LoRA, or if Arjun Khanna declines the offer."
   },
-  "CAND_0044222_CAND_0080102": {
-    "pair_key": "CAND_0044222_CAND_0080102",
+  "CAND_0081053_CAND_0017960": {
+    "pair_key": "CAND_0081053_CAND_0017960",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.83,
+        "b_score": 0.45,
+        "rationale": "Om Chopra leads on technical (83% vs 45%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.73,
+        "b_score": 0.73,
+        "rationale": "Comparable product fit (73% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.51,
+        "b_score": 0.56,
+        "rationale": "Pari Shah leads on cultural (56% vs 51%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.62,
+        "b_score": 0.62,
+        "rationale": "Comparable growth fit (62% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Om Chopra (NLP Engineer at Glance) ranks higher at 76 vs 66 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Pari Shah would be preferred if the role scope narrows to focus on LlamaIndex, or if Om Chopra declines the offer."
+  },
+  "CAND_0017960_CAND_0061655": {
+    "pair_key": "CAND_0017960_CAND_0061655",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.45,
+        "b_score": 0.79,
+        "rationale": "Mira Banerjee leads on technical (79% vs 45%)"
+      },
+      "Product": {
+        "winner": "B",
+        "a_score": 0.73,
+        "b_score": 0.83,
+        "rationale": "Mira Banerjee leads on product (83% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "A",
+        "a_score": 0.56,
+        "b_score": 0.51,
+        "rationale": "Pari Shah leads on cultural (56% vs 51%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.62,
+        "b_score": 0.62,
+        "rationale": "Comparable growth fit (62% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Pari Shah (Recommendation Systems Engineer at Nykaa) ranks higher at 66 vs 67 overall. Stronger on Cultural.",
+    "b_salvage_scenario": "Mira Banerjee would be preferred if the role scope narrows to focus on Haystack, or if Pari Shah declines the offer."
+  },
+  "CAND_0061655_CAND_0073504": {
+    "pair_key": "CAND_0061655_CAND_0073504",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.79,
+        "b_score": 0.63,
+        "rationale": "Mira Banerjee leads on technical (79% vs 63%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.83,
+        "b_score": 0.8,
+        "rationale": "Comparable product fit (83% vs 80%)"
+      },
+      "Cultural": {
+        "winner": "TIE",
+        "a_score": 0.51,
+        "b_score": 0.53,
+        "rationale": "Comparable cultural fit (51% vs 53%)"
+      },
+      "Growth": {
+        "winner": "B",
+        "a_score": 0.62,
+        "b_score": 0.8,
+        "rationale": "Pranav Pillai leads on growth (80% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Mira Banerjee (Machine Learning Engineer at Krutrim) ranks higher at 67 vs 71 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Pranav Pillai would be preferred if the role scope narrows to focus on Elasticsearch, or if Mira Banerjee declines the offer."
+  },
+  "CAND_0073504_CAND_0079064": {
+    "pair_key": "CAND_0073504_CAND_0079064",
     "dimension_comparison": {
       "Technical": {
         "winner": "A",
         "a_score": 0.63,
+        "b_score": 0.4,
+        "rationale": "Pranav Pillai leads on technical (63% vs 40%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.8,
+        "b_score": 0.81,
+        "rationale": "Comparable product fit (80% vs 81%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.53,
+        "b_score": 0.63,
+        "rationale": "Sai Saxena leads on cultural (63% vs 53%)"
+      },
+      "Growth": {
+        "winner": "A",
+        "a_score": 0.8,
+        "b_score": 0.31,
+        "rationale": "Pranav Pillai leads on growth (80% vs 31%)"
+      }
+    },
+    "why_a_over_b": "Pranav Pillai (Junior ML Engineer at PolicyBazaar) ranks higher at 71 vs 66 overall. Stronger on Technical, Growth.",
+    "b_salvage_scenario": "Sai Saxena would be preferred if the role scope narrows to focus on Illustrator, or if Pranav Pillai declines the offer."
+  },
+  "CAND_0079064_CAND_0094056": {
+    "pair_key": "CAND_0079064_CAND_0094056",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.4,
+        "b_score": 0.67,
+        "rationale": "Diya Pillai leads on technical (67% vs 40%)"
+      },
+      "Product": {
+        "winner": "A",
+        "a_score": 0.81,
+        "b_score": 0.71,
+        "rationale": "Sai Saxena leads on product (81% vs 71%)"
+      },
+      "Cultural": {
+        "winner": "A",
+        "a_score": 0.63,
+        "b_score": 0.58,
+        "rationale": "Sai Saxena leads on cultural (63% vs 58%)"
+      },
+      "Growth": {
+        "winner": "B",
+        "a_score": 0.31,
+        "b_score": 0.61,
+        "rationale": "Diya Pillai leads on growth (61% vs 31%)"
+      }
+    },
+    "why_a_over_b": "Sai Saxena (Senior Data Scientist at Niramai) ranks higher at 66 vs 57 overall. Stronger on Product, Cultural.",
+    "b_salvage_scenario": "Diya Pillai would be preferred if the role scope narrows to focus on MLflow, or if Sai Saxena declines the offer."
+  },
+  "CAND_0094056_CAND_0005649": {
+    "pair_key": "CAND_0094056_CAND_0005649",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.67,
+        "b_score": 0.62,
+        "rationale": "Diya Pillai leads on technical (67% vs 62%)"
+      },
+      "Product": {
+        "winner": "B",
+        "a_score": 0.71,
+        "b_score": 0.83,
+        "rationale": "Riya Kapoor leads on product (83% vs 71%)"
+      },
+      "Cultural": {
+        "winner": "A",
+        "a_score": 0.58,
+        "b_score": 0.47,
+        "rationale": "Diya Pillai leads on cultural (58% vs 47%)"
+      },
+      "Growth": {
+        "winner": "A",
+        "a_score": 0.61,
+        "b_score": 0.32,
+        "rationale": "Diya Pillai leads on growth (61% vs 32%)"
+      }
+    },
+    "why_a_over_b": "Diya Pillai (NLP Engineer at Rephrase.ai) ranks higher at 57 vs 72 overall. Stronger on Technical, Cultural.",
+    "b_salvage_scenario": "Riya Kapoor would be preferred if the role scope narrows to focus on Haystack, or if Diya Pillai declines the offer."
+  },
+  "CAND_0005649_CAND_0008425": {
+    "pair_key": "CAND_0005649_CAND_0008425",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.62,
+        "b_score": 0.99,
+        "rationale": "Myra Krishnan leads on technical (99% vs 62%)"
+      },
+      "Product": {
+        "winner": "A",
+        "a_score": 0.83,
+        "b_score": 0.75,
+        "rationale": "Riya Kapoor leads on product (83% vs 75%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.47,
+        "b_score": 0.72,
+        "rationale": "Myra Krishnan leads on cultural (72% vs 47%)"
+      },
+      "Growth": {
+        "winner": "B",
+        "a_score": 0.32,
+        "b_score": 0.84,
+        "rationale": "Myra Krishnan leads on growth (84% vs 32%)"
+      }
+    },
+    "why_a_over_b": "Riya Kapoor (Senior Data Scientist at Sarvam AI) ranks higher at 72 vs 86 overall. Stronger on Product.",
+    "b_salvage_scenario": "Myra Krishnan would be preferred if the role scope narrows to focus on Learning to Rank, or if Riya Kapoor declines the offer."
+  },
+  "CAND_0008425_CAND_0093763": {
+    "pair_key": "CAND_0008425_CAND_0093763",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.99,
         "b_score": 0.57,
-        "rationale": "Dev Shah leads on technical (63% vs 57%)"
+        "rationale": "Myra Krishnan leads on technical (99% vs 57%)"
+      },
+      "Product": {
+        "winner": "A",
+        "a_score": 0.75,
+        "b_score": 0.7,
+        "rationale": "Myra Krishnan leads on product (75% vs 70%)"
+      },
+      "Cultural": {
+        "winner": "A",
+        "a_score": 0.72,
+        "b_score": 0.37,
+        "rationale": "Myra Krishnan leads on cultural (72% vs 37%)"
+      },
+      "Growth": {
+        "winner": "A",
+        "a_score": 0.84,
+        "b_score": 0.3,
+        "rationale": "Myra Krishnan leads on growth (84% vs 30%)"
+      }
+    },
+    "why_a_over_b": "Myra Krishnan (Senior NLP Engineer at Ola) ranks higher at 86 vs 62 overall. Stronger on Technical, Product.",
+    "b_salvage_scenario": "Krishna Nair would be preferred if the role scope narrows to focus on FAISS, or if Myra Krishnan declines the offer."
+  },
+  "CAND_0093763_CAND_0046064": {
+    "pair_key": "CAND_0093763_CAND_0046064",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.57,
+        "b_score": 0.5,
+        "rationale": "Krishna Nair leads on technical (57% vs 50%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.7,
+        "b_score": 0.73,
+        "rationale": "Comparable product fit (70% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.37,
+        "b_score": 0.66,
+        "rationale": "Saanvi Naidu leads on cultural (66% vs 37%)"
+      },
+      "Growth": {
+        "winner": "B",
+        "a_score": 0.3,
+        "b_score": 0.62,
+        "rationale": "Saanvi Naidu leads on growth (62% vs 30%)"
+      }
+    },
+    "why_a_over_b": "Krishna Nair (Senior Software Engineer (ML) at Swiggy) ranks higher at 62 vs 57 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Saanvi Naidu would be preferred if the role scope narrows to focus on Python, or if Krishna Nair declines the offer."
+  },
+  "CAND_0046064_CAND_0043637": {
+    "pair_key": "CAND_0046064_CAND_0043637",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.5,
+        "b_score": 0.68,
+        "rationale": "Ela Menon leads on technical (68% vs 50%)"
+      },
+      "Product": {
+        "winner": "B",
+        "a_score": 0.73,
+        "b_score": 0.8,
+        "rationale": "Ela Menon leads on product (80% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "A",
+        "a_score": 0.66,
+        "b_score": 0.57,
+        "rationale": "Saanvi Naidu leads on cultural (66% vs 57%)"
+      },
+      "Growth": {
+        "winner": "B",
+        "a_score": 0.62,
+        "b_score": 0.8,
+        "rationale": "Ela Menon leads on growth (80% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Saanvi Naidu (Senior NLP Engineer at Salesforce) ranks higher at 57 vs 60 overall. Stronger on Cultural.",
+    "b_salvage_scenario": "Ela Menon would be preferred if the role scope narrows to focus on PyTorch, or if Saanvi Naidu declines the offer."
+  },
+  "CAND_0043637_CAND_0076163": {
+    "pair_key": "CAND_0043637_CAND_0076163",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "TIE",
+        "a_score": 0.68,
+        "b_score": 0.67,
+        "rationale": "Comparable technical fit (68% vs 67%)"
+      },
+      "Product": {
+        "winner": "A",
+        "a_score": 0.8,
+        "b_score": 0.73,
+        "rationale": "Ela Menon leads on product (80% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "TIE",
+        "a_score": 0.57,
+        "b_score": 0.56,
+        "rationale": "Comparable cultural fit (57% vs 56%)"
+      },
+      "Growth": {
+        "winner": "A",
+        "a_score": 0.8,
+        "b_score": 0.62,
+        "rationale": "Ela Menon leads on growth (80% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Ela Menon (Junior ML Engineer at Rephrase.ai) ranks higher at 60 vs 73 overall. Stronger on Product, Growth.",
+    "b_salvage_scenario": "Nikhil Mittal would be preferred if the role scope narrows to focus on Weaviate, or if Ela Menon declines the offer."
+  },
+  "CAND_0076163_CAND_0027801": {
+    "pair_key": "CAND_0076163_CAND_0027801",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.67,
+        "b_score": 0.51,
+        "rationale": "Nikhil Mittal leads on technical (67% vs 51%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.73,
+        "b_score": 0.71,
+        "rationale": "Comparable product fit (73% vs 71%)"
+      },
+      "Cultural": {
+        "winner": "TIE",
+        "a_score": 0.56,
+        "b_score": 0.58,
+        "rationale": "Comparable cultural fit (56% vs 58%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.62,
+        "b_score": 0.61,
+        "rationale": "Comparable growth fit (62% vs 61%)"
+      }
+    },
+    "why_a_over_b": "Nikhil Mittal (NLP Engineer at Ola) ranks higher at 73 vs 63 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Anil Mittal would be preferred if the role scope narrows to focus on Time Series, or if Nikhil Mittal declines the offer."
+  },
+  "CAND_0027801_CAND_0045250": {
+    "pair_key": "CAND_0027801_CAND_0045250",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.51,
+        "b_score": 0.62,
+        "rationale": "Priya Pandey leads on technical (62% vs 51%)"
+      },
+      "Product": {
+        "winner": "B",
+        "a_score": 0.71,
+        "b_score": 0.81,
+        "rationale": "Priya Pandey leads on product (81% vs 71%)"
+      },
+      "Cultural": {
+        "winner": "TIE",
+        "a_score": 0.58,
+        "b_score": 0.56,
+        "rationale": "Comparable cultural fit (58% vs 56%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.61,
+        "b_score": 0.61,
+        "rationale": "Comparable growth fit (61% vs 61%)"
+      }
+    },
+    "why_a_over_b": "Anil Mittal (NLP Engineer at InMobi) ranks higher at 63 vs 71 overall. Stronger on overall fit.",
+    "b_salvage_scenario": "Priya Pandey would be preferred if the role scope narrows to focus on Sentence Transformers, or if Anil Mittal declines the offer."
+  },
+  "CAND_0045250_CAND_0027691": {
+    "pair_key": "CAND_0045250_CAND_0027691",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.62,
+        "b_score": 0.26,
+        "rationale": "Priya Pandey leads on technical (62% vs 26%)"
+      },
+      "Product": {
+        "winner": "A",
+        "a_score": 0.81,
+        "b_score": 0.73,
+        "rationale": "Priya Pandey leads on product (81% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.56,
+        "b_score": 0.72,
+        "rationale": "Ayaan Goyal leads on cultural (72% vs 56%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.61,
+        "b_score": 0.62,
+        "rationale": "Comparable growth fit (61% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Priya Pandey (Applied ML Engineer at Rephrase.ai) ranks higher at 71 vs 47 overall. Stronger on Technical, Product.",
+    "b_salvage_scenario": "Ayaan Goyal would be preferred if the role scope narrows to focus on SAP, or if Priya Pandey declines the offer."
+  },
+  "CAND_0027691_CAND_0062247": {
+    "pair_key": "CAND_0027691_CAND_0062247",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.26,
+        "b_score": 0.62,
+        "rationale": "Saanvi Trivedi leads on technical (62% vs 26%)"
+      },
+      "Product": {
+        "winner": "B",
+        "a_score": 0.73,
+        "b_score": 0.83,
+        "rationale": "Saanvi Trivedi leads on product (83% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "TIE",
+        "a_score": 0.72,
+        "b_score": 0.72,
+        "rationale": "Comparable cultural fit (72% vs 72%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.62,
+        "b_score": 0.62,
+        "rationale": "Comparable growth fit (62% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Ayaan Goyal (NLP Engineer at Haptik) ranks higher at 47 vs 69 overall. Stronger on overall fit.",
+    "b_salvage_scenario": "Saanvi Trivedi would be preferred if the role scope narrows to focus on Image Classification, or if Ayaan Goyal declines the offer."
+  },
+  "CAND_0062247_CAND_0018549": {
+    "pair_key": "CAND_0062247_CAND_0018549",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.62,
+        "b_score": 0.71,
+        "rationale": "Mira Verma leads on technical (71% vs 62%)"
+      },
+      "Product": {
+        "winner": "A",
+        "a_score": 0.83,
+        "b_score": 0.73,
+        "rationale": "Saanvi Trivedi leads on product (83% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "A",
+        "a_score": 0.72,
+        "b_score": 0.51,
+        "rationale": "Saanvi Trivedi leads on cultural (72% vs 51%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.62,
+        "b_score": 0.62,
+        "rationale": "Comparable growth fit (62% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Saanvi Trivedi (AI Engineer at Google) ranks higher at 69 vs 60 overall. Stronger on Product, Cultural.",
+    "b_salvage_scenario": "Mira Verma would be preferred if the role scope narrows to focus on Computer Vision, or if Saanvi Trivedi declines the offer."
+  },
+  "CAND_0018549_CAND_0013536": {
+    "pair_key": "CAND_0018549_CAND_0013536",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "TIE",
+        "a_score": 0.71,
+        "b_score": 0.66,
+        "rationale": "Comparable technical fit (71% vs 66%)"
+      },
+      "Product": {
+        "winner": "B",
+        "a_score": 0.73,
+        "b_score": 0.81,
+        "rationale": "Nisha Sen leads on product (81% vs 73%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.51,
+        "b_score": 0.7,
+        "rationale": "Nisha Sen leads on cultural (70% vs 51%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.62,
+        "b_score": 0.61,
+        "rationale": "Comparable growth fit (62% vs 61%)"
+      }
+    },
+    "why_a_over_b": "Mira Verma (Recommendation Systems Engineer at Uber) ranks higher at 60 vs 78 overall. Stronger on overall fit.",
+    "b_salvage_scenario": "Nisha Sen would be preferred if the role scope narrows to focus on PyTorch, or if Mira Verma declines the offer."
+  },
+  "CAND_0013536_CAND_0007412": {
+    "pair_key": "CAND_0013536_CAND_0007412",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.66,
+        "b_score": 0.46,
+        "rationale": "Nisha Sen leads on technical (66% vs 46%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.81,
+        "b_score": 0.84,
+        "rationale": "Comparable product fit (81% vs 84%)"
+      },
+      "Cultural": {
+        "winner": "TIE",
+        "a_score": 0.7,
+        "b_score": 0.71,
+        "rationale": "Comparable cultural fit (70% vs 71%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.61,
+        "b_score": 0.63,
+        "rationale": "Comparable growth fit (61% vs 63%)"
+      }
+    },
+    "why_a_over_b": "Nisha Sen (Applied ML Engineer at Haptik) ranks higher at 78 vs 57 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Pranav Shah would be preferred if the role scope narrows to focus on Node.js, or if Nisha Sen declines the offer."
+  },
+  "CAND_0007412_CAND_0075574": {
+    "pair_key": "CAND_0007412_CAND_0075574",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "B",
+        "a_score": 0.46,
+        "b_score": 0.93,
+        "rationale": "Karan Ghosh leads on technical (93% vs 46%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.84,
+        "b_score": 0.84,
+        "rationale": "Comparable product fit (84% vs 84%)"
+      },
+      "Cultural": {
+        "winner": "A",
+        "a_score": 0.71,
+        "b_score": 0.56,
+        "rationale": "Pranav Shah leads on cultural (71% vs 56%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.63,
+        "b_score": 0.63,
+        "rationale": "Comparable growth fit (63% vs 63%)"
+      }
+    },
+    "why_a_over_b": "Pranav Shah (Applied ML Engineer at Zoho) ranks higher at 57 vs 78 overall. Stronger on Cultural.",
+    "b_salvage_scenario": "Karan Ghosh would be preferred if the role scope narrows to focus on Hugging Face Transformers, or if Pranav Shah declines the offer."
+  },
+  "CAND_0075574_CAND_0051292": {
+    "pair_key": "CAND_0075574_CAND_0051292",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.93,
+        "b_score": 0.75,
+        "rationale": "Karan Ghosh leads on technical (93% vs 75%)"
+      },
+      "Product": {
+        "winner": "TIE",
+        "a_score": 0.84,
+        "b_score": 0.83,
+        "rationale": "Comparable product fit (84% vs 83%)"
+      },
+      "Cultural": {
+        "winner": "B",
+        "a_score": 0.56,
+        "b_score": 0.72,
+        "rationale": "Shreya Chatterjee leads on cultural (72% vs 56%)"
+      },
+      "Growth": {
+        "winner": "TIE",
+        "a_score": 0.63,
+        "b_score": 0.62,
+        "rationale": "Comparable growth fit (63% vs 62%)"
+      }
+    },
+    "why_a_over_b": "Karan Ghosh (Machine Learning Engineer at Haptik) ranks higher at 78 vs 77 overall. Stronger on Technical.",
+    "b_salvage_scenario": "Shreya Chatterjee would be preferred if the role scope narrows to focus on Vue.js, or if Karan Ghosh declines the offer."
+  },
+  "CAND_0051292_CAND_0046353": {
+    "pair_key": "CAND_0051292_CAND_0046353",
+    "dimension_comparison": {
+      "Technical": {
+        "winner": "A",
+        "a_score": 0.75,
+        "b_score": 0.53,
+        "rationale": "Shreya Chatterjee leads on technical (75% vs 53%)"
       },
       "Product": {
         "winner": "TIE",
@@ -1256,266 +1473,49 @@
       },
       "Cultural": {
         "winner": "A",
-        "a_score": 0.57,
-        "b_score": 0.49,
-        "rationale": "Dev Shah leads on cultural (57% vs 49%)"
+        "a_score": 0.72,
+        "b_score": 0.58,
+        "rationale": "Shreya Chatterjee leads on cultural (72% vs 58%)"
       },
       "Growth": {
-        "winner": "B",
+        "winner": "TIE",
         "a_score": 0.62,
-        "b_score": 0.8,
-        "rationale": "Naina Desai leads on growth (80% vs 62%)"
+        "b_score": 0.6,
+        "rationale": "Comparable growth fit (62% vs 60%)"
       }
     },
-    "why_a_over_b": "Dev Shah (AI Engineer at PolicyBazaar) ranks higher at 66 vs 66 overall. Stronger on Technical, Cultural.",
-    "b_salvage_scenario": "Naina Desai would be preferred if the role scope narrows to focus on Hugging Face Transformers, or if Dev Shah declines the offer."
+    "why_a_over_b": "Shreya Chatterjee (Applied ML Engineer at Freshworks) ranks higher at 77 vs 58 overall. Stronger on Technical, Cultural.",
+    "b_salvage_scenario": "Sneha Tiwari would be preferred if the role scope narrows to focus on MLflow, or if Shreya Chatterjee declines the offer."
   },
-  "CAND_0080102_CAND_0016170": {
-    "pair_key": "CAND_0080102_CAND_0016170",
+  "CAND_0046353_CAND_0009691": {
+    "pair_key": "CAND_0046353_CAND_0009691",
     "dimension_comparison": {
       "Technical": {
-        "winner": "TIE",
-        "a_score": 0.57,
-        "b_score": 0.58,
-        "rationale": "Comparable technical fit (57% vs 58%)"
+        "winner": "B",
+        "a_score": 0.53,
+        "b_score": 0.71,
+        "rationale": "Ira Subramanian leads on technical (71% vs 53%)"
       },
       "Product": {
         "winner": "TIE",
         "a_score": 0.8,
-        "b_score": 0.76,
-        "rationale": "Comparable product fit (80% vs 76%)"
+        "b_score": 0.83,
+        "rationale": "Comparable product fit (80% vs 83%)"
       },
       "Cultural": {
-        "winner": "TIE",
-        "a_score": 0.49,
-        "b_score": 0.48,
-        "rationale": "Comparable cultural fit (49% vs 48%)"
-      },
-      "Growth": {
-        "winner": "A",
-        "a_score": 0.8,
-        "b_score": 0.6,
-        "rationale": "Naina Desai leads on growth (80% vs 60%)"
-      }
-    },
-    "why_a_over_b": "Naina Desai (Junior ML Engineer at BYJU'S) ranks higher at 66 vs 66 overall. Stronger on Growth.",
-    "b_salvage_scenario": "Aditya Reddy would be preferred if the role scope narrows to focus on Sentence Transformers, or if Naina Desai declines the offer."
-  },
-  "CAND_0016170_CAND_0067183": {
-    "pair_key": "CAND_0016170_CAND_0067183",
-    "dimension_comparison": {
-      "Technical": {
         "winner": "TIE",
         "a_score": 0.58,
-        "b_score": 0.59,
-        "rationale": "Comparable technical fit (58% vs 59%)"
-      },
-      "Product": {
-        "winner": "TIE",
-        "a_score": 0.76,
-        "b_score": 0.8,
-        "rationale": "Comparable product fit (76% vs 80%)"
-      },
-      "Cultural": {
-        "winner": "A",
-        "a_score": 0.48,
-        "b_score": 0.39,
-        "rationale": "Aditya Reddy leads on cultural (48% vs 39%)"
-      },
-      "Growth": {
-        "winner": "TIE",
-        "a_score": 0.6,
         "b_score": 0.6,
-        "rationale": "Comparable growth fit (60% vs 60%)"
-      }
-    },
-    "why_a_over_b": "Aditya Reddy (AI Research Engineer at Dream11) ranks higher at 66 vs 66 overall. Stronger on Cultural.",
-    "b_salvage_scenario": "Riya Chowdary would be preferred if the role scope narrows to focus on NLP, or if Aditya Reddy declines the offer."
-  },
-  "CAND_0067183_CAND_0001930": {
-    "pair_key": "CAND_0067183_CAND_0001930",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "A",
-        "a_score": 0.59,
-        "b_score": 0.5,
-        "rationale": "Riya Chowdary leads on technical (59% vs 50%)"
+        "rationale": "Comparable cultural fit (58% vs 60%)"
       },
-      "Product": {
-        "winner": "A",
-        "a_score": 0.8,
-        "b_score": 0.7,
-        "rationale": "Riya Chowdary leads on product (80% vs 70%)"
-      },
-      "Cultural": {
+      "Growth": {
         "winner": "TIE",
-        "a_score": 0.39,
-        "b_score": 0.38,
-        "rationale": "Comparable cultural fit (39% vs 38%)"
-      },
-      "Growth": {
-        "winner": "A",
         "a_score": 0.6,
-        "b_score": 0.3,
-        "rationale": "Riya Chowdary leads on growth (60% vs 30%)"
+        "b_score": 0.62,
+        "rationale": "Comparable growth fit (60% vs 62%)"
       }
     },
-    "why_a_over_b": "Riya Chowdary (ML Engineer at Sarvam AI) ranks higher at 66 vs 66 overall. Stronger on Technical, Product.",
-    "b_salvage_scenario": "Rahul Gupta would be preferred if the role scope narrows to focus on Machine Learning, or if Riya Chowdary declines the offer."
-  },
-  "CAND_0001930_CAND_0005538": {
-    "pair_key": "CAND_0001930_CAND_0005538",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "A",
-        "a_score": 0.5,
-        "b_score": 0.34,
-        "rationale": "Rahul Gupta leads on technical (50% vs 34%)"
-      },
-      "Product": {
-        "winner": "B",
-        "a_score": 0.7,
-        "b_score": 0.85,
-        "rationale": "Aryan Goyal leads on product (85% vs 70%)"
-      },
-      "Cultural": {
-        "winner": "B",
-        "a_score": 0.38,
-        "b_score": 0.72,
-        "rationale": "Aryan Goyal leads on cultural (72% vs 38%)"
-      },
-      "Growth": {
-        "winner": "B",
-        "a_score": 0.3,
-        "b_score": 0.84,
-        "rationale": "Aryan Goyal leads on growth (84% vs 30%)"
-      }
-    },
-    "why_a_over_b": "Rahul Gupta (Senior Software Engineer (ML) at Dream11) ranks higher at 66 vs 65 overall. Stronger on Technical.",
-    "b_salvage_scenario": "Aryan Goyal would be preferred if the role scope narrows to focus on Project Management, or if Rahul Gupta declines the offer."
-  },
-  "CAND_0005538_CAND_0007851": {
-    "pair_key": "CAND_0005538_CAND_0007851",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.34,
-        "b_score": 0.63,
-        "rationale": "Aryan Goyal leads on technical (63% vs 34%)"
-      },
-      "Product": {
-        "winner": "A",
-        "a_score": 0.85,
-        "b_score": 0.71,
-        "rationale": "Aryan Goyal leads on product (85% vs 71%)"
-      },
-      "Cultural": {
-        "winner": "A",
-        "a_score": 0.72,
-        "b_score": 0.65,
-        "rationale": "Aryan Goyal leads on cultural (72% vs 65%)"
-      },
-      "Growth": {
-        "winner": "A",
-        "a_score": 0.84,
-        "b_score": 0.61,
-        "rationale": "Aryan Goyal leads on growth (84% vs 61%)"
-      }
-    },
-    "why_a_over_b": "Aryan Goyal (Senior AI Engineer at Adobe) ranks higher at 65 vs 65 overall. Stronger on Product, Cultural.",
-    "b_salvage_scenario": "Aryan Goyal would be preferred if the role scope narrows to focus on Time Series, or if Aryan Goyal declines the offer."
-  },
-  "CAND_0007851_CAND_0057529": {
-    "pair_key": "CAND_0007851_CAND_0057529",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "A",
-        "a_score": 0.63,
-        "b_score": 0.42,
-        "rationale": "Aryan Goyal leads on technical (63% vs 42%)"
-      },
-      "Product": {
-        "winner": "B",
-        "a_score": 0.71,
-        "b_score": 0.8,
-        "rationale": "Manish Kapoor leads on product (80% vs 71%)"
-      },
-      "Cultural": {
-        "winner": "A",
-        "a_score": 0.65,
-        "b_score": 0.54,
-        "rationale": "Aryan Goyal leads on cultural (65% vs 54%)"
-      },
-      "Growth": {
-        "winner": "B",
-        "a_score": 0.61,
-        "b_score": 0.8,
-        "rationale": "Manish Kapoor leads on growth (80% vs 61%)"
-      }
-    },
-    "why_a_over_b": "Aryan Goyal (Backend Engineer at Zomato) ranks higher at 65 vs 65 overall. Stronger on Technical, Cultural.",
-    "b_salvage_scenario": "Manish Kapoor would be preferred if the role scope narrows to focus on Data Science, or if Aryan Goyal declines the offer."
-  },
-  "CAND_0057529_CAND_0036724": {
-    "pair_key": "CAND_0057529_CAND_0036724",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "B",
-        "a_score": 0.42,
-        "b_score": 0.84,
-        "rationale": "Avni Gupta leads on technical (84% vs 42%)"
-      },
-      "Product": {
-        "winner": "A",
-        "a_score": 0.8,
-        "b_score": 0.42,
-        "rationale": "Manish Kapoor leads on product (80% vs 42%)"
-      },
-      "Cultural": {
-        "winner": "B",
-        "a_score": 0.54,
-        "b_score": 0.66,
-        "rationale": "Avni Gupta leads on cultural (66% vs 54%)"
-      },
-      "Growth": {
-        "winner": "A",
-        "a_score": 0.8,
-        "b_score": 0.6,
-        "rationale": "Manish Kapoor leads on growth (80% vs 60%)"
-      }
-    },
-    "why_a_over_b": "Manish Kapoor (Junior ML Engineer at Glance) ranks higher at 65 vs 65 overall. Stronger on Product, Growth.",
-    "b_salvage_scenario": "Avni Gupta would be preferred if the role scope narrows to focus on TensorFlow, or if Manish Kapoor declines the offer."
-  },
-  "CAND_0036724_CAND_0042421": {
-    "pair_key": "CAND_0036724_CAND_0042421",
-    "dimension_comparison": {
-      "Technical": {
-        "winner": "TIE",
-        "a_score": 0.84,
-        "b_score": 0.8,
-        "rationale": "Comparable technical fit (84% vs 80%)"
-      },
-      "Product": {
-        "winner": "B",
-        "a_score": 0.42,
-        "b_score": 0.71,
-        "rationale": "Suresh Dalal leads on product (71% vs 42%)"
-      },
-      "Cultural": {
-        "winner": "A",
-        "a_score": 0.66,
-        "b_score": 0.41,
-        "rationale": "Avni Gupta leads on cultural (66% vs 41%)"
-      },
-      "Growth": {
-        "winner": "A",
-        "a_score": 0.6,
-        "b_score": 0.31,
-        "rationale": "Avni Gupta leads on growth (60% vs 31%)"
-      }
-    },
-    "why_a_over_b": "Avni Gupta (Software Engineer at BYJU'S) ranks higher at 65 vs 65 overall. Stronger on Cultural, Growth.",
-    "b_salvage_scenario": "Suresh Dalal would be preferred if the role scope narrows to focus on Azure, or if Avni Gupta declines the offer."
+    "why_a_over_b": "Sneha Tiwari (ML Engineer at Razorpay) ranks higher at 58 vs 64 overall. Stronger on overall fit.",
+    "b_salvage_scenario": "Ira Subramanian would be preferred if the role scope narrows to focus on BentoML, or if Sneha Tiwari declines the offer."
   }
 }

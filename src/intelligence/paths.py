@@ -14,13 +14,15 @@ ROOT = Path(__file__).resolve().parents[2]
 # ---------------------------------------------------------------------------
 
 DATASET_DIR = ROOT / "datasets"
+CANDIDATES_DIR = DATASET_DIR / "candidates"
+DOCS_DIR = DATASET_DIR / "docs"
 
 # Primary input files
-CANDIDATES_JSONL = DATASET_DIR / "candidates.jsonl"
-SAMPLE_CANDIDATES_JSON = DATASET_DIR / "sample_candidates.json"
-JD_DOCX = DATASET_DIR / "job_description.docx"
-REDROB_SIGNALS_DOCX = DATASET_DIR / "redrob_signals_doc.docx"
-CANDIDATE_SCHEMA_JSON = DATASET_DIR / "candidate_schema.json"
+CANDIDATES_JSONL = CANDIDATES_DIR / "candidates.jsonl"
+SAMPLE_CANDIDATES_JSON = CANDIDATES_DIR / "sample_candidates.json"
+JD_DOCX = DOCS_DIR / "job_description.docx"
+REDROB_SIGNALS_DOCX = DOCS_DIR / "redrob_signals_doc.docx"
+CANDIDATE_SCHEMA_JSON = CANDIDATES_DIR / "candidate_schema.json"
 
 # Markdown fallback (created during scaffolding, used if docx not found)
 JD_MD_FALLBACK = ROOT / "job_description.md"
@@ -38,6 +40,7 @@ JOB_INTEL_FILE = PRECOMPUTED_DIR / "job_intelligence.json"
 REASONING_MAP_FILE = PRECOMPUTED_DIR / "reasoning_map.json"
 COMPARISONS_FILE = PRECOMPUTED_DIR / "comparisons.json"
 DEMO_DATA_FILE = PRECOMPUTED_DIR / "demo_data.json"
+RANKED_CANDIDATES_FILE = PRECOMPUTED_DIR / "ranked_candidates.json"
 
 
 def ensure_output_dirs() -> None:
@@ -72,3 +75,44 @@ def top_matches() -> int:
 def required_decisions() -> int:
     """Agent 5: expected size of reasoning_map (relaxed in test mode)."""
     return top_matches()
+
+
+def load_ranked_candidates() -> list[dict]:
+    """
+    Load the ranked candidate manifest written by the ranking pipeline.
+
+    The manifest is the shared candidate set for the offline intelligence
+    agents. If it is missing, callers should decide whether to fall back to
+    the legacy per-agent selection logic.
+    """
+
+    if not RANKED_CANDIDATES_FILE.exists():
+        return []
+
+    import json
+
+    try:
+        with open(RANKED_CANDIDATES_FILE, encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return []
+
+    if not isinstance(data, list):
+        return []
+
+    ranked: list[dict] = []
+    for item in data:
+        if not isinstance(item, dict):
+            continue
+        cid = item.get("candidate_id")
+        if not cid:
+            continue
+        ranked.append(
+            {
+                "candidate_id": str(cid),
+                "rank": int(item.get("rank", len(ranked) + 1)),
+                "score": float(item.get("score", 0.0)),
+            }
+        )
+    ranked.sort(key=lambda item: item["rank"])
+    return ranked

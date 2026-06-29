@@ -20,6 +20,17 @@ import json
 import logging
 from pathlib import Path
 
+from src.models.recruiter_decision import (
+    FitAssessment,
+    FitDimension,
+    HiringRisk,
+    InterviewQuestion,
+    Recommendation,
+    RecruiterDecision,
+    TimingAssessment,
+    TrustAssessment,
+    TrustSignal,
+)
 from src.intelligence.paths import (
     DECISIONS_DIR,
     JOB_INTEL_FILE,
@@ -145,6 +156,30 @@ def _load_top_matches() -> list:
     top = matches[:TOP_N]
     logger.info(f"Loaded {len(top)} match scores (pool: {len(matches)})")
     return top
+
+
+def _load_matches_for_ids(candidate_ids: list[str]) -> list[dict]:
+    if not candidate_ids:
+        return []
+
+    wanted = list(dict.fromkeys(candidate_ids))
+    by_id: dict[str, dict] = {}
+
+    for cid in wanted:
+        path = MATCH_DIR / f"{cid}.json"
+        if not path.exists():
+            continue
+        try:
+            with open(path, encoding="utf-8") as f:
+                by_id[cid] = json.load(f)
+        except Exception as exc:
+            logger.warning(f"Could not load {path}: {exc}")
+
+    missing = [cid for cid in wanted if cid not in by_id]
+    if missing:
+        logger.warning("Missing %d match score(s) from shared ranking manifest", len(missing))
+
+    return [by_id[cid] for cid in wanted if cid in by_id]
 
 
 # ---------------------------------------------------------------------------
@@ -495,43 +530,97 @@ def _rule_enrich(match: dict, profile: dict, recommendation: str) -> dict:
     }
 
 
-def _build_decision(match: dict, profile: dict, recommendation: str, enrichment: dict) -> dict:
+def _build_decision(match: dict, profile: dict, recommendation: str, enrichment: dict) -> RecruiterDecision:
     fd = enrichment.get("fit_dimensions", {})
 
     def dim(key: str) -> dict:
         return fd.get(key, {"score": 0.5, "evidence": [], "gaps": []})
 
-    return {
-        "candidate_id": match["candidate_id"],
-        "name": profile.get("name", ""),
-        "current_title": profile.get("current_title", ""),
-        "current_company": profile.get("current_company", ""),
-        "recommendation": recommendation,
-        "trust_assessment": enrichment.get("trust_assessment", {}),
-        "fit_assessment": {
-            "technical": dim("technical"),
-            "product": dim("product"),
-            "cultural": dim("cultural"),
-            "growth": dim("growth"),
-            "overall": round(
-                dim("technical")["score"] * 0.35
-                + dim("product")["score"] * 0.30
-                + dim("cultural")["score"] * 0.20
-                + dim("growth")["score"] * 0.15,
-                3,
-            ),
-        },
-        "hiring_risks": enrichment.get("hiring_risks", []),
-        "interview_focus": enrichment.get("interview_focus", []),
-        "recommendation_rationale": enrichment.get("recommendation_rationale", ""),
-        "timing_assessment": enrichment.get("timing_assessment"),
-        "required_skills_matched": match.get("required_skills_matched", []),
-        "overall_match_score": match.get("overall_match_score", 0),
-        "top_evidence": enrichment.get("top_evidence", []),
+    trust = enrichment.get("trust_assessment", {})
+    fit = {
+        "technical": dim("technical"),
+        "product": dim("product"),
+        "cultural": dim("cultural"),
+        "growth": dim("growth"),
+        "overall": round(
+            dim("technical")["score"] * 0.35
+            + dim("product")["score"] * 0.30
+            + dim("cultural")["score"] * 0.20
+            + dim("growth")["score"] * 0.15,
+            3,
+        ),
     }
 
+    decision = RecruiterDecision(
+        candidate_id=match["candidate_id"],
+        recommendation=Recommendation(recommendation),
+        trust_assessment=TrustAssessment(
+            overall_trust_score=float(trust.get("overall_trust_score", 0.0)),
+            trust_tier=str(trust.get("trust_tier", "LOW")),
+            signals=[
+                TrustSignal(
+                    signal_type=str(sig.get("signal_type", "")),
+                    description=str(sig.get("description", "")),
+                    confidence=float(sig.get("confidence", 0.0)),
+                    field_name=str(sig.get("field_name", "")),
+                )
+                for sig in trust.get("signals", []) or []
+                if isinstance(sig, dict)
+            ],
+            verified_claims=list(trust.get("verified_claims", []) or []),
+            unverifiable_claims=list(trust.get("unverifiable_claims", []) or []),
+            red_flags=list(trust.get("red_flags", []) or []),
+        ),
+        fit_assessment=FitAssessment(
+            technical=FitDimension(**fit["technical"]),
+            product=FitDimension(**fit["product"]),
+            cultural=FitDimension(**fit["cultural"]),
+            growth=FitDimension(**fit["growth"]),
+        ),
+        hiring_risks=[
+            HiringRisk(
+                risk_type=str(r.get("risk_type", "")),
+                severity=str(r.get("severity", "LOW")),
+                description=str(r.get("description", "")),
+                mitigation=str(r.get("mitigation", "")),
+                is_blocking=bool(r.get("is_blocking", False)),
+            )
+            for r in enrichment.get("hiring_risks", []) or []
+            if isinstance(r, dict)
+        ],
+        interview_focus=[
+            InterviewQuestion(
+                question=str(q.get("question", "")),
+                priority=str(q.get("priority", "LOW")),
+                dimension=str(q.get("dimension", "")),
+                what_to_listen_for=str(q.get("what_to_listen_for", "")),
+            )
+            for q in enrichment.get("interview_focus", []) or []
+            if isinstance(q, dict)
+        ],
+        recommendation_rationale=str(enrichment.get("recommendation_rationale", "")),
+        timing_assessment=(
+            TimingAssessment(
+                current_tenure_months=int(enrichment.get("timing_assessment", {}).get("current_tenure_months", 0)),
+                likely_available=bool(enrichment.get("timing_assessment", {}).get("likely_available", False)),
+                urgency_signal=str(enrichment.get("timing_assessment", {}).get("urgency_signal", "")),
+                estimated_notice_weeks=int(enrichment.get("timing_assessment", {}).get("estimated_notice_weeks", 4)),
+            )
+            if enrichment.get("timing_assessment")
+            else None
+        ),
+        required_skills_matched=list(match.get("required_skills_matched", []) or []),
+        overall_match_score=float(match.get("overall_match_score", 0)),
+        top_evidence=list(enrichment.get("top_evidence", []) or []),
+        name=str(profile.get("name", "")),
+        current_title=str(profile.get("current_title", "")),
+        current_company=str(profile.get("current_company", "")),
+    )
 
-def run() -> list:
+    return decision
+
+
+def run(candidate_ids: list[str] | None = None) -> list:
     logger.info("=" * 60)
     mode_label = "TEST" if is_test_mode() else "FULL"
     logger.info(f"Agent 4: Recruiter Intelligence  [{mode_label} — top-{TOP_N}]  [Rule-Based — No LLM]")
@@ -542,7 +631,11 @@ def run() -> list:
     if not JOB_INTEL_FILE.exists():
         raise FileNotFoundError(f"Missing {JOB_INTEL_FILE}. Run Agent 1 first.")
 
-    all_matches = _load_top_matches()
+    if candidate_ids:
+        logger.info(f"Using shared ranked candidate set ({len(candidate_ids)} candidates)")
+        all_matches = _load_matches_for_ids(candidate_ids)
+    else:
+        all_matches = _load_top_matches()
 
     pending = [
         m for m in all_matches
@@ -572,7 +665,7 @@ def run() -> list:
 
             out_path = DECISIONS_DIR / f"{cid}.json"
             with open(out_path, "w", encoding="utf-8") as f:
-                json.dump(decision, f, indent=2)
+                json.dump(decision.to_dict(), f, indent=2)
             processed += 1
 
         except Exception as exc:
