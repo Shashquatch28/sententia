@@ -25,8 +25,10 @@ html,body{height:100%;font-family:var(--font-sans);background:var(--sidebar);col
   flex:0 0 52%;background:var(--sidebar);
   display:flex;flex-direction:column;justify-content:space-between;padding:48px 56px;
 }
+.brand-row{display:flex;flex-direction:column;gap:6px;}
 .logo{font-size:17px;font-weight:700;letter-spacing:-0.02em;color:#fff;}
 .logo span{color:var(--accent);}
+.brand-sub{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);}
 .tagline{margin-top:auto;padding-bottom:20px;}
 .tagline-kicker{
   font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
@@ -91,11 +93,13 @@ html,body{height:100%;font-family:var(--font-sans);background:var(--sidebar);col
 
   <!-- Left: brand + histogram -->
   <div class="left">
-    <div class="logo">Hire<span>IQ</span></div>
+    <div class="brand-row">
+      <div class="logo">Hire<span>IQ</span></div>
+      <div class="brand-sub">Recruiter Intelligence Platform</div>
+    </div>
     <div class="tagline">
-      <div class="tagline-kicker">Redrob × H2S · INDIA.RUNS</div>
       <h1>Rank 100 candidates in <em>minutes,</em> not days.</h1>
-      <p class="tagline-sub">AI-grounded scoring across technical depth, culture, availability and trust — so you spend time on decisions, not screening.</p>
+      <p class="tagline-sub">Score technical depth, culture, availability and trust. Spend time deciding, not screening.</p>
       <div class="hist-wrap">
         <div class="hist-label">Match score distribution · 100 candidates</div>
         <div class="hist" id="hist"></div>

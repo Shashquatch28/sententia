@@ -573,27 +573,54 @@ function openCompare(aId,bId){
             : `${esc(a.name)} ranks above ${esc(b.name)} on overall match (${fmtScore(a.overall_match_score)} vs ${fmtScore(b.overall_match_score)}), led by the dimensions marked below.`;
   const salvage = comp?.b_salvage_scenario || `Choose ${esc(b.name)} if availability or a specific skill depth outweighs the overall gap.`;
 
-  $("#lens-root").innerHTML=`<div class="lens-pad"><div class="lens-max">
-    <div class="cmp-head">
-      <div><div class="cmp-title">#${a._rank} ${esc(a.name)} vs #${b._rank} ${esc(b.name)}</div>
-        <div class="cmp-sub">Why this order — and when you'd choose differently.</div></div>
-      <button class="btn" id="cmp-back">← Back to shortlist</button>
+  const decisiveDims = dimList.filter(([n,va,vb])=>Math.abs(va-vb)>=0.12);
+  const aWins = dimList.filter(([n,va,vb])=>va>vb+0.02).length;
+  const bWins = dimList.filter(([n,va,vb])=>vb>va+0.02).length;
+  const scoreDelta = (a.overall_match_score - b.overall_match_score);
+
+  const side = `<div class="ri-side">
+    <div class="sl-side-card">
+      <div class="sl-side-label">Head to head</div>
+      <div class="sl-kv"><span>Score delta</span><span class="mono" style="color:var(--accent)">+${scoreDelta.toFixed(3)}</span></div>
+      <div class="sl-kv"><span>${esc(a.name.split(" ")[0])} wins on</span><span class="mono">${aWins} dims</span></div>
+      <div class="sl-kv"><span>${esc(b.name.split(" ")[0])} wins on</span><span class="mono">${bWins} dims</span></div>
+      <div class="sl-kv"><span>Decisive dims</span><span class="mono" style="color:var(--warning)">${decisiveDims.length}</span></div>
     </div>
-    <div class="cmp-cards">
-      ${cmpCard(a,evA,true)}
-      ${cmpCard(b,evB,false)}
+    ${decisiveDims.length ? `<div class="sl-side-card">
+      <div class="sl-side-label">Decisive dimensions</div>
+      ${decisiveDims.map(([n,va,vb])=>`<div class="sl-kv"><span>${esc(n)}</span><span class="mono" style="color:${va>vb?"var(--accent)":"var(--ink-600)"}">${va.toFixed(2)} vs ${vb.toFixed(2)}</span></div>`).join("")}
+    </div>` : ""}
+    <div class="sl-side-card">
+      <div class="sl-side-label">Quick actions</div>
+      <button class="sl-side-link" style="margin-bottom:8px" onclick="openRail('${esc(aId)}')">Open ${esc(a.name.split(" ")[0])} →</button><br>
+      <button class="sl-side-link" onclick="openRail('${esc(bId)}')">Open ${esc(b.name.split(" ")[0])} →</button>
     </div>
-    <div class="dim-cmp">
-      ${dimList.map(([n,va,vb])=>{
-        const aw=va>vb+0.02, bw=vb>va+0.02, decisive=Math.abs(va-vb)>=0.12;
-        return `<div class="dim-cmp-row">
-          <div class="dcell a ${aw?'winr':''}">${(va).toFixed(2)} ${aw?'◀':''}</div>
-          <div class="dmid">${esc(n)}${decisive?`<span class="decisive">decisive</span>`:""}</div>
-          <div class="dcell b ${bw?'winr':''}">${bw?'▶':''} ${(vb).toFixed(2)}</div>
-        </div>`;}).join("")}
+  </div>`;
+
+  $("#lens-root").innerHTML=`<div class="lens-pad"><div class="ri-two-col">
+    <div class="ri-main">
+      <div class="cmp-head">
+        <div><div class="cmp-title">#${a._rank} ${esc(a.name)} vs #${b._rank} ${esc(b.name)}</div>
+          <div class="cmp-sub">Why this order — and when you'd choose differently.</div></div>
+        <button class="btn" id="cmp-back">← Back to shortlist</button>
+      </div>
+      <div class="cmp-cards">
+        ${cmpCard(a,evA,true)}
+        ${cmpCard(b,evB,false)}
+      </div>
+      <div class="dim-cmp">
+        ${dimList.map(([n,va,vb])=>{
+          const aw=va>vb+0.02, bw=vb>va+0.02, decisive=Math.abs(va-vb)>=0.12;
+          return `<div class="dim-cmp-row">
+            <div class="dcell a ${aw?'winr':''}">${(va).toFixed(2)} ${aw?'◀':''}</div>
+            <div class="dmid">${esc(n)}${decisive?`<span class="decisive">decisive</span>`:""}</div>
+            <div class="dcell b ${bw?'winr':''}">${bw?'▶':''} ${(vb).toFixed(2)}</div>
+          </div>`;}).join("")}
+      </div>
+      <div class="cmp-why"><h3>Why #${a._rank} over #${b._rank}</h3><p>${why}</p></div>
+      <div class="cmp-salvage"><h3>Choose ${esc(b.name)} if…</h3><p>${salvage}</p></div>
     </div>
-    <div class="cmp-why"><h3>Why #${a._rank} over #${b._rank}</h3><p>${why}</p></div>
-    <div class="cmp-salvage"><h3>Choose ${esc(b.name)} if…</h3><p>${salvage}</p></div>
+    ${side}
   </div></div>`;
   $("#cmp-back").addEventListener("click",()=>setLens("shortlist"));
 }
@@ -629,12 +656,13 @@ function renderExplorer(){
 
   const trustBars=c=>{
     const ts=c.trust_assessment?.overall_trust_score||0;
-    const col=ts>=0.7?"var(--accent)":ts>=0.5?"var(--warning)":"var(--hair)";
-    return `<div style="display:flex;align-items:flex-end;gap:2px;">
-      <div style="width:3px;height:6px;background:var(--accent);border-radius:1px;opacity:0.5;"></div>
-      <div style="width:3px;height:9px;background:${ts>=0.5?"var(--accent)":"var(--hair)"};border-radius:1px;${ts>=0.5?"":"opacity:0.4;"}"></div>
-      <div style="width:3px;height:12px;background:${ts>=0.7?"var(--accent)":"var(--hair)"};border-radius:1px;${ts>=0.7?"":"opacity:0.4;"}"></div>
-    </div>`;
+    const tier=c.trust_assessment?.trust_tier||"—";
+    const col=ts>=0.85?"var(--success)":ts>=0.6?"var(--accent)":ts>=0.4?"var(--warning)":"var(--danger)";
+    // each bar lights up at its own threshold so the pattern varies across the 0–1 range
+    const th=[0.2,0.45,0.7,0.9];
+    const heights=[5,8,11,14];
+    const bars=th.map((t,i)=>`<div style="width:3px;height:${heights[i]}px;background:${ts>=t?col:"var(--hair)"};border-radius:1px;${ts>=t?"":"opacity:0.4;"}"></div>`).join("");
+    return `<div title="Trust score ${ts.toFixed(2)} · ${esc(tier)}" style="display:flex;align-items:flex-end;gap:2px;cursor:help;">${bars}</div>`;
   };
   const recDot=c=>{
     const col=c.recommendation==="STRONGLY_ADVANCE"?"var(--success)":c.recommendation==="ADVANCE"?"var(--accent)":"var(--ink-400)";
@@ -656,7 +684,7 @@ function renderExplorer(){
       <div style="min-width:860px;">
         <div class="expl-head">
           <div class="ec ec-rank">Rank</div>
-          <div class="ec ec-trust">Trust</div>
+          <div class="ec ec-trust" title="Trust score — profile credibility &amp; consistency (0–1). More bars filled = higher trust.">Trust</div>
           <div class="ec ec-name">Candidate</div>
           <div class="ec ec-score">Score</div>
           <div class="ec ec-rec">Recommendation</div>
@@ -779,7 +807,37 @@ function renderGuide(forceCid){
     if(d.includes("cult")||d.includes("behav")) return "var(--ink-400)";
     return "var(--accent)";
   };
-  return `<div class="lens-pad"><div class="lens-max" style="max-width:760px;">
+  const d=dims(c);
+  const dimRows=[["Technical",d.technical],["Product",d.product],["Cultural",d.cultural],["Growth",d.growth],["Availability",d.availability],["Trust",d.trust]];
+  const risks=c.hiring_risks||[];
+  const ev=c.top_evidence||[];
+
+  const side = `<div class="ri-side">
+    <div class="sl-side-card">
+      <div class="sl-side-label">Candidate snapshot</div>
+      <div class="sl-kv"><span>Rank</span><span class="mono">#${c._rank}</span></div>
+      <div class="sl-kv"><span>Score</span><span class="mono">${fmtScore(c.overall_match_score)}</span></div>
+      <div class="sl-kv"><span>Notice</span><span class="mono">${esc(noticeLabel(c)||"—")}</span></div>
+    </div>
+    <div class="sl-side-card">
+      <div class="sl-side-label">Dimension breakdown</div>
+      ${dimRows.map(([n,v])=>`<div class="dim-row" style="padding:5px 0">
+        <span class="dim-name" style="font-size:12.5px">${esc(n)}</span>
+        <span class="dim-track"><span class="dim-fill" style="width:${pct(v)}%"></span></span>
+        <span class="dim-val tabular" style="font-size:12px">${(Number(v)||0).toFixed(2)}</span></div>`).join("")}
+    </div>
+    ${ev.length?`<div class="sl-side-card">
+      <div class="sl-side-label">Strongest evidence</div>
+      ${ev.slice(0,3).map(e=>`<div class="sl-kv" style="display:block;font-size:12.5px;line-height:1.5;padding:5px 0;"><span class="arr" style="color:var(--accent)">→</span> ${esc(e)}</div>`).join("")}
+    </div>`:""}
+    ${risks.length?`<div class="sl-side-card">
+      <div class="sl-side-label">Hiring risks</div>
+      ${risks.map(r=>`<div class="sl-kv" style="display:block;font-size:12.5px;line-height:1.5;padding:5px 0;"><span class="sev sev-${esc(r.severity||"LOW")}">${esc(r.severity||"LOW")}</span> ${esc(r.description||r.risk_type||"")}</div>`).join("")}
+    </div>`:""}
+  </div>`;
+
+  return `<div class="lens-pad"><div class="ri-two-col">
+    <div class="ri-main">
     <div style="background:#fff;border:1px solid var(--hair);border-radius:var(--r-md);padding:18px 22px;margin-bottom:24px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;">
       <div>
         <div class="mono" style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin-bottom:7px;">Interview Focus</div>
@@ -821,6 +879,8 @@ function renderGuide(forceCid){
         </div>`;
       }).join("")}
     </div>
+    </div>
+    ${side}
   </div></div>`;
 }
 
