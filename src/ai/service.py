@@ -32,27 +32,34 @@ class AIService(AIBase):
     def generate(
         self,
         task: str,
-        candidate_id: str,
+        candidate_id: str | None = None,
         question: str | None = None,
         scenario: str | None = None,
+        extra_context: str | None = None,
     ) -> str:
 
-        context = self._get_context(candidate_id)
+        context = self._get_context(candidate_id) if candidate_id else {}
 
-        if context["candidate_profile"] is None:
+        if task != "copilot" and (not candidate_id or context.get("candidate_profile") is None):
             return "Candidate not found."
 
         if task == "copilot":
-            formatted = self._format_context(candidate_id)
+            candidate_block = ""
+            if candidate_id and context.get("candidate_profile"):
+                candidate_block = self._format_context(candidate_id)
+
+            ec = extra_context.strip() if extra_context else ""
 
             prompt = f"""
-{formatted}
+{ec}
+
+{candidate_block}
 
 Recruiter Question
 
 {question}
 
-Answer only using the supplied context.
+Answer only using the supplied context. If the question is about the candidate pool as a whole, use the run statistics above.
 """
 
             system = (
@@ -92,10 +99,10 @@ Generate an interview guide.
             )
 
         elif task == "simulation":
-            candidate = context["candidate_profile"] or {}
-            match = context["match_score"] or {}
-            decision = context["recruiter_decision"] or {}
-            job = context["job_intelligence"] or {}
+            candidate = context.get("candidate_profile") or {}
+            match = context.get("match_score") or {}
+            decision = context.get("recruiter_decision") or {}
+            job = context.get("job_intelligence") or {}
 
             prompt = f"""
 Candidate

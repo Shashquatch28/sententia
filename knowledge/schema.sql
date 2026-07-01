@@ -104,3 +104,25 @@ ON recruiter_decisions(recommendation);
 
 CREATE INDEX IF NOT EXISTS idx_decision_score
 ON recruiter_decisions(overall_match_score DESC);
+
+---------------------------------------------------------------
+-- Pipeline Decisions (recruiter actions)
+---------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS pipeline_decisions (
+    candidate_id TEXT PRIMARY KEY,
+    status TEXT NOT NULL CHECK(status IN ('advanced', 'setaside')),
+    decided_at TEXT
+);
+
+---------------------------------------------------------------
+-- Users (auth)
+---------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS users (
+    user_id TEXT PRIMARY KEY,
+    email TEXT UNIQUE NOT NULL,
+    password_hash TEXT,
+    name TEXT,
+    created_at TEXT DEFAULT (datetime('now'))
+);

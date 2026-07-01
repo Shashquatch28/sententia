@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HireIQ — Recruiter Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+<div id="app" class="app-shell">
+
+  <!-- ░░ SIDEBAR ░░ -->
+  <nav class="sidebar" aria-label="Lenses">
+    <div class="sb-logo" onclick="window.location.href='signin.html'" title="HireIQ home" style="cursor:pointer">H<span>I</span></div>
+    <div class="sb-role" title="Recommendation Systems Engineer · click to view role" onclick="setLens('role')" style="cursor:pointer">RS</div>
+    <button class="nav-btn" data-lens="shortlist" title="Shortlist" aria-label="Shortlist">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 6h16M4 11h16M4 16h11"></path></svg>
+    </button>
+    <button class="nav-btn" data-lens="explorer" title="Candidate Explorer" aria-label="Candidate Explorer">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18M9 21V9"></path></svg>
+    </button>
+    <button class="nav-btn" data-lens="role" title="Role Intelligence" aria-label="Role Intelligence">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+    </button>
+    <button class="nav-btn" data-lens="copilot" title="Copilot" aria-label="Copilot">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    </button>
+    <button class="nav-btn" data-lens="simulator" title="Simulator" aria-label="Simulator">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="4" y1="5" x2="20" y2="5"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="19" x2="20" y2="19"></line><circle cx="8" cy="5" r="2" fill="currentColor"></circle><circle cx="16" cy="12" r="2" fill="currentColor"></circle><circle cx="10" cy="19" r="2" fill="currentColor"></circle></svg>
+    </button>
+    <button class="nav-btn" data-lens="pipeline" title="Pipeline" aria-label="Pipeline">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+    </button>
+    <div class="sb-spacer"></div>
+    <div class="sb-avatar" id="sb-avatar" title="Account" style="cursor:pointer">P</div>
+  </nav>
+
+  <!-- ░░ MAIN ░░ -->
+  <div class="main">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <div class="role-pill" id="role-pill" style="cursor:pointer;position:relative" onclick="toggleRoleDropdown()">
+        <span class="dot dot-success"></span>
+        <span class="role-name">Rec. Systems Engineer</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8C8D93" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+        <div id="role-dropdown" class="role-dropdown" hidden>
+          <div class="role-dd-head">
+            <span class="dot dot-success"></span>
+            <span style="font-weight:600;font-size:14px">Rec. Systems Engineer</span>
+            <span class="role-dd-badge">Active</span>
+          </div>
+          <div class="role-dd-meta">100 candidates · Run v3 · Fresh</div>
+          <div class="role-dd-divider"></div>
+          <button class="role-dd-item" onclick="setLens('role');closeRoleDropdown()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            View role intelligence
+          </button>
+          <button class="role-dd-item" onclick="setLens('shortlist');closeRoleDropdown()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 11h16M4 16h11"></path></svg>
+            View shortlist
+          </button>
+          <button class="role-dd-item" onclick="setLens('pipeline');closeRoleDropdown()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            View pipeline
+          </button>
+        </div>
+      </div>
+      <button class="search-bar" id="open-cmdk">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8C8D93" stroke-width="1.5"><circle cx="11" cy="11" r="7"></circle><path d="M16 16l4 4"></path></svg>
+        <span class="search-placeholder">Search or ask anything…</span>
+        <span class="kbd">⌘K</span>
+      </button>
+      <div class="topbar-spacer"></div>
+      <button class="ask-copilot" data-lens="copilot">
+        <span class="dot dot-accent"></span> Ask Copilot
+      </button>
+      <button class="icon-btn" id="bell-btn" title="Notifications">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+        <span class="bell-dot"></span>
+      </button>
+    </header>
+
+    <!-- LENS CONTENT -->
+    <main id="lens-root" class="lens-root">
+      <div class="loading-screen">
+        <div class="spinner"></div>
+        <p>Loading recruiter intelligence…</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- ░░ CANDIDATE RAIL (overlay) ░░ -->
+  <div id="rail-scrim" class="rail-scrim" hidden></div>
+  <aside id="rail" class="rail" hidden aria-label="Candidate detail"></aside>
+
+  <!-- ░░ COMMAND PALETTE (⌘K) ░░ -->
+  <div id="cmdk" class="cmdk-overlay" hidden>
+    <div class="cmdk">
+      <div class="cmdk-input-row">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8C8D93" stroke-width="1.5"><circle cx="11" cy="11" r="7"></circle><path d="M16 16l4 4"></path></svg>
+        <input id="cmdk-input" type="text" placeholder="Search a candidate, ask a question, jump to a lens…" autocomplete="off">
+        <span class="kbd">esc</span>
+      </div>
+      <div id="cmdk-results" class="cmdk-results"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ░░ NOTIFICATION PANEL (body-level, positioned by JS) ░░ -->
+<div id="notif-panel" class="notif-panel" hidden>
+  <div class="notif-head">Notifications <span id="notif-count">3 new</span></div>
+  <div id="notif-list"></div>
+</div>
+
+<!-- ░░ AVATAR MENU (body-level, positioned by JS) ░░ -->
+<div id="avatar-menu" class="avatar-menu" hidden>
+  <div class="avatar-menu-user">
+    <div class="avatar-menu-name" id="avatar-name">Demo Recruiter</div>
+    <div class="avatar-menu-email" id="avatar-email">demo@hireiq.com</div>
+  </div>
+  <button class="avatar-menu-item" onclick="setLens('shortlist');closeAvatarMenu()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 11h16M4 16h11"></path></svg>
+    Shortlist
+  </button>
+  <button class="avatar-menu-item" onclick="setLens('pipeline');closeAvatarMenu()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+    Pipeline
+  </button>
+  <div class="avatar-menu-divider"></div>
+  <button class="avatar-menu-item danger" onclick="signOut()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+    Sign out
+  </button>
+</div>
+
+<script src="app.js?v=3"></script>
+</body>
+</html>

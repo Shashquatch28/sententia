@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HireIQ — Sign In</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --canvas:#F2EFE7;--panel:#FBFAF5;--ink:#15161A;--ink-600:#54565E;--ink-400:#8C8D93;
+  --hair:#D9D4C8;--hair-soft:#E8E3DA;--accent:#2747C9;--success:#1C6B4F;--sidebar:#15161A;
+  --r-sm:6px;--r-md:11px;--r-lg:16px;
+  --font-sans:'Hanken Grotesk',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+  --font-edit:'Newsreader',Georgia,serif;
+}
+html,body{height:100%;font-family:var(--font-sans);background:var(--sidebar);color:#fff;}
+.shell{display:flex;height:100vh;overflow:hidden;}
+
+/* ── Left panel ── */
+.left{
+  flex:0 0 52%;background:var(--sidebar);
+  display:flex;flex-direction:column;justify-content:space-between;padding:48px 56px;
+}
+.logo{font-size:17px;font-weight:700;letter-spacing:-0.02em;color:#fff;}
+.logo span{color:var(--accent);}
+.tagline{margin-top:auto;padding-bottom:20px;}
+.tagline-kicker{
+  font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(255,255,255,.4);margin-bottom:18px;
+}
+.tagline h1{
+  font-size:clamp(26px,3.2vw,38px);font-weight:700;line-height:1.15;letter-spacing:-0.03em;
+  color:#fff;max-width:480px;margin-bottom:16px;
+}
+.tagline h1 em{font-family:var(--font-edit);font-style:italic;font-weight:400;color:rgba(255,255,255,.55);}
+.tagline-sub{font-size:14px;color:rgba(255,255,255,.45);line-height:1.6;max-width:400px;}
+
+/* histogram */
+.hist-wrap{margin-top:36px;}
+.hist-label{font-family:var(--font-mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:10px;}
+.hist{display:flex;align-items:flex-end;gap:3px;height:56px;}
+.hist-bar{flex:1;border-radius:2px 2px 0 0;background:rgba(39,71,201,.5);transition:background .2s;}
+.hist-bar.hi{background:var(--accent);}
+.hist-axis{display:flex;justify-content:space-between;margin-top:6px;font-family:var(--font-mono);font-size:9px;color:rgba(255,255,255,.25);}
+
+/* ── Right panel ── */
+.right{
+  flex:1;background:var(--canvas);display:flex;flex-direction:column;
+  justify-content:center;align-items:center;padding:48px 40px;
+}
+.form-card{width:100%;max-width:380px;}
+.form-eyebrow{
+  font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink-400);margin-bottom:24px;
+}
+.form-card h2{font-size:26px;font-weight:700;letter-spacing:-0.02em;color:var(--ink);margin-bottom:8px;}
+.form-card p{font-size:14px;color:var(--ink-600);margin-bottom:32px;line-height:1.5;}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;}
+.field label{font-size:13px;font-weight:500;color:var(--ink);}
+.field input{
+  padding:11px 14px;border:1.5px solid var(--hair);border-radius:var(--r-md);
+  background:#fff;font-family:inherit;font-size:14px;color:var(--ink);outline:none;
+  transition:border-color .15s;
+}
+.field input:focus{border-color:var(--accent);}
+.field input::placeholder{color:var(--ink-400);}
+.btn-primary{
+  width:100%;padding:13px;border-radius:var(--r-md);background:var(--accent);border:none;
+  color:#fff;font-family:inherit;font-size:15px;font-weight:600;cursor:pointer;
+  margin-top:4px;transition:opacity .15s;
+}
+.btn-primary:hover{opacity:.88;}
+.divider{display:flex;align-items:center;gap:12px;margin:20px 0;color:var(--ink-400);font-size:13px;}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--hair);}
+.btn-demo{
+  width:100%;padding:12px;border-radius:var(--r-md);background:transparent;
+  border:1.5px solid var(--hair);color:var(--ink);font-family:inherit;font-size:14px;
+  font-weight:500;cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.btn-demo:hover{border-color:var(--accent);color:var(--accent);background:color-mix(in srgb,var(--accent) 5%,#fff);}
+.form-footer{margin-top:28px;text-align:center;font-size:12.5px;color:var(--ink-400);}
+.form-footer a{color:var(--accent);text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <!-- Left: brand + histogram -->
+  <div class="left">
+    <div class="logo">Hire<span>IQ</span></div>
+    <div class="tagline">
+      <div class="tagline-kicker">Redrob × H2S · INDIA.RUNS</div>
+      <h1>Rank 100 candidates in <em>minutes,</em> not days.</h1>
+      <p class="tagline-sub">AI-grounded scoring across technical depth, culture, availability and trust — so you spend time on decisions, not screening.</p>
+      <div class="hist-wrap">
+        <div class="hist-label">Match score distribution · 100 candidates</div>
+        <div class="hist" id="hist"></div>
+        <div class="hist-axis"><span>0.0</span><span>0.25</span><span>0.5</span><span>0.75</span><span>1.0</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: form -->
+  <div class="right">
+    <div class="form-card">
+      <div class="form-eyebrow">Recruiter workspace</div>
+      <h2>Sign in to HireIQ</h2>
+      <p>Access your ranked shortlist and candidate intelligence.</p>
+      <div class="field">
+        <label for="email">Work email</label>
+        <input id="email" type="email" placeholder="you@company.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <div id="signin-error" style="display:none;background:color-mix(in srgb,var(--danger,#B23B2E) 10%,#fff);border:1px solid color-mix(in srgb,var(--danger,#B23B2E) 30%,#fff);border-radius:var(--r-md);padding:10px 14px;font-size:13px;color:var(--danger,#B23B2E);margin-bottom:12px;"></div>
+      <button class="btn-primary" id="btn-signin">Continue</button>
+      <div class="divider">or</div>
+      <button class="btn-demo" id="btn-demo">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-14 9V3z"></path></svg>
+        Continue as demo →
+      </button>
+      <div class="form-footer">
+        Don't have an account? <a href="#">Request access</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script>
+// Histogram
+(function(){
+  const bars = [2,4,6,9,14,18,17,13,9,6,2];
+  const max = Math.max(...bars);
+  const hi = bars.indexOf(max);
+  const hist = document.getElementById("hist");
+  bars.forEach((v,i)=>{
+    const d = document.createElement("div");
+    d.className = "hist-bar" + (i===hi?" hi":"");
+    d.style.height = (v/max*100)+"%";
+    hist.appendChild(d);
+  });
+})();
+
+const API = "http://localhost:8001";
+
+function showError(msg){
+  const el=document.getElementById("signin-error");
+  el.textContent=msg; el.style.display="block";
+}
+function clearError(){
+  const el=document.getElementById("signin-error");
+  if(el) el.style.display="none";
+}
+function setLoading(btn, loading){
+  btn.disabled=loading;
+  btn.style.opacity=loading?"0.6":"1";
+}
+
+function storeAndGo(data){
+  localStorage.setItem("hiq_token", data.token);
+  localStorage.setItem("hiq_email", data.email||"");
+  localStorage.setItem("hiq_name", data.name||"Recruiter");
+  window.location.href="index.html";
+}
+
+document.getElementById("btn-signin").addEventListener("click", async ()=>{
+  clearError();
+  const email=document.getElementById("email").value.trim();
+  const password=document.getElementById("password").value;
+  if(!email||!password){ showError("Enter your email and password."); return; }
+  const btn=document.getElementById("btn-signin");
+  setLoading(btn,true);
+  try{
+    const r=await fetch(`${API}/api/auth/login`,{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({email,password}),
+    });
+    const data=await r.json();
+    if(!r.ok){ showError(data.error||"Login failed."); return; }
+    storeAndGo(data);
+  }catch(e){
+    // API not running — fall through to app anyway (demo mode)
+    localStorage.removeItem("hiq_token");
+    window.location.href="index.html";
+  }finally{ setLoading(btn,false); }
+});
+
+document.getElementById("btn-demo").addEventListener("click", async ()=>{
+  clearError();
+  const btn=document.getElementById("btn-demo");
+  setLoading(btn,true);
+  try{
+    const r=await fetch(`${API}/api/auth/demo`,{method:"POST"});
+    const data=await r.json();
+    storeAndGo(data);
+  }catch(e){
+    // API not running — go to app anyway
+    localStorage.removeItem("hiq_token");
+    window.location.href="index.html";
+  }finally{ setLoading(btn,false); }
+});
+
+// Allow Enter key on password field
+document.getElementById("password").addEventListener("keydown",e=>{
+  if(e.key==="Enter") document.getElementById("btn-signin").click();
+});
+</script>
+</body>
+</html>

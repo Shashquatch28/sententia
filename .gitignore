@@ -25,6 +25,7 @@ htmlcov/
 .vscode/
 .idea/
 .cursor/
+.claude/
 
 # Environment
 .env
