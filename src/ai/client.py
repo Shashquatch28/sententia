@@ -118,7 +118,7 @@ class GeminiClient(BaseLLMClient):
     def __init__(
         self,
         api_key: str,
-        model: str = "gemini-1.5-flash",
+        model: str = "gemini-2.5-flash-lite",
     ) -> None:
         self.api_key = api_key
         self.model = model
@@ -300,7 +300,7 @@ def get_client() -> BaseLLMClient:
     if provider == "gemini":
         return GeminiClient(
             api_key=os.getenv("GEMINI_API_KEY", os.getenv("LLM_API_KEY", "")),
-            model=os.getenv("LLM_MODEL", "gemini-1.5-flash"),
+            model=os.getenv("LLM_MODEL", "gemini-2.5-flash-lite"),
         )
 
     if provider == "openai":

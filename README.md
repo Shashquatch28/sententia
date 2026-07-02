@@ -351,7 +351,7 @@ Required environment variables:
 | Variable | Value |
 |---|---|
 | `LLM_PROVIDER` | `gemini` |
-| `LLM_MODEL` | `gemini-1.5-flash` |
+| `LLM_MODEL` | `gemini-2.5-flash-lite` |
 | `GEMINI_API_KEY` | Your hosted Gemini API key |
 | `HIQ_SECRET_KEY` | Long random string for demo auth tokens |
 
@@ -369,7 +369,7 @@ For deployment, use a hosted provider:
 
 ```bash
 LLM_PROVIDER=gemini
-LLM_MODEL=gemini-1.5-flash
+LLM_MODEL=gemini-2.5-flash-lite
 GEMINI_API_KEY=...
 ```
 
@@ -441,7 +441,7 @@ Environment variables:
 |---|---|
 | `HIREIQ_TEST=1` | Enables reduced funnel sizes for agent test mode. |
 | `LLM_PROVIDER` | `gemini`, `groq`, `openai`, `openai_compatible`, `ollama`, or `disabled`. |
-| `LLM_MODEL` | Hosted model name, for example `gemini-1.5-flash`. |
+| `LLM_MODEL` | Hosted model name, for example `gemini-2.5-flash-lite`. |
 | `GEMINI_API_KEY` | Required when `LLM_PROVIDER=gemini`. |
 | `GROQ_API_KEY` | Required when `LLM_PROVIDER=groq`. |
 | `OPENAI_API_KEY` | Required when `LLM_PROVIDER=openai`. |
