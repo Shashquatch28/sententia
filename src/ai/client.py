@@ -23,6 +23,11 @@ from abc import ABC, abstractmethod
 import requests
 
 
+GEMINI_MODEL_ALIASES = {
+    "gemini-1.5-flash": "gemini-2.5-flash-lite",
+}
+
+
 # ---------------------------------------------------------------------
 # Base Client
 # ---------------------------------------------------------------------
@@ -121,7 +126,7 @@ class GeminiClient(BaseLLMClient):
         model: str = "gemini-2.5-flash-lite",
     ) -> None:
         self.api_key = api_key
-        self.model = model
+        self.model = GEMINI_MODEL_ALIASES.get(model, model)
 
     def generate(
         self,
