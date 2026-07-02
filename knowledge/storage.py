@@ -17,6 +17,7 @@ candidate JSON, LLMs, Streamlit, or the ranking pipeline.
 from __future__ import annotations
 
 import hashlib
+import os
 import sqlite3
 import uuid
 from pathlib import Path
@@ -27,7 +28,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-DATA_DIR = ROOT / "data"
+DATA_DIR = Path(os.getenv("HIQ_DATA_DIR", ROOT / "data"))
 DB_PATH = DATA_DIR / "hireiq.db"
 
 SCHEMA_PATH = Path(__file__).parent / "schema.sql"

@@ -31,6 +31,7 @@ MATCH_DIR = PRECOMPUTED / "match_scores"
 DECISION_DIR = PRECOMPUTED / "recruiter_decisions"
 
 JOB_FILE = PRECOMPUTED / "job_intelligence.json"
+DEMO_FILE = PRECOMPUTED / "demo_data.json"
 
 # ---------------------------------------------------------------------
 # SQL
@@ -225,3 +226,93 @@ def ingest_all() -> dict[str, int]:
         conn.commit()
 
     return stats
+
+
+def ingest_demo_data() -> dict[str, int]:
+    """
+    Import the compact frontend demo artifact into SQLite.
+
+    This is a deployment fallback for hosts where the per-candidate
+    precomputed directories are not present, but demo_data.json is.
+    """
+
+    if not DEMO_FILE.exists():
+        return {
+            "job": 0,
+            "candidate_profiles": 0,
+            "match_scores": 0,
+            "recruiter_decisions": 0,
+        }
+
+    demo = _load_json(DEMO_FILE)
+    candidates = demo.get("all_candidates", []) or []
+    job = demo.get("job_intelligence", {}) or {}
+
+    with get_connection() as conn:
+        if job:
+            conn.execute(
+                INSERT_JOB,
+                (
+                    "default",
+                    job.get("role_name", "Recommendation Systems Engineer"),
+                    job.get("generated_at", ""),
+                    json.dumps(job, ensure_ascii=False),
+                ),
+            )
+
+        for candidate in candidates:
+            candidate_id = candidate["candidate_id"]
+            match_payload = {
+                **candidate,
+                "match_evidence": candidate.get("top_evidence", []),
+                "identified_gaps": _collect_gaps(candidate),
+            }
+
+            conn.execute(
+                INSERT_CANDIDATE,
+                (
+                    candidate_id,
+                    candidate.get("name", ""),
+                    candidate.get("current_title", ""),
+                    candidate.get("current_company", ""),
+                    candidate.get("narrative_type", ""),
+                    candidate.get("consistency_score", 0.0),
+                    candidate.get("fast_score", candidate.get("overall_match_score", 0.0)),
+                    candidate.get("years_of_experience", 0.0),
+                    json.dumps(candidate, ensure_ascii=False),
+                ),
+            )
+            conn.execute(
+                INSERT_MATCH,
+                (
+                    candidate_id,
+                    candidate.get("overall_match_score", 0.0),
+                    json.dumps(match_payload, ensure_ascii=False),
+                ),
+            )
+            conn.execute(
+                INSERT_DECISION,
+                (
+                    candidate_id,
+                    candidate.get("recommendation", ""),
+                    candidate.get("overall_match_score", 0.0),
+                    json.dumps(candidate, ensure_ascii=False),
+                ),
+            )
+
+        conn.commit()
+
+    return {
+        "job": 1 if job else 0,
+        "candidate_profiles": len(candidates),
+        "match_scores": len(candidates),
+        "recruiter_decisions": len(candidates),
+    }
+
+
+def _collect_gaps(candidate: dict) -> list[str]:
+    gaps: list[str] = []
+    for dimension in (candidate.get("fit_assessment") or {}).values():
+        if isinstance(dimension, dict):
+            gaps.extend(str(gap) for gap in dimension.get("gaps", []) if gap)
+    return gaps

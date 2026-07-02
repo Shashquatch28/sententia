@@ -335,9 +335,45 @@ Expected backend artifacts:
 
 ---
 
+## Deploy On Render
+
+The hackathon deployment is configured as one Render web service via `render.yaml`.
+The same service serves the frontend, precomputed JSON, and API backend.
+
+Render start command:
+
+```bash
+uvicorn server:app --host 0.0.0.0 --port $PORT
+```
+
+Required environment variables:
+
+| Variable | Value |
+|---|---|
+| `LLM_PROVIDER` | `gemini` |
+| `LLM_MODEL` | `gemini-1.5-flash` |
+| `GEMINI_API_KEY` | Your hosted Gemini API key |
+| `HIQ_SECRET_KEY` | Long random string for demo auth tokens |
+
+After deployment, open `/api/health` and confirm it reports `"status": "ok"` and
+nonzero knowledge-store counts. The full checklist is in
+`RENDER_DEPLOYMENT_CHECKLIST.md`.
+
+---
+
 ## Optional AI Layer
 
 The AI layer is not part of ranking. It sits on top of the precomputed artifacts and SQLite knowledge store.
+
+For deployment, use a hosted provider:
+
+```bash
+LLM_PROVIDER=gemini
+LLM_MODEL=gemini-1.5-flash
+GEMINI_API_KEY=...
+```
+
+Local Ollama still works for development.
 
 ### Start Ollama
 
@@ -404,7 +440,14 @@ Environment variables:
 | Variable | Purpose |
 |---|---|
 | `HIREIQ_TEST=1` | Enables reduced funnel sizes for agent test mode. |
-| LLM provider variables | Optional; see `src/ai/client.py`. |
+| `LLM_PROVIDER` | `gemini`, `groq`, `openai`, `openai_compatible`, `ollama`, or `disabled`. |
+| `LLM_MODEL` | Hosted model name, for example `gemini-1.5-flash`. |
+| `GEMINI_API_KEY` | Required when `LLM_PROVIDER=gemini`. |
+| `GROQ_API_KEY` | Required when `LLM_PROVIDER=groq`. |
+| `OPENAI_API_KEY` | Required when `LLM_PROVIDER=openai`. |
+| `LLM_API_KEY` / `LLM_API_BASE` | Required for generic OpenAI-compatible providers. |
+| `HIQ_SECRET_KEY` | Token signing secret for demo auth. |
+| `HIQ_DATA_DIR` | Optional SQLite data directory override for cloud/runtime testing. |
 
 ---
 

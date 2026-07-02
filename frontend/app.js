@@ -1,6 +1,6 @@
 /* ============================================================
    HireIQ frontend — binds the design to real precomputed data.
-   No backend, no API: reads precomputed/demo_data.json directly.
+   Render-ready full stack: reads precomputed data and calls same-origin API routes.
    ============================================================ */
 
 const DATA_PATHS = [
@@ -93,8 +93,8 @@ async function removeDecision(cid){
   }catch(_){}
 }
 
-/* API server (server.py) — if not running, Copilot falls back to client-side retrieval */
-const API_BASE = "http://localhost:8001";
+/* API server: same-origin by default, override with window.HIREIQ_API_BASE if split-hosting. */
+const API_BASE = (window.HIREIQ_API_BASE || "").replace(/\/$/, "");
 
 /* ── utilities ── */
 const $ = (s,r=document)=>r.querySelector(s);
@@ -134,9 +134,7 @@ async function boot(){
   if(!data){
     $("#lens-root").innerHTML =
       `<div class="loading-screen"><p style="max-width:420px;text-align:center">Couldn't load <code>precomputed/demo_data.json</code>.<br><br>
-      Serve the repo over HTTP so the browser can read it:<br>
-      <code style="font-family:var(--font-mono);font-size:12px">python -m http.server 8000</code><br>
-      then open <code style="font-family:var(--font-mono);font-size:12px">http://localhost:8000/frontend/</code></p></div>`;
+      Check that the deployment includes <code style="font-family:var(--font-mono);font-size:12px">precomputed/demo_data.json</code>.</p></div>`;
     return;
   }
   State.data = data;
@@ -419,6 +417,7 @@ function openRail(cid){
       <span class="rail-bigscore tabular">${fmtScore(c.overall_match_score)}</span>
     </div>
     ${c.recommendation_rationale?`<div class="rail-rationale">${esc(c.recommendation_rationale)}</div>`:""}
+    <div id="rail-ai-output"></div>
 
     <div class="section-label">Dimension breakdown</div>
     ${dimRows.map(([n,v])=>`<div class="dim-row"><span class="dim-name">${n}</span>
@@ -447,11 +446,20 @@ function openRail(cid){
 
   const rail=$("#rail");
   rail.innerHTML=html; rail.hidden=false; $("#rail-scrim").hidden=false;
+  const railActions = rail.querySelector(".rail-actions");
+  if(railActions){
+    railActions.insertAdjacentHTML("beforeend", `
+      <button class="btn" id="rail-outreach">Draft outreach</button>
+      <button class="btn" id="rail-ai-sim">AI what-if</button>
+    `);
+  }
   $("#rail-close").addEventListener("click",closeRail);
   $$("[data-compare]",rail).forEach(b=>b.addEventListener("click",()=>{
     const [a,bb]=b.dataset.compare.split("|"); openCompare(a,bb);
   }));
   $("#rail-guide")?.addEventListener("click",()=>{ closeRail(); setLens("guide"); });
+  $("#rail-outreach")?.addEventListener("click",()=>draftOutreach(cid));
+  $("#rail-ai-sim")?.addEventListener("click",()=>runAiSimulation(cid));
   $("#rail-advance")?.addEventListener("click",()=>{
     const cid=State.currentCandidate; if(!cid) return;
     const c=State.byId[cid]; if(!c) return;
@@ -482,6 +490,49 @@ function openRail(cid){
   });
 }
 function closeRail(){ $("#rail").hidden=true; $("#rail-scrim").hidden=true; }
+
+function setRailAiOutput(title, body, loading=false){
+  const out=$("#rail-ai-output");
+  if(!out) return;
+  out.innerHTML = `<div class="rail-rationale" style="font-size:13.5px;margin-top:12px">
+    <div class="section-label" style="margin-top:0">${esc(title)}</div>
+    ${loading?`<span class="hiq-dots"><span></span><span></span><span></span></span> `:""}${body}
+  </div>`;
+}
+
+async function draftOutreach(cid){
+  const c=State.byId[cid]; if(!c) return;
+  setRailAiOutput("Outreach draft", "Drafting outreach...", true);
+  try{
+    const res=await fetch(`${API_BASE}/api/outreach/${encodeURIComponent(cid)}`,{
+      method:"POST",
+      headers:authHeaders(),
+    });
+    const data=await res.json();
+    if(!res.ok) throw new Error(data.error||`API ${res.status}`);
+    setRailAiOutput("Outreach draft", llmHtml(data.email||"No outreach returned."));
+  }catch(e){
+    setRailAiOutput("Outreach draft", `<p>${esc(e.message||"Outreach unavailable.")}</p>`);
+  }
+}
+
+async function runAiSimulation(cid){
+  const c=State.byId[cid]; if(!c) return;
+  const scenario = `The recruiter prioritizes immediate availability and production LLM/RAG experience for ${c.name}. Would the recommendation change?`;
+  setRailAiOutput("AI what-if", "Running scenario...", true);
+  try{
+    const res=await fetch(`${API_BASE}/api/simulate`,{
+      method:"POST",
+      headers:{"Content-Type":"application/json",...authHeaders()},
+      body:JSON.stringify({candidate_id:cid, scenario}),
+    });
+    const data=await res.json();
+    if(!res.ok) throw new Error(data.error||`API ${res.status}`);
+    setRailAiOutput("AI what-if", llmHtml(data.result||"No simulation returned."));
+  }catch(e){
+    setRailAiOutput("AI what-if", `<p>${esc(e.message||"Simulation unavailable.")}</p>`);
+  }
+}
 
 /* ============================================================ */
 /*  ROLE INTELLIGENCE                                           */
@@ -914,7 +965,7 @@ function copilotMsg(m){
   const meta = m.loading
     ? `<div class="cp-meta cp-thinking"><span class="hiq-dots"><span></span><span></span><span></span></span> Thinking…</div>`
     : m.llm
-      ? `<div class="cp-meta">Copilot · <span style="color:var(--accent)">LLM</span> · Ollama</div>`
+      ? `<div class="cp-meta">Copilot · <span style="color:var(--accent)">LLM</span></div>`
       : `<div class="cp-meta">Copilot · grounded in ${m.grounded} record${m.grounded===1?"":"s"}</div>`;
   return `<div class="cp-msg">
     <div class="cp-q">${esc(m.q)}</div>

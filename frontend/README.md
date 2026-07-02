@@ -1,63 +1,64 @@
-# HireIQ — Web Frontend
+# HireIQ Web Frontend
 
-A faithful implementation of the HireIQ design language (`Design guidelines review/`),
-bound to the **real** intelligence data in `precomputed/demo_data.json`.
+The frontend binds the HireIQ design language to the real intelligence data in
+`precomputed/demo_data.json`.
 
-It is a static, self-contained web app — **no backend, no API, no build step**. It reads
-the precomputed JSON directly in the browser, so it changes nothing in the Python pipeline,
-the agents, or the knowledge store.
+For the hackathon deployment, the frontend is served by `server.py` from the same
+Render web service as the API. That keeps auth, decisions, Copilot, AI what-if
+simulation, and outreach on one public origin.
 
 ## Run
 
-Serve the repo root over HTTP (the page fetches `../precomputed/demo_data.json`):
+From the project root:
 
 ```bash
-# from the project root
-python -m http.server 8000
+python server.py
 ```
 
-Then open: **http://localhost:8000/frontend/**
+Then open:
 
-> Opening `index.html` directly with `file://` will not work — browsers block `fetch()`
-> of local files. It must be served over HTTP (any static server is fine).
+```text
+http://localhost:8001/
+```
 
-## What's here
+Opening `index.html` directly with `file://` will not work because browsers block
+local `fetch()` calls. Use the Python server for the complete app.
+
+## Files
 
 | File | Purpose |
-|------|---------|
-| `index.html` | App shell — sidebar, top bar, ⌘K palette, candidate rail |
-| `styles.css` | The design system (tokens, type, components) from the design docs |
-| `app.js` | Data loading + all six lenses + interactions |
+|---|---|
+| `index.html` | App shell, sidebar, top bar, command palette, candidate rail |
+| `signin.html` | Demo/login entry screen |
+| `styles.css` | HireIQ design system and component styling |
+| `app.js` | Data loading, API calls, all lenses, and interactions |
 
-## Lenses (the six data-backed surfaces from the Information Architecture)
+## Main Surfaces
 
-- **Shortlist** (home) — tier-grouped candidate cards, funnel strip, real ranks & scores
-- **Role Intelligence** — AI narrative, discriminator hierarchy, red-line requirements, culture signals
-- **Candidate rail** — opens in place: recommendation, dimension breakdown, evidence, risks, interview focus, timing
-- **Comparison** — two candidates side by side with dimension deltas and "why #1 over #2"
-- **Copilot** — grounded retrieval over the loaded data (no hallucination; honest redirect for off-topic)
-- **Simulator** — adjust scoring weights, instant client-side re-rank with movement deltas
-- **⌘K** command palette — jump to a candidate or a lens
+- Shortlist: tier-grouped candidate cards, funnel strip, real ranks, and scores.
+- Role Intelligence: role narrative, discriminator hierarchy, red-line requirements, and culture signals.
+- Candidate rail: recommendation, dimensions, evidence, risks, interview focus, outreach, and AI what-if.
+- Comparison: two candidates side by side with dimension deltas and ranking rationale.
+- Copilot: calls `/api/copilot` first, with grounded client-side retrieval fallback.
+- Simulator: instant client-side re-rank plus candidate-level AI scenario generation.
+- Pipeline: persists advance/set-aside decisions through `/api/decisions`.
 
-## Data mapping
+## Data Mapping
 
-| UI | Source in `demo_data.json` |
-|----|----------------------------|
-| Funnel / tier counts | `stats`, `candidates_by_tier` |
-| Cards / ranks / scores | `all_candidates` (sorted by `overall_match_score`) |
-| Candidate detail | `fit_assessment`, `trust_assessment`, `hiring_risks`, `interview_focus`, `timing_assessment`, `recommendation_rationale` |
+| UI | Source |
+|---|---|
+| Funnel / tier counts | `precomputed/demo_data.json` |
+| Cards / ranks / scores | `all_candidates` in `demo_data.json` |
+| Candidate detail | `fit_assessment`, `trust_assessment`, `hiring_risks`, `interview_focus`, `timing_assessment` |
 | Role Intelligence | `job_intelligence` |
 | Comparison | `comparisons` |
+| Copilot / simulation / outreach | Backend API routes in `server.py` |
 
-## Notes & scope
+## Deployment
 
-- The Copilot here is **client-side grounded retrieval** — it filters/explains real records
-  and never invents facts. (The Python `src/ai` Copilot/Simulator that call Ollama are a
-  separate server-side path; this static frontend deliberately needs no backend so the demo
-  runs anywhere, including Streamlit/static hosting.)
-- The Simulator re-ranks over the available fit dimensions (technical, product, cultural,
-  growth, trust, availability). "Default" reproduces the baseline order, so presets show
-  clear movement.
-- Screens in the design set that have **no backend data** (Sign In, Onboarding, Role
-  Creation, Pipeline, Outreach, Analytics, Audit, Settings, Admin) are intentionally not
-  built — there is no auth/user/API layer to back them, and the brief was to use real data.
+Use the root `render.yaml` for Render. The deployed service serves:
+
+- `/` and `/signin.html` for sign in
+- `/index.html` for the dashboard
+- `/precomputed/demo_data.json` for browser data
+- `/api/*` for backend features

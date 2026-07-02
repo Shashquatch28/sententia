@@ -4,7 +4,7 @@ server.py
 Lightweight API server exposing HireIQ intelligence and data to the frontend.
 
 Run from the project root:
-    .venv\Scripts\python server.py
+    .venv/Scripts/python server.py
 
 Endpoints:
     GET  /api/health                  — liveness check
@@ -23,15 +23,17 @@ from __future__ import annotations
 
 import json
 import asyncio
+import os
 from pathlib import Path
 
 import uvicorn
 from itsdangerous import URLSafeTimedSerializer, BadSignature, SignatureExpired
 from starlette.applications import Starlette
 from starlette.requests import Request
-from starlette.responses import JSONResponse
-from starlette.routing import Route
+from starlette.responses import FileResponse, JSONResponse
+from starlette.routing import Mount, Route
 from starlette.middleware.cors import CORSMiddleware
+from starlette.staticfiles import StaticFiles
 
 from knowledge.storage import (
     initialize_database,
@@ -42,21 +44,40 @@ from knowledge.storage import (
     get_run_stats,
     verify_user,
     ensure_demo_user,
+    table_counts,
 )
+from knowledge.ingest import ingest_all, ingest_demo_data
 from src.ai.service import AIService
 
 # ------------------------------------------------------------------
 # Startup
 # ------------------------------------------------------------------
 
-initialize_database()
-ensure_demo_user()   # seed demo@hireiq.com / demo123
+ROOT = Path(__file__).parent
+FRONTEND_DIR = ROOT / "frontend"
+PRECOMPUTED_DIR = ROOT / "precomputed"
+
+
+def _bootstrap_database() -> None:
+    """Initialize and seed the local demo DB from committed artifacts."""
+    initialize_database()
+
+    counts = table_counts()
+    if not counts.get("candidate_profiles") or not counts.get("match_scores"):
+        ingest_all()
+
+    ingest_demo_data()
+
+    ensure_demo_user()   # seed demo@hireiq.com / demo123
+
+
+_bootstrap_database()
 
 _service = AIService()
 
 # Load demo_data.json once so Copilot stats match what the frontend shows
 _DEMO_DATA: dict = {}
-_DEMO_JSON = Path(__file__).parent / "precomputed" / "demo_data.json"
+_DEMO_JSON = PRECOMPUTED_DIR / "demo_data.json"
 if _DEMO_JSON.exists():
     with open(_DEMO_JSON, encoding="utf-8") as _f:
         _DEMO_DATA = _f.read()
@@ -66,7 +87,7 @@ if _DEMO_JSON.exists():
 # Auth helpers (itsdangerous token — no PyJWT dependency)
 # ------------------------------------------------------------------
 
-_SECRET = "hireiq-demo-secret-v1"
+_SECRET = os.getenv("HIQ_SECRET_KEY", "hireiq-demo-secret-v1")
 _signer = URLSafeTimedSerializer(_SECRET)
 _TOKEN_MAX_AGE = 60 * 60 * 24 * 7   # 7 days
 
@@ -256,7 +277,15 @@ async def roles_list(request: Request) -> JSONResponse:
 # ------------------------------------------------------------------
 
 async def health(request: Request) -> JSONResponse:
-    return JSONResponse({"status": "ok", "model": "ollama/qwen2.5:7b"})
+    counts = table_counts()
+    return JSONResponse(
+        {
+            "status": "ok",
+            "llm_provider": os.getenv("LLM_PROVIDER", "disabled"),
+            "llm_model": os.getenv("LLM_MODEL", ""),
+            "knowledge_store": counts,
+        }
+    )
 
 
 async def copilot(request: Request) -> JSONResponse:
@@ -294,7 +323,7 @@ async def copilot(request: Request) -> JSONResponse:
         return JSONResponse({"answer": answer, "candidate_id": cid})
     except RuntimeError as e:
         return JSONResponse(
-            {"answer": f"LLM unavailable: {e}. Is Ollama running? Run: ollama serve"},
+            {"answer": f"LLM unavailable: {e}"},
             status_code=200,
         )
     except Exception as e:
@@ -327,7 +356,7 @@ async def simulate(request: Request) -> JSONResponse:
         return JSONResponse({"result": result})
     except RuntimeError as e:
         return JSONResponse(
-            {"result": f"LLM unavailable: {e}. Is Ollama running? Run: ollama serve"},
+            {"result": f"LLM unavailable: {e}"},
             status_code=200,
         )
     except Exception as e:
@@ -390,11 +419,23 @@ Write the outreach email."""
         return JSONResponse({"email": email_text, "candidate_id": candidate_id})
     except RuntimeError as e:
         return JSONResponse(
-            {"email": f"LLM unavailable: {e}. Is Ollama running?"},
+            {"email": f"LLM unavailable: {e}"},
             status_code=200,
         )
     except Exception as e:
         return JSONResponse({"error": str(e)}, status_code=500)
+
+
+# ------------------------------------------------------------------
+# Route handlers - Frontend
+# ------------------------------------------------------------------
+
+async def frontend_index(request: Request) -> FileResponse:
+    return FileResponse(FRONTEND_DIR / "index.html")
+
+
+async def frontend_signin(request: Request) -> FileResponse:
+    return FileResponse(FRONTEND_DIR / "signin.html")
 
 
 # ------------------------------------------------------------------
@@ -403,6 +444,9 @@ Write the outreach email."""
 
 app = Starlette(
     routes=[
+        Route("/",                              frontend_signin,  methods=["GET"]),
+        Route("/index.html",                    frontend_index,   methods=["GET"]),
+        Route("/signin.html",                   frontend_signin,  methods=["GET"]),
         Route("/api/health",                    health,           methods=["GET"]),
         Route("/api/auth/demo",                 auth_demo,        methods=["POST"]),
         Route("/api/auth/login",                auth_login,       methods=["POST"]),
@@ -413,6 +457,8 @@ app = Starlette(
         Route("/api/copilot",                   copilot,          methods=["POST"]),
         Route("/api/simulate",                  simulate,         methods=["POST"]),
         Route("/api/outreach/{candidate_id}",   outreach,         methods=["POST"]),
+        Mount("/precomputed", StaticFiles(directory=PRECOMPUTED_DIR), name="precomputed"),
+        Mount("/", StaticFiles(directory=FRONTEND_DIR), name="frontend"),
     ]
 )
 
@@ -424,7 +470,10 @@ app.add_middleware(
 )
 
 if __name__ == "__main__":
-    print("HireIQ API server starting on http://localhost:8001")
+    port = int(os.getenv("PORT", "8001"))
+    print(f"HireIQ server starting on http://localhost:{port}")
+    print("  GET    /                         — frontend sign in")
+    print("  GET    /index.html                — frontend app")
     print("  GET    /api/health")
     print("  POST   /api/auth/demo")
     print("  POST   /api/auth/login           — { email, password }")
@@ -435,4 +484,4 @@ if __name__ == "__main__":
     print("  POST   /api/copilot              — { question, candidate_id? }")
     print("  POST   /api/simulate             — { candidate_id, scenario }")
     print("  POST   /api/outreach/{cid}")
-    uvicorn.run(app, host="0.0.0.0", port=8001)
+    uvicorn.run(app, host="0.0.0.0", port=port)

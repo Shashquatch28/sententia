@@ -151,7 +151,7 @@ html,body{height:100%;font-family:var(--font-sans);background:var(--sidebar);col
   });
 })();
 
-const API = "http://localhost:8001";
+const API = (window.HIREIQ_API_BASE || "").replace(/\/$/, "");
 
 function showError(msg){
   const el=document.getElementById("signin-error");
